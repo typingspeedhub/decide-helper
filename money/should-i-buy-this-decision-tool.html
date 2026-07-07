@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Should I Buy This? Decision Tool | DecideHelper</title>
+  <meta name="description" content="Use this free Should I Buy This? Decision Tool to evaluate any purchase, reduce impulse buying, and get a practical purchase decision score before spending money.">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header, footer {
+      background: #0f172a;
+      color: white;
+      padding: 24px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      margin-right: 16px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .hero {
+      padding: 54px 0 28px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      line-height: 1.2;
+      margin: 0 0 16px;
+      color: #0f172a;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 18px;
+      color: #475569;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 28px;
+      margin: 24px 0;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      border: 1px solid #e5e7eb;
+    }
+
+    h2 {
+      color: #0f172a;
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 14px;
+    }
+
+    h3 {
+      color: #111827;
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+
+    label {
+      display: block;
+      font-weight: 700;
+      margin-top: 16px;
+      margin-bottom: 6px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 16px;
+      box-sizing: border-box;
+      background: white;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .question {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 16px;
+      margin-top: 14px;
+    }
+
+    .question p {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .options label {
+      font-weight: 400;
+      margin: 7px 0;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .options input {
+      width: auto;
+    }
+
+    button {
+      margin-top: 22px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 14px 22px;
+      border-radius: 10px;
+      font-size: 17px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    .result {
+      display: none;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 14px;
+      padding: 24px;
+      margin-top: 24px;
+    }
+
+    .score {
+      font-size: 48px;
+      font-weight: 800;
+      color: #1d4ed8;
+      margin: 4px 0 8px;
+    }
+
+    .recommendation {
+      font-size: 24px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+    }
+
+    th, td {
+      border: 1px solid #e5e7eb;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background: #f1f5f9;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    .related {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .related a {
+      display: block;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 16px;
+      color: #0f172a;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .related a:hover {
+      background: #eff6ff;
+      border-color: #bfdbfe;
+    }
+
+    .note {
+      font-size: 14px;
+      color: #64748b;
+      margin-top: 12px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #cbd5e1;
+    }
+
+    @media (max-width: 760px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .grid, .related {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a href="/" class="logo">DecideHelper</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/money/">Money</a>
+      <a href="/life/">Life</a>
+      <a href="/tools/">Tools</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="hero">
+    <h1>Should I Buy This? Decision Tool</h1>
+    <p>Answer a few practical questions and get a purchase decision score before spending money. This free tool helps you slow down, compare the real impact of a purchase, and avoid buyer's remorse.</p>
+  </section>
+
+  <section class="card">
+    <h2>Purchase Decision Calculator</h2>
+    <p>Use this tool for everyday purchases, electronics, clothes, furniture, appliances, hobby equipment, subscriptions, or any item you are unsure about buying.</p>
+
+    <div class="grid">
+      <div>
+        <label for="price">Purchase price</label>
+        <input type="number" id="price" min="0" step="0.01" placeholder="Example: 250">
+      </div>
+      <div>
+        <label for="income">Monthly income</label>
+        <input type="number" id="income" min="0" step="0.01" placeholder="Example: 3000">
+      </div>
+      <div>
+        <label for="savings">Monthly savings</label>
+        <input type="number" id="savings" min="0" step="0.01" placeholder="Example: 400">
+      </div>
+      <div>
+        <label for="emergency">Emergency fund</label>
+        <input type="number" id="emergency" min="0" step="0.01" placeholder="Example: 5000">
+      </div>
+    </div>
+
+    <div class="question">
+      <p>Do you actually need this item?</p>
+      <div class="options">
+        <label><input type="radio" name="need" value="10" checked> Yes, definitely</label>
+        <label><input type="radio" name="need" value="6"> Somewhat</label>
+        <label><input type="radio" name="need" value="1"> Not really</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>Have you wanted it for more than 30 days?</p>
+      <div class="options">
+        <label><input type="radio" name="waited" value="10" checked> Yes</label>
+        <label><input type="radio" name="waited" value="3"> No</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>Will you use it at least once every week?</p>
+      <div class="options">
+        <label><input type="radio" name="use" value="10" checked> Yes</label>
+        <label><input type="radio" name="use" value="6"> Occasionally</label>
+        <label><input type="radio" name="use" value="2"> Rarely</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>Will buying it delay an important financial goal?</p>
+      <div class="options">
+        <label><input type="radio" name="goal" value="10" checked> No</label>
+        <label><input type="radio" name="goal" value="5"> Maybe</label>
+        <label><input type="radio" name="goal" value="0"> Yes</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>Would you need financing or a credit card balance?</p>
+      <div class="options">
+        <label><input type="radio" name="credit" value="10" checked> No</label>
+        <label><input type="radio" name="credit" value="0"> Yes</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>Is this purchase replacing something broken or necessary?</p>
+      <div class="options">
+        <label><input type="radio" name="replace" value="10" checked> Yes</label>
+        <label><input type="radio" name="replace" value="4"> No</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>Can you comfortably afford it?</p>
+      <div class="options">
+        <label><input type="radio" name="afford" value="10" checked> Easily</label>
+        <label><input type="radio" name="afford" value="5"> With some sacrifice</label>
+        <label><input type="radio" name="afford" value="0"> It would be difficult</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>If the item disappeared tomorrow, would you buy it again?</p>
+      <div class="options">
+        <label><input type="radio" name="again" value="10" checked> Definitely</label>
+        <label><input type="radio" name="again" value="5"> Maybe</label>
+        <label><input type="radio" name="again" value="1"> Probably not</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>Is this mainly an emotional purchase?</p>
+      <div class="options">
+        <label><input type="radio" name="emotion" value="10" checked> No</label>
+        <label><input type="radio" name="emotion" value="5"> Maybe</label>
+        <label><input type="radio" name="emotion" value="0"> Yes</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>Would waiting one more week change your decision?</p>
+      <div class="options">
+        <label><input type="radio" name="week" value="10" checked> No</label>
+        <label><input type="radio" name="week" value="3"> Yes</label>
+      </div>
+    </div>
+
+    <button onclick="calculateDecision()">Calculate Decision</button>
+
+    <div class="result" id="result">
+      <div class="score" id="scoreText">0 / 100</div>
+      <div class="recommendation" id="recommendationText"></div>
+      <p id="resultExplanation"></p>
+      <p class="note">This tool is for educational and decision-support purposes only. It does not replace personal financial advice.</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>How to Use the Should I Buy This Tool</h2>
+    <p>Before making a purchase, enter the basic financial numbers and answer each question honestly. The tool will calculate a score from 0 to 100. A higher score means the purchase is more likely to be useful, affordable, and aligned with your goals. A lower score means there may be a higher risk of regret.</p>
+    <p>This tool is especially useful when you are thinking about buying something that feels exciting in the moment. Sales, discounts, social media trends, and limited-time offers can make an item feel more important than it really is. By slowing down and answering structured questions, you can make a calmer and more realistic buying decision.</p>
+  </section>
+
+  <section class="card">
+    <h2>What Your Purchase Score Means</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Score</th>
+          <th>Meaning</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>90-100</td><td>Excellent purchase. It appears useful, affordable, and unlikely to create financial stress.</td></tr>
+        <tr><td>75-89</td><td>Good purchase. Buying may be reasonable, but check whether it still fits your priorities.</td></tr>
+        <tr><td>60-74</td><td>Reasonable, but think carefully. There may be some risk of regret or opportunity cost.</td></tr>
+        <tr><td>40-59</td><td>Wait before buying. The decision may be influenced by emotion, pressure, or weak affordability.</td></tr>
+        <tr><td>20-39</td><td>High risk of buyer's remorse. Consider delaying, saving more, or choosing a cheaper alternative.</td></tr>
+        <tr><td>0-19</td><td>Avoid purchasing for now. The purchase may not be necessary or financially comfortable.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>Why People Regret Purchases</h2>
+    <p>Buyer's remorse usually happens when a purchase feels good at the moment but does not make sense later. The item may be too expensive, rarely used, bought with debt, or chosen because of temporary emotion rather than real need.</p>
+    <p>Common reasons people regret buying something include:</p>
+    <ul>
+      <li>Buying because of a limited-time discount</li>
+      <li>Feeling pressure from social media or friends</li>
+      <li>Using credit for something that is not necessary</li>
+      <li>Ignoring future costs such as maintenance, accessories, or subscriptions</li>
+      <li>Buying after a stressful or emotional day</li>
+      <li>Choosing something to impress others instead of solving a real need</li>
+      <li>Not comparing the purchase with savings goals or debt payoff goals</li>
+    </ul>
+    <p>A good purchase is not only something you can pay for today. It should also be something you will use, value, and still feel comfortable with after the excitement fades.</p>
+  </section>
+
+  <section class="card">
+    <h2>Questions to Ask Before Buying Anything</h2>
+    <p>Even if the calculator gives a high score, it can help to pause and ask a few final questions before checking out:</p>
+    <ul>
+      <li>Would I still want this if it were not on sale?</li>
+      <li>Will I still use this in six months?</li>
+      <li>Could I borrow, rent, repair, or buy used instead?</li>
+      <li>Does this purchase support my current priorities?</li>
+      <li>Will this make my life easier, healthier, safer, or more productive?</li>
+      <li>Am I buying this because I need it or because I want a quick emotional reward?</li>
+    </ul>
+    <p>These questions do not mean you should never spend money on enjoyable things. The goal is to spend intentionally, not automatically.</p>
+  </section>
+
+  <section class="card">
+    <h2>When Buying Now Can Make Sense</h2>
+    <p>Buying now may be a smart choice when the item solves a real problem, replaces something important, saves time, improves safety, or supports your work or daily life. A purchase can also make sense when you have already planned for it, saved for it, and compared alternatives.</p>
+    <p>For example, replacing a broken work laptop may be more reasonable than buying a second device you rarely need. Buying comfortable shoes you will wear every week may be more practical than buying trendy clothing that will sit unused. The best decision depends on usefulness, affordability, and long-term value.</p>
+  </section>
+
+  <section class="card">
+    <h2>When You Should Wait</h2>
+    <p>Waiting is usually wise when the item is expensive compared with your monthly income, when you would need debt to buy it, or when the main reason for buying is stress, boredom, fear of missing out, or a short-term discount.</p>
+    <p>A simple waiting rule can prevent many unnecessary purchases. For smaller items, wait 24 hours. For medium purchases, wait one week. For expensive purchases, wait 30 days. If you still want the item after waiting and it still fits your budget, the decision is likely more thoughtful.</p>
+  </section>
+
+  <section class="card">
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>Can this tool tell me exactly what to buy?</h3>
+    <p>No. The tool does not choose a specific product for you. It helps you evaluate whether buying an item is reasonable based on affordability, usefulness, timing, and risk of regret.</p>
+
+    <h3>Is a high score a guarantee that I should buy it?</h3>
+    <p>No. A high score means the purchase appears reasonable based on your answers. You should still consider your personal situation, future bills, savings goals, and other priorities.</p>
+
+    <h3>Can I use this for expensive purchases?</h3>
+    <p>Yes. You can use it for electronics, furniture, appliances, vacations, hobby equipment, or other large purchases. For major financial commitments, combine this tool with a full budget review.</p>
+
+    <h3>Why does the tool ask about waiting?</h3>
+    <p>Waiting helps separate real need from impulse. If waiting one week changes your decision, the purchase may have been driven by emotion or urgency rather than long-term value.</p>
+
+    <h3>Is this only about saving money?</h3>
+    <p>No. The goal is not to avoid every purchase. The goal is to buy things that are affordable, useful, and aligned with your real priorities.</p>
+  </section>
+
+  <section class="card">
+    <h2>Related Money Decision Tools</h2>
+    <div class="related">
+      <a href="impulse-purchase-calculator.html">Impulse Purchase Calculator</a>
+      <a href="work-hours-cost-calculator.html">Work Hours Cost Calculator</a>
+      <a href="cost-per-day-calculator.html">Cost Per Day Calculator</a>
+      <a href="emergency-fund-calculator.html">Emergency Fund Calculator</a>
+      <a href="debt-payoff-calculator.html">Debt Payoff Calculator</a>
+      <a href="savings-goal-calculator.html">Savings Goal Calculator</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2026 DecideHelper. Educational tools for better everyday decisions.</p>
+  </div>
+</footer>
+
+<script>
+function getRadioValue(name) {
+  const checked = document.querySelector('input[name="' + name + '"]:checked');
+  return checked ? Number(checked.value) : 0;
+}
+
+function calculateDecision() {
+  const price = Number(document.getElementById('price').value) || 0;
+  const income = Number(document.getElementById('income').value) || 0;
+  const savings = Number(document.getElementById('savings').value) || 0;
+  const emergency = Number(document.getElementById('emergency').value) || 0;
+
+  let score = 0;
+
+  score += getRadioValue('need');
+  score += getRadioValue('waited');
+  score += getRadioValue('use');
+  score += getRadioValue('goal');
+  score += getRadioValue('credit');
+  score += getRadioValue('replace');
+  score += getRadioValue('afford');
+  score += getRadioValue('again');
+  score += getRadioValue('emotion');
+  score += getRadioValue('week');
+
+  if (income > 0 && price > 0) {
+    const priceToIncome = price / income;
+    if (priceToIncome <= 0.05) score += 5;
+    else if (priceToIncome <= 0.15) score += 2;
+    else if (priceToIncome > 0.30) score -= 8;
+  }
+
+  if (savings > 0 && price > 0) {
+    if (price <= savings) score += 5;
+    else if (price > savings * 3) score -= 5;
+  }
+
+  if (emergency > 0 && income > 0) {
+    const monthsCovered = emergency / income;
+    if (monthsCovered >= 3) score += 5;
+    else if (monthsCovered < 1) score -= 5;
+  }
+
+  score = Math.max(0, Math.min(100, Math.round(score)));
+
+  let recommendation = '';
+  let explanation = '';
+
+  if (score >= 90) {
+    recommendation = 'Excellent Purchase';
+    explanation = 'This purchase appears useful, affordable, and unlikely to interfere with your financial goals. It looks like a well-considered buying decision.';
+  } else if (score >= 75) {
+    recommendation = 'Good Purchase';
+    explanation = 'This purchase seems reasonable overall. Before buying, double-check that it still fits your current priorities and that there are no hidden costs.';
+  } else if (score >= 60) {
+    recommendation = 'Reasonable, But Think Carefully';
+    explanation = 'The purchase may make sense, but there are some warning signs. Consider waiting a few days, comparing alternatives, or lowering the cost.';
+  } else if (score >= 40) {
+    recommendation = 'Wait Before Buying';
+    explanation = 'This decision may be influenced by emotion, urgency, or weak affordability. Waiting one week could help you decide more clearly.';
+  } else if (score >= 20) {
+    recommendation = 'High Risk of Buyer\'s Remorse';
+    explanation = 'There is a strong chance you may regret this purchase. Consider delaying it, saving more, or choosing a cheaper alternative.';
+  } else {
+    recommendation = 'Avoid Purchasing For Now';
+    explanation = 'Based on your answers, this purchase does not look financially comfortable or necessary right now. It may be better to wait.';
+  }
+
+  document.getElementById('scoreText').textContent = score + ' / 100';
+  document.getElementById('recommendationText').textContent = recommendation;
+  document.getElementById('resultExplanation').textContent = explanation;
+  document.getElementById('result').style.display = 'block';
+}
+</script>
+
+</body>
+</html>
