@@ -1,0 +1,3696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Should I Finance It? Decision Tool & Financing Calculator | DecideHelper</title>
+
+  <meta
+    name="description"
+    content="Use the free Should I Finance It? Tool to calculate monthly payment, total interest, full financed cost, payment-to-income impact, emergency fund risk, and a practical financing decision score."
+  >
+
+  <link
+    rel="canonical"
+    href="https://decidehelper.com/money/should-i-finance-it-tool.html"
+  >
+
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+  >
+
+  <meta
+    property="og:title"
+    content="Should I Finance It? Decision Tool & Financing Calculator"
+  >
+
+  <meta
+    property="og:description"
+    content="Calculate the real cost of financing and get a practical score based on affordability, APR, emergency savings, urgency, alternatives, and repayment risk."
+  >
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:url"
+    content="https://decidehelper.com/money/should-i-finance-it-tool.html"
+  >
+
+  <meta
+    property="og:site_name"
+    content="DecideHelper"
+  >
+
+  <meta
+    name="twitter:card"
+    content="summary"
+  >
+
+  <meta
+    name="twitter:title"
+    content="Should I Finance It? Decision Tool"
+  >
+
+  <meta
+    name="twitter:description"
+    content="See the monthly payment, total interest, true financed cost, affordability indicators, and a practical decision score before you borrow."
+  >
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://decidehelper.com/money/should-i-finance-it-tool.html#webapp",
+        "name": "Should I Finance It? Decision Tool",
+        "url": "https://decidehelper.com/money/should-i-finance-it-tool.html",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript",
+        "description": "A free financing decision calculator that estimates monthly payment, total interest, total financed cost, affordability, emergency fund risk, and a practical decision score.",
+        "isAccessibleForFree": true,
+        "publisher": {
+          "@type": "Organization",
+          "name": "DecideHelper",
+          "url": "https://decidehelper.com/"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://decidehelper.com/money/should-i-finance-it-tool.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://decidehelper.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Money Decisions",
+            "item": "https://decidehelper.com/money/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Should I Finance It? Tool",
+            "item": "https://decidehelper.com/money/should-i-finance-it-tool.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://decidehelper.com/money/should-i-finance-it-tool.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does the Should I Finance It? Tool work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The tool combines the loan terms with affordability, savings, urgency, alternatives, and risk questions. It estimates payment and total cost, then produces a decision-support score."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does a high score guarantee that financing is a good idea?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. A high score means the financing appears more manageable based on the information entered. It is not a guarantee and does not replace professional financial advice."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use this tool for car financing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The tool can be used for cars, appliances, electronics, furniture, home repairs, courses, medical costs, and other installment purchases."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between interest rate and APR?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The interest rate is the stated borrowing rate. APR is generally a broader annualized measure that may include certain finance charges. Always compare the disclosed APR and total amount paid."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is zero-percent financing always a good deal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. It can be useful, but only when the cash price is competitive, there are no hidden fees or deferred-interest traps, and the offer does not encourage overspending."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the calculator save my financial information?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The calculations run in your browser. The page does not need to send the values you enter to a server."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --navy: #0f172a;
+      --navy-soft: #1e293b;
+      --blue: #2563eb;
+      --blue-dark: #1d4ed8;
+      --blue-light: #eff6ff;
+      --green: #047857;
+      --green-light: #ecfdf5;
+      --amber: #b45309;
+      --amber-light: #fffbeb;
+      --red: #b91c1c;
+      --red-light: #fef2f2;
+      --purple-light: #faf5ff;
+      --page: #f5f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --shadow: 0 12px 34px rgba(15, 23, 42, 0.08);
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--page);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header,
+    footer {
+      background: var(--navy);
+      color: white;
+    }
+
+    header {
+      padding: 22px 20px;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding: 32px 20px;
+      font-size: 14px;
+      color: #cbd5e1;
+    }
+
+    .container {
+      width: min(1100px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      color: white;
+      text-decoration: none;
+      font-size: 26px;
+      line-height: 1;
+      font-weight: 800;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    nav a,
+    footer a {
+      color: #cbd5e1;
+      text-decoration: none;
+    }
+
+    nav a:hover,
+    footer a:hover {
+      color: white;
+    }
+
+    .hero {
+      background:
+        radial-gradient(circle at top right, rgba(59, 130, 246, 0.38), transparent 34%),
+        linear-gradient(135deg, var(--navy), #334155);
+      color: white;
+      padding: 68px 0 60px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 12px;
+      color: #bfdbfe;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      max-width: 900px;
+      margin: 0 auto 18px;
+      font-size: clamp(34px, 5vw, 52px);
+      line-height: 1.13;
+    }
+
+    .hero p {
+      max-width: 820px;
+      margin: 0 auto;
+      color: #e2e8f0;
+      font-size: 18px;
+    }
+
+    .hero-points {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 26px;
+    }
+
+    .hero-points span {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 999px;
+      padding: 7px 12px;
+      color: white;
+      font-size: 14px;
+    }
+
+    main {
+      padding: 36px 0 10px;
+    }
+
+    .breadcrumb {
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .breadcrumb a {
+      color: #475569;
+      text-decoration: none;
+    }
+
+    .card {
+      margin: 24px 0;
+      padding: 30px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .card h2 {
+      margin: 0 0 12px;
+      color: var(--navy);
+      font-size: 29px;
+      line-height: 1.3;
+    }
+
+    .card h3 {
+      margin: 26px 0 8px;
+      color: #111827;
+      font-size: 21px;
+      line-height: 1.35;
+    }
+
+    .lead {
+      font-size: 18px;
+      color: #475569;
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .privacy-note {
+      margin-top: 18px;
+      padding: 13px 15px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: #475569;
+      font-size: 14px;
+    }
+
+    .section-title {
+      margin-top: 34px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+      color: var(--navy);
+      font-size: 23px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .form-grid.three {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .field {
+      min-width: 0;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--navy);
+      font-weight: 700;
+    }
+
+    .hint {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 12px 13px;
+      border: 1px solid #cbd5e1;
+      border-radius: 9px;
+      background: white;
+      color: #111827;
+      font: inherit;
+    }
+
+    input:focus,
+    select:focus {
+      border-color: #60a5fa;
+      outline: 3px solid rgba(96, 165, 250, 0.22);
+    }
+
+    .question {
+      margin-top: 15px;
+      padding: 17px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .question-title {
+      margin: 0 0 11px;
+      color: var(--navy);
+      font-weight: 800;
+    }
+
+    .options {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 9px;
+    }
+
+    .options label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0;
+      padding: 10px 11px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      font-weight: 400;
+      cursor: pointer;
+    }
+
+    .options label:hover {
+      border-color: #93c5fd;
+      background: var(--blue-light);
+    }
+
+    .options input {
+      width: auto;
+      margin: 0;
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    button {
+      border: 0;
+      border-radius: 10px;
+      padding: 14px 20px;
+      font-size: 16px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .primary-button {
+      background: var(--blue);
+      color: white;
+    }
+
+    .primary-button:hover {
+      background: var(--blue-dark);
+    }
+
+    .secondary-button {
+      background: #e2e8f0;
+      color: var(--navy);
+    }
+
+    .secondary-button:hover {
+      background: #cbd5e1;
+    }
+
+    .error-box {
+      display: none;
+      margin-top: 18px;
+      padding: 14px 16px;
+      background: var(--red-light);
+      border: 1px solid #fecaca;
+      border-radius: 10px;
+      color: #991b1b;
+      font-weight: 700;
+    }
+
+    .result {
+      display: none;
+      margin-top: 28px;
+      border-top: 1px solid var(--border);
+      padding-top: 28px;
+    }
+
+    .result-head {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .score-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 22px;
+      text-align: center;
+      background: var(--blue-light);
+      border: 1px solid #bfdbfe;
+      border-radius: 14px;
+    }
+
+    .score-number {
+      color: var(--blue-dark);
+      font-size: 48px;
+      line-height: 1;
+      font-weight: 900;
+    }
+
+    .score-label {
+      margin-top: 7px;
+      color: #475569;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .recommendation-box {
+      padding: 22px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .recommendation {
+      margin: 0 0 8px;
+      color: var(--navy);
+      font-size: 27px;
+      line-height: 1.2;
+      font-weight: 900;
+    }
+
+    .recommendation-box p {
+      margin: 8px 0 0;
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .metric {
+      padding: 17px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .metric-name {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .metric-value {
+      margin-top: 5px;
+      color: var(--navy);
+      font-size: 23px;
+      line-height: 1.25;
+      font-weight: 900;
+      overflow-wrap: anywhere;
+    }
+
+    .status-panel {
+      margin-top: 18px;
+      padding: 18px;
+      border-radius: 12px;
+    }
+
+    .status-good {
+      background: var(--green-light);
+      border: 1px solid #a7f3d0;
+    }
+
+    .status-caution {
+      background: var(--amber-light);
+      border: 1px solid #fde68a;
+    }
+
+    .status-risk {
+      background: var(--red-light);
+      border: 1px solid #fecaca;
+    }
+
+    .status-panel h3 {
+      margin: 0 0 8px;
+    }
+
+    .status-panel ul {
+      margin-bottom: 0;
+    }
+
+    .warning-list,
+    .positive-list,
+    .next-steps {
+      margin-top: 18px;
+      padding: 18px 20px;
+      border-radius: 12px;
+    }
+
+    .warning-list {
+      background: var(--red-light);
+      border: 1px solid #fecaca;
+    }
+
+    .positive-list {
+      background: var(--green-light);
+      border: 1px solid #a7f3d0;
+    }
+
+    .next-steps {
+      background: var(--blue-light);
+      border: 1px solid #bfdbfe;
+    }
+
+    .warning-list h3,
+    .positive-list h3,
+    .next-steps h3 {
+      margin-top: 0;
+    }
+
+    table {
+      width: 100%;
+      margin: 18px 0;
+      border-collapse: collapse;
+      font-size: 15px;
+    }
+
+    th,
+    td {
+      padding: 12px;
+      border: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f1f5f9;
+      color: var(--navy);
+    }
+
+    ul,
+    ol {
+      padding-left: 23px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .info-box,
+    .warning-box,
+    .example-box,
+    .tool-box,
+    .summary-box,
+    .comparison-box {
+      margin: 22px 0;
+      padding: 20px;
+      border-radius: 13px;
+    }
+
+    .info-box {
+      background: var(--blue-light);
+      border: 1px solid #bfdbfe;
+    }
+
+    .warning-box {
+      background: var(--amber-light);
+      border: 1px solid #fde68a;
+    }
+
+    .example-box {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+    }
+
+    .tool-box {
+      background: var(--green-light);
+      border: 1px solid #bbf7d0;
+    }
+
+    .summary-box {
+      background: #f0f9ff;
+      border: 1px solid #bae6fd;
+    }
+
+    .comparison-box {
+      background: var(--purple-light);
+      border: 1px solid #e9d5ff;
+    }
+
+    .info-box h3,
+    .warning-box h3,
+    .example-box h3,
+    .tool-box h3,
+    .summary-box h3,
+    .comparison-box h3 {
+      margin-top: 0;
+    }
+
+    .toc {
+      columns: 2;
+      column-gap: 34px;
+    }
+
+    .toc li {
+      break-inside: avoid;
+    }
+
+    a {
+      color: var(--blue);
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 12px 17px;
+      border-radius: 9px;
+      background: var(--blue);
+      color: white;
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    .cta:hover {
+      background: var(--blue-dark);
+    }
+
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .related-grid a {
+      display: block;
+      padding: 17px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    .related-grid a:hover {
+      background: var(--blue-light);
+      border-color: #bfdbfe;
+    }
+
+    .faq-item {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-item:last-child {
+      border-bottom: 0;
+    }
+
+    .faq-item h3 {
+      margin: 0 0 8px;
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .print-only {
+      display: none;
+    }
+
+    @media (max-width: 820px) {
+      .form-grid,
+      .form-grid.three,
+      .metric-grid,
+      .related-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .options {
+        grid-template-columns: 1fr;
+      }
+
+      .result-head {
+        grid-template-columns: 1fr;
+      }
+
+      .toc {
+        columns: 1;
+      }
+    }
+
+    @media (max-width: 580px) {
+      .container {
+        width: min(100% - 24px, 1100px);
+      }
+
+      .hero {
+        padding: 52px 0 48px;
+      }
+
+      .card {
+        padding: 21px;
+      }
+
+      .form-grid,
+      .form-grid.three,
+      .metric-grid,
+      .related-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .actions button {
+        width: 100%;
+      }
+
+      .metric-value {
+        font-size: 21px;
+      }
+    }
+
+    @media print {
+      header,
+      footer,
+      .hero,
+      .breadcrumb,
+      .actions,
+      .educational-content,
+      .privacy-note {
+        display: none !important;
+      }
+
+      body {
+        background: white;
+      }
+
+      .container {
+        width: 100%;
+      }
+
+      .card {
+        box-shadow: none;
+        border: 0;
+        margin: 0;
+        padding: 0;
+      }
+
+      .result {
+        display: block !important;
+      }
+
+      .print-only {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container header-row">
+    <a href="/" class="logo">DecideHelper</a>
+
+    <nav aria-label="Primary navigation">
+      <a href="/">Home</a>
+      <a href="/money/">Money</a>
+      <a href="/life/">Life</a>
+      <a href="/tools/">Tools</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <span class="eyebrow">Free financing decision calculator</span>
+
+    <h1>Should I Finance It? Decision Tool</h1>
+
+    <p>
+      Calculate the monthly payment, total interest, complete financed cost,
+      payment-to-income impact, emergency fund risk, and a practical financing
+      decision score before you sign.
+    </p>
+
+    <div class="hero-points" aria-label="Tool features">
+      <span>Monthly payment estimate</span>
+      <span>Total cost breakdown</span>
+      <span>Affordability checks</span>
+      <span>Decision score</span>
+      <span>No registration</span>
+    </div>
+  </div>
+</section>
+
+<main>
+  <div class="container">
+
+    <div class="breadcrumb">
+      <a href="/">Home</a>
+      ›
+      <a href="/money/">Money Decisions</a>
+      ›
+      Should I Finance It? Tool
+    </div>
+
+    <section class="card" id="calculator">
+      <h2>Financing Decision Calculator</h2>
+
+      <p class="lead">
+        Enter the offer details and answer the practical questions honestly.
+        The tool checks both the mathematics of the loan and the real-life risk
+        behind the purchase.
+      </p>
+
+      <div class="privacy-note">
+        <strong>Privacy:</strong>
+        your entries are calculated inside your browser. This page does not
+        need to store or transmit the financial values you enter.
+      </div>
+
+      <h3 class="section-title">1. Purchase and financing details</h3>
+
+      <div class="form-grid three">
+        <div class="field">
+          <label for="currency">Currency</label>
+
+          <select id="currency">
+            <option value="$">USD ($)</option>
+            <option value="€">EUR (€)</option>
+            <option value="£">GBP (£)</option>
+            <option value="Ft">HUF (Ft)</option>
+            <option value="C$">CAD (C$)</option>
+            <option value="A$">AUD (A$)</option>
+            <option value="">Other</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="cashPrice">Cash purchase price</label>
+
+          <input
+            type="number"
+            id="cashPrice"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 12000"
+          >
+
+          <span class="hint">
+            The price before financing costs.
+          </span>
+        </div>
+
+        <div class="field">
+          <label for="downPayment">Down payment</label>
+
+          <input
+            type="number"
+            id="downPayment"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 2000"
+          >
+
+          <span class="hint">
+            Cash paid at the beginning.
+          </span>
+        </div>
+
+        <div class="field">
+          <label for="tradeIn">Trade-in or rebate</label>
+
+          <input
+            type="number"
+            id="tradeIn"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 500"
+          >
+
+          <span class="hint">
+            Amount that directly reduces the financed balance.
+          </span>
+        </div>
+
+        <div class="field">
+          <label for="upfrontFees">Upfront fees paid in cash</label>
+
+          <input
+            type="number"
+            id="upfrontFees"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 100"
+          >
+
+          <span class="hint">
+            Fees paid now and not added to the loan.
+          </span>
+        </div>
+
+        <div class="field">
+          <label for="financedFees">Fees added to the loan</label>
+
+          <input
+            type="number"
+            id="financedFees"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 250"
+          >
+
+          <span class="hint">
+            Setup, origination, delivery, or other financed charges.
+          </span>
+        </div>
+
+        <div class="field">
+          <label for="apr">APR or annual interest rate</label>
+
+          <input
+            type="number"
+            id="apr"
+            min="0"
+            max="1000"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 7.9"
+          >
+
+          <span class="hint">
+            Enter the percentage without the % sign.
+          </span>
+        </div>
+
+        <div class="field">
+          <label for="termMonths">Repayment term in months</label>
+
+          <input
+            type="number"
+            id="termMonths"
+            min="1"
+            max="600"
+            step="1"
+            inputmode="numeric"
+            placeholder="Example: 48"
+          >
+
+          <span class="hint">
+            Total number of monthly payments.
+          </span>
+        </div>
+
+        <div class="field">
+          <label for="balloonPayment">Final balloon payment</label>
+
+          <input
+            type="number"
+            id="balloonPayment"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 0"
+          >
+
+          <span class="hint">
+            A large final payment, if the agreement includes one.
+          </span>
+        </div>
+      </div>
+
+      <h3 class="section-title">2. Monthly budget and safety margin</h3>
+
+      <div class="form-grid three">
+        <div class="field">
+          <label for="monthlyIncome">Monthly take-home income</label>
+
+          <input
+            type="number"
+            id="monthlyIncome"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 3500"
+          >
+
+          <span class="hint">
+            Use reliable after-tax household income.
+          </span>
+        </div>
+
+        <div class="field">
+          <label for="essentialExpenses">Essential monthly expenses</label>
+
+          <input
+            type="number"
+            id="essentialExpenses"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 2100"
+          >
+
+          <span class="hint">
+            Housing, food, utilities, insurance, transport, and essentials.
+          </span>
+        </div>
+
+        <div class="field">
+          <label for="existingDebt">Existing monthly debt payments</label>
+
+          <input
+            type="number"
+            id="existingDebt"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 300"
+          >
+
+          <span class="hint">
+            Loans, credit cards, store plans, and other fixed debt payments.
+          </span>
+        </div>
+
+        <div class="field">
+          <label for="monthlySavings">Planned monthly savings</label>
+
+          <input
+            type="number"
+            id="monthlySavings"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 350"
+          >
+
+          <span class="hint">
+            The amount you normally want to keep saving.
+          </span>
+        </div>
+
+        <div class="field">
+          <label for="emergencyFund">Emergency fund balance</label>
+
+          <input
+            type="number"
+            id="emergencyFund"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 7500"
+          >
+
+          <span class="hint">
+            Accessible savings reserved for emergencies.
+          </span>
+        </div>
+
+        <div class="field">
+          <label for="extraOwnershipCost">Extra monthly ownership cost</label>
+
+          <input
+            type="number"
+            id="extraOwnershipCost"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 120"
+          >
+
+          <span class="hint">
+            Insurance, subscriptions, maintenance, fuel, energy, or service.
+          </span>
+        </div>
+      </div>
+
+      <h3 class="section-title">3. Practical decision questions</h3>
+
+      <div class="question">
+        <p class="question-title">
+          How necessary is the purchase?
+        </p>
+
+        <div class="options">
+          <label>
+            <input type="radio" name="need" value="12">
+            Essential for work, health, safety, or basic living
+          </label>
+
+          <label>
+            <input type="radio" name="need" value="7" checked>
+            Useful, but not urgent
+          </label>
+
+          <label>
+            <input type="radio" name="need" value="1">
+            Mainly a want or upgrade
+          </label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p class="question-title">
+          Did you plan this purchase before seeing the financing offer?
+        </p>
+
+        <div class="options">
+          <label>
+            <input type="radio" name="planned" value="10">
+            Yes, it was already planned
+          </label>
+
+          <label>
+            <input type="radio" name="planned" value="5" checked>
+            Partly
+          </label>
+
+          <label>
+            <input type="radio" name="planned" value="0">
+            No, the offer created the purchase
+          </label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p class="question-title">
+          Have you compared the cash price and at least two alternatives?
+        </p>
+
+        <div class="options">
+          <label>
+            <input type="radio" name="compared" value="10">
+            Yes, carefully
+          </label>
+
+          <label>
+            <input type="radio" name="compared" value="5" checked>
+            I checked one alternative
+          </label>
+
+          <label>
+            <input type="radio" name="compared" value="0">
+            No
+          </label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p class="question-title">
+          Would you still buy it if financing were unavailable?
+        </p>
+
+        <div class="options">
+          <label>
+            <input type="radio" name="withoutFinance" value="10">
+            Yes, I would save or find another way
+          </label>
+
+          <label>
+            <input type="radio" name="withoutFinance" value="5" checked>
+            Maybe
+          </label>
+
+          <label>
+            <input type="radio" name="withoutFinance" value="0">
+            No, I only want it because payments look small
+          </label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p class="question-title">
+          Is the repayment term shorter than the expected useful life?
+        </p>
+
+        <div class="options">
+          <label>
+            <input type="radio" name="usefulLife" value="10">
+            Yes, clearly shorter
+          </label>
+
+          <label>
+            <input type="radio" name="usefulLife" value="5" checked>
+            About the same
+          </label>
+
+          <label>
+            <input type="radio" name="usefulLife" value="0">
+            No, I may still owe money after it is outdated or worn
+          </label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p class="question-title">
+          How stable is the income used to make the payments?
+        </p>
+
+        <div class="options">
+          <label>
+            <input type="radio" name="incomeStability" value="10">
+            Stable and predictable
+          </label>
+
+          <label>
+            <input type="radio" name="incomeStability" value="5" checked>
+            Some variation
+          </label>
+
+          <label>
+            <input type="radio" name="incomeStability" value="0">
+            Irregular, uncertain, or likely to change
+          </label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p class="question-title">
+          Can you repay early without a penalty?
+        </p>
+
+        <div class="options">
+          <label>
+            <input type="radio" name="prepay" value="8">
+            Yes
+          </label>
+
+          <label>
+            <input type="radio" name="prepay" value="4" checked>
+            I am not sure
+          </label>
+
+          <label>
+            <input type="radio" name="prepay" value="0">
+            No, or there is a significant penalty
+          </label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p class="question-title">
+          Are the rate, fees, late-payment rules, and total amount paid clear?
+        </p>
+
+        <div class="options">
+          <label>
+            <input type="radio" name="clearTerms" value="10">
+            Yes, everything is clear in writing
+          </label>
+
+          <label>
+            <input type="radio" name="clearTerms" value="4" checked>
+            Some parts are unclear
+          </label>
+
+          <label>
+            <input type="radio" name="clearTerms" value="0">
+            No
+          </label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p class="question-title">
+          Are you feeling pressured to sign today?
+        </p>
+
+        <div class="options">
+          <label>
+            <input type="radio" name="pressure" value="10">
+            No pressure
+          </label>
+
+          <label>
+            <input type="radio" name="pressure" value="5" checked>
+            Some urgency
+          </label>
+
+          <label>
+            <input type="radio" name="pressure" value="0">
+            Strong sales pressure or fear of missing out
+          </label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p class="question-title">
+          What would happen after one moderate unexpected expense?
+        </p>
+
+        <div class="options">
+          <label>
+            <input type="radio" name="stressTest" value="10">
+            I could handle it without new debt
+          </label>
+
+          <label>
+            <input type="radio" name="stressTest" value="5" checked>
+            It would be uncomfortable
+          </label>
+
+          <label>
+            <input type="radio" name="stressTest" value="0">
+            I would probably need more credit
+          </label>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button
+          type="button"
+          class="primary-button"
+          onclick="calculateFinancingDecision()"
+        >
+          Calculate Financing Decision
+        </button>
+
+        <button
+          type="button"
+          class="secondary-button"
+          onclick="resetCalculator()"
+        >
+          Reset
+        </button>
+
+        <button
+          type="button"
+          class="secondary-button"
+          onclick="window.print()"
+        >
+          Print Result
+        </button>
+      </div>
+
+      <div
+        id="errorBox"
+        class="error-box"
+        role="alert"
+      ></div>
+
+      <div
+        id="result"
+        class="result"
+        aria-live="polite"
+      >
+        <p class="print-only">
+          DecideHelper — Should I Finance It? Decision Tool
+        </p>
+
+        <div class="result-head">
+          <div class="score-box">
+            <div
+              id="scoreNumber"
+              class="score-number"
+            >
+              0
+            </div>
+
+            <div class="score-label">
+              Financing score out of 100
+            </div>
+          </div>
+
+          <div class="recommendation-box">
+            <div
+              id="recommendation"
+              class="recommendation"
+            ></div>
+
+            <p id="recommendationText"></p>
+
+            <p class="small">
+              This score is a decision-support estimate, not a loan approval,
+              guarantee, or substitute for individualized financial advice.
+            </p>
+          </div>
+        </div>
+
+        <div class="metric-grid">
+          <div class="metric">
+            <div class="metric-name">
+              Estimated monthly payment
+            </div>
+
+            <div
+              id="monthlyPaymentResult"
+              class="metric-value"
+            >
+              —
+            </div>
+          </div>
+
+          <div class="metric">
+            <div class="metric-name">
+              Amount financed
+            </div>
+
+            <div
+              id="amountFinancedResult"
+              class="metric-value"
+            >
+              —
+            </div>
+          </div>
+
+          <div class="metric">
+            <div class="metric-name">
+              Total interest
+            </div>
+
+            <div
+              id="totalInterestResult"
+              class="metric-value"
+            >
+              —
+            </div>
+          </div>
+
+          <div class="metric">
+            <div class="metric-name">
+              Full amount paid
+            </div>
+
+            <div
+              id="fullCostResult"
+              class="metric-value"
+            >
+              —
+            </div>
+          </div>
+
+          <div class="metric">
+            <div class="metric-name">
+              New monthly ownership cost
+            </div>
+
+            <div
+              id="monthlyBurdenResult"
+              class="metric-value"
+            >
+              —
+            </div>
+          </div>
+
+          <div class="metric">
+            <div class="metric-name">
+              Payment share of income
+            </div>
+
+            <div
+              id="paymentRatioResult"
+              class="metric-value"
+            >
+              —
+            </div>
+          </div>
+
+          <div class="metric">
+            <div class="metric-name">
+              Cash left after listed commitments
+            </div>
+
+            <div
+              id="cashFlowResult"
+              class="metric-value"
+            >
+              —
+            </div>
+          </div>
+
+          <div class="metric">
+            <div class="metric-name">
+              Emergency fund coverage
+            </div>
+
+            <div
+              id="emergencyMonthsResult"
+              class="metric-value"
+            >
+              —
+            </div>
+          </div>
+
+          <div class="metric">
+            <div class="metric-name">
+              Financing premium over cash price
+            </div>
+
+            <div
+              id="premiumResult"
+              class="metric-value"
+            >
+              —
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="statusPanel"
+          class="status-panel"
+        >
+          <h3 id="statusTitle">
+            Result summary
+          </h3>
+
+          <p id="statusText"></p>
+        </div>
+
+        <div
+          id="positiveList"
+          class="positive-list"
+        >
+          <h3>What supports this decision</h3>
+
+          <ul id="positiveItems"></ul>
+        </div>
+
+        <div
+          id="warningList"
+          class="warning-list"
+        >
+          <h3>Warning signs to review</h3>
+
+          <ul id="warningItems"></ul>
+        </div>
+
+        <div class="next-steps">
+          <h3>Suggested next steps</h3>
+
+          <ol id="nextStepItems"></ol>
+        </div>
+      </div>
+    </section>
+
+    <div class="educational-content">
+
+      <section class="card">
+        <h2>How to Use the Should I Finance It? Tool</h2>
+
+        <p>
+          Start with the actual cash price, down payment, financed fees, APR,
+          repayment term, and any balloon payment. Then add your normal monthly
+          income, essential expenses, existing debt payments, planned savings,
+          emergency fund, and ownership costs.
+        </p>
+
+        <p>
+          The calculator estimates the loan payment using the information you
+          enter. It then checks whether the new obligation appears manageable
+          alongside the rest of your budget. Finally, it combines those numbers
+          with practical questions about urgency, useful life, comparison
+          shopping, income stability, contract clarity, and emotional pressure.
+        </p>
+
+        <div class="info-box">
+          <h3>Use realistic numbers</h3>
+
+          <p>
+            Do not enter your best possible month. Use reliable take-home income
+            and expenses that reflect normal life. Include costs that are easy
+            to forget, such as insurance, maintenance, fuel, subscriptions,
+            service plans, and annual expenses converted into monthly amounts.
+          </p>
+        </div>
+
+        <p>
+          The result is not a simple yes-or-no command. Financing decisions are
+          personal, and the same payment can be safe for one household and risky
+          for another. The score is designed to make hidden trade-offs visible
+          before you commit future income.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>On This Page</h2>
+
+        <ol class="toc">
+          <li>
+            <a href="#what-the-score-means">
+              What the financing score means
+            </a>
+          </li>
+
+          <li>
+            <a href="#monthly-payment">
+              How monthly payment is calculated
+            </a>
+          </li>
+
+          <li>
+            <a href="#total-cost">
+              Why total financed cost matters
+            </a>
+          </li>
+
+          <li>
+            <a href="#affordability">
+              Financing affordability checks
+            </a>
+          </li>
+
+          <li>
+            <a href="#apr">
+              APR, fees, and promotional offers
+            </a>
+          </li>
+
+          <li>
+            <a href="#emergency-fund">
+              Emergency fund and financing risk
+            </a>
+          </li>
+
+          <li>
+            <a href="#loan-term">
+              Loan term and useful life
+            </a>
+          </li>
+
+          <li>
+            <a href="#balloon-payments">
+              Balloon payments
+            </a>
+          </li>
+
+          <li>
+            <a href="#zero-percent">
+              Zero-percent financing
+            </a>
+          </li>
+
+          <li>
+            <a href="#buy-now-pay-later">
+              Buy now, pay later plans
+            </a>
+          </li>
+
+          <li>
+            <a href="#car-financing">
+              Car financing
+            </a>
+          </li>
+
+          <li>
+            <a href="#electronics">
+              Electronics and phone financing
+            </a>
+          </li>
+
+          <li>
+            <a href="#appliances">
+              Appliances and furniture
+            </a>
+          </li>
+
+          <li>
+            <a href="#home-repairs">
+              Home repair financing
+            </a>
+          </li>
+
+          <li>
+            <a href="#medical">
+              Medical and dental financing
+            </a>
+          </li>
+
+          <li>
+            <a href="#courses">
+              Courses and education
+            </a>
+          </li>
+
+          <li>
+            <a href="#travel">
+              Travel and event financing
+            </a>
+          </li>
+
+          <li>
+            <a href="#alternatives">
+              Alternatives to financing
+            </a>
+          </li>
+
+          <li>
+            <a href="#checklist">
+              Final financing checklist
+            </a>
+          </li>
+
+          <li>
+            <a href="#faq">
+              Frequently asked questions
+            </a>
+          </li>
+        </ol>
+      </section>
+
+      <section
+        class="card"
+        id="what-the-score-means"
+      >
+        <h2>What Your Financing Decision Score Means</h2>
+
+        <p>
+          The score combines loan cost, cash-flow pressure, emergency savings,
+          purchase quality, and contract risk. A strong score usually means the
+          payment appears manageable and the purchase has a practical reason.
+          A weak score suggests that waiting, saving, choosing a cheaper option,
+          or reviewing the contract may be safer.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Score</th>
+              <th>General meaning</th>
+              <th>Suggested response</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>85–100</td>
+              <td>
+                Stronger financing case. The purchase appears useful, the terms
+                look clearer, and the budget has more room.
+              </td>
+              <td>
+                Verify the written agreement and compare one final alternative.
+              </td>
+            </tr>
+
+            <tr>
+              <td>70–84</td>
+              <td>
+                Potentially reasonable, but one or more issues deserve review.
+              </td>
+              <td>
+                Check total cost, emergency savings, and ownership costs.
+              </td>
+            </tr>
+
+            <tr>
+              <td>55–69</td>
+              <td>
+                Borderline decision. The purchase may be useful, but the
+                financing could reduce flexibility.
+              </td>
+              <td>
+                Consider a larger down payment, shorter term, or cheaper item.
+              </td>
+            </tr>
+
+            <tr>
+              <td>35–54</td>
+              <td>
+                High caution. Cost, affordability, urgency, or contract terms
+                may create meaningful risk.
+              </td>
+              <td>
+                Delay signing and compare cash, used, repaired, or lower-cost options.
+              </td>
+            </tr>
+
+            <tr>
+              <td>0–34</td>
+              <td>
+                Financing appears risky based on the entered information.
+              </td>
+              <td>
+                Avoid committing until the budget or offer changes substantially.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="warning-box">
+          <h3>A score is not approval</h3>
+
+          <p>
+            The tool does not know every detail of your finances, taxes, local
+            lending laws, credit profile, future income, or contract. A lender
+            may approve a payment that is still uncomfortable for your real
+            life. Treat approval and affordability as different questions.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="card"
+        id="monthly-payment"
+      >
+        <h2>How the Monthly Payment Is Calculated</h2>
+
+        <p>
+          For a standard fixed-rate installment loan, the calculator uses the
+          financed balance, monthly interest rate, and number of payments. When
+          the APR is zero, it divides the balance by the term. When a balloon
+          payment is entered, the tool estimates the smaller monthly payments
+          while leaving the stated balloon amount due at the end.
+        </p>
+
+        <p>
+          Real offers can use different compounding methods, payment timing,
+          fees, taxes, insurance, or promotional rules. That is why the result
+          should be compared with the lender's official disclosure.
+        </p>
+
+        <div class="example-box">
+          <h3>Example: Standard installment financing</h3>
+
+          <p>
+            A purchase costs $12,000. You pay $2,000 down and finance $10,000
+            for 48 months at 7.9%. The monthly payment is only one part of the
+            decision. You should also compare total interest, all fees, the
+            amount of cash used at signing, and the cost of owning the item.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="card"
+        id="total-cost"
+      >
+        <h2>Why the Total Financed Cost Matters More Than the Payment</h2>
+
+        <p>
+          A monthly payment can be made smaller by extending the loan. That may
+          make the purchase feel affordable even when the total cost rises
+          sharply. The full amount paid is a better reality check because it
+          includes the down payment, upfront fees, monthly payments, and final
+          balloon payment.
+        </p>
+
+        <p>
+          The financing premium is the extra amount paid above the cash price.
+          It can include interest and fees. A high premium may still be
+          justified for a necessary purchase, but it should never be invisible.
+        </p>
+
+        <ul>
+          <li>
+            Compare the cash price with the complete amount paid.
+          </li>
+
+          <li>
+            Ask whether a cash discount is available.
+          </li>
+
+          <li>
+            Check whether warranties, service plans, or insurance are optional.
+          </li>
+
+          <li>
+            Do not add accessories to the loan merely because the payment
+            increase looks small.
+          </li>
+
+          <li>
+            Make sure taxes, delivery, setup, and documentation fees are included.
+          </li>
+        </ul>
+      </section>
+
+      <section
+        class="card"
+        id="affordability"
+      >
+        <h2>How the Tool Checks Financing Affordability</h2>
+
+        <p>
+          The tool looks at more than the new loan payment. It also includes the
+          extra monthly cost of owning the item. For a vehicle, this could mean
+          insurance, fuel, parking, maintenance, and registration. For
+          electronics, it could include a data plan, software, cloud storage, or
+          protection plan.
+        </p>
+
+        <p>
+          It then subtracts essential expenses, existing debt payments, planned
+          savings, the new payment, and ownership costs from take-home income.
+          A negative result is an immediate warning. A very small positive
+          result can also be fragile because irregular costs still happen.
+        </p>
+
+        <div class="summary-box">
+          <h3>Four useful affordability questions</h3>
+
+          <ol>
+            <li>
+              Can you make the payment in a normal month?
+            </li>
+
+            <li>
+              Can you continue saving while making the payment?
+            </li>
+
+            <li>
+              Can you handle a moderate unexpected expense?
+            </li>
+
+            <li>
+              Will the payment still be manageable if costs rise or income falls?
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section
+        class="card"
+        id="apr"
+      >
+        <h2>APR, Interest Rate, Fees, and Promotional Offers</h2>
+
+        <p>
+          The stated interest rate describes the cost of borrowing the balance.
+          APR is generally intended to provide a broader annualized measure that
+          may include certain finance charges. The exact legal definition and
+          required disclosures depend on the country and type of credit.
+        </p>
+
+        <p>
+          Before signing, read the written offer and identify the amount
+          financed, APR, payment schedule, total amount paid, late fees,
+          prepayment rules, optional products, and whether the rate can change.
+        </p>
+
+        <div class="warning-box">
+          <h3>Common financing red flags</h3>
+
+          <ul>
+            <li>
+              The salesperson discusses only the monthly payment.
+            </li>
+
+            <li>
+              The cash price is difficult to identify.
+            </li>
+
+            <li>
+              Fees are added after you agree to the deal.
+            </li>
+
+            <li>
+              The promotional rate changes dramatically later.
+            </li>
+
+            <li>
+              Deferred interest can be charged retroactively.
+            </li>
+
+            <li>
+              Early repayment triggers a penalty.
+            </li>
+
+            <li>
+              The agreement includes add-ons you did not request.
+            </li>
+
+            <li>
+              You are told the offer disappears unless you sign immediately.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        class="card"
+        id="emergency-fund"
+      >
+        <h2>Emergency Fund Risk Before Financing</h2>
+
+        <p>
+          A new payment makes your monthly budget less flexible. If the
+          emergency fund is small or zero, a repair, medical expense, income
+          delay, or family cost may force you to borrow again.
+        </p>
+
+        <p>
+          The tool estimates emergency fund coverage by dividing the emergency
+          balance by essential expenses plus existing debt and the new
+          obligation. This is only a simplified measure, but it helps show how
+          quickly savings could disappear.
+        </p>
+
+        <ul>
+          <li>
+            Avoid using all available cash as a down payment.
+          </li>
+
+          <li>
+            Keep money for the first repair, insurance bill, or setup cost.
+          </li>
+
+          <li>
+            Non-essential financing is much harder to justify with no emergency fund.
+          </li>
+
+          <li>
+            A necessary purchase may still justify financing, but the amount
+            borrowed should remain as small as practical.
+          </li>
+        </ul>
+      </section>
+
+      <section
+        class="card"
+        id="loan-term"
+      >
+        <h2>Loan Term, Depreciation, and Useful Life</h2>
+
+        <p>
+          A longer term normally lowers the monthly payment but keeps the debt
+          alive for longer. It may also increase the total interest. This is
+          especially important for cars, phones, computers, furniture, and
+          other items that lose value or wear out.
+        </p>
+
+        <p>
+          A useful rule is that the debt should end before the item is likely to
+          become obsolete, unreliable, or ready for replacement. Paying for an
+          old item while financing its replacement is a difficult cycle.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Term choice</th>
+              <th>Main advantage</th>
+              <th>Main risk</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Shorter term</td>
+              <td>
+                Less time in debt and often less total interest.
+              </td>
+              <td>
+                Higher required monthly payment.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Longer term</td>
+              <td>
+                Lower monthly payment.
+              </td>
+              <td>
+                More interest, slower equity growth, and greater risk of overbuying.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Balloon structure</td>
+              <td>
+                Lower regular payments.
+              </td>
+              <td>
+                A large final obligation that may require refinancing or selling.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section
+        class="card"
+        id="balloon-payments"
+      >
+        <h2>Why Balloon Payments Need Extra Caution</h2>
+
+        <p>
+          A balloon payment leaves a large part of the balance until the end.
+          This can make the regular payment look attractive, but the final
+          obligation does not disappear. You may need to save separately,
+          refinance, sell the item, or use cash when the balloon comes due.
+        </p>
+
+        <div class="warning-box">
+          <h3>Ask these questions before accepting a balloon payment</h3>
+
+          <ul>
+            <li>
+              How much will be due at the end?
+            </li>
+
+            <li>
+              What monthly amount must you save to prepare for it?
+            </li>
+
+            <li>
+              What happens if the item is worth less than the balloon balance?
+            </li>
+
+            <li>
+              Is refinancing guaranteed? Usually it is not.
+            </li>
+
+            <li>
+              Are there mileage, condition, return, or resale restrictions?
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        class="card"
+        id="zero-percent"
+      >
+        <h2>Is Zero-Percent Financing Always a Good Deal?</h2>
+
+        <p>
+          Zero-percent financing can reduce borrowing cost, but it does not make
+          an overpriced or unnecessary purchase wise. The product may cost more
+          than it does elsewhere, a cash discount may be unavailable, or fees
+          may replace the interest.
+        </p>
+
+        <p>
+          Some offers use deferred interest rather than a true zero-percent
+          loan. If the balance is not fully paid by the deadline, interest may
+          be charged according to the contract. Read the exact terms instead of
+          relying on the advertisement.
+        </p>
+
+        <ul>
+          <li>
+            Compare the same product at other sellers.
+          </li>
+
+          <li>
+            Confirm whether the offer is true 0% APR or deferred interest.
+          </li>
+
+          <li>
+            Check setup, account, documentation, and mandatory service fees.
+          </li>
+
+          <li>
+            Divide the balance by the promotional months and make sure that
+            payment is comfortable.
+          </li>
+
+          <li>
+            Do not buy a more expensive model simply because financing is cheap.
+          </li>
+        </ul>
+      </section>
+
+      <section
+        class="card"
+        id="buy-now-pay-later"
+      >
+        <h2>Buy Now, Pay Later Financing</h2>
+
+        <p>
+          Buy now, pay later plans can be convenient for a planned purchase, but
+          multiple small plans can overlap and become difficult to track. The
+          short approval process may make the commitment feel less serious than
+          a traditional loan.
+        </p>
+
+        <p>
+          Enter the full price and total number of months into this tool even
+          when the provider describes the plan as four small payments. The
+          financial question is still whether future income should be committed
+          to the purchase.
+        </p>
+
+        <div class="warning-box">
+          <h3>Do not stack invisible payments</h3>
+
+          <p>
+            List every active installment plan in your existing monthly debt
+            payments. A $25 payment can look harmless, but six similar plans can
+            take $150 from the same paycheck.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="card"
+        id="car-financing"
+      >
+        <h2>Using the Tool for Car Financing</h2>
+
+        <p>
+          Car affordability includes much more than the loan. Add insurance,
+          fuel, maintenance, tires, parking, registration, taxes, and an
+          expected repair reserve to the extra monthly ownership cost.
+        </p>
+
+        <p>
+          Enter dealer fees and financed extras separately. Extended warranties,
+          service plans, accessories, and insurance products can quietly
+          increase the loan balance and total interest.
+        </p>
+
+        <div class="example-box">
+          <h3>Car financing reality check</h3>
+
+          <p>
+            A dealer may lower the payment by extending the loan from 48 months
+            to 72 or 84 months. The payment becomes easier, but you remain in
+            debt longer and may owe more than the car is worth. Compare the
+            complete amount paid and expected repair years, not only the first
+            monthly bill.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="card"
+        id="electronics"
+      >
+        <h2>Financing Phones, Computers, and Electronics</h2>
+
+        <p>
+          Electronics lose value quickly. Financing may be reasonable when a
+          reliable device is required for work, education, communication, or
+          accessibility. It is harder to justify when a current device works
+          and the new model is mainly a status or convenience upgrade.
+        </p>
+
+        <ul>
+          <li>
+            Keep the repayment term shorter than the expected useful life.
+          </li>
+
+          <li>
+            Include the service plan, data plan, software, and accessories.
+          </li>
+
+          <li>
+            Compare repair, refurbished, used, and previous-generation models.
+          </li>
+
+          <li>
+            Check whether the device is locked to a provider.
+          </li>
+
+          <li>
+            Do not finance accessories for longer than they are likely to last.
+          </li>
+        </ul>
+      </section>
+
+      <section
+        class="card"
+        id="appliances"
+      >
+        <h2>Financing Appliances and Furniture</h2>
+
+        <p>
+          A refrigerator, washer, mattress, or essential household item can
+          solve a real problem. Financing may be reasonable when repair is not
+          practical and delaying the purchase would disrupt daily life.
+        </p>
+
+        <p>
+          Showrooms and online stores often encourage customers to increase the
+          order because the additional monthly payment looks small. Separate the
+          essential function from upgrades, matching sets, premium finishes,
+          warranties, delivery, and optional accessories.
+        </p>
+      </section>
+
+      <section
+        class="card"
+        id="home-repairs"
+      >
+        <h2>Financing Home Repairs and Improvements</h2>
+
+        <p>
+          Financing a repair that prevents water damage, protects safety, or
+          keeps essential systems working can be sensible. Cosmetic improvements
+          need a higher standard because they are easier to delay.
+        </p>
+
+        <ul>
+          <li>
+            Obtain multiple written quotes for significant work.
+          </li>
+
+          <li>
+            Keep a contingency amount for unexpected project costs.
+          </li>
+
+          <li>
+            Understand whether the credit is secured against property.
+          </li>
+
+          <li>
+            Do not assume the project will add its full cost to home value.
+          </li>
+
+          <li>
+            Confirm permits, warranties, contractor terms, and payment stages.
+          </li>
+        </ul>
+      </section>
+
+      <section
+        class="card"
+        id="medical"
+      >
+        <h2>Medical and Dental Financing</h2>
+
+        <p>
+          Health costs can be urgent and emotionally difficult. Ask for a
+          written estimate, identify which parts are essential, and request
+          information about provider payment plans or staged treatment.
+        </p>
+
+        <p>
+          Promotional medical credit can contain deferred-interest terms. Read
+          the deadline and calculate the payment needed to clear the balance
+          before the promotion ends. Include medication, follow-up visits,
+          travel, recovery time, and possible future treatment costs.
+        </p>
+      </section>
+
+      <section
+        class="card"
+        id="courses"
+      >
+        <h2>Financing a Course or Education Program</h2>
+
+        <p>
+          Education can improve skills and income, but not every course produces
+          a financial return. Before borrowing, examine completion rates,
+          accreditation where relevant, refund terms, time requirements, and
+          realistic job outcomes.
+        </p>
+
+        <ul>
+          <li>
+            Is the skill actually requested by employers or customers?
+          </li>
+
+          <li>
+            Can you complete the course alongside work and family commitments?
+          </li>
+
+          <li>
+            Are lower-cost books, community programs, or online resources available?
+          </li>
+
+          <li>
+            Is the provider making income claims that seem unrealistic?
+          </li>
+
+          <li>
+            What happens to the debt if you stop the course?
+          </li>
+        </ul>
+      </section>
+
+      <section
+        class="card"
+        id="travel"
+      >
+        <h2>Financing Travel, Weddings, and Events</h2>
+
+        <p>
+          Experiences can be meaningful, but the event may end long before the
+          payments do. High-interest debt for travel and celebrations can turn
+          a positive memory into months of pressure.
+        </p>
+
+        <p>
+          Consider a smaller trip, shorter event, local alternative, reduced
+          guest list, or longer savings period. Meaning does not have to depend
+          on the size of the financed bill.
+        </p>
+      </section>
+
+      <section
+        class="card"
+        id="alternatives"
+      >
+        <h2>Alternatives to Financing</h2>
+
+        <p>
+          The best financing decision is sometimes a different purchase. Before
+          borrowing, compare at least three realistic alternatives.
+        </p>
+
+        <div class="comparison-box">
+          <table>
+            <thead>
+              <tr>
+                <th>Alternative</th>
+                <th>When it may help</th>
+                <th>What to check</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Wait and save</td>
+                <td>
+                  The purchase is useful but not urgent.
+                </td>
+                <td>
+                  Set a monthly sinking-fund amount and target date.
+                </td>
+              </tr>
+
+              <tr>
+                <td>Buy a cheaper model</td>
+                <td>
+                  You need the function but not premium features.
+                </td>
+                <td>
+                  Reliability, warranty, and expected life.
+                </td>
+              </tr>
+
+              <tr>
+                <td>Buy used or refurbished</td>
+                <td>
+                  Depreciation is high and condition can be verified.
+                </td>
+                <td>
+                  Return rights, inspection, battery health, and repair history.
+                </td>
+              </tr>
+
+              <tr>
+                <td>Repair the current item</td>
+                <td>
+                  Repair extends useful life at a reasonable cost.
+                </td>
+                <td>
+                  Compare repair cost with remaining expected life.
+                </td>
+              </tr>
+
+              <tr>
+                <td>Rent or borrow</td>
+                <td>
+                  The need is temporary or infrequent.
+                </td>
+                <td>
+                  Total rental cost, deposits, and liability.
+                </td>
+              </tr>
+
+              <tr>
+                <td>Use a smaller down payment</td>
+                <td>
+                  A large down payment would empty emergency savings.
+                </td>
+                <td>
+                  The higher payment and interest must still fit safely.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section
+        class="card"
+        id="checklist"
+      >
+        <h2>Final Checklist Before You Finance Anything</h2>
+
+        <div class="summary-box">
+          <ul>
+            <li>
+              I know the cash price.
+            </li>
+
+            <li>
+              I know the amount financed.
+            </li>
+
+            <li>
+              I know the APR and whether it can change.
+            </li>
+
+            <li>
+              I know the number and size of all payments.
+            </li>
+
+            <li>
+              I know the complete amount paid.
+            </li>
+
+            <li>
+              I understand all fees and optional add-ons.
+            </li>
+
+            <li>
+              I can continue paying essential expenses.
+            </li>
+
+            <li>
+              I can continue saving at least something.
+            </li>
+
+            <li>
+              I have emergency savings after the down payment.
+            </li>
+
+            <li>
+              I included ownership and maintenance costs.
+            </li>
+
+            <li>
+              I compared at least two alternatives.
+            </li>
+
+            <li>
+              I understand late-payment and prepayment rules.
+            </li>
+
+            <li>
+              The debt ends before the item is likely to need replacement.
+            </li>
+
+            <li>
+              I am not signing because of pressure or fear of missing out.
+            </li>
+
+            <li>
+              I would still choose the purchase after a waiting period.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Useful Financing Calculators</h2>
+
+        <div class="tool-box">
+          <h3>Check the numbers from another angle</h3>
+
+          <p>
+            Use the
+            <a
+              href="https://financecalccenter.com/loan-payment-calculator.html"
+              target="_blank"
+              rel="noopener"
+            >
+              Loan Payment Calculator
+            </a>
+            to compare loan terms and total interest.
+          </p>
+
+          <p>
+            For a purchase placed on a revolving balance, use the
+            <a
+              href="https://financecalccenter.com/credit-card-payoff-calculator.html"
+              target="_blank"
+              rel="noopener"
+            >
+              Credit Card Payoff Calculator
+            </a>.
+          </p>
+
+          <p>
+            You can also compare the decision with the
+            <a
+              href="https://financecalccenter.com/work-hours-cost-calculator.html"
+              target="_blank"
+              rel="noopener"
+            >
+              Work Hours Cost Calculator
+            </a>,
+            the
+            <a
+              href="https://financecalccenter.com/impulse-purchase-calculator.html"
+              target="_blank"
+              rel="noopener"
+            >
+              Impulse Purchase Calculator
+            </a>,
+            and the
+            <a
+              href="https://financecalccenter.com/cost-per-day-calculator.html"
+              target="_blank"
+              rel="noopener"
+            >
+              Cost Per Day Calculator
+            </a>.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="card"
+        id="faq"
+      >
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <h3>How does the Should I Finance It? Tool work?</h3>
+
+          <p>
+            It combines loan calculations with budget indicators and practical
+            decision questions. The result includes monthly payment, total
+            interest, full amount paid, cash-flow impact, emergency fund
+            coverage, warning signs, and a score from 0 to 100.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Does a high score guarantee that financing is a good idea?</h3>
+
+          <p>
+            No. A high score means the entered information appears more
+            manageable. It cannot guarantee future income, product quality,
+            contract fairness, or personal satisfaction.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I use this tool for car financing?</h3>
+
+          <p>
+            Yes. Add insurance, fuel, maintenance, parking, registration, and
+            repair reserves to the extra monthly ownership cost. Include dealer
+            fees and add-ons in the appropriate fee fields.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I use it for zero-percent financing?</h3>
+
+          <p>
+            Yes. Enter zero as the APR. The tool will divide the financed balance
+            across the term. You should still check fees, cash discounts,
+            deferred-interest rules, and whether the purchase price is competitive.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What is the difference between interest rate and APR?</h3>
+
+          <p>
+            The interest rate is the stated borrowing rate. APR is generally a
+            broader annualized measure that may include certain finance charges.
+            The exact disclosure rules depend on the credit type and location.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What should I enter as essential monthly expenses?</h3>
+
+          <p>
+            Include housing, utilities, food, basic transport, insurance,
+            healthcare, childcare, required subscriptions, and other expenses
+            that cannot easily be stopped.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Should planned savings be treated like an expense?</h3>
+
+          <p>
+            In this tool, yes. Saving is included to show whether the financing
+            payment forces you to stop making progress on emergency funds,
+            retirement, repairs, or other goals.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What if my income changes every month?</h3>
+
+          <p>
+            Use a conservative income figure, such as a typical lower month.
+            Irregular income generally requires a larger safety margin and a
+            stronger emergency fund.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How should I handle a balloon payment?</h3>
+
+          <p>
+            Enter the final balloon amount. The calculator will estimate lower
+            monthly payments while keeping that amount due at the end. You
+            should also calculate how much to save each month for the balloon.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Is buy now, pay later safer than a credit card?</h3>
+
+          <p>
+            Not automatically. It may have lower interest, but overlapping
+            plans, late fees, account rules, and easy approval can still cause
+            overspending. Count every active plan in your monthly debt payments.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Does the calculator save my financial information?</h3>
+
+          <p>
+            No. The calculations run in the browser. The page does not need to
+            send the entered values to a server.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Is this financial advice?</h3>
+
+          <p>
+            No. The page provides general education and decision support. For a
+            major or high-risk commitment, consider advice from a qualified
+            professional who can review your full circumstances and local rules.
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Related Money Decision Pages</h2>
+
+        <div class="related-grid">
+          <a href="should-i-finance-it.html">
+            Should I Finance It? Guide
+          </a>
+
+          <a href="should-i-buy-this.html">
+            Should I Buy This?
+          </a>
+
+          <a href="should-i-buy-this-tool.html">
+            Should I Buy This? Tool
+          </a>
+
+          <a
+            href="https://financecalccenter.com/loan-payment-calculator.html"
+            target="_blank"
+            rel="noopener"
+          >
+            Loan Payment Calculator
+          </a>
+
+          <a
+            href="https://financecalccenter.com/credit-card-payoff-calculator.html"
+            target="_blank"
+            rel="noopener"
+          >
+            Credit Card Payoff Calculator
+          </a>
+
+          <a
+            href="https://financecalccenter.com/impulse-purchase-calculator.html"
+            target="_blank"
+            rel="noopener"
+          >
+            Impulse Purchase Calculator
+          </a>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Important Disclaimer</h2>
+
+        <p>
+          This calculator provides estimates for educational and
+          decision-support purposes. Actual loan payments, APR calculations,
+          taxes, fees, insurance, legal disclosures, and contract terms can
+          differ. The tool does not provide financial, legal, tax, or credit
+          advice and does not recommend a specific lender or product.
+        </p>
+
+        <p>
+          Review the official financing agreement before signing. For a major
+          commitment or a situation involving financial hardship, consider
+          speaking with a qualified professional or an appropriate nonprofit
+          debt-advice service in your country.
+        </p>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <div>
+      <strong>DecideHelper</strong>
+
+      <p>
+        Educational tools for clearer everyday decisions.
+      </p>
+
+      <p>
+        &copy; 2026 DecideHelper.com
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/money/">Money</a>
+      <a href="/tools/">Tools</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy-policy.html">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function numberValue(id) {
+    const raw = document.getElementById(id).value.trim();
+
+    if (raw === "") {
+      return 0;
+    }
+
+    const value = Number(raw);
+
+    return Number.isFinite(value) ? value : 0;
+  }
+
+  function radioValue(name) {
+    const selected = document.querySelector(
+      'input[name="' + name + '"]:checked'
+    );
+
+    return selected ? Number(selected.value) : 0;
+  }
+
+  function selectedText(name) {
+    const selected = document.querySelector(
+      'input[name="' + name + '"]:checked'
+    );
+
+    if (!selected) {
+      return "";
+    }
+
+    return selected.parentElement.textContent.trim();
+  }
+
+  function currencyFormat(value, symbol) {
+    if (!Number.isFinite(value)) {
+      return "—";
+    }
+
+    const rounded = Math.abs(value) >= 1000
+      ? value.toLocaleString(undefined, {
+          maximumFractionDigits: 0
+        })
+      : value.toLocaleString(undefined, {
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2
+        });
+
+    if (symbol === "Ft") {
+      return rounded + " Ft";
+    }
+
+    return symbol + rounded;
+  }
+
+  function percentFormat(value) {
+    if (!Number.isFinite(value)) {
+      return "—";
+    }
+
+    return value.toFixed(1) + "%";
+  }
+
+  function addListItem(list, text) {
+    const item = document.createElement("li");
+    item.textContent = text;
+    list.appendChild(item);
+  }
+
+  function calculatePayment(
+    principal,
+    annualRate,
+    months,
+    balloon
+  ) {
+    if (months <= 0 || principal <= 0) {
+      return 0;
+    }
+
+    const safeBalloon = Math.min(
+      Math.max(balloon, 0),
+      principal
+    );
+
+    const monthlyRate = annualRate / 100 / 12;
+
+    if (monthlyRate === 0) {
+      return Math.max(
+        0,
+        (principal - safeBalloon) / months
+      );
+    }
+
+    const discountFactor = Math.pow(
+      1 + monthlyRate,
+      months
+    );
+
+    const presentValueOfBalloon =
+      safeBalloon / discountFactor;
+
+    const amortizedPrincipal =
+      principal - presentValueOfBalloon;
+
+    return (
+      amortizedPrincipal *
+      monthlyRate *
+      discountFactor /
+      (discountFactor - 1)
+    );
+  }
+
+  function calculateFinancingDecision() {
+    const errorBox = document.getElementById("errorBox");
+    errorBox.style.display = "none";
+    errorBox.textContent = "";
+
+    const symbol = document.getElementById("currency").value;
+
+    const cashPrice = numberValue("cashPrice");
+    const downPayment = numberValue("downPayment");
+    const tradeIn = numberValue("tradeIn");
+    const upfrontFees = numberValue("upfrontFees");
+    const financedFees = numberValue("financedFees");
+    const apr = numberValue("apr");
+    const termMonths = Math.round(numberValue("termMonths"));
+    const balloonPayment = numberValue("balloonPayment");
+
+    const monthlyIncome = numberValue("monthlyIncome");
+    const essentialExpenses = numberValue("essentialExpenses");
+    const existingDebt = numberValue("existingDebt");
+    const monthlySavings = numberValue("monthlySavings");
+    const emergencyFund = numberValue("emergencyFund");
+    const extraOwnershipCost = numberValue("extraOwnershipCost");
+
+    const errors = [];
+
+    if (cashPrice <= 0) {
+      errors.push("Enter a cash purchase price greater than zero.");
+    }
+
+    if (termMonths <= 0) {
+      errors.push("Enter a repayment term of at least one month.");
+    }
+
+    if (downPayment + tradeIn > cashPrice + financedFees) {
+      errors.push(
+        "The down payment and trade-in cannot be greater than the purchase price plus financed fees."
+      );
+    }
+
+    if (apr < 0) {
+      errors.push("APR cannot be negative.");
+    }
+
+    if (monthlyIncome < 0) {
+      errors.push("Monthly income cannot be negative.");
+    }
+
+    if (errors.length > 0) {
+      errorBox.innerHTML = errors.join("<br>");
+      errorBox.style.display = "block";
+      document.getElementById("result").style.display = "none";
+      errorBox.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      });
+      return;
+    }
+
+    const amountFinanced = Math.max(
+      0,
+      cashPrice -
+      downPayment -
+      tradeIn +
+      financedFees
+    );
+
+    const safeBalloon = Math.min(
+      Math.max(balloonPayment, 0),
+      amountFinanced
+    );
+
+    const monthlyPayment = calculatePayment(
+      amountFinanced,
+      apr,
+      termMonths,
+      safeBalloon
+    );
+
+    const totalLoanPayments =
+      monthlyPayment * termMonths + safeBalloon;
+
+    const totalInterest = Math.max(
+      0,
+      totalLoanPayments - amountFinanced
+    );
+
+    const fullAmountPaid =
+      downPayment +
+      upfrontFees +
+      tradeIn +
+      totalLoanPayments;
+
+    const financingPremium =
+      fullAmountPaid -
+      cashPrice -
+      tradeIn;
+
+    const newMonthlyBurden =
+      monthlyPayment + extraOwnershipCost;
+
+    const paymentRatio =
+      monthlyIncome > 0
+        ? newMonthlyBurden / monthlyIncome * 100
+        : NaN;
+
+    const totalDebtPaymentRatio =
+      monthlyIncome > 0
+        ? (existingDebt + monthlyPayment) / monthlyIncome * 100
+        : NaN;
+
+    const cashLeft =
+      monthlyIncome -
+      essentialExpenses -
+      existingDebt -
+      monthlySavings -
+      newMonthlyBurden;
+
+    const emergencyMonthlyNeed =
+      essentialExpenses +
+      existingDebt +
+      newMonthlyBurden;
+
+    const emergencyMonths =
+      emergencyMonthlyNeed > 0
+        ? emergencyFund / emergencyMonthlyNeed
+        : NaN;
+
+    const financingPremiumPercent =
+      cashPrice > 0
+        ? financingPremium / cashPrice * 100
+        : NaN;
+
+    let score =
+      radioValue("need") +
+      radioValue("planned") +
+      radioValue("compared") +
+      radioValue("withoutFinance") +
+      radioValue("usefulLife") +
+      radioValue("incomeStability") +
+      radioValue("prepay") +
+      radioValue("clearTerms") +
+      radioValue("pressure") +
+      radioValue("stressTest");
+
+    const positives = [];
+    const warnings = [];
+    const steps = [];
+
+    if (monthlyIncome > 0) {
+      if (paymentRatio <= 5) {
+        score += 8;
+        positives.push(
+          "The new payment and listed ownership costs use no more than 5% of take-home income."
+        );
+      } else if (paymentRatio <= 10) {
+        score += 5;
+        positives.push(
+          "The new monthly burden appears moderate relative to take-home income."
+        );
+      } else if (paymentRatio <= 15) {
+        score += 1;
+        warnings.push(
+          "The new payment and ownership costs take a noticeable share of monthly income."
+        );
+      } else if (paymentRatio <= 25) {
+        score -= 8;
+        warnings.push(
+          "The new monthly burden is high relative to take-home income."
+        );
+      } else {
+        score -= 16;
+        warnings.push(
+          "The new monthly burden exceeds one quarter of take-home income."
+        );
+      }
+
+      if (totalDebtPaymentRatio <= 15) {
+        score += 5;
+        positives.push(
+          "Listed monthly debt payments remain relatively low compared with income."
+        );
+      } else if (totalDebtPaymentRatio <= 30) {
+        score += 1;
+      } else if (totalDebtPaymentRatio <= 40) {
+        score -= 6;
+        warnings.push(
+          "Existing debt plus the new loan would take a large share of income."
+        );
+      } else {
+        score -= 12;
+        warnings.push(
+          "Total listed debt payments would exceed 40% of take-home income."
+        );
+      }
+
+      if (cashLeft >= monthlyIncome * 0.15) {
+        score += 8;
+        positives.push(
+          "The entered budget leaves a meaningful monthly cash-flow margin."
+        );
+      } else if (cashLeft >= monthlyIncome * 0.05) {
+        score += 3;
+      } else if (cashLeft >= 0) {
+        score -= 5;
+        warnings.push(
+          "Very little cash remains after the listed expenses, debt, savings, and new obligation."
+        );
+      } else {
+        score -= 18;
+        warnings.push(
+          "The entered commitments exceed monthly take-home income."
+        );
+      }
+    } else {
+      score -= 8;
+      warnings.push(
+        "No monthly income was entered, so affordability could not be measured."
+      );
+    }
+
+    if (Number.isFinite(emergencyMonths)) {
+      if (emergencyMonths >= 6) {
+        score += 8;
+        positives.push(
+          "The emergency fund covers at least six months of the listed core commitments."
+        );
+      } else if (emergencyMonths >= 3) {
+        score += 5;
+        positives.push(
+          "The emergency fund covers at least three months of the listed core commitments."
+        );
+      } else if (emergencyMonths >= 1) {
+        score -= 2;
+        warnings.push(
+          "The emergency fund covers less than three months of the listed core commitments."
+        );
+      } else {
+        score -= 10;
+        warnings.push(
+          "The emergency fund covers less than one month of the listed core commitments."
+        );
+      }
+    }
+
+    if (apr === 0) {
+      score += 5;
+      positives.push(
+        "The entered rate is 0%, although fees and promotional conditions still need review."
+      );
+    } else if (apr <= 5) {
+      score += 4;
+      positives.push(
+        "The entered APR is relatively low."
+      );
+    } else if (apr <= 10) {
+      score += 2;
+    } else if (apr <= 20) {
+      score -= 5;
+      warnings.push(
+        "The APR is high enough to add meaningful cost."
+      );
+    } else {
+      score -= 12;
+      warnings.push(
+        "The APR is very high and may make the purchase much more expensive."
+      );
+    }
+
+    if (Number.isFinite(financingPremiumPercent)) {
+      if (financingPremiumPercent <= 3) {
+        score += 4;
+        positives.push(
+          "The estimated financing premium is small compared with the cash price."
+        );
+      } else if (financingPremiumPercent <= 10) {
+        score += 1;
+      } else if (financingPremiumPercent <= 25) {
+        score -= 4;
+        warnings.push(
+          "Financing adds more than 10% to the cash price."
+        );
+      } else {
+        score -= 10;
+        warnings.push(
+          "Financing adds more than 25% to the cash price."
+        );
+      }
+    }
+
+    if (termMonths <= 12) {
+      score += 4;
+      positives.push(
+        "The repayment term is short."
+      );
+    } else if (termMonths <= 36) {
+      score += 2;
+    } else if (termMonths > 72) {
+      score -= 7;
+      warnings.push(
+        "The repayment term is longer than six years."
+      );
+    } else if (termMonths > 60) {
+      score -= 4;
+      warnings.push(
+        "The repayment term is long and may hide a high total cost."
+      );
+    }
+
+    if (safeBalloon > 0) {
+      const balloonShare =
+        amountFinanced > 0
+          ? safeBalloon / amountFinanced * 100
+          : 0;
+
+      score -= balloonShare >= 30 ? 10 : 5;
+
+      warnings.push(
+        "A final balloon payment remains due and requires a separate plan."
+      );
+    }
+
+    if (downPayment > emergencyFund && emergencyFund > 0) {
+      score -= 4;
+      warnings.push(
+        "The down payment is larger than the entered emergency fund balance."
+      );
+    }
+
+    if (financedFees > cashPrice * 0.05) {
+      score -= 4;
+      warnings.push(
+        "Financed fees exceed 5% of the cash purchase price."
+      );
+    }
+
+    if (selectedText("pressure").includes("Strong")) {
+      warnings.push(
+        "Strong sales pressure can weaken comparison and contract review."
+      );
+    }
+
+    if (selectedText("clearTerms").startsWith("No")) {
+      warnings.push(
+        "Do not sign while important financing terms remain unclear."
+      );
+    }
+
+    if (selectedText("withoutFinance").startsWith("No")) {
+      warnings.push(
+        "The financing offer may be creating demand for a purchase you would otherwise skip."
+      );
+    }
+
+    if (selectedText("need").includes("Essential")) {
+      positives.push(
+        "The purchase is connected to a stated essential need."
+      );
+    }
+
+    score = Math.max(
+      0,
+      Math.min(
+        100,
+        Math.round(score)
+      )
+    );
+
+    let recommendation = "";
+    let recommendationText = "";
+    let statusClass = "";
+    let statusTitle = "";
+    let statusText = "";
+
+    if (score >= 85) {
+      recommendation = "Financing May Be Reasonable";
+      recommendationText =
+        "The entered offer and budget show a stronger case for financing. Confirm the official disclosures, verify that no fees or add-ons are missing, and compare one final alternative before signing.";
+      statusClass = "status-good";
+      statusTitle = "Stronger financing case";
+      statusText =
+        "The payment appears more manageable and the practical answers contain fewer major warning signs. The decision still depends on the accuracy of the inputs and the written agreement.";
+    } else if (score >= 70) {
+      recommendation = "Reasonable With Careful Review";
+      recommendationText =
+        "The financing may work, but at least one area deserves attention. Review the total cost, cash-flow margin, emergency fund, ownership costs, and contract terms before committing.";
+      statusClass = "status-good";
+      statusTitle = "Potentially workable";
+      statusText =
+        "The decision is not clearly unsafe, but it should not be accepted on the monthly payment alone.";
+    } else if (score >= 55) {
+      recommendation = "Borderline — Improve the Deal";
+      recommendationText =
+        "The purchase may have value, but the current financing reduces flexibility. A cheaper item, larger safe down payment, shorter term, lower APR, or waiting period could improve the decision.";
+      statusClass = "status-caution";
+      statusTitle = "Meaningful caution";
+      statusText =
+        "The numbers or practical answers suggest that the agreement could become uncomfortable if an unexpected cost appears.";
+    } else if (score >= 35) {
+      recommendation = "High Caution — Delay Signing";
+      recommendationText =
+        "Several warning signs are present. Do not sign under pressure. Compare alternatives, review the budget, and look for a lower total cost before taking on the obligation.";
+      statusClass = "status-caution";
+      statusTitle = "Risky in its current form";
+      statusText =
+        "The current offer may be making an expensive or fragile purchase appear manageable through smaller payments.";
+    } else {
+      recommendation = "Avoid Financing for Now";
+      recommendationText =
+        "Based on the entered information, the financing appears likely to create financial pressure or excessive cost. Waiting, saving, repairing, buying used, or choosing a cheaper option is likely safer.";
+      statusClass = "status-risk";
+      statusTitle = "High financing risk";
+      statusText =
+        "The budget, loan terms, or decision factors contain serious warning signs. A major change to the price, rate, term, savings, or purchase need would be required.";
+    }
+
+    if (warnings.length === 0) {
+      warnings.push(
+        "No major warning was detected from the entered information, but review the official contract for details the calculator cannot see."
+      );
+    }
+
+    if (positives.length === 0) {
+      positives.push(
+        "No strong positive indicator was identified. Improving the price, rate, savings buffer, or clarity of terms may strengthen the decision."
+      );
+    }
+
+    steps.push(
+      "Compare the complete amount paid with the cash price and at least one competing offer."
+    );
+
+    if (apr > 10) {
+      steps.push(
+        "Ask whether a lower APR is available through another lender, a shorter term, or a larger down payment that does not empty emergency savings."
+      );
+    }
+
+    if (cashLeft < monthlyIncome * 0.1) {
+      steps.push(
+        "Test the payment for one or two months by saving the same amount before signing."
+      );
+    }
+
+    if (emergencyMonths < 3) {
+      steps.push(
+        "Consider building a larger emergency buffer before financing a non-essential purchase."
+      );
+    }
+
+    if (safeBalloon > 0) {
+      steps.push(
+        "Create a separate monthly savings plan for the final balloon payment."
+      );
+    }
+
+    if (selectedText("clearTerms").includes("unclear") ||
+        selectedText("clearTerms").startsWith("No")) {
+      steps.push(
+        "Request the APR, all fees, payment schedule, total amount paid, late rules, and prepayment terms in writing."
+      );
+    }
+
+    steps.push(
+      "Wait at least 24 hours for a smaller purchase and longer for a major non-essential purchase."
+    );
+
+    document.getElementById("scoreNumber").textContent = score;
+    document.getElementById("recommendation").textContent = recommendation;
+    document.getElementById("recommendationText").textContent =
+      recommendationText;
+
+    document.getElementById("monthlyPaymentResult").textContent =
+      currencyFormat(monthlyPayment, symbol);
+
+    document.getElementById("amountFinancedResult").textContent =
+      currencyFormat(amountFinanced, symbol);
+
+    document.getElementById("totalInterestResult").textContent =
+      currencyFormat(totalInterest, symbol);
+
+    document.getElementById("fullCostResult").textContent =
+      currencyFormat(fullAmountPaid, symbol);
+
+    document.getElementById("monthlyBurdenResult").textContent =
+      currencyFormat(newMonthlyBurden, symbol);
+
+    document.getElementById("paymentRatioResult").textContent =
+      percentFormat(paymentRatio);
+
+    document.getElementById("cashFlowResult").textContent =
+      monthlyIncome > 0
+        ? currencyFormat(cashLeft, symbol)
+        : "Not calculated";
+
+    document.getElementById("emergencyMonthsResult").textContent =
+      Number.isFinite(emergencyMonths)
+        ? emergencyMonths.toFixed(1) + " months"
+        : "Not calculated";
+
+    document.getElementById("premiumResult").textContent =
+      currencyFormat(financingPremium, symbol) +
+      (
+        Number.isFinite(financingPremiumPercent)
+          ? " (" + financingPremiumPercent.toFixed(1) + "%)"
+          : ""
+      );
+
+    const statusPanel = document.getElementById("statusPanel");
+
+    statusPanel.className =
+      "status-panel " + statusClass;
+
+    document.getElementById("statusTitle").textContent =
+      statusTitle;
+
+    document.getElementById("statusText").textContent =
+      statusText;
+
+    const positiveItems =
+      document.getElementById("positiveItems");
+
+    const warningItems =
+      document.getElementById("warningItems");
+
+    const nextStepItems =
+      document.getElementById("nextStepItems");
+
+    positiveItems.innerHTML = "";
+    warningItems.innerHTML = "";
+    nextStepItems.innerHTML = "";
+
+    positives.slice(0, 7).forEach(function(item) {
+      addListItem(positiveItems, item);
+    });
+
+    warnings.slice(0, 9).forEach(function(item) {
+      addListItem(warningItems, item);
+    });
+
+    steps.slice(0, 7).forEach(function(item) {
+      addListItem(nextStepItems, item);
+    });
+
+    document.getElementById("result").style.display = "block";
+
+    document.getElementById("result").scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }
+
+  function resetCalculator() {
+    const fields = [
+      "cashPrice",
+      "downPayment",
+      "tradeIn",
+      "upfrontFees",
+      "financedFees",
+      "apr",
+      "termMonths",
+      "balloonPayment",
+      "monthlyIncome",
+      "essentialExpenses",
+      "existingDebt",
+      "monthlySavings",
+      "emergencyFund",
+      "extraOwnershipCost"
+    ];
+
+    fields.forEach(function(id) {
+      document.getElementById(id).value = "";
+    });
+
+    document.getElementById("currency").value = "$";
+
+    const defaults = {
+      need: "7",
+      planned: "5",
+      compared: "5",
+      withoutFinance: "5",
+      usefulLife: "5",
+      incomeStability: "5",
+      prepay: "4",
+      clearTerms: "4",
+      pressure: "5",
+      stressTest: "5"
+    };
+
+    Object.keys(defaults).forEach(function(name) {
+      const input = document.querySelector(
+        'input[name="' +
+        name +
+        '"][value="' +
+        defaults[name] +
+        '"]'
+      );
+
+      if (input) {
+        input.checked = true;
+      }
+    });
+
+    document.getElementById("result").style.display = "none";
+    document.getElementById("errorBox").style.display = "none";
+
+    document.getElementById("calculator").scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }
+</script>
+
+</body>
+</html>
