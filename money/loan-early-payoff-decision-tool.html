@@ -1,0 +1,3210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Loan Early Payoff Decision Tool & Calculator | DecideHelper</title>
+
+  <meta
+    name="description"
+    content="Use the free Loan Early Payoff Decision Tool to estimate interest saved, months saved, payoff date, emergency fund impact, investment opportunity cost, and whether paying off your loan early may make sense."
+  >
+
+  <link
+    rel="canonical"
+    href="https://decidehelper.com/money/loan-early-payoff-decision-tool.html"
+  >
+
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+  >
+
+  <meta
+    property="og:title"
+    content="Loan Early Payoff Decision Tool & Calculator"
+  >
+
+  <meta
+    property="og:description"
+    content="Compare your current loan schedule with extra payments or a lump-sum payoff. See estimated interest saved, time saved, liquidity impact, opportunity cost, and a practical early payoff score."
+  >
+
+  <meta property="og:type" content="website">
+
+  <meta
+    property="og:url"
+    content="https://decidehelper.com/money/loan-early-payoff-decision-tool.html"
+  >
+
+  <meta property="og:site_name" content="DecideHelper">
+
+  <meta name="twitter:card" content="summary">
+
+  <meta
+    name="twitter:title"
+    content="Loan Early Payoff Decision Tool"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Estimate interest saved, payoff time saved, emergency fund impact, investment trade-offs, and whether paying off a loan early may be the better decision."
+  >
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://decidehelper.com/money/loan-early-payoff-decision-tool.html#webapp",
+        "name": "Loan Early Payoff Decision Tool",
+        "url": "https://decidehelper.com/money/loan-early-payoff-decision-tool.html",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript",
+        "description": "A free debt payoff decision calculator that compares a current loan schedule with extra monthly payments and lump-sum payments. It estimates interest saved, months saved, payoff date, emergency fund impact, investment opportunity cost, and a practical early payoff score.",
+        "isAccessibleForFree": true,
+        "publisher": {
+          "@type": "Organization",
+          "name": "DecideHelper",
+          "url": "https://decidehelper.com/"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://decidehelper.com/money/loan-early-payoff-decision-tool.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://decidehelper.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Money Decisions",
+            "item": "https://decidehelper.com/money/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Loan Early Payoff Decision Tool",
+            "item": "https://decidehelper.com/money/loan-early-payoff-decision-tool.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://decidehelper.com/money/loan-early-payoff-decision-tool.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does the Loan Early Payoff Decision Tool work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The tool compares your current repayment schedule with a plan that includes extra monthly payments, a one-time lump sum, or both. It estimates interest saved, months saved, payoff timing, emergency fund impact, opportunity cost, and a practical decision score."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is paying off a loan early always a good idea?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Paying early can save interest and reduce risk, but it may be less attractive when the interest rate is low, the emergency fund is weak, a prepayment penalty applies, or the money is needed for higher-priority goals."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use this tool for a mortgage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The calculator can be used for mortgages, car loans, personal loans, student loans, and other fixed-rate installment debts. Actual lender calculations may differ."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does guaranteed return from debt payoff mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Avoided loan interest is often described as a guaranteed return because reducing principal prevents future interest charges under the loan contract. Tax treatment and loan features can change the comparison."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I invest or pay off debt?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Compare the loan rate, investment risk, taxes, emergency savings, time horizon, and personal risk tolerance. A possible investment return is uncertain, while avoided interest is usually more predictable."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the calculator save my information?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The calculations run locally in your browser and the page does not need to send your entered values to a server."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --navy: #0f172a;
+      --navy-soft: #1e293b;
+      --blue: #2563eb;
+      --blue-dark: #1d4ed8;
+      --blue-light: #eff6ff;
+      --green: #047857;
+      --green-light: #ecfdf5;
+      --amber: #b45309;
+      --amber-light: #fffbeb;
+      --red: #b91c1c;
+      --red-light: #fef2f2;
+      --purple-light: #faf5ff;
+      --page: #f5f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --shadow: 0 12px 34px rgba(15, 23, 42, 0.08);
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--page);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header,
+    footer {
+      background: var(--navy);
+      color: white;
+    }
+
+    header {
+      padding: 22px 20px;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding: 32px 20px;
+      font-size: 14px;
+      color: #cbd5e1;
+    }
+
+    .container {
+      width: min(1100px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      color: white;
+      text-decoration: none;
+      font-size: 26px;
+      line-height: 1;
+      font-weight: 800;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    nav a,
+    footer a {
+      color: #cbd5e1;
+      text-decoration: none;
+    }
+
+    nav a:hover,
+    footer a:hover {
+      color: white;
+    }
+
+    .hero {
+      background:
+        radial-gradient(circle at top right, rgba(59, 130, 246, 0.38), transparent 34%),
+        linear-gradient(135deg, var(--navy), #334155);
+      color: white;
+      padding: 68px 0 60px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 12px;
+      color: #bfdbfe;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      max-width: 920px;
+      margin: 0 auto 18px;
+      font-size: clamp(34px, 5vw, 52px);
+      line-height: 1.13;
+    }
+
+    .hero p {
+      max-width: 840px;
+      margin: 0 auto;
+      color: #e2e8f0;
+      font-size: 18px;
+    }
+
+    .hero-points {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 26px;
+    }
+
+    .hero-points span {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 999px;
+      padding: 7px 12px;
+      color: white;
+      font-size: 14px;
+    }
+
+    main {
+      padding: 36px 0 10px;
+    }
+
+    .breadcrumb {
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .breadcrumb a {
+      color: #475569;
+      text-decoration: none;
+    }
+
+    .card {
+      margin: 24px 0;
+      padding: 30px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .card h2 {
+      margin: 0 0 12px;
+      color: var(--navy);
+      font-size: 29px;
+      line-height: 1.3;
+    }
+
+    .card h3 {
+      margin: 26px 0 8px;
+      color: #111827;
+      font-size: 21px;
+      line-height: 1.35;
+    }
+
+    .lead {
+      font-size: 18px;
+      color: #475569;
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .privacy-note {
+      margin-top: 18px;
+      padding: 13px 15px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: #475569;
+      font-size: 14px;
+    }
+
+    .section-title {
+      margin-top: 34px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+      color: var(--navy);
+      font-size: 23px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .form-grid.three {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .field {
+      min-width: 0;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--navy);
+      font-weight: 700;
+    }
+
+    .hint {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 12px 13px;
+      border: 1px solid #cbd5e1;
+      border-radius: 9px;
+      background: white;
+      color: #111827;
+      font: inherit;
+    }
+
+    input:focus,
+    select:focus {
+      border-color: #60a5fa;
+      outline: 3px solid rgba(96, 165, 250, 0.22);
+    }
+
+    .question {
+      margin-top: 15px;
+      padding: 17px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .question-title {
+      margin: 0 0 11px;
+      color: var(--navy);
+      font-weight: 800;
+    }
+
+    .options {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 9px;
+    }
+
+    .options label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0;
+      padding: 10px 11px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      font-weight: 400;
+      cursor: pointer;
+    }
+
+    .options label:hover {
+      border-color: #93c5fd;
+      background: var(--blue-light);
+    }
+
+    .options input {
+      width: auto;
+      margin: 0;
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    button {
+      border: 0;
+      border-radius: 10px;
+      padding: 14px 20px;
+      font-size: 16px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .primary-button {
+      background: var(--blue);
+      color: white;
+    }
+
+    .primary-button:hover {
+      background: var(--blue-dark);
+    }
+
+    .secondary-button {
+      background: #e2e8f0;
+      color: var(--navy);
+    }
+
+    .secondary-button:hover {
+      background: #cbd5e1;
+    }
+
+    .error-box {
+      display: none;
+      margin-top: 18px;
+      padding: 14px 16px;
+      background: var(--red-light);
+      border: 1px solid #fecaca;
+      border-radius: 10px;
+      color: #991b1b;
+      font-weight: 700;
+    }
+
+    .result {
+      display: none;
+      margin-top: 28px;
+      border-top: 1px solid var(--border);
+      padding-top: 28px;
+    }
+
+    .result-head {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .score-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 22px;
+      text-align: center;
+      background: var(--blue-light);
+      border: 1px solid #bfdbfe;
+      border-radius: 14px;
+    }
+
+    .score-number {
+      color: var(--blue-dark);
+      font-size: 48px;
+      line-height: 1;
+      font-weight: 900;
+    }
+
+    .score-label {
+      margin-top: 7px;
+      color: #475569;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .recommendation-box {
+      padding: 22px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .recommendation {
+      margin: 0 0 8px;
+      color: var(--navy);
+      font-size: 27px;
+      line-height: 1.2;
+      font-weight: 900;
+    }
+
+    .recommendation-box p {
+      margin: 8px 0 0;
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .metric {
+      padding: 17px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .metric-name {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .metric-value {
+      margin-top: 5px;
+      color: var(--navy);
+      font-size: 23px;
+      line-height: 1.25;
+      font-weight: 900;
+      overflow-wrap: anywhere;
+    }
+
+    .status-panel {
+      margin-top: 18px;
+      padding: 18px;
+      border-radius: 12px;
+    }
+
+    .status-good {
+      background: var(--green-light);
+      border: 1px solid #a7f3d0;
+    }
+
+    .status-caution {
+      background: var(--amber-light);
+      border: 1px solid #fde68a;
+    }
+
+    .status-risk {
+      background: var(--red-light);
+      border: 1px solid #fecaca;
+    }
+
+    .status-panel h3 {
+      margin: 0 0 8px;
+    }
+
+    .status-panel ul {
+      margin-bottom: 0;
+    }
+
+    .warning-list,
+    .positive-list,
+    .next-steps {
+      margin-top: 18px;
+      padding: 18px 20px;
+      border-radius: 12px;
+    }
+
+    .warning-list {
+      background: var(--red-light);
+      border: 1px solid #fecaca;
+    }
+
+    .positive-list {
+      background: var(--green-light);
+      border: 1px solid #a7f3d0;
+    }
+
+    .next-steps {
+      background: var(--blue-light);
+      border: 1px solid #bfdbfe;
+    }
+
+    .warning-list h3,
+    .positive-list h3,
+    .next-steps h3 {
+      margin-top: 0;
+    }
+
+    table {
+      width: 100%;
+      margin: 18px 0;
+      border-collapse: collapse;
+      font-size: 15px;
+    }
+
+    th,
+    td {
+      padding: 12px;
+      border: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f1f5f9;
+      color: var(--navy);
+    }
+
+    ul,
+    ol {
+      padding-left: 23px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .info-box,
+    .warning-box,
+    .example-box,
+    .tool-box,
+    .summary-box,
+    .comparison-box {
+      margin: 22px 0;
+      padding: 20px;
+      border-radius: 13px;
+    }
+
+    .info-box {
+      background: var(--blue-light);
+      border: 1px solid #bfdbfe;
+    }
+
+    .warning-box {
+      background: var(--amber-light);
+      border: 1px solid #fde68a;
+    }
+
+    .example-box {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+    }
+
+    .tool-box {
+      background: var(--green-light);
+      border: 1px solid #bbf7d0;
+    }
+
+    .summary-box {
+      background: #f0f9ff;
+      border: 1px solid #bae6fd;
+    }
+
+    .comparison-box {
+      background: var(--purple-light);
+      border: 1px solid #e9d5ff;
+    }
+
+    .info-box h3,
+    .warning-box h3,
+    .example-box h3,
+    .tool-box h3,
+    .summary-box h3,
+    .comparison-box h3 {
+      margin-top: 0;
+    }
+
+    .toc {
+      columns: 2;
+      column-gap: 34px;
+    }
+
+    .toc li {
+      break-inside: avoid;
+    }
+
+    a {
+      color: var(--blue);
+    }
+
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .related-grid a {
+      display: block;
+      padding: 17px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    .related-grid a:hover {
+      background: var(--blue-light);
+      border-color: #bfdbfe;
+    }
+
+    .faq-item {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-item:last-child {
+      border-bottom: 0;
+    }
+
+    .faq-item h3 {
+      margin: 0 0 8px;
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .print-only {
+      display: none;
+    }
+
+    @media (max-width: 820px) {
+      .form-grid,
+      .form-grid.three,
+      .metric-grid,
+      .related-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .options {
+        grid-template-columns: 1fr;
+      }
+
+      .result-head {
+        grid-template-columns: 1fr;
+      }
+
+      .toc {
+        columns: 1;
+      }
+    }
+
+    @media (max-width: 580px) {
+      .container {
+        width: min(100% - 24px, 1100px);
+      }
+
+      .hero {
+        padding: 52px 0 48px;
+      }
+
+      .card {
+        padding: 21px;
+      }
+
+      .form-grid,
+      .form-grid.three,
+      .metric-grid,
+      .related-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .actions button {
+        width: 100%;
+      }
+
+      .metric-value {
+        font-size: 21px;
+      }
+    }
+
+    @media print {
+      header,
+      footer,
+      .hero,
+      .breadcrumb,
+      .actions,
+      .educational-content,
+      .privacy-note {
+        display: none !important;
+      }
+
+      body {
+        background: white;
+      }
+
+      .container {
+        width: 100%;
+      }
+
+      .card {
+        box-shadow: none;
+        border: 0;
+        margin: 0;
+        padding: 0;
+      }
+
+      .result {
+        display: block !important;
+      }
+
+      .print-only {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container header-row">
+    <a href="/" class="logo">DecideHelper</a>
+
+    <nav aria-label="Primary navigation">
+      <a href="/">Home</a>
+      <a href="/money/">Money</a>
+      <a href="/life/">Life</a>
+      <a href="/tools/">Tools</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <span class="eyebrow">Free debt payoff decision calculator</span>
+
+    <h1>Loan Early Payoff Decision Tool</h1>
+
+    <p>
+      Compare your current loan schedule with extra monthly payments or a
+      one-time lump sum. Estimate interest saved, months saved, payoff timing,
+      emergency fund impact, investment opportunity cost, and a practical early
+      payoff decision score.
+    </p>
+
+    <div class="hero-points" aria-label="Tool features">
+      <span>Interest saved</span>
+      <span>Months saved</span>
+      <span>New payoff date</span>
+      <span>Liquidity check</span>
+      <span>Decision score</span>
+      <span>No registration</span>
+    </div>
+  </div>
+</section>
+
+<main>
+  <div class="container">
+
+    <div class="breadcrumb">
+      <a href="/">Home</a>
+      ›
+      <a href="/money/">Money Decisions</a>
+      ›
+      Loan Early Payoff Decision Tool
+    </div>
+
+    <section class="card" id="calculator">
+      <h2>Early Loan Payoff Calculator</h2>
+
+      <p class="lead">
+        Enter your remaining loan details, the extra payment you are considering,
+        and your financial safety information. The calculator compares the
+        standard repayment path with the accelerated payoff plan.
+      </p>
+
+      <div class="privacy-note">
+        <strong>Privacy:</strong>
+        all calculations run inside your browser. The page does not need to
+        store or transmit the financial values you enter.
+      </div>
+
+      <h3 class="section-title">1. Current loan details</h3>
+
+      <div class="form-grid three">
+        <div class="field">
+          <label for="currency">Currency</label>
+
+          <select id="currency">
+            <option value="$">USD ($)</option>
+            <option value="€">EUR (€)</option>
+            <option value="£">GBP (£)</option>
+            <option value="Ft">HUF (Ft)</option>
+            <option value="C$">CAD (C$)</option>
+            <option value="A$">AUD (A$)</option>
+            <option value="">Other</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="loanType">Loan type</label>
+
+          <select id="loanType">
+            <option value="mortgage">Mortgage</option>
+            <option value="car">Car loan</option>
+            <option value="personal">Personal loan</option>
+            <option value="student">Student loan</option>
+            <option value="home-equity">Home equity loan</option>
+            <option value="other">Other installment loan</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="balance">Remaining loan balance</label>
+
+          <input
+            type="number"
+            id="balance"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 85000"
+          >
+
+          <span class="hint">
+            Use the current principal balance, not the original loan amount.
+          </span>
+        </div>
+
+        <div class="field">
+          <label for="annualRate">Annual interest rate</label>
+
+          <input
+            type="number"
+            id="annualRate"
+            min="0"
+            max="1000"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 6.5"
+          >
+
+          <span class="hint">
+            Enter the percentage without the % sign.
+          </span>
+        </div>
+
+        <div class="field">
+          <label for="remainingMonths">Remaining term in months</label>
+
+          <input
+            type="number"
+            id="remainingMonths"
+            min="1"
+            max="600"
+            step="1"
+            inputmode="numeric"
+            placeholder="Example: 180"
+          >
+
+          <span class="hint">
+            The number of scheduled payments still remaining.
+          </span>
+        </div>
+
+        <div class="field">
+          <label for="currentPayment">Current required monthly payment</label>
+
+          <input
+            type="number"
+            id="currentPayment"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Optional"
+          >
+
+          <span class="hint">
+            Leave blank to let the tool estimate the payment.
+          </span>
+        </div>
+      </div>
+
+      <h3 class="section-title">2. Early payoff plan</h3>
+
+      <div class="form-grid three">
+        <div class="field">
+          <label for="extraMonthly">Extra monthly payment</label>
+
+          <input
+            type="number"
+            id="extraMonthly"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 250"
+          >
+
+          <span class="hint">
+            Additional principal paid every month.
+          </span>
+        </div>
+
+        <div class="field">
+          <label for="lumpSum">One-time lump-sum payment</label>
+
+          <input
+            type="number"
+            id="lumpSum"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 5000"
+          >
+
+          <span class="hint">
+            Amount paid toward principal now.
+          </span>
+        </div>
+
+        <div class="field">
+          <label for="prepaymentPenalty">Prepayment penalty or fee</label>
+
+          <input
+            type="number"
+            id="prepaymentPenalty"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 0"
+          >
+
+          <span class="hint">
+            Include any known early repayment charge.
+          </span>
+        </div>
+
+        <div class="field">
+          <label for="expectedReturn">Expected annual investment return</label>
+
+          <input
+            type="number"
+            id="expectedReturn"
+            min="-100"
+            max="1000"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 7"
+          >
+
+          <span class="hint">
+            A planning assumption, not a guaranteed return.
+          </span>
+        </div>
+
+        <div class="field">
+          <label for="taxRate">Estimated tax rate on investment gains</label>
+
+          <input
+            type="number"
+            id="taxRate"
+            min="0"
+            max="100"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 15"
+          >
+
+          <span class="hint">
+            Use zero if not applicable or if you prefer a pre-tax comparison.
+          </span>
+        </div>
+
+        <div class="field">
+          <label for="payoffStartDate">Extra-payment start date</label>
+
+          <input
+            type="date"
+            id="payoffStartDate"
+          >
+
+          <span class="hint">
+            Used to estimate the new payoff month.
+          </span>
+        </div>
+      </div>
+
+      <h3 class="section-title">3. Financial safety and priorities</h3>
+
+      <div class="form-grid three">
+        <div class="field">
+          <label for="emergencyFund">Emergency fund before lump sum</label>
+
+          <input
+            type="number"
+            id="emergencyFund"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 15000"
+          >
+
+          <span class="hint">
+            Accessible cash reserved for unexpected expenses.
+          </span>
+        </div>
+
+        <div class="field">
+          <label for="essentialExpenses">Essential monthly expenses</label>
+
+          <input
+            type="number"
+            id="essentialExpenses"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 3000"
+          >
+
+          <span class="hint">
+            Housing, food, utilities, insurance, transport, and essentials.
+          </span>
+        </div>
+
+        <div class="field">
+          <label for="highInterestDebt">Other high-interest debt balance</label>
+
+          <input
+            type="number"
+            id="highInterestDebt"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 0"
+          >
+
+          <span class="hint">
+            Credit cards or other debt with a higher rate than this loan.
+          </span>
+        </div>
+
+        <div class="field">
+          <label for="monthlySavings">Current monthly saving or investing</label>
+
+          <input
+            type="number"
+            id="monthlySavings"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 500"
+          >
+
+          <span class="hint">
+            Regular contributions before the proposed extra loan payment.
+          </span>
+        </div>
+
+        <div class="field">
+          <label for="employerMatch">Unclaimed monthly employer match</label>
+
+          <input
+            type="number"
+            id="employerMatch"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 0"
+          >
+
+          <span class="hint">
+            Enter money you would lose by reducing retirement contributions.
+          </span>
+        </div>
+
+        <div class="field">
+          <label for="nearTermNeed">Cash needed within the next 24 months</label>
+
+          <input
+            type="number"
+            id="nearTermNeed"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="Example: 3000"
+          >
+
+          <span class="hint">
+            Planned repairs, medical costs, moving, education, or other goals.
+          </span>
+        </div>
+      </div>
+
+      <h3 class="section-title">4. Practical decision questions</h3>
+
+      <div class="question">
+        <p class="question-title">
+          How stable is the income supporting your normal payments?
+        </p>
+
+        <div class="options">
+          <label>
+            <input type="radio" name="incomeStability" value="10">
+            Stable and predictable
+          </label>
+
+          <label>
+            <input type="radio" name="incomeStability" value="5" checked>
+            Some variation
+          </label>
+
+          <label>
+            <input type="radio" name="incomeStability" value="0">
+            Irregular or uncertain
+          </label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p class="question-title">
+          Would paying extra reduce essential retirement contributions?
+        </p>
+
+        <div class="options">
+          <label>
+            <input type="radio" name="retirementImpact" value="10">
+            No
+          </label>
+
+          <label>
+            <input type="radio" name="retirementImpact" value="5" checked>
+            Slightly
+          </label>
+
+          <label>
+            <input type="radio" name="retirementImpact" value="0">
+            Yes, significantly
+          </label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p class="question-title">
+          Is the interest rate fixed and the loan contract clear?
+        </p>
+
+        <div class="options">
+          <label>
+            <input type="radio" name="contractClarity" value="10">
+            Yes, fixed and clear
+          </label>
+
+          <label>
+            <input type="radio" name="contractClarity" value="5" checked>
+            Mostly clear
+          </label>
+
+          <label>
+            <input type="radio" name="contractClarity" value="0">
+            Variable, unclear, or both
+          </label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p class="question-title">
+          How important is becoming debt-free to your peace of mind?
+        </p>
+
+        <div class="options">
+          <label>
+            <input type="radio" name="peaceOfMind" value="10">
+            Very important
+          </label>
+
+          <label>
+            <input type="radio" name="peaceOfMind" value="5" checked>
+            Moderately important
+          </label>
+
+          <label>
+            <input type="radio" name="peaceOfMind" value="1">
+            Not a major priority
+          </label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p class="question-title">
+          Would you invest the money consistently if you did not pay the loan early?
+        </p>
+
+        <div class="options">
+          <label>
+            <input type="radio" name="investmentDiscipline" value="0">
+            Yes, automatically and consistently
+          </label>
+
+          <label>
+            <input type="radio" name="investmentDiscipline" value="5" checked>
+            Probably
+          </label>
+
+          <label>
+            <input type="radio" name="investmentDiscipline" value="10">
+            No, I would probably spend it
+          </label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p class="question-title">
+          Do you expect a major income drop or large expense soon?
+        </p>
+
+        <div class="options">
+          <label>
+            <input type="radio" name="futureRisk" value="10">
+            No known major risk
+          </label>
+
+          <label>
+            <input type="radio" name="futureRisk" value="5" checked>
+            Possible
+          </label>
+
+          <label>
+            <input type="radio" name="futureRisk" value="0">
+            Likely
+          </label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p class="question-title">
+          Can extra payments be applied directly to principal?
+        </p>
+
+        <div class="options">
+          <label>
+            <input type="radio" name="principalApplication" value="10">
+            Yes, confirmed in writing
+          </label>
+
+          <label>
+            <input type="radio" name="principalApplication" value="4" checked>
+            I am not sure
+          </label>
+
+          <label>
+            <input type="radio" name="principalApplication" value="0">
+            No, or restrictions apply
+          </label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p class="question-title">
+          Is this loan rate higher than your other available low-risk priorities?
+        </p>
+
+        <div class="options">
+          <label>
+            <input type="radio" name="priorityComparison" value="10">
+            Yes
+          </label>
+
+          <label>
+            <input type="radio" name="priorityComparison" value="5" checked>
+            Similar
+          </label>
+
+          <label>
+            <input type="radio" name="priorityComparison" value="0">
+            No
+          </label>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button
+          type="button"
+          class="primary-button"
+          onclick="calculatePayoffDecision()"
+        >
+          Calculate Early Payoff Decision
+        </button>
+
+        <button
+          type="button"
+          class="secondary-button"
+          onclick="resetCalculator()"
+        >
+          Reset
+        </button>
+
+        <button
+          type="button"
+          class="secondary-button"
+          onclick="window.print()"
+        >
+          Print Result
+        </button>
+      </div>
+
+      <div id="errorBox" class="error-box" role="alert"></div>
+
+      <div id="result" class="result" aria-live="polite">
+        <p class="print-only">
+          DecideHelper — Loan Early Payoff Decision Tool
+        </p>
+
+        <div class="result-head">
+          <div class="score-box">
+            <div id="scoreNumber" class="score-number">0</div>
+
+            <div class="score-label">
+              Early payoff score out of 100
+            </div>
+          </div>
+
+          <div class="recommendation-box">
+            <div id="recommendation" class="recommendation"></div>
+
+            <p id="recommendationText"></p>
+
+            <p class="small">
+              This is an educational decision-support estimate, not personalized
+              financial, tax, legal, or investment advice.
+            </p>
+          </div>
+        </div>
+
+        <div class="metric-grid">
+          <div class="metric">
+            <div class="metric-name">Estimated current payment</div>
+            <div id="basePaymentResult" class="metric-value">—</div>
+          </div>
+
+          <div class="metric">
+            <div class="metric-name">New total monthly payment</div>
+            <div id="newPaymentResult" class="metric-value">—</div>
+          </div>
+
+          <div class="metric">
+            <div class="metric-name">Interest without extra payments</div>
+            <div id="baseInterestResult" class="metric-value">—</div>
+          </div>
+
+          <div class="metric">
+            <div class="metric-name">Interest with early payoff plan</div>
+            <div id="newInterestResult" class="metric-value">—</div>
+          </div>
+
+          <div class="metric">
+            <div class="metric-name">Estimated interest saved</div>
+            <div id="interestSavedResult" class="metric-value">—</div>
+          </div>
+
+          <div class="metric">
+            <div class="metric-name">Estimated months saved</div>
+            <div id="monthsSavedResult" class="metric-value">—</div>
+          </div>
+
+          <div class="metric">
+            <div class="metric-name">Estimated new payoff date</div>
+            <div id="payoffDateResult" class="metric-value">—</div>
+          </div>
+
+          <div class="metric">
+            <div class="metric-name">Emergency fund after lump sum</div>
+            <div id="remainingEmergencyResult" class="metric-value">—</div>
+          </div>
+
+          <div class="metric">
+            <div class="metric-name">Emergency fund coverage</div>
+            <div id="coverageResult" class="metric-value">—</div>
+          </div>
+
+          <div class="metric">
+            <div class="metric-name">Net savings after penalty</div>
+            <div id="netSavingsResult" class="metric-value">—</div>
+          </div>
+
+          <div class="metric">
+            <div class="metric-name">After-tax expected investment return</div>
+            <div id="afterTaxReturnResult" class="metric-value">—</div>
+          </div>
+
+          <div class="metric">
+            <div class="metric-name">Rate advantage</div>
+            <div id="rateAdvantageResult" class="metric-value">—</div>
+          </div>
+        </div>
+
+        <div id="statusPanel" class="status-panel">
+          <h3 id="statusTitle">Result summary</h3>
+          <p id="statusText"></p>
+        </div>
+
+        <div id="positiveList" class="positive-list">
+          <h3>What supports paying early</h3>
+          <ul id="positiveItems"></ul>
+        </div>
+
+        <div id="warningList" class="warning-list">
+          <h3>Reasons to pause or adjust the plan</h3>
+          <ul id="warningItems"></ul>
+        </div>
+
+        <div class="next-steps">
+          <h3>Suggested next steps</h3>
+          <ol id="nextStepItems"></ol>
+        </div>
+      </div>
+    </section>
+
+    <div class="educational-content">
+
+      <section class="card">
+        <h2>How to Use the Loan Early Payoff Decision Tool</h2>
+
+        <p>
+          Start with the remaining principal balance, annual interest rate,
+          remaining term, and required monthly payment. If you do not know the
+          required payment, leave that field blank and the calculator will
+          estimate a standard fixed-rate payment from the remaining balance,
+          rate, and term.
+        </p>
+
+        <p>
+          Next, enter the extra monthly payment, lump-sum payment, and any
+          prepayment charge. The calculator creates two simplified schedules:
+          one based on the current payment and one based on the accelerated
+          payoff plan. It then compares the estimated interest cost and payoff
+          time.
+        </p>
+
+        <p>
+          Finally, add your emergency savings, essential expenses, other
+          high-interest debt, investment assumptions, and near-term cash needs.
+          These details matter because saving interest is useful only when the
+          payoff plan does not create a larger financial weakness elsewhere.
+        </p>
+
+        <div class="info-box">
+          <h3>Use the lender's current principal balance</h3>
+
+          <p>
+            A payoff quote can be different from the balance shown on your last
+            statement because daily interest, fees, or other adjustments may
+            apply. Use this tool for planning, then request an official payoff
+            figure before making a large final payment.
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>On This Page</h2>
+
+        <ol class="toc">
+          <li><a href="#score-meaning">What the score means</a></li>
+          <li><a href="#how-calculated">How the payoff calculation works</a></li>
+          <li><a href="#benefits">Benefits of early payoff</a></li>
+          <li><a href="#when-not">When not to pay off early</a></li>
+          <li><a href="#emergency-fund">Emergency fund first</a></li>
+          <li><a href="#invest-or-payoff">Invest or pay off debt</a></li>
+          <li><a href="#guaranteed-return">The guaranteed-return idea</a></li>
+          <li><a href="#prepayment-penalties">Prepayment penalties</a></li>
+          <li><a href="#mortgage">Mortgage early payoff</a></li>
+          <li><a href="#car-loan">Car loan early payoff</a></li>
+          <li><a href="#personal-loans">Personal loan payoff</a></li>
+          <li><a href="#student-loans">Student loan payoff</a></li>
+          <li><a href="#taxes">Tax considerations</a></li>
+          <li><a href="#inflation">Inflation and fixed-rate debt</a></li>
+          <li><a href="#liquidity">Liquidity and flexibility</a></li>
+          <li><a href="#methods">Extra payment methods</a></li>
+          <li><a href="#mistakes">Common mistakes</a></li>
+          <li><a href="#examples">Payoff examples</a></li>
+          <li><a href="#checklist">Final checklist</a></li>
+          <li><a href="#faq">Frequently asked questions</a></li>
+        </ol>
+      </section>
+
+      <section class="card" id="score-meaning">
+        <h2>What Your Early Payoff Decision Score Means</h2>
+
+        <p>
+          The score combines the estimated interest benefit with emergency
+          savings, other debt priorities, prepayment costs, investment
+          assumptions, income stability, contract clarity, and personal
+          preferences. It is designed to highlight trade-offs rather than give a
+          universal answer.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Score</th>
+              <th>General meaning</th>
+              <th>Suggested response</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>85–100</td>
+              <td>
+                Stronger case for accelerated payoff. The loan cost is meaningful,
+                savings remain adequate, and major conflicts are limited.
+              </td>
+              <td>
+                Confirm principal-application rules and execute the plan carefully.
+              </td>
+            </tr>
+
+            <tr>
+              <td>70–84</td>
+              <td>
+                Paying early may be reasonable, but one or two issues deserve review.
+              </td>
+              <td>
+                Consider a balanced approach or a smaller lump sum.
+              </td>
+            </tr>
+
+            <tr>
+              <td>55–69</td>
+              <td>
+                Borderline decision. The mathematical benefit exists, but liquidity
+                or opportunity cost may reduce the advantage.
+              </td>
+              <td>
+                Compare partial payoff, monthly extra payments, and investing.
+              </td>
+            </tr>
+
+            <tr>
+              <td>35–54</td>
+              <td>
+                High caution. Emergency savings, penalties, low interest, or other
+                priorities may be more important.
+              </td>
+              <td>
+                Delay a large payoff and strengthen the financial foundation first.
+              </td>
+            </tr>
+
+            <tr>
+              <td>0–34</td>
+              <td>
+                Paying off this loan aggressively appears weak based on the entered
+                information.
+              </td>
+              <td>
+                Keep liquidity, address higher-priority debt, or reassess later.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="warning-box">
+          <h3>Do not treat the score as a command</h3>
+
+          <p>
+            The calculator cannot see every contract term, tax rule, income
+            change, investment risk, or family priority. Use the result as a
+            structured second opinion, not as an automatic instruction.
+          </p>
+        </div>
+      </section>
+
+      <section class="card" id="how-calculated">
+        <h2>How the Loan Payoff Calculation Works</h2>
+
+        <p>
+          The calculator models monthly interest and principal reduction. For
+          the standard schedule, it uses the required payment or an estimated
+          amortizing payment. For the accelerated schedule, it applies the lump
+          sum first and then adds the extra monthly amount to each payment.
+        </p>
+
+        <p>
+          Interest is calculated from the remaining balance each month. Because
+          the accelerated plan reduces principal faster, less future interest is
+          charged. The difference between the two schedules becomes the
+          estimated interest saved.
+        </p>
+
+        <div class="example-box">
+          <h3>Why the timing of extra principal matters</h3>
+
+          <p>
+            An extra payment made early usually saves more interest than the same
+            payment made near the end of the loan. Early principal reduction
+            lowers the balance on which future interest is calculated for more
+            months.
+          </p>
+        </div>
+
+        <p>
+          Real lender calculations can differ because of daily interest,
+          payment timing, rounding, escrow, insurance, variable rates, payment
+          holidays, fees, or unusual amortization rules. Always compare the
+          estimate with the official loan agreement.
+        </p>
+      </section>
+
+      <section class="card" id="benefits">
+        <h2>Benefits of Paying Off a Loan Early</h2>
+
+        <p>
+          The most direct benefit is lower interest cost. Every unit of
+          principal removed can prevent future interest from being charged on
+          that amount. The higher the rate and the longer the remaining term,
+          the larger the potential savings may be.
+        </p>
+
+        <ul>
+          <li>Reduce total interest paid.</li>
+          <li>Become debt-free sooner.</li>
+          <li>Lower monthly obligations after payoff.</li>
+          <li>Improve resilience to future income changes.</li>
+          <li>Reduce the chance of missed payments.</li>
+          <li>Create emotional relief for people who dislike debt.</li>
+          <li>Free future cash flow for saving, investing, or family goals.</li>
+        </ul>
+
+        <p>
+          Early payoff can be especially attractive when the loan rate is high,
+          the debt has no valuable tax treatment, the borrower has adequate
+          emergency savings, and there are no better guaranteed uses for the
+          money.
+        </p>
+      </section>
+
+      <section class="card" id="when-not">
+        <h2>When Paying Off a Loan Early May Not Be the Best Move</h2>
+
+        <p>
+          A loan can be expensive, but using every available dollar to eliminate
+          it can create a different problem. Money paid into a loan is usually
+          difficult to access again without new borrowing. That loss of
+          liquidity matters when income is uncertain or a major expense may be
+          approaching.
+        </p>
+
+        <div class="warning-box">
+          <h3>Reasons to pause before making a large payoff</h3>
+
+          <ul>
+            <li>Your emergency fund would fall below a comfortable level.</li>
+            <li>You have credit card debt or another loan with a higher rate.</li>
+            <li>You would lose an employer retirement match.</li>
+            <li>A prepayment penalty removes much of the interest benefit.</li>
+            <li>The loan rate is very low and fixed.</li>
+            <li>You need cash for taxes, repairs, healthcare, moving, or education.</li>
+            <li>Your income is unstable or likely to fall.</li>
+            <li>The contract does not apply extra money directly to principal.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card" id="emergency-fund">
+        <h2>Build an Emergency Fund Before Aggressive Loan Payoff</h2>
+
+        <p>
+          Emergency savings help prevent a surprise expense from turning into
+          new high-interest debt. A borrower who pays off a low-rate loan but
+          then uses a credit card for a repair may end up in a worse position.
+        </p>
+
+        <p>
+          The tool estimates emergency fund coverage after the proposed lump
+          sum. It divides remaining accessible savings by essential monthly
+          expenses. This simplified measure does not capture every household
+          risk, but it provides a useful warning when liquidity becomes thin.
+        </p>
+
+        <div class="summary-box">
+          <h3>A practical order of priorities</h3>
+
+          <ol>
+            <li>Keep enough cash for immediate bills and known expenses.</li>
+            <li>Build a basic emergency reserve.</li>
+            <li>Capture valuable employer matches.</li>
+            <li>Address very high-interest debt.</li>
+            <li>Then compare extra payments with investing and other goals.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="card" id="invest-or-payoff">
+        <h2>Should You Invest or Pay Off the Loan?</h2>
+
+        <p>
+          This decision is not solved by comparing two percentages alone. The
+          loan rate is usually known, while an investment return is uncertain.
+          Investment gains may be taxed, markets can fall, and the time horizon
+          may be shorter than expected.
+        </p>
+
+        <p>
+          Paying down a 7% loan avoids a known contractual cost. Expecting a 7%
+          investment return does not mean receiving 7% every year. The
+          investment may produce more, less, or a loss. On the other hand,
+          long-term diversified investing can offer growth and keeps assets
+          outside the loan.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Factor</th>
+              <th>Favors early payoff</th>
+              <th>Favors investing</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Loan rate</td>
+              <td>High or variable</td>
+              <td>Low and fixed</td>
+            </tr>
+
+            <tr>
+              <td>Emergency fund</td>
+              <td>Strong after payoff</td>
+              <td>Weak or incomplete</td>
+            </tr>
+
+            <tr>
+              <td>Time horizon</td>
+              <td>Short or uncertain</td>
+              <td>Long and flexible</td>
+            </tr>
+
+            <tr>
+              <td>Risk tolerance</td>
+              <td>Low</td>
+              <td>Comfortable with market volatility</td>
+            </tr>
+
+            <tr>
+              <td>Employer match</td>
+              <td>No match available</td>
+              <td>Valuable match not yet captured</td>
+            </tr>
+
+            <tr>
+              <td>Behavior</td>
+              <td>Money would otherwise be spent</td>
+              <td>Investing is automated and consistent</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="card" id="guaranteed-return">
+        <h2>Is Paying Off Debt a Guaranteed Return?</h2>
+
+        <p>
+          Early payoff is often described as earning a return equal to the loan
+          rate because reducing principal prevents future interest charges.
+          This comparison is useful, but it should be applied carefully.
+        </p>
+
+        <p>
+          The effective benefit may differ when interest is tax-deductible,
+          penalties apply, the rate changes, or the borrower needs to replace
+          the lost liquidity with another loan. The psychological benefit of
+          being debt-free also has value, although it cannot be measured
+          precisely.
+        </p>
+
+        <div class="info-box">
+          <h3>Known savings versus uncertain growth</h3>
+
+          <p>
+            Avoided interest is generally more predictable than investment
+            growth. A fair comparison should reduce expected investment returns
+            for taxes, fees, and risk rather than comparing the loan rate with an
+            optimistic headline return.
+          </p>
+        </div>
+      </section>
+
+      <section class="card" id="prepayment-penalties">
+        <h2>Check Prepayment Penalties and Principal-Only Rules</h2>
+
+        <p>
+          Some lenders charge a fee for early repayment or limit how much can be
+          paid each year without cost. Others may treat an extra payment as an
+          advance on future installments rather than reducing principal
+          immediately.
+        </p>
+
+        <ul>
+          <li>Ask whether extra payments go directly to principal.</li>
+          <li>Confirm whether you must choose a principal-only option.</li>
+          <li>Check annual or lifetime prepayment limits.</li>
+          <li>Request the exact penalty in writing.</li>
+          <li>Ask whether a full payoff quote includes daily interest.</li>
+          <li>Keep proof of every extra payment and the updated balance.</li>
+        </ul>
+
+        <p>
+          The calculator subtracts the entered penalty from estimated interest
+          savings. If the penalty is close to the interest saved, the payoff may
+          offer little financial advantage.
+        </p>
+      </section>
+
+      <section class="card" id="mortgage">
+        <h2>Should You Pay Off a Mortgage Early?</h2>
+
+        <p>
+          A mortgage is often the largest and longest debt in a household.
+          Paying it early can remove years of interest and create a powerful
+          sense of security. However, the decision must account for emergency
+          savings, retirement progress, taxes, property expenses, and the
+          difficulty of accessing home equity.
+        </p>
+
+        <p>
+          Home equity is valuable, but it is not the same as cash. Recovering
+          money from a property may require selling, refinancing, or opening a
+          credit line. Those options may be expensive or unavailable during a
+          financial crisis.
+        </p>
+
+        <div class="comparison-box">
+          <h3>Mortgage payoff questions</h3>
+
+          <ul>
+            <li>Is the mortgage rate high, low, fixed, or variable?</li>
+            <li>Would the lump sum leave enough cash for major repairs?</li>
+            <li>Are retirement contributions on track?</li>
+            <li>Does local tax treatment reduce the effective mortgage cost?</li>
+            <li>Will the home likely be sold before the payoff benefit is realized?</li>
+            <li>Would partial prepayment reduce the term, payment, or both?</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card" id="car-loan">
+        <h2>Should You Pay Off a Car Loan Early?</h2>
+
+        <p>
+          Cars normally lose value and can require repairs while the loan is
+          still active. Paying a high-rate car loan early may reduce interest
+          and lower the risk of owing more than the vehicle is worth.
+        </p>
+
+        <p>
+          Before using all available savings, keep cash for insurance,
+          registration, tires, maintenance, and unexpected repairs. A car that
+          is paid off but cannot be repaired is not a complete financial
+          solution.
+        </p>
+
+        <ul>
+          <li>Request the lender's exact payoff amount.</li>
+          <li>Confirm that no early payoff fee applies.</li>
+          <li>Check whether the loan uses simple interest or another method.</li>
+          <li>Keep enough cash for vehicle ownership costs.</li>
+          <li>Redirect the old payment into savings after payoff.</li>
+        </ul>
+      </section>
+
+      <section class="card" id="personal-loans">
+        <h2>Paying Off a Personal Loan Early</h2>
+
+        <p>
+          Personal loans often have higher rates than mortgages and may be strong
+          candidates for early payoff. The benefit depends on the remaining
+          balance, rate, term, and any origination or prepayment rules.
+        </p>
+
+        <p>
+          If the personal loan consolidated credit card debt, avoid rebuilding
+          card balances after payoff. The goal is not only to remove one loan
+          but also to change the cash-flow pattern that created the debt.
+        </p>
+      </section>
+
+      <section class="card" id="student-loans">
+        <h2>Paying Off Student Loans Early</h2>
+
+        <p>
+          Student loans may include protections, income-based payment options,
+          subsidies, deferment rights, or forgiveness programs that ordinary
+          loans do not offer. Paying aggressively can reduce interest, but it may
+          also give up valuable flexibility.
+        </p>
+
+        <p>
+          Review the specific loan type, program eligibility, tax treatment,
+          repayment protections, and local rules before making a large lump-sum
+          payment. Do not assume all student debt works the same way.
+        </p>
+      </section>
+
+      <section class="card" id="taxes">
+        <h2>Tax Considerations Before Early Payoff</h2>
+
+        <p>
+          Interest may receive different tax treatment depending on the country,
+          loan type, property use, and taxpayer circumstances. A deductible
+          interest expense may reduce the effective after-tax cost of a loan,
+          but a tax deduction does not make interest free.
+        </p>
+
+        <p>
+          Investment returns can also be taxed. A fair comparison may require
+          reducing the expected return for taxes and fees. Because tax rules
+          change and personal circumstances differ, major decisions may justify
+          professional advice.
+        </p>
+      </section>
+
+      <section class="card" id="inflation">
+        <h2>Inflation and Low Fixed-Rate Loans</h2>
+
+        <p>
+          Inflation can reduce the real burden of a fixed payment over time when
+          income and prices rise. A payment that feels large today may represent
+          a smaller share of future income. This can make very low fixed-rate
+          debt less urgent to eliminate.
+        </p>
+
+        <p>
+          Inflation is not a reason to ignore debt. The borrower must still make
+          every payment, income may not rise with prices, and investment returns
+          are uncertain. It is simply one factor in the comparison.
+        </p>
+      </section>
+
+      <section class="card" id="liquidity">
+        <h2>Liquidity, Flexibility, and the Cost of Locking Up Cash</h2>
+
+        <p>
+          Cash can pay for emergencies, job transitions, medical costs, moving,
+          education, or repairs. Principal paid into a loan normally cannot be
+          withdrawn easily. That means early payoff exchanges liquid savings for
+          lower debt.
+        </p>
+
+        <p>
+          A balanced strategy may preserve flexibility while still reducing
+          interest. For example, you might keep a full emergency fund, make a
+          smaller lump sum, and add a manageable amount to each monthly payment.
+        </p>
+
+        <div class="summary-box">
+          <h3>Three common payoff strategies</h3>
+
+          <ol>
+            <li>
+              <strong>Full payoff:</strong> maximum debt reduction, minimum liquidity.
+            </li>
+            <li>
+              <strong>Partial lump sum:</strong> lower balance while preserving cash.
+            </li>
+            <li>
+              <strong>Monthly extra payment:</strong> gradual progress with more flexibility.
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="card" id="methods">
+        <h2>Ways to Pay Off a Loan Faster</h2>
+
+        <h3>Make a fixed extra principal payment</h3>
+
+        <p>
+          Add the same amount every month and confirm that the lender applies it
+          to principal. This method is simple, predictable, and easy to automate.
+        </p>
+
+        <h3>Use irregular income carefully</h3>
+
+        <p>
+          Bonuses, refunds, gifts, and side-income can reduce principal without
+          increasing the required monthly commitment. Keep enough of the money
+          for taxes and near-term needs.
+        </p>
+
+        <h3>Round up the payment</h3>
+
+        <p>
+          Rounding a payment from $463 to $500 creates a modest recurring extra
+          payment. Small differences can become meaningful over a long term.
+        </p>
+
+        <h3>Redirect payments from finished debts</h3>
+
+        <p>
+          When another debt is paid off, move its former payment to the target
+          loan. This preserves the existing monthly budget while accelerating
+          progress.
+        </p>
+
+        <h3>Refinance only after comparing total cost</h3>
+
+        <p>
+          A lower rate can help, but fees and a longer new term can reduce the
+          benefit. Compare total remaining cost, not only the new payment.
+        </p>
+      </section>
+
+      <section class="card" id="mistakes">
+        <h2>Common Early Payoff Mistakes</h2>
+
+        <ul>
+          <li>Emptying the emergency fund to remove a low-rate loan.</li>
+          <li>Ignoring higher-interest credit card debt.</li>
+          <li>Giving up an employer retirement match.</li>
+          <li>Assuming the lender applies every extra payment to principal.</li>
+          <li>Forgetting prepayment penalties or administrative fees.</li>
+          <li>Using an unrealistically high investment return assumption.</li>
+          <li>Comparing a guaranteed interest saving with an uncertain return as if both were equal.</li>
+          <li>Failing to redirect the old payment into savings after payoff.</li>
+          <li>Paying debt early while postponing urgent home, vehicle, or health costs.</li>
+          <li>Using borrowed money or a credit card to make the payoff.</li>
+        </ul>
+      </section>
+
+      <section class="card" id="examples">
+        <h2>Loan Early Payoff Examples</h2>
+
+        <div class="example-box">
+          <h3>Example 1: High-rate personal loan</h3>
+
+          <p>
+            A borrower has a personal loan at 13% with three years remaining,
+            a strong emergency fund, no credit card balance, and no prepayment
+            penalty. Paying extra may provide a clear benefit because the avoided
+            interest is high and liquidity remains adequate.
+          </p>
+        </div>
+
+        <div class="example-box">
+          <h3>Example 2: Low-rate mortgage and weak savings</h3>
+
+          <p>
+            A household has a fixed mortgage at 2.8% but only one month of
+            emergency savings. A large lump-sum payment would save some interest
+            but create major liquidity risk. Building cash reserves first may be
+            more important.
+          </p>
+        </div>
+
+        <div class="example-box">
+          <h3>Example 3: Car loan with a moderate rate</h3>
+
+          <p>
+            A borrower has a 6.5% car loan, stable income, and enough savings.
+            A partial lump sum plus a fixed monthly extra payment may reduce
+            interest while preserving money for repairs and insurance.
+          </p>
+        </div>
+
+        <div class="example-box">
+          <h3>Example 4: Investment versus payoff</h3>
+
+          <p>
+            A borrower expects an 8% market return and has a 7% loan. The
+            difference is small after taxes and uncertainty. The decision may
+            depend more on risk tolerance, time horizon, and debt-related stress
+            than on the headline percentages.
+          </p>
+        </div>
+      </section>
+
+      <section class="card" id="checklist">
+        <h2>Final Checklist Before Paying Off a Loan Early</h2>
+
+        <div class="summary-box">
+          <ul>
+            <li>I know the current principal balance.</li>
+            <li>I requested an official payoff quote.</li>
+            <li>I confirmed that extra payments reduce principal.</li>
+            <li>I checked for prepayment penalties.</li>
+            <li>I compared interest saved with the penalty and lost liquidity.</li>
+            <li>I will still have an adequate emergency fund.</li>
+            <li>I have no higher-interest debt that should come first.</li>
+            <li>I am not giving up a valuable employer match.</li>
+            <li>I included known expenses over the next 24 months.</li>
+            <li>I used a conservative investment return assumption.</li>
+            <li>I understand relevant tax considerations.</li>
+            <li>I know whether the loan rate is fixed or variable.</li>
+            <li>I considered a partial payoff instead of an all-or-nothing choice.</li>
+            <li>I have a plan for the cash flow freed after payoff.</li>
+            <li>The decision supports both my numbers and my peace of mind.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Useful Debt and Loan Calculators</h2>
+
+        <div class="tool-box">
+          <h3>Review the decision from another angle</h3>
+
+          <p>
+            Use the
+            <a
+              href="https://financecalccenter.com/loan-payment-calculator.html"
+              target="_blank"
+              rel="noopener"
+            >
+              Loan Payment Calculator
+            </a>
+            to compare payment amounts, terms, and total interest.
+          </p>
+
+          <p>
+            For revolving balances, use the
+            <a
+              href="https://financecalccenter.com/credit-card-payoff-calculator.html"
+              target="_blank"
+              rel="noopener"
+            >
+              Credit Card Payoff Calculator
+            </a>.
+          </p>
+
+          <p>
+            You may also compare the opportunity cost with the
+            <a
+              href="https://financecalccenter.com/compound-interest-calculator.html"
+              target="_blank"
+              rel="noopener"
+            >
+              Compound Interest Calculator
+            </a>
+            and review monthly flexibility with a
+            <a
+              href="https://financecalccenter.com/how-to-build-a-simple-household-budget.html"
+              target="_blank"
+              rel="noopener"
+            >
+              Household Budget Guide
+            </a>.
+          </p>
+        </div>
+      </section>
+
+      <section class="card" id="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <h3>How does the Loan Early Payoff Decision Tool work?</h3>
+
+          <p>
+            It compares a standard loan schedule with an accelerated schedule
+            that includes your proposed extra monthly payment, lump sum, or both.
+            It then evaluates interest savings, time savings, emergency fund
+            impact, opportunity cost, and practical risk factors.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Is paying off a loan early always a good idea?</h3>
+
+          <p>
+            No. It can be attractive when the rate is high and savings remain
+            strong, but it may be weaker when the loan rate is low, a penalty
+            applies, or the payoff would empty your emergency fund.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I use the calculator for a mortgage?</h3>
+
+          <p>
+            Yes. Enter the remaining principal, current rate, remaining term,
+            payment, and proposed extra amount. Escrow, taxes, insurance, and
+            lender-specific rules are not included in the amortization estimate.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I use it for a car loan?</h3>
+
+          <p>
+            Yes. The tool is suitable for a standard fixed-rate car loan. Confirm
+            the official payoff amount and keep cash available for repairs,
+            insurance, registration, and maintenance.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What if I do not know my current monthly payment?</h3>
+
+          <p>
+            Leave the payment field blank. The calculator will estimate a normal
+            amortizing payment from the remaining balance, annual rate, and
+            remaining number of months.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What is a principal-only payment?</h3>
+
+          <p>
+            It is an extra payment applied directly to the principal balance
+            rather than treated as an early future installment. Reducing
+            principal sooner is what creates most of the interest savings.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Should I use my emergency fund to pay off debt?</h3>
+
+          <p>
+            Usually not all of it. A strong payoff plan leaves enough accessible
+            cash for income interruptions, repairs, healthcare, and other
+            unexpected expenses.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Should I pay off high-interest debt first?</h3>
+
+          <p>
+            High-interest debt often deserves priority because it creates a
+            larger guaranteed cost. Compare rates, penalties, tax treatment,
+            minimum payments, and account protections before deciding.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Is the loan rate equal to an investment return?</h3>
+
+          <p>
+            Not exactly. Avoided loan interest is generally more predictable.
+            Investment returns are uncertain and may be reduced by taxes, fees,
+            and market losses.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What happens if there is a prepayment penalty?</h3>
+
+          <p>
+            Enter the expected charge in the calculator. The tool subtracts it
+            from estimated interest savings. Request the exact amount from the
+            lender before acting.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Does a lump sum reduce the monthly payment?</h3>
+
+          <p>
+            Not always. Many loans keep the required payment unchanged and
+            shorten the remaining term. Some lenders may recast the loan and
+            reduce the payment, but that normally requires a separate request
+            and may involve a fee.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What is mortgage recasting?</h3>
+
+          <p>
+            Recasting means recalculating the required payment after a large
+            principal reduction while keeping the existing loan and rate.
+            Availability and fees depend on the lender and loan type.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Is it better to make a lump sum or monthly extra payments?</h3>
+
+          <p>
+            A lump sum normally saves more interest when made earlier, but
+            monthly extra payments preserve more liquidity. A combined strategy
+            may balance both goals.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How accurate is the payoff date?</h3>
+
+          <p>
+            It is an estimate based on monthly compounding and the entered
+            payment assumptions. Daily interest, lender rounding, fees, payment
+            dates, and variable rates can change the actual date.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Does the calculator save my information?</h3>
+
+          <p>
+            No. The calculations run locally in your browser and do not require
+            the values to be transmitted to a server.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Is this financial advice?</h3>
+
+          <p>
+            No. The tool provides general educational estimates and decision
+            support. Major, tax-sensitive, or complex decisions may require
+            advice from a qualified professional.
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Related Money Decision Pages</h2>
+
+        <div class="related-grid">
+          <a href="should-i-finance-it.html">
+            Should I Finance It? Guide
+          </a>
+
+          <a href="should-i-finance-it-tool.html">
+            Should I Finance It? Tool
+          </a>
+
+          <a href="should-i-pay-cash.html">
+            Should I Pay Cash?
+          </a>
+
+          <a href="should-i-buy-this.html">
+            Should I Buy This?
+          </a>
+
+          <a
+            href="https://financecalccenter.com/loan-payment-calculator.html"
+            target="_blank"
+            rel="noopener"
+          >
+            Loan Payment Calculator
+          </a>
+
+          <a
+            href="https://financecalccenter.com/credit-card-payoff-calculator.html"
+            target="_blank"
+            rel="noopener"
+          >
+            Credit Card Payoff Calculator
+          </a>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Important Disclaimer</h2>
+
+        <p>
+          This calculator provides simplified estimates for educational and
+          decision-support purposes. Actual lender calculations, payoff amounts,
+          daily interest, fees, taxes, investment returns, deductions, and
+          contract rules can differ.
+        </p>
+
+        <p>
+          The tool does not provide financial, tax, legal, credit, or investment
+          advice. Request an official payoff quote and review the loan agreement
+          before making a large payment. Consider qualified professional advice
+          for major, complex, or tax-sensitive decisions.
+        </p>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <div>
+      <strong>DecideHelper</strong>
+
+      <p>
+        Educational tools for clearer everyday decisions.
+      </p>
+
+      <p>
+        &copy; 2026 DecideHelper.com
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/money/">Money</a>
+      <a href="/tools/">Tools</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy-policy.html">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function numberValue(id) {
+    const raw = document.getElementById(id).value.trim();
+
+    if (raw === "") {
+      return 0;
+    }
+
+    const value = Number(raw);
+
+    return Number.isFinite(value) ? value : 0;
+  }
+
+  function radioValue(name) {
+    const selected = document.querySelector(
+      'input[name="' + name + '"]:checked'
+    );
+
+    return selected ? Number(selected.value) : 0;
+  }
+
+  function selectedText(name) {
+    const selected = document.querySelector(
+      'input[name="' + name + '"]:checked'
+    );
+
+    if (!selected) {
+      return "";
+    }
+
+    return selected.parentElement.textContent.trim();
+  }
+
+  function currencyFormat(value, symbol) {
+    if (!Number.isFinite(value)) {
+      return "—";
+    }
+
+    const rounded = Math.abs(value) >= 1000
+      ? value.toLocaleString(undefined, {
+          maximumFractionDigits: 0
+        })
+      : value.toLocaleString(undefined, {
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2
+        });
+
+    if (symbol === "Ft") {
+      return rounded + " Ft";
+    }
+
+    return symbol + rounded;
+  }
+
+  function percentFormat(value) {
+    if (!Number.isFinite(value)) {
+      return "—";
+    }
+
+    return value.toFixed(2) + "%";
+  }
+
+  function addListItem(list, text) {
+    const item = document.createElement("li");
+    item.textContent = text;
+    list.appendChild(item);
+  }
+
+  function calculateStandardPayment(principal, annualRate, months) {
+    if (principal <= 0 || months <= 0) {
+      return 0;
+    }
+
+    const monthlyRate = annualRate / 100 / 12;
+
+    if (monthlyRate === 0) {
+      return principal / months;
+    }
+
+    const factor = Math.pow(1 + monthlyRate, months);
+
+    return principal * monthlyRate * factor / (factor - 1);
+  }
+
+  function simulateLoan(principal, annualRate, monthlyPayment, maxMonths) {
+    let balance = Math.max(0, principal);
+    let month = 0;
+    let totalInterest = 0;
+    let totalPaid = 0;
+    const monthlyRate = annualRate / 100 / 12;
+    const hardLimit = Math.max(maxMonths || 600, 1200);
+
+    if (balance === 0) {
+      return {
+        months: 0,
+        totalInterest: 0,
+        totalPaid: 0,
+        endingBalance: 0,
+        paidOff: true
+      };
+    }
+
+    if (monthlyPayment <= 0) {
+      return {
+        months: 0,
+        totalInterest: 0,
+        totalPaid: 0,
+        endingBalance: balance,
+        paidOff: false
+      };
+    }
+
+    while (balance > 0.005 && month < hardLimit) {
+      const interest = balance * monthlyRate;
+      let payment = monthlyPayment;
+
+      if (monthlyRate > 0 && payment <= interest) {
+        return {
+          months: month,
+          totalInterest: totalInterest,
+          totalPaid: totalPaid,
+          endingBalance: balance,
+          paidOff: false
+        };
+      }
+
+      if (payment > balance + interest) {
+        payment = balance + interest;
+      }
+
+      totalInterest += interest;
+      totalPaid += payment;
+      balance = balance + interest - payment;
+      month += 1;
+    }
+
+    return {
+      months: month,
+      totalInterest: totalInterest,
+      totalPaid: totalPaid,
+      endingBalance: Math.max(0, balance),
+      paidOff: balance <= 0.005
+    };
+  }
+
+  function payoffDate(startDateValue, months) {
+    const start = startDateValue
+      ? new Date(startDateValue + "T12:00:00")
+      : new Date();
+
+    if (Number.isNaN(start.getTime()) || !Number.isFinite(months)) {
+      return "—";
+    }
+
+    start.setMonth(start.getMonth() + Math.max(0, Math.round(months)));
+
+    return start.toLocaleDateString(undefined, {
+      year: "numeric",
+      month: "long"
+    });
+  }
+
+  function calculatePayoffDecision() {
+    const errorBox = document.getElementById("errorBox");
+    errorBox.style.display = "none";
+    errorBox.textContent = "";
+
+    const symbol = document.getElementById("currency").value;
+    const balance = numberValue("balance");
+    const annualRate = numberValue("annualRate");
+    const remainingMonths = Math.round(numberValue("remainingMonths"));
+    const enteredPayment = numberValue("currentPayment");
+    const extraMonthly = numberValue("extraMonthly");
+    const lumpSum = numberValue("lumpSum");
+    const prepaymentPenalty = numberValue("prepaymentPenalty");
+    const expectedReturn = numberValue("expectedReturn");
+    const taxRate = numberValue("taxRate");
+    const emergencyFund = numberValue("emergencyFund");
+    const essentialExpenses = numberValue("essentialExpenses");
+    const highInterestDebt = numberValue("highInterestDebt");
+    const monthlySavings = numberValue("monthlySavings");
+    const employerMatch = numberValue("employerMatch");
+    const nearTermNeed = numberValue("nearTermNeed");
+    const startDateValue = document.getElementById("payoffStartDate").value;
+
+    const errors = [];
+
+    if (balance <= 0) {
+      errors.push("Enter a remaining loan balance greater than zero.");
+    }
+
+    if (remainingMonths <= 0) {
+      errors.push("Enter at least one remaining month.");
+    }
+
+    if (annualRate < 0) {
+      errors.push("The annual interest rate cannot be negative.");
+    }
+
+    if (lumpSum > balance + prepaymentPenalty) {
+      errors.push("The lump-sum payment should not exceed the remaining balance by more than any known payoff fee.");
+    }
+
+    if (extraMonthly <= 0 && lumpSum <= 0) {
+      errors.push("Enter an extra monthly payment, a lump-sum payment, or both.");
+    }
+
+    if (taxRate < 0 || taxRate > 100) {
+      errors.push("Enter an investment tax rate between 0% and 100%.");
+    }
+
+    if (errors.length > 0) {
+      errorBox.innerHTML = errors.join("<br>");
+      errorBox.style.display = "block";
+      document.getElementById("result").style.display = "none";
+      errorBox.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      });
+      return;
+    }
+
+    const estimatedPayment = calculateStandardPayment(
+      balance,
+      annualRate,
+      remainingMonths
+    );
+
+    const basePayment = enteredPayment > 0
+      ? enteredPayment
+      : estimatedPayment;
+
+    const baseSchedule = simulateLoan(
+      balance,
+      annualRate,
+      basePayment,
+      Math.max(remainingMonths, 1200)
+    );
+
+    if (!baseSchedule.paidOff) {
+      errorBox.textContent =
+        "The entered monthly payment is too low to repay this loan under the entered interest rate.";
+      errorBox.style.display = "block";
+      document.getElementById("result").style.display = "none";
+      return;
+    }
+
+    const actualLumpSum = Math.min(lumpSum, balance);
+    const acceleratedPrincipal = Math.max(0, balance - actualLumpSum);
+    const newMonthlyPayment = basePayment + extraMonthly;
+
+    const acceleratedSchedule = simulateLoan(
+      acceleratedPrincipal,
+      annualRate,
+      newMonthlyPayment,
+      Math.max(remainingMonths, 1200)
+    );
+
+    if (!acceleratedSchedule.paidOff) {
+      errorBox.textContent =
+        "The proposed accelerated payment is not sufficient to repay the remaining balance.";
+      errorBox.style.display = "block";
+      document.getElementById("result").style.display = "none";
+      return;
+    }
+
+    const baseInterest = baseSchedule.totalInterest;
+    const newInterest = acceleratedSchedule.totalInterest;
+    const grossInterestSaved = Math.max(0, baseInterest - newInterest);
+    const netSavings = grossInterestSaved - prepaymentPenalty;
+    const monthsSaved = Math.max(0, baseSchedule.months - acceleratedSchedule.months);
+    const remainingEmergency = Math.max(0, emergencyFund - actualLumpSum - nearTermNeed);
+    const emergencyCoverage = essentialExpenses > 0
+      ? remainingEmergency / essentialExpenses
+      : NaN;
+
+    const afterTaxExpectedReturn =
+      expectedReturn * (1 - Math.min(Math.max(taxRate, 0), 100) / 100);
+
+    const rateAdvantage = annualRate - afterTaxExpectedReturn;
+
+    let score =
+      radioValue("incomeStability") +
+      radioValue("retirementImpact") +
+      radioValue("contractClarity") +
+      radioValue("peaceOfMind") +
+      radioValue("investmentDiscipline") +
+      radioValue("futureRisk") +
+      radioValue("principalApplication") +
+      radioValue("priorityComparison");
+
+    const positives = [];
+    const warnings = [];
+    const steps = [];
+
+    if (annualRate >= 12) {
+      score += 18;
+      positives.push("The loan rate is very high, so early principal reduction may avoid substantial interest.");
+    } else if (annualRate >= 8) {
+      score += 14;
+      positives.push("The loan rate is high enough to make early payoff financially attractive.");
+    } else if (annualRate >= 5) {
+      score += 9;
+      positives.push("The loan rate is moderate and creates a meaningful guaranteed cost.");
+    } else if (annualRate >= 3) {
+      score += 3;
+    } else {
+      score -= 6;
+      warnings.push("The loan rate is very low, so liquidity and other long-term goals may deserve more weight.");
+    }
+
+    if (netSavings > balance * 0.15) {
+      score += 12;
+      positives.push("The estimated net interest savings exceed 15% of the current balance.");
+    } else if (netSavings > balance * 0.05) {
+      score += 8;
+      positives.push("The estimated net savings are meaningful compared with the current balance.");
+    } else if (netSavings > 0) {
+      score += 3;
+    } else {
+      score -= 12;
+      warnings.push("The entered prepayment cost removes the estimated interest benefit.");
+    }
+
+    if (monthsSaved >= 60) {
+      score += 9;
+      positives.push("The accelerated plan may remove at least five years of payments.");
+    } else if (monthsSaved >= 24) {
+      score += 6;
+      positives.push("The accelerated plan may remove at least two years of payments.");
+    } else if (monthsSaved >= 6) {
+      score += 2;
+    }
+
+    if (Number.isFinite(emergencyCoverage)) {
+      if (emergencyCoverage >= 6) {
+        score += 10;
+        positives.push("The remaining emergency fund covers at least six months of essential expenses.");
+      } else if (emergencyCoverage >= 3) {
+        score += 6;
+        positives.push("The remaining emergency fund covers at least three months of essential expenses.");
+      } else if (emergencyCoverage >= 1) {
+        score -= 6;
+        warnings.push("The proposed lump sum would leave less than three months of essential expenses.");
+      } else {
+        score -= 18;
+        warnings.push("The proposed payoff plan would leave less than one month of essential expenses.");
+      }
+    } else {
+      score -= 4;
+      warnings.push("Emergency fund coverage could not be measured because essential expenses were not entered.");
+    }
+
+    if (highInterestDebt > 0) {
+      score -= 14;
+      warnings.push("Other high-interest debt may deserve priority before accelerating this loan.");
+    }
+
+    if (employerMatch > 0) {
+      score -= 10;
+      warnings.push("The plan may sacrifice an available employer contribution.");
+    }
+
+    if (nearTermNeed > 0 && remainingEmergency < nearTermNeed) {
+      score -= 7;
+      warnings.push("Known near-term cash needs may compete with the proposed lump-sum payment.");
+    }
+
+    if (rateAdvantage >= 3) {
+      score += 9;
+      positives.push("The loan rate exceeds the entered after-tax investment return by at least three percentage points.");
+    } else if (rateAdvantage >= 0) {
+      score += 4;
+      positives.push("The loan rate is at least as high as the entered after-tax investment return.");
+    } else if (rateAdvantage > -2) {
+      score -= 2;
+      warnings.push("The investment assumption is only slightly higher than the loan rate and is not guaranteed.");
+    } else {
+      score -= 8;
+      warnings.push("The entered after-tax investment return is materially higher than the loan rate, although it remains uncertain.");
+    }
+
+    if (prepaymentPenalty > 0) {
+      const penaltyShare = grossInterestSaved > 0
+        ? prepaymentPenalty / grossInterestSaved
+        : 1;
+
+      if (penaltyShare >= 0.75) {
+        score -= 12;
+        warnings.push("The prepayment charge consumes most of the estimated interest savings.");
+      } else if (penaltyShare >= 0.25) {
+        score -= 6;
+        warnings.push("The prepayment charge removes a meaningful part of the estimated savings.");
+      } else {
+        score -= 2;
+      }
+    }
+
+    if (extraMonthly > monthlySavings && monthlySavings > 0) {
+      score -= 4;
+      warnings.push("The proposed extra payment is larger than the amount currently saved or invested each month.");
+    }
+
+    if (selectedText("principalApplication").includes("not sure")) {
+      warnings.push("Confirm that extra payments are applied directly to principal.");
+    }
+
+    if (selectedText("contractClarity").includes("Variable")) {
+      positives.push("Reducing variable-rate debt may lower exposure to future rate increases.");
+    }
+
+    if (selectedText("peaceOfMind").includes("Very important")) {
+      positives.push("Becoming debt-free is a stated personal priority.");
+    }
+
+    if (selectedText("investmentDiscipline").startsWith("No")) {
+      positives.push("Paying the loan may create more reliable progress than an investment plan that would not be followed.");
+    }
+
+    score = Math.max(0, Math.min(100, Math.round(score)));
+
+    let recommendation = "";
+    let recommendationText = "";
+    let statusClass = "";
+    let statusTitle = "";
+    let statusText = "";
+
+    if (score >= 85) {
+      recommendation = "Strong Case for Early Payoff";
+      recommendationText =
+        "The entered numbers and priorities support accelerating the loan. Confirm the lender's payoff rules, preserve the planned emergency reserve, and direct payments to principal.";
+      statusClass = "status-good";
+      statusTitle = "Early payoff appears well supported";
+      statusText =
+        "The estimated savings are meaningful and the plan appears less likely to weaken liquidity or higher-priority financial goals.";
+    } else if (score >= 70) {
+      recommendation = "Early Payoff May Be Reasonable";
+      recommendationText =
+        "The payoff plan appears workable, but one or two trade-offs deserve review. A partial lump sum or smaller recurring extra payment may improve flexibility.";
+      statusClass = "status-good";
+      statusTitle = "Potentially worthwhile";
+      statusText =
+        "The mathematical benefit is useful, but the final decision should account for cash reserves, investment priorities, and contract rules.";
+    } else if (score >= 55) {
+      recommendation = "Consider a Balanced Payoff Plan";
+      recommendationText =
+        "The decision is borderline. Instead of using all available cash, consider preserving a stronger emergency fund and making a smaller lump sum or monthly extra payment.";
+      statusClass = "status-caution";
+      statusTitle = "Benefit with important trade-offs";
+      statusText =
+        "The plan may save interest, but liquidity or opportunity cost reduces the strength of a full early payoff.";
+    } else if (score >= 35) {
+      recommendation = "Pause Before Paying Aggressively";
+      recommendationText =
+        "Several factors weaken the current plan. Strengthen emergency savings, review higher-interest debt, confirm penalties, and protect retirement contributions first.";
+      statusClass = "status-caution";
+      statusTitle = "High caution";
+      statusText =
+        "Paying this loan early may create a larger weakness elsewhere in the financial plan.";
+    } else {
+      recommendation = "Do Not Prioritize Early Payoff Yet";
+      recommendationText =
+        "Based on the entered information, preserving liquidity or addressing higher-priority goals appears more important than accelerating this loan right now.";
+      statusClass = "status-risk";
+      statusTitle = "Weak early payoff case";
+      statusText =
+        "The loan rate, penalty, emergency fund impact, or competing priorities make aggressive payoff unattractive in its current form.";
+    }
+
+    if (positives.length === 0) {
+      positives.push("No strong positive factor was identified. The decision may improve with a lower penalty, higher rate, or stronger savings buffer.");
+    }
+
+    if (warnings.length === 0) {
+      warnings.push("No major warning was detected, but the official loan contract and payoff quote should still be checked.");
+    }
+
+    steps.push("Request an official payoff quote and confirm how extra payments are applied.");
+
+    if (emergencyCoverage < 3) {
+      steps.push("Reduce the proposed lump sum or build a larger emergency reserve first.");
+    }
+
+    if (highInterestDebt > 0) {
+      steps.push("Compare this loan with your higher-interest balances before choosing the payoff target.");
+    }
+
+    if (employerMatch > 0) {
+      steps.push("Protect any valuable employer retirement match before increasing loan payments.");
+    }
+
+    if (prepaymentPenalty > 0) {
+      steps.push("Ask whether the prepayment charge falls over time or whether penalty-free partial payments are allowed.");
+    }
+
+    if (rateAdvantage < 0) {
+      steps.push("Compare the payoff with a conservative after-tax investment scenario rather than an optimistic return.");
+    }
+
+    steps.push("Create a plan for the monthly cash flow that becomes available after the loan is paid off.");
+
+    document.getElementById("scoreNumber").textContent = score;
+    document.getElementById("recommendation").textContent = recommendation;
+    document.getElementById("recommendationText").textContent = recommendationText;
+
+    document.getElementById("basePaymentResult").textContent =
+      currencyFormat(basePayment, symbol);
+
+    document.getElementById("newPaymentResult").textContent =
+      currencyFormat(newMonthlyPayment, symbol);
+
+    document.getElementById("baseInterestResult").textContent =
+      currencyFormat(baseInterest, symbol);
+
+    document.getElementById("newInterestResult").textContent =
+      currencyFormat(newInterest, symbol);
+
+    document.getElementById("interestSavedResult").textContent =
+      currencyFormat(grossInterestSaved, symbol);
+
+    document.getElementById("monthsSavedResult").textContent =
+      monthsSaved.toLocaleString() + " months";
+
+    document.getElementById("payoffDateResult").textContent =
+      payoffDate(startDateValue, acceleratedSchedule.months);
+
+    document.getElementById("remainingEmergencyResult").textContent =
+      currencyFormat(remainingEmergency, symbol);
+
+    document.getElementById("coverageResult").textContent =
+      Number.isFinite(emergencyCoverage)
+        ? emergencyCoverage.toFixed(1) + " months"
+        : "Not calculated";
+
+    document.getElementById("netSavingsResult").textContent =
+      currencyFormat(netSavings, symbol);
+
+    document.getElementById("afterTaxReturnResult").textContent =
+      percentFormat(afterTaxExpectedReturn);
+
+    document.getElementById("rateAdvantageResult").textContent =
+      (rateAdvantage >= 0 ? "+" : "") + rateAdvantage.toFixed(2) + " percentage points";
+
+    const statusPanel = document.getElementById("statusPanel");
+    statusPanel.className = "status-panel " + statusClass;
+
+    document.getElementById("statusTitle").textContent = statusTitle;
+    document.getElementById("statusText").textContent = statusText;
+
+    const positiveItems = document.getElementById("positiveItems");
+    const warningItems = document.getElementById("warningItems");
+    const nextStepItems = document.getElementById("nextStepItems");
+
+    positiveItems.innerHTML = "";
+    warningItems.innerHTML = "";
+    nextStepItems.innerHTML = "";
+
+    positives.slice(0, 8).forEach(function(item) {
+      addListItem(positiveItems, item);
+    });
+
+    warnings.slice(0, 9).forEach(function(item) {
+      addListItem(warningItems, item);
+    });
+
+    steps.slice(0, 7).forEach(function(item) {
+      addListItem(nextStepItems, item);
+    });
+
+    document.getElementById("result").style.display = "block";
+
+    document.getElementById("result").scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }
+
+  function resetCalculator() {
+    const fields = [
+      "balance",
+      "annualRate",
+      "remainingMonths",
+      "currentPayment",
+      "extraMonthly",
+      "lumpSum",
+      "prepaymentPenalty",
+      "expectedReturn",
+      "taxRate",
+      "payoffStartDate",
+      "emergencyFund",
+      "essentialExpenses",
+      "highInterestDebt",
+      "monthlySavings",
+      "employerMatch",
+      "nearTermNeed"
+    ];
+
+    fields.forEach(function(id) {
+      document.getElementById(id).value = "";
+    });
+
+    document.getElementById("currency").value = "$";
+    document.getElementById("loanType").value = "mortgage";
+
+    const defaults = {
+      incomeStability: "5",
+      retirementImpact: "5",
+      contractClarity: "5",
+      peaceOfMind: "5",
+      investmentDiscipline: "5",
+      futureRisk: "5",
+      principalApplication: "4",
+      priorityComparison: "5"
+    };
+
+    Object.keys(defaults).forEach(function(name) {
+      const input = document.querySelector(
+        'input[name="' +
+        name +
+        '"][value="' +
+        defaults[name] +
+        '"]'
+      );
+
+      if (input) {
+        input.checked = true;
+      }
+    });
+
+    document.getElementById("result").style.display = "none";
+    document.getElementById("errorBox").style.display = "none";
+
+    document.getElementById("calculator").scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }
+</script>
+
+</body>
+</html>
