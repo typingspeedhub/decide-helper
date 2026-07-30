@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <script async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1607876440670769"
+    crossorigin="anonymous"></script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>DecideHelper | Make Better Everyday Decisions</title>
-  <meta name="description" content="DecideHelper helps you make better everyday decisions about money, shopping, home, career, and technology with simple guides and decision tools.">
+  <title>Shopping Decisions | DecideHelper</title>
+
+  <meta
+    name="description"
+    content="Shopping decision guides and tools to help you decide whether to buy new or used, wait for a sale, repair or replace, and make smarter purchase decisions."
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://decidehelper.com/shopping/"
+  >
 
   <style>
     body {
@@ -16,7 +32,8 @@
       line-height: 1.6;
     }
 
-    header {
+    header,
+    footer {
       background: #0f172a;
       color: white;
       padding: 24px 20px;
@@ -37,88 +54,96 @@
       margin-top: 12px;
     }
 
-    nav a {
+    nav a,
+    footer a {
       color: #cbd5e1;
       text-decoration: none;
       margin-right: 18px;
       font-size: 15px;
     }
 
-    nav a:hover {
+    nav a:hover,
+    footer a:hover {
       color: white;
     }
 
     .hero {
       background: linear-gradient(135deg, #1e293b, #334155);
       color: white;
-      padding: 70px 20px;
+      padding: 65px 20px;
       text-align: center;
     }
 
     .hero h1 {
       font-size: 44px;
+      margin-top: 0;
       margin-bottom: 16px;
     }
 
     .hero p {
-      max-width: 720px;
+      max-width: 760px;
       margin: auto;
-      font-size: 18px;
       color: #e2e8f0;
+      font-size: 18px;
     }
 
-    .section {
+    main {
       padding: 50px 20px;
     }
 
-    .section h2 {
+    .section-title {
       text-align: center;
       font-size: 32px;
+      margin-top: 0;
       margin-bottom: 12px;
     }
 
     .section-intro {
+      max-width: 760px;
+      margin: 0 auto 36px;
       text-align: center;
-      max-width: 700px;
-      margin: 0 auto 35px;
       color: #4b5563;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 22px;
     }
 
     .card {
+      display: block;
       background: white;
       border-radius: 14px;
       padding: 24px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
       text-decoration: none;
       color: inherit;
       border: 1px solid #e5e7eb;
+      transition: 0.2s;
     }
 
     .card:hover {
       transform: translateY(-3px);
-      transition: 0.2s;
-      box-shadow: 0 8px 22px rgba(0,0,0,0.09);
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.09);
     }
 
     .card h3 {
       margin-top: 0;
+      margin-bottom: 10px;
       font-size: 22px;
+      color: #111827;
     }
 
     .card p {
       color: #4b5563;
       font-size: 15px;
+      margin-bottom: 0;
     }
 
     .tag {
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 14px;
       font-size: 13px;
       background: #e0f2fe;
       color: #0369a1;
@@ -129,48 +154,62 @@
     .coming {
       background: #f3f4f6;
       color: #6b7280;
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      padding: 24px;
     }
 
-    .latest {
+    .coming h3 {
+      margin-top: 0;
+      font-size: 22px;
+    }
+
+    .coming p {
+      color: #6b7280;
+      font-size: 15px;
+    }
+
+    .coming .tag {
+      background: #e5e7eb;
+      color: #6b7280;
+    }
+
+    .info-section {
+      margin-top: 55px;
       background: white;
       border-radius: 14px;
-      padding: 28px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-      max-width: 850px;
-      margin: auto;
+      padding: 30px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
     }
 
-    .latest ul {
-      padding-left: 20px;
+    .info-section h2 {
+      margin-top: 0;
+      font-size: 28px;
     }
 
-    .latest a {
-      color: #2563eb;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .latest a:hover {
-      text-decoration: underline;
+    .info-section p {
+      color: #4b5563;
     }
 
     footer {
-      background: #0f172a;
-      color: #cbd5e1;
       text-align: center;
-      padding: 30px 20px;
       margin-top: 40px;
       font-size: 14px;
     }
 
-    footer a {
-      color: #cbd5e1;
-      margin: 0 8px;
-      text-decoration: none;
+    footer p {
+      margin: 8px 0;
     }
 
-    footer a:hover {
-      color: white;
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin-bottom: 8px;
+      }
     }
   </style>
 </head>
@@ -179,180 +218,228 @@
 
 <header>
   <div class="container">
-    <div class="logo">DecideHelper</div>
+
+    <div class="logo">
+      DecideHelper
+    </div>
+
     <nav>
-      <a href="index.html">Home</a>
-      <a href="money/">Money Decisions</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a href="../index.html">Home</a>
+      <a href="../money/">Money Decisions</a>
+      <a href="index.html">Shopping Decisions</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
     </nav>
+
   </div>
 </header>
 
 <section class="hero">
   <div class="container">
-    <h1>Make Better Everyday Decisions</h1>
+
+    <h1>Shopping Decisions</h1>
+
     <p>
-      DecideHelper gives you simple guides and practical decision tools to help you make smarter choices about money, shopping, home, career, and technology.
+      Compare price, quality, timing, condition, warranty, lifespan,
+      repair risk, and long-term value before making a purchase.
     </p>
+
   </div>
 </section>
 
-<section class="section">
+<main>
   <div class="container">
-    <h2>Decision Categories</h2>
+
+    <h2 class="section-title">
+      Shopping Guides and Decision Tools
+    </h2>
+
     <p class="section-intro">
-      Start with the area where you need help. More guides and interactive decision tools will be added regularly.
+      Use these practical guides and interactive tools to decide whether
+      to buy now or wait, choose new or used, and avoid expensive
+      or unnecessary purchases.
     </p>
 
     <div class="grid">
 
-      <a href="money/" class="card">
-        <h3>💰 Money Decisions</h3>
+      <a
+        href="should-i-buy-new-or-used.html"
+        class="card"
+      >
+        <h3>
+          Should I Buy New or Used?
+        </h3>
+
         <p>
-          Decide whether to buy, finance, save, invest, refinance, or pay off debt.
+          Compare purchase price, condition, warranty, lifespan,
+          repair risk, reliability, and resale value before choosing.
         </p>
-        <span class="tag">Available now</span>
+
+        <span class="tag">
+          Guide
+        </span>
       </a>
 
-     <a href="shopping/" class="card">
-    <h3>🛒 Shopping Decisions</h3>
+      <a
+        href="should-i-buy-new-or-used-tool.html"
+        class="card"
+      >
+        <h3>
+          Should I Buy New or Used? Decision Tool
+        </h3>
 
-    <p>
-    Compare buying now or later,
-    new or used, repair or replace,
-    and subscription value.
-    </p>
-
-  <span class="tag">Available now</span>
-</a>
-
-      <div class="card coming">
-        <h3>🏠 Home Decisions</h3>
         <p>
-          Make better choices about repairs, appliances, renovations, rent, and home upgrades.
+          Compare long-term ownership costs, reliability, warranty,
+          condition, resale value, and receive a practical decision score.
         </p>
-        <span class="tag">Coming soon</span>
+
+        <span class="tag">
+          Decision tool
+        </span>
+      </a>
+
+      <a
+        href="should-i-wait-for-a-sale.html"
+        class="card"
+      >
+        <h3>
+          Should I Wait for a Sale?
+        </h3>
+
+        <p>
+          Decide whether to buy now or wait by comparing urgency,
+          price history, expected discounts, stock risk,
+          and the cost of delaying the purchase.
+        </p>
+
+        <span class="tag">
+          New guide
+        </span>
+      </a>
+
+      <div class="coming">
+        <h3>
+          Should I Wait for a Sale? Decision Tool
+        </h3>
+
+        <p>
+          Compare the current price, likely discount, urgency,
+          availability risk, and the financial cost of waiting.
+        </p>
+
+        <span class="tag">
+          Coming soon
+        </span>
       </div>
 
-      <div class="card coming">
-        <h3>💼 Career Decisions</h3>
+      <div class="coming">
+        <h3>
+          Should I Repair or Replace?
+        </h3>
+
         <p>
-          Think through job offers, raises, remote work, promotion, freelancing, and career changes.
+          Compare repair costs, replacement price, age,
+          expected lifespan, reliability, and future maintenance.
         </p>
-        <span class="tag">Coming soon</span>
+
+        <span class="tag">
+          Coming soon
+        </span>
       </div>
 
-      <div class="card coming">
-        <h3>📱 Technology Decisions</h3>
+      <div class="coming">
+        <h3>
+          Should I Buy an Extended Warranty?
+        </h3>
+
         <p>
-          Decide whether to upgrade, switch providers, buy subscriptions, or replace devices.
+          Compare warranty cost, failure risk, repair expenses,
+          manufacturer coverage, and product reliability.
         </p>
-        <span class="tag">Coming soon</span>
+
+        <span class="tag">
+          Coming soon
+        </span>
+      </div>
+
+      <div class="coming">
+        <h3>
+          Should I Subscribe or Buy?
+        </h3>
+
+        <p>
+          Compare recurring subscription costs with ownership,
+          flexibility, usage frequency, and long-term value.
+        </p>
+
+        <span class="tag">
+          Coming soon
+        </span>
+      </div>
+
+      <div class="coming">
+        <h3>
+          Should I Upgrade My Phone?
+        </h3>
+
+        <p>
+          Compare performance, battery health, software support,
+          repair cost, trade-in value, and the price of upgrading.
+        </p>
+
+        <span class="tag">
+          Coming soon
+        </span>
       </div>
 
     </div>
-  </div>
-</section>
 
-<section class="section">
-  <div class="container">
-    <h2>Latest Decision Guides</h2>
+    <section class="info-section">
 
-    <div class="latest">
-      <ul>
+      <h2>
+        How to Make Better Shopping Decisions
+      </h2>
 
-        <li>
-      <a href="shopping/should-i-buy-new-or-used.html">
-        Should I Buy New or Used?
-      </a>
-      — compare purchase price, condition, warranty, lifespan, repair risk, and resale value.
-    </li>
-
-    <li>
-      <a href="shopping/should-i-buy-new-or-used-tool.html">
-        Should I Buy New or Used? Decision Tool
-      </a>
-      — compare long-term ownership costs, reliability, warranty, resale value, and receive a practical decision score.
-    </li>
-        
-        <li>
-          <a href="money/should-i-buy-this.html">Should I Buy This?</a>
-          — decide whether a purchase is worth it or whether you should wait.
-        </li>
-
-        <li>
-          <a href="money/should-i-finance-it.html">Should I Finance It?</a>
-          — compare monthly payments, interest, total cost, and financing risk.
-        </li>
-
-        <li>
-          <a href="money/should-i-pay-cash.html">Should I Pay Cash?</a>
-          — compare paying cash with financing while protecting your savings.
-        </li>
-
-        <li>
-          <a href="money/should-i-refinance.html">
-          Should I Refinance?
-          </a>
-          — compare your current loan with a new offer, including interest rates, fees, total cost, and break-even time.
-        </li>
-        <li>
-          <a href="money/loan-early-payoff-decision-tool.html">
-            Loan Early Payoff Decision Tool
-          </a>
-          — estimate interest savings, payoff time, liquidity impact, and whether early repayment may make sense.
-        </li>
-      </ul>
       <p>
-       Explore practical money and shopping decision guides and interactive tools designed to help you compare costs, risks, alternatives, and long-term impact before making a choice.
+        A low price does not automatically make a purchase worthwhile.
+        Before buying, consider whether the product solves a real problem,
+        how often you will use it, how long it should last,
+        and whether a cheaper or more practical alternative exists.
       </p>
-    </div>
+
+      <p>
+        DecideHelper shopping guides help you compare immediate price
+        with long-term ownership costs, reliability, warranty protection,
+        repair risk, resale value, and the cost of waiting.
+      </p>
+
+      <p>
+        Start with a detailed guide to understand the decision,
+        then use a decision tool when available to compare your options
+        using your own situation.
+      </p>
+
+    </section>
+
   </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <h2>How DecideHelper Works</h2>
-
-    <div class="grid">
-      <div class="card">
-        <h3>1. Read the guide</h3>
-        <p>
-          Understand the most important factors behind the decision.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>2. Use the tool</h3>
-        <p>
-          Answer simple questions and get a practical decision score.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>3. Decide with more confidence</h3>
-        <p>
-          See the pros, risks, and next steps before making your choice.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+</main>
 
 <footer>
+
   <p>
     © 2026 DecideHelper.com
   </p>
+
   <p>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-  <a href="privacy-policy.html">Privacy Policy</a>
-  <a href="terms-and-conditions.html">Terms</a>
-  <a href="disclaimer.html">Disclaimer</a>
-</p>
+    <a href="../index.html">Home</a>
+    <a href="../about.html">About</a>
+    <a href="../contact.html">Contact</a>
+    <a href="../privacy-policy.html">Privacy Policy</a>
+    <a href="../terms-and-conditions.html">Terms</a>
+    <a href="../disclaimer.html">Disclaimer</a>
+  </p>
+
 </footer>
 
 </body>
 </html>
-
