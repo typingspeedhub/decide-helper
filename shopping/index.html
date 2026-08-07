@@ -98,7 +98,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 22px;
     }
 
@@ -186,7 +186,17 @@
       margin: 8px 0;
     }
 
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
     @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
       .hero h1 {
         font-size: 34px;
       }
@@ -233,21 +243,31 @@
   <section class="section">
     <div class="container">
 
-      <h2>Shopping Decision Guides</h2>
+      <h2>Shopping Guides and Decision Tools</h2>
 
       <p class="section-intro">
-        These practical guides will help you compare cost, usefulness,
-        timing, product condition, long-term value, and the risk of buyer’s remorse.
+        Use these practical guides and interactive tools to decide whether to buy now or wait,
+        choose new or used, repair or replace, subscribe or buy, and make better long-term purchase decisions.
       </p>
 
       <div class="grid">
+
         <a href="should-i-buy-new-or-used.html" class="card">
           <h3>Should I Buy New or Used?</h3>
           <p>
-            Compare price, condition, warranty coverage, expected lifespan,
+            Compare purchase price, condition, warranty, lifespan,
             repair risk, reliability, and resale value before choosing.
           </p>
           <span class="tag">Guide</span>
+        </a>
+
+        <a href="should-i-buy-new-or-used-tool.html" class="card">
+          <h3>Should I Buy New or Used? Decision Tool</h3>
+          <p>
+            Compare long-term ownership costs, reliability, warranty,
+            condition, resale value, and receive a practical decision score.
+          </p>
+          <span class="tag">Decision tool</span>
         </a>
 
         <a href="should-i-wait-for-a-sale.html" class="card">
@@ -260,70 +280,6 @@
           <span class="tag">Guide</span>
         </a>
 
-        <a href="should-i-repair-or-replace.html" class="card">
-          <h3>Should I Repair or Replace?</h3>
-          <p>
-            Compare repair cost, replacement price, age, reliability,
-            safety, energy efficiency, expected lifespan, and long-term value
-            before deciding whether to fix or replace an item.
-          </p>
-          <span class="tag">Guide</span>
-        </a>
-
-        <div class="card coming">
-          <h3>Should I Buy an Extended Warranty?</h3>
-          <p>
-            Compare warranty cost, failure risk, repair expenses,
-            manufacturer coverage, product reliability,
-            and the value of additional protection.
-          </p>
-          <span class="tag">Coming Aug 8</span>
-        </div>
-
-        <div class="card coming">
-          <h3>Should I Subscribe or Buy?</h3>
-          <p>
-            Compare recurring subscription costs with ownership,
-            flexibility, usage frequency, maintenance,
-            and long-term value.
-          </p>
-          <span class="tag">Coming Aug 13</span>
-        </div>
-
-        <div class="card coming">
-          <h3>Should I Upgrade My Phone?</h3>
-          <p>
-            Compare performance, battery health, software support,
-            repair cost, trade-in value, and the price of upgrading.
-          </p>
-          <span class="tag">Coming Aug 18</span>
-        </div>
-</div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-
-      <h2>Shopping Decision Tools</h2>
-
-      <p class="section-intro">
-       Use these interactive decision tools to compare repair costs,
-       replacement costs, purchase price, warranty, reliability,
-       long-term ownership costs, and receive practical recommendations
-       based on your own situation.
-      </p>
-
-      <div class="grid">
-        <a href="should-i-buy-new-or-used-tool.html" class="card">
-          <h3>Should I Buy New or Used? Decision Tool</h3>
-          <p>
-            Compare purchase price, expected lifespan, repair risk,
-            warranty, running costs, resale value, and receive a practical score.
-          </p>
-          <span class="tag">Decision tool</span>
-        </a>
-
         <a href="should-i-wait-for-a-sale-tool.html" class="card">
           <h3>Should I Wait for a Sale? Decision Tool</h3>
           <p>
@@ -332,6 +288,16 @@
             to receive a practical buy now or wait recommendation.
           </p>
           <span class="tag">Decision tool</span>
+        </a>
+
+        <a href="should-i-repair-or-replace.html" class="card">
+          <h3>Should I Repair or Replace?</h3>
+          <p>
+            Compare repair cost, replacement price, age, safety,
+            expected lifespan, reliability, energy efficiency,
+            downtime, warranty, and long-term value.
+          </p>
+          <span class="tag">Guide</span>
         </a>
 
         <a href="should-i-repair-or-replace-tool.html" class="card">
@@ -345,6 +311,16 @@
         </a>
 
         <div class="card coming">
+          <h3>Should I Buy an Extended Warranty?</h3>
+          <p>
+            Compare warranty cost, failure risk, repair expenses,
+            manufacturer coverage, product reliability,
+            and the value of additional protection.
+          </p>
+          <span class="tag">Coming Aug 8</span>
+        </div>
+
+        <div class="card coming">
           <h3>Extended Warranty Decision Tool</h3>
           <p>
             Compare warranty price, expected repair costs,
@@ -352,6 +328,16 @@
             product lifespan, and replacement risk.
           </p>
           <span class="tag">Coming Aug 11</span>
+        </div>
+
+        <div class="card coming">
+          <h3>Should I Subscribe or Buy?</h3>
+          <p>
+            Compare recurring subscription costs with ownership,
+            flexibility, usage frequency, maintenance,
+            and long-term value.
+          </p>
+          <span class="tag">Coming Aug 13</span>
         </div>
 
         <div class="card coming">
@@ -365,6 +351,15 @@
         </div>
 
         <div class="card coming">
+          <h3>Should I Upgrade My Phone?</h3>
+          <p>
+            Compare performance, battery health, software support,
+            repair cost, trade-in value, and the price of upgrading.
+          </p>
+          <span class="tag">Coming Aug 18</span>
+        </div>
+
+        <div class="card coming">
           <h3>Phone Upgrade Decision Tool</h3>
           <p>
             Compare your current phone's age, battery condition,
@@ -373,7 +368,8 @@
           </p>
           <span class="tag">Coming Aug 20</span>
         </div>
-</div>
+
+      </div>
     </div>
   </section>
 
