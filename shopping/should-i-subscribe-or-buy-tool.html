@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-68ZVCW4FWK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-68ZVCW4FWK");
+  </script>
+
+  <!-- Google AdSense -->
+  <script async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1607876440670769"
+    crossorigin="anonymous"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Should I Subscribe or Buy? Decision Tool & Calculator | DecideHelper</title>
+  <meta name="description" content="Use this free Subscribe vs Buy calculator to compare total subscription cost, purchase cost, resale value, maintenance, upgrades, flexibility, price increases, usage, and break-even time.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="DecideHelper">
+  <link rel="canonical" href="https://decidehelper.com/shopping/should-i-subscribe-or-buy-tool.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DecideHelper">
+  <meta property="og:title" content="Should I Subscribe or Buy? Decision Tool & Calculator">
+  <meta property="og:description" content="Compare subscription costs with buying outright, including resale value, maintenance, upgrades, flexibility, price increases, usage, and long-term ownership value.">
+  <meta property="og:url" content="https://decidehelper.com/shopping/should-i-subscribe-or-buy-tool.html">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Should I Subscribe or Buy? Decision Tool">
+  <meta name="twitter:description" content="A free calculator for comparing recurring subscription costs with the true long-term cost of buying.">
+
+  <style>
+    :root{
+      --bg:#f5f7fb;--surface:#fff;--surface-soft:#eff6ff;--surface-muted:#f8fafc;
+      --text:#1f2937;--muted:#5f6b7a;--heading:#0f172a;--primary:#2563eb;
+      --primary-dark:#1d4ed8;--green:#15803d;--green-soft:#f0fdf4;
+      --amber:#92400e;--amber-soft:#fffbeb;--red:#991b1b;--red-soft:#fef2f2;
+      --border:#dbe3ef;--shadow:0 14px 36px rgba(15,23,42,.08);
+      --radius:16px;--max-width:1100px;
+    }
+    *{box-sizing:border-box}html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+    a{color:var(--primary-dark)}a:hover{text-decoration-thickness:2px}
+    button,input,select{font:inherit}
+    header{background:#0f172a;color:#fff;padding:24px 20px}
+    .header-inner,.footer-inner{max-width:var(--max-width);margin:0 auto}
+    .logo{display:inline-block;color:#fff;text-decoration:none;font-size:27px;font-weight:700;letter-spacing:-.02em}
+    .tagline{margin:5px 0 0;color:#cbd5e1;font-size:15px}
+    .primary-nav{margin-top:16px;display:flex;gap:16px;flex-wrap:wrap}
+    .primary-nav a{color:#e2e8f0;text-decoration:none;font-weight:600}
+    .primary-nav a:hover{color:#fff;text-decoration:underline}
+    .container{max-width:var(--max-width);margin:0 auto;padding:0 20px}
+    .breadcrumb{padding:22px 0 8px;color:var(--muted);font-size:14px}.breadcrumb a{color:var(--muted)}
+    main{padding-bottom:60px}.page-shell{margin-top:12px;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+    .hero{padding:52px 48px 42px;background:linear-gradient(135deg,#eff6ff 0%,#fff 55%,#f8fafc 100%);border-bottom:1px solid var(--border)}
+    .eyebrow{display:inline-block;margin-bottom:14px;padding:6px 11px;border-radius:999px;background:#dbeafe;color:#1e40af;font-size:13px;font-weight:700;letter-spacing:.03em;text-transform:uppercase}
+    h1{margin:0;max-width:920px;color:var(--heading);font-size:clamp(38px,6vw,62px);line-height:1.08;letter-spacing:-.04em}
+    .hero-intro{max-width:890px;margin:24px 0 0;font-size:20px;color:#334155}.meta{margin-top:22px;color:var(--muted);font-size:14px}
+    .content{padding:44px 48px 56px}
+    h2{margin-top:54px;margin-bottom:14px;color:var(--heading);font-size:32px;line-height:1.22;letter-spacing:-.02em}
+    h3{margin-top:30px;margin-bottom:10px;color:var(--heading);font-size:22px;line-height:1.3}
+    p{margin:13px 0}ul,ol{padding-left:24px}li{margin:8px 0}.lead{font-size:19px;color:#334155}
+    .summary-box{padding:24px;border:1px solid #bfdbfe;border-left:5px solid var(--primary);background:var(--surface-soft);border-radius:12px;margin-bottom:34px}
+    .summary-box h2{margin-top:0;font-size:24px}
+    .calculator-wrap{margin:34px 0 44px;border:1px solid var(--border);border-radius:16px;overflow:hidden;background:#fff}
+    .calculator-heading{padding:28px 30px;background:#0f172a;color:#fff}.calculator-heading h2{margin:0;color:#fff;font-size:30px}.calculator-heading p{margin-bottom:0;color:#cbd5e1}
+    .calculator-body{padding:30px}.section-title{margin:32px 0 18px;padding-bottom:10px;border-bottom:1px solid var(--border);font-size:22px;color:var(--heading)}.section-title:first-child{margin-top:0}
+    .field-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}
+    label{font-weight:700;color:#172033}.help{color:var(--muted);font-size:13px;line-height:1.45}
+    input,select{width:100%;min-height:46px;padding:11px 12px;border:1px solid #cbd5e1;border-radius:9px;background:#fff;color:var(--text)}
+    input:focus,select:focus{outline:3px solid rgba(37,99,235,.16);border-color:var(--primary)}
+    .button-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.button{border:0;border-radius:10px;padding:13px 20px;cursor:pointer;font-weight:700}
+    .button.primary{background:var(--primary);color:#fff}.button.primary:hover{background:var(--primary-dark)}
+    .button.secondary{background:#e2e8f0;color:#0f172a}.button.secondary:hover{background:#cbd5e1}
+    .error-box{display:none;margin-top:22px;padding:16px 18px;border:1px solid #fecaca;border-radius:10px;background:var(--red-soft);color:var(--red);font-weight:700}
+    .results{display:none;margin-top:30px;border-top:1px solid var(--border);padding-top:30px}
+    .recommendation{padding:26px;border-radius:14px;border:1px solid #bfdbfe;background:var(--surface-soft)}
+    .recommendation.buy{border-color:#bbf7d0;background:var(--green-soft)}.recommendation.subscribe{border-color:#bfdbfe;background:var(--surface-soft)}.recommendation.close{border-color:#fde68a;background:var(--amber-soft)}
+    .recommendation h3{margin:0 0 10px;font-size:28px}
+    .score-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:24px 0}
+    .score-card{border:1px solid var(--border);border-radius:14px;padding:22px;background:#fff}.score-card h3{margin-top:0;font-size:20px}.score-value{font-size:40px;font-weight:700;line-height:1}
+    .score-card.subscribe .score-value{color:var(--primary)}.score-card.buy .score-value{color:var(--green)}
+    .score-bar{margin-top:14px;height:12px;border-radius:999px;background:#e2e8f0;overflow:hidden}.score-fill{height:100%;width:0;transition:width .4s ease}
+    .score-card.subscribe .score-fill{background:var(--primary)}.score-card.buy .score-fill{background:var(--green)}
+    .results-table,.comparison-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px}
+    .results-table th,.comparison-table th{padding:13px;background:#0f172a;color:#fff;text-align:left;border:1px solid #334155}
+    .results-table td,.comparison-table td{padding:13px;border:1px solid var(--border);vertical-align:top}
+    .results-table tbody tr:nth-child(even),.comparison-table tbody tr:nth-child(even){background:#f8fafc}
+    .reason-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:24px}.reason-box{padding:20px;border:1px solid var(--border);border-radius:12px;background:#f8fafc}.reason-box h3{margin-top:0;font-size:19px}
+    .callout{border-radius:12px;padding:22px 24px;margin:28px 0}.callout.good{background:var(--green-soft);border:1px solid #bbf7d0;color:#14532d}.callout.warning{background:var(--amber-soft);border:1px solid #fde68a;color:#78350f}.callout.info{background:var(--surface-soft);border:1px solid #bfdbfe;color:#1e3a8a}.callout h3{margin-top:0}
+    .formula{margin:20px 0;padding:18px;border-radius:10px;background:#0f172a;color:#f8fafc;font-family:"Courier New",monospace;overflow-x:auto}
+    .steps{counter-reset:decision-step;list-style:none;padding-left:0}.steps li{counter-increment:decision-step;position:relative;padding:0 0 24px 64px;min-height:52px}.steps li::before{content:counter(decision-step);position:absolute;left:0;top:0;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--primary);color:#fff;font-weight:700}
+    .faq-item{border-top:1px solid var(--border);padding:22px 0}.faq-item:first-of-type{border-top:0}.faq-item h3{margin-top:0;font-size:21px}
+    .about-box{margin-top:48px;padding:28px;border-radius:14px;background:#f8fafc;border:1px solid var(--border)}.about-box h2{margin-top:0}
+    .related{margin-top:54px;padding:30px;border-radius:14px;background:#0f172a;color:#e2e8f0}.related h2{margin-top:0;color:#fff}.related a{color:#bfdbfe;font-weight:700}
+    .disclaimer{margin-top:36px;padding-top:24px;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
+    footer{background:#0f172a;color:#cbd5e1;padding:34px 20px}.footer-inner{text-align:center}.footer-links{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-bottom:14px}.footer-links a{color:#e2e8f0}
+    @media(max-width:820px){.hero{padding:38px 26px 32px}.content{padding:32px 26px 44px}.field-grid,.score-grid,.reason-list{grid-template-columns:1fr}.comparison-table,.results-table{display:block;overflow-x:auto}}
+    @media(max-width:520px){header{padding:20px 16px}.container{padding:0 12px}.hero{padding:32px 20px 28px}.content{padding:28px 20px 38px}.calculator-body{padding:22px 18px}.calculator-heading{padding:24px 20px}h1{font-size:38px}h2{font-size:28px}.hero-intro{font-size:18px}.button{width:100%}}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebApplication",
+    "name":"Should I Subscribe or Buy? Decision Tool",
+    "url":"https://decidehelper.com/shopping/should-i-subscribe-or-buy-tool.html",
+    "applicationCategory":"FinanceApplication",
+    "operatingSystem":"Any",
+    "description":"A free interactive calculator that compares subscription cost with the net cost of buying using expected use period, fees, price increases, maintenance, resale value, upgrades, flexibility, and ownership preferences.",
+    "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+    "publisher":{"@type":"Organization","name":"DecideHelper","url":"https://decidehelper.com/"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://decidehelper.com/"},
+      {"@type":"ListItem","position":2,"name":"Shopping Decisions","item":"https://decidehelper.com/shopping/"},
+      {"@type":"ListItem","position":3,"name":"Should I Subscribe or Buy? Decision Tool","item":"https://decidehelper.com/shopping/should-i-subscribe-or-buy-tool.html"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"How does the Subscribe vs Buy calculator work?","acceptedAnswer":{"@type":"Answer","text":"The calculator estimates subscription spending over your expected use period, including recurring fees, setup costs and optional price increases. It compares that amount with purchase price, financing, maintenance and resale value, then considers flexibility, upgrades, ownership, cancellation risk and expected usage."}},
+      {"@type":"Question","name":"What is the break-even point between subscribing and buying?","acceptedAnswer":{"@type":"Answer","text":"The break-even point is the approximate time when cumulative subscription costs equal the net cost of buying. The tool estimates it using the subscription payment pattern and the ownership costs you enter."}},
+      {"@type":"Question","name":"When is subscribing usually better?","acceptedAnswer":{"@type":"Answer","text":"Subscribing is often more attractive for short or uncertain use, when upgrades or maintenance are valuable, cancellation is easy, technology changes quickly, or a large upfront purchase would be undesirable."}},
+      {"@type":"Question","name":"When is buying usually better?","acceptedAnswer":{"@type":"Answer","text":"Buying is often stronger for stable long-term use when the product has a long useful life, ownership provides lasting value, resale value is meaningful, and frequent upgrades are unnecessary."}},
+      {"@type":"Question","name":"Does the calculator give financial advice?","acceptedAnswer":{"@type":"Answer","text":"No. It is an educational decision aid based on the estimates you enter. Actual prices, contracts, taxes, maintenance, resale values and access rights can differ."}}
+    ]
+  }
+  </script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a class="logo" href="../index.html">DecideHelper</a>
+    <p class="tagline">Clear frameworks for difficult everyday decisions.</p>
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="../money/index.html">Money Decisions</a>
+      <a href="index.html">Shopping Decisions</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../index.html">Home</a> › <a href="index.html">Shopping Decisions</a> › Should I Subscribe or Buy? Decision Tool
+  </nav>
+  <main>
+    <article class="page-shell">
+      <section class="hero">
+        <span class="eyebrow">Free Shopping Decision Tool</span>
+        <h1>Should I Subscribe or Buy? Decision Tool</h1>
+        <p class="hero-intro">Compare recurring subscription payments with the true long-term cost of ownership. Estimate total cost, break-even time, resale value, maintenance, price increases, flexibility, upgrades, cancellation risk, and how long you realistically expect to use the product or service.</p>
+        <p class="meta">Updated August 15, 2026 · No signup required</p>
+      </section>
+
+      <div class="content">
+        <section class="summary-box">
+          <h2>What this calculator does</h2>
+          <p>The tool compares both choices over the <strong>same expected usage period</strong>. It calculates projected subscription spending and net ownership cost, then creates separate <strong>Subscribe</strong> and <strong>Buy</strong> scores using practical factors that price alone can miss.</p>
+          <p>Use any currency, but keep the same currency in every money field. The result is an educational estimate, not a prediction of future prices, resale value, product life, or contract terms.</p>
+        </section>
+
+        <section class="calculator-wrap" aria-labelledby="calculator-title">
+          <div class="calculator-heading">
+            <h2 id="calculator-title">Subscribe vs Buy Calculator</h2>
+            <p>Enter realistic numbers for the period you actually expect to use the product or service.</p>
+          </div>
+          <div class="calculator-body">
+            <form id="decisionForm" novalidate>
+              <h3 class="section-title">1. Expected use and subscription price</h3>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="useMonths">Expected use period (months)</label>
+                  <input id="useMonths" type="number" min="1" step="1" value="36" required>
+                  <span class="help">Use the period you realistically expect to keep paying or using the product.</span>
+                </div>
+                <div class="field">
+                  <label for="monthlyFee">Current monthly subscription price</label>
+                  <input id="monthlyFee" type="number" min="0" step="0.01" value="30" required>
+                </div>
+                <div class="field">
+                  <label for="setupFee">Subscription setup / activation fees</label>
+                  <input id="setupFee" type="number" min="0" step="0.01" value="0" required>
+                </div>
+                <div class="field">
+                  <label for="monthlyExtras">Required monthly add-ons or usage fees</label>
+                  <input id="monthlyExtras" type="number" min="0" step="0.01" value="0" required>
+                </div>
+                <div class="field">
+                  <label for="annualIncrease">Estimated annual subscription price increase</label>
+                  <select id="annualIncrease">
+                    <option value="0">0% — use today's price</option>
+                    <option value="0.03" selected>3% per year</option>
+                    <option value="0.05">5% per year</option>
+                    <option value="0.08">8% per year</option>
+                    <option value="0.10">10% per year</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="cancelCost">Expected cancellation / exit cost</label>
+                  <input id="cancelCost" type="number" min="0" step="0.01" value="0" required>
+                </div>
+              </div>
+
+              <h3 class="section-title">2. Purchase and ownership costs</h3>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="purchasePrice">Purchase price</label>
+                  <input id="purchasePrice" type="number" min="0" step="0.01" value="900" required>
+                </div>
+                <div class="field">
+                  <label for="financingCost">Total financing interest / fees</label>
+                  <input id="financingCost" type="number" min="0" step="0.01" value="0" required>
+                </div>
+                <div class="field">
+                  <label for="annualMaintenance">Estimated annual maintenance / repair cost</label>
+                  <input id="annualMaintenance" type="number" min="0" step="0.01" value="40" required>
+                </div>
+                <div class="field">
+                  <label for="ownershipExtras">Other ownership costs over the full period</label>
+                  <input id="ownershipExtras" type="number" min="0" step="0.01" value="0" required>
+                  <span class="help">For example required software, storage, accessories, disposal, or service fees.</span>
+                </div>
+                <div class="field">
+                  <label for="resaleValue">Expected resale value at the end</label>
+                  <input id="resaleValue" type="number" min="0" step="0.01" value="200" required>
+                </div>
+                <div class="field">
+                  <label for="buyUpgradeCost">Expected upgrade / replacement spending while owning</label>
+                  <input id="buyUpgradeCost" type="number" min="0" step="0.01" value="0" required>
+                </div>
+              </div>
+
+              <h3 class="section-title">3. Usage and flexibility</h3>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="usageConfidence">How certain are you that you will use it for the full period?</label>
+                  <select id="usageConfidence">
+                    <option value="0">Very uncertain</option>
+                    <option value="1">Somewhat uncertain</option>
+                    <option value="2" selected>Reasonably likely</option>
+                    <option value="3">Very likely</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="usageFrequency">Expected usage frequency</label>
+                  <select id="usageFrequency">
+                    <option value="0">Rarely</option>
+                    <option value="1">Occasionally</option>
+                    <option value="2" selected>Regularly</option>
+                    <option value="3">Very frequently / essential</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="cancelEase">How easy is the subscription to cancel?</label>
+                  <select id="cancelEase">
+                    <option value="0">Difficult / long contract</option>
+                    <option value="1">Some restrictions</option>
+                    <option value="2" selected>Reasonably easy</option>
+                    <option value="3">Easy month-to-month cancellation</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="needsChange">How likely are your needs to change?</label>
+                  <select id="needsChange">
+                    <option value="0">Very unlikely</option>
+                    <option value="1">Low chance</option>
+                    <option value="2" selected>Moderate chance</option>
+                    <option value="3">High chance</option>
+                  </select>
+                </div>
+              </div>
+
+              <h3 class="section-title">4. Upgrades, maintenance, and access</h3>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="upgradeValue">Value of subscription upgrades / new versions</label>
+                  <select id="upgradeValue">
+                    <option value="0">Little or no value</option>
+                    <option value="1">Some value</option>
+                    <option value="2" selected>Meaningful value</option>
+                    <option value="3">Very important</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="includedService">Value of included maintenance / support / replacement</label>
+                  <select id="includedService">
+                    <option value="0">None or irrelevant</option>
+                    <option value="1">Minor</option>
+                    <option value="2" selected>Useful</option>
+                    <option value="3">Very valuable</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="obsolescence">How quickly could the product become obsolete?</label>
+                  <select id="obsolescence">
+                    <option value="0">Slowly</option>
+                    <option value="1">Moderately slowly</option>
+                    <option value="2" selected>Moderately quickly</option>
+                    <option value="3">Very quickly</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="providerRisk">Subscription price / provider / access risk</label>
+                  <select id="providerRisk">
+                    <option value="0">Low</option>
+                    <option value="1" selected>Some risk</option>
+                    <option value="2">Meaningful risk</option>
+                    <option value="3">High risk or strong lock-in</option>
+                  </select>
+                </div>
+              </div>
+
+              <h3 class="section-title">5. Ownership and affordability</h3>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="ownershipValue">How valuable is ownership and control to you?</label>
+                  <select id="ownershipValue">
+                    <option value="0">Not important</option>
+                    <option value="1">Somewhat important</option>
+                    <option value="2" selected>Important</option>
+                    <option value="3">Very important</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="resaleConfidence">How realistic is the resale estimate?</label>
+                  <select id="resaleConfidence">
+                    <option value="0">Very uncertain</option>
+                    <option value="1">Rough estimate</option>
+                    <option value="2" selected>Reasonably researched</option>
+                    <option value="3">Strong resale market / evidence</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="upfrontComfort">Can you buy without harming your emergency savings?</label>
+                  <select id="upfrontComfort">
+                    <option value="0">No — buying would cause serious strain</option>
+                    <option value="1">Only with some strain</option>
+                    <option value="2" selected>Yes, but it is a meaningful expense</option>
+                    <option value="3">Yes, comfortably</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="paymentPreference">Preference for predictable low payments vs ending payments</label>
+                  <select id="paymentPreference">
+                    <option value="0">Strongly prefer low recurring payments</option>
+                    <option value="1">Slightly prefer recurring payments</option>
+                    <option value="2" selected>Neutral</option>
+                    <option value="3">Prefer owning and ending payments</option>
+                    <option value="4">Strongly prefer owning and ending payments</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="button-row">
+                <button class="button primary" type="submit">Compare Subscribe vs Buy</button>
+                <button class="button secondary" type="button" id="resetBtn">Reset Tool</button>
+              </div>
+              <div class="error-box" id="errorBox" role="alert"></div>
+            </form>
+
+            <section class="results" id="results" aria-live="polite">
+              <div class="recommendation" id="recommendationBox">
+                <h3 id="recommendationTitle">Your recommendation</h3>
+                <p id="recommendationText"></p>
+              </div>
+
+              <div class="score-grid">
+                <div class="score-card subscribe">
+                  <h3>Subscribe score</h3>
+                  <div class="score-value"><span id="subscribeScore">0</span>/100</div>
+                  <div class="score-bar" aria-hidden="true"><div class="score-fill" id="subscribeScoreBar"></div></div>
+                </div>
+                <div class="score-card buy">
+                  <h3>Buy score</h3>
+                  <div class="score-value"><span id="buyScore">0</span>/100</div>
+                  <div class="score-bar" aria-hidden="true"><div class="score-fill" id="buyScoreBar"></div></div>
+                </div>
+              </div>
+
+              <table class="results-table">
+                <thead><tr><th>Comparison</th><th>Estimated result</th></tr></thead>
+                <tbody>
+                  <tr><td>Total subscription cost</td><td id="subscriptionCostCell">—</td></tr>
+                  <tr><td>Net ownership cost</td><td id="ownershipCostCell">—</td></tr>
+                  <tr><td>Estimated cost difference</td><td id="differenceCell">—</td></tr>
+                  <tr><td>Estimated break-even point</td><td id="breakEvenCell">—</td></tr>
+                  <tr><td>Subscription cost per month of use</td><td id="subMonthlyCell">—</td></tr>
+                  <tr><td>Ownership cost per month of use</td><td id="buyMonthlyCell">—</td></tr>
+                </tbody>
+              </table>
+
+              <div class="reason-list">
+                <div class="reason-box">
+                  <h3>Factors favoring subscription</h3>
+                  <ul id="subscribeReasons"></ul>
+                </div>
+                <div class="reason-box">
+                  <h3>Factors favoring buying</h3>
+                  <ul id="buyReasons"></ul>
+                </div>
+              </div>
+
+              <div class="callout warning">
+                <h3>Before you decide</h3>
+                <p>Check the actual subscription renewal and cancellation rules, what happens to your data or access after cancellation, what maintenance or upgrades are truly included, and whether a “purchase” still depends on a license, server, cloud service, or recurring fee.</p>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section>
+          <h2>How the Subscribe vs Buy decision tool works</h2>
+          <p class="lead">The calculator starts with the central comparison from the companion guide: compare the <strong>same realistic usage period</strong>, not a monthly payment with a lifetime purchase price.</p>
+          <p>For the subscription side, it projects recurring fees across the months you expect to use the product or service. It can also include setup fees, required add-ons, cancellation costs, and a selected annual price-increase scenario.</p>
+          <p>For the ownership side, it adds purchase price, financing, maintenance, other ownership costs, and expected upgrades, then subtracts your estimated resale value.</p>
+          <div class="formula">Projected subscription cost = recurring payments + setup + required add-ons + exit costs</div>
+          <div class="formula">Net ownership cost = purchase + financing + maintenance + other costs + upgrades − resale value</div>
+          <p>Finally, the tool adds non-price factors. Flexibility, easy cancellation, useful upgrades, included maintenance, changing needs, ownership value, obsolescence, provider risk, and upfront affordability can all matter even when one side is slightly cheaper.</p>
+        </section>
+
+        <section>
+          <h2>Why total cost matters more than the monthly price</h2>
+          <p>A recurring price is psychologically easy to accept because it is small compared with a purchase price. But the relevant number is how much you will pay during the period you actually use the product.</p>
+          <p>For example, a $30 monthly plan is $360 in the first year and $1,080 over three years before setup charges, add-ons, or price increases. If a comparable product costs $900 to buy and still has resale value after three years, the purchase may be less expensive even though the first payment is much larger.</p>
+          <div class="callout info">
+            <h3>Use realistic time horizons</h3>
+            <p>If you need something for four months, compare four months of subscription with the cost of buying and later selling. If you expect six years of regular use, compare six years with six years.</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Understanding the break-even point</h2>
+          <p>The break-even point is the approximate month when cumulative subscription spending catches the estimated net cost of buying. It is especially useful when you are unsure how long your need will last.</p>
+          <p>If the break-even point is around 24 months and you are confident you will use the product for four years, buying deserves more weight. If your need may disappear after six months, paying for flexibility can be sensible.</p>
+          <p>The tool estimates break-even using your current subscription cost pattern and ownership estimate. It is not a guarantee because future subscription prices, repairs, resale value, and product life can change.</p>
+        </section>
+
+        <section>
+          <h2>Subscription price increases can change a long-term decision</h2>
+          <p>Today's monthly price may not remain unchanged for years. A small annual increase can materially affect a long subscription. That is why the calculator lets you test several price-increase scenarios rather than assuming the current price lasts forever.</p>
+          <p>Try the tool once at 0% and again at 3%, 5%, or a higher scenario if the service has a history of changing prices. Scenario testing is more useful than pretending one forecast is certain.</p>
+        </section>
+
+        <section>
+          <h2>Resale value reduces the true cost of buying</h2>
+          <p>A purchased item may still have value when you stop using it. Selling it recovers part of the purchase cost, while a subscription usually leaves no asset to sell.</p>
+          <p>Use a conservative resale estimate. Electronics can depreciate quickly; durable tools, furniture, specialist equipment, and some vehicles may retain more value. If the resale market is uncertain, run the calculator again with a lower value.</p>
+          <div class="formula">Effective ownership cost = money spent on ownership − money recovered at resale</div>
+        </section>
+
+        <section>
+          <h2>Flexibility is valuable only when you can actually use it</h2>
+          <p>A subscription can reduce commitment when your need is temporary, your work or living situation may change, or you are testing something for the first time. But a long minimum contract is not truly flexible simply because it is billed monthly.</p>
+          <p>Check the renewal period, minimum commitment, cancellation deadline, refund policy, and whether annual prepayment is refundable. A cheaper annual plan may be poor value if you stop using the service after three months.</p>
+        </section>
+
+        <section>
+          <h2>When upgrades and maintenance justify recurring payments</h2>
+          <p>Some subscriptions provide more than access. They may include software updates, security patches, cloud services, technical support, repairs, replacement, new content, or frequent hardware upgrades.</p>
+          <p>Those benefits should count only when you would genuinely use them. Paying continuously for upgrades that solve no real problem can make a subscription expensive. Conversely, professional software that requires current security, compatibility, collaboration, and support may be worth keeping on subscription even when a perpetual version exists.</p>
+        </section>
+
+        <section>
+          <h2>Ownership has practical value beyond resale</h2>
+          <p>Ownership can give you control over when and how you use an item, whether you can lend or modify it, and whether access continues after you stop making payments. For physical products, this can be significant.</p>
+          <p>Digital ownership is more complicated. A one-time software license, game, media purchase, or connected device may still depend on activation servers, supported hardware, account rules, or online services. Read the actual terms when continued access matters.</p>
+        </section>
+
+        <section>
+          <h2>Affordability and total value are different questions</h2>
+          <p>A subscription may be easier on this month's cash flow while being more expensive over the full period. Buying may be cheaper in total while requiring more money today.</p>
+          <p>Do not drain emergency savings merely to avoid recurring payments. But also do not accept years of payments simply because the monthly figure feels small. If buying would create harmful debt or leave you without a financial buffer, the cheaper long-term option may not be the safer choice today.</p>
+        </section>
+
+        <section>
+          <h2>Subscribe vs buy by product type</h2>
+          <table class="comparison-table">
+            <thead><tr><th>Category</th><th>Subscription can fit when…</th><th>Buying can fit when…</th></tr></thead>
+            <tbody>
+              <tr><td>Software</td><td>Updates, security, cloud features, collaboration, or support are essential.</td><td>Your needs are stable and a perpetual version remains useful for years.</td></tr>
+              <tr><td>Phones & electronics</td><td>You genuinely value frequent upgrades and included protection.</td><td>You normally keep devices for several years.</td></tr>
+              <tr><td>Tools & equipment</td><td>You need specialized equipment temporarily or only a few times.</td><td>You use the tool repeatedly and can maintain it.</td></tr>
+              <tr><td>Furniture & appliances</td><td>Your housing is temporary or moving/service is included.</td><td>The item is durable and you expect long-term use.</td></tr>
+              <tr><td>Entertainment</td><td>You use a broad changing library regularly.</td><td>You repeatedly return to a smaller set of content and lasting access matters.</td></tr>
+              <tr><td>Consumables</td><td>Usage is predictable and automatic delivery saves real effort.</td><td>Consumption varies or subscription pricing is not competitive.</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>Common mistakes this calculator is designed to expose</h2>
+          <ul>
+            <li>Comparing one monthly payment with the full purchase price.</li>
+            <li>Assuming you will remember to cancel an unused subscription.</li>
+            <li>Ignoring annual price increases and premium-tier add-ons.</li>
+            <li>Forgetting maintenance, repairs, financing, or required services on the ownership side.</li>
+            <li>Ignoring resale value.</li>
+            <li>Paying for flexibility even though your need is clearly long term.</li>
+            <li>Buying because ownership feels better even when the item will rarely be used.</li>
+            <li>Counting subscription features you would never pay for separately as full-value benefits.</li>
+            <li>Choosing recurring payments only to make an optional, unaffordable product feel cheaper.</li>
+            <li>Assuming a digital one-time purchase guarantees permanent access.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>A practical seven-step Subscribe or Buy process</h2>
+          <ol class="steps">
+            <li><strong>Define the need and realistic use period.</strong> Decide how many months or years you expect to use the product or service.</li>
+            <li><strong>Calculate projected subscription spending.</strong> Include fees, add-ons, likely price increases, and cancellation costs.</li>
+            <li><strong>Calculate net ownership cost.</strong> Add purchase, financing, maintenance, upgrades, and other required costs; subtract conservative resale value.</li>
+            <li><strong>Find the break-even point.</strong> See approximately when recurring payments catch the net ownership cost.</li>
+            <li><strong>Value non-price benefits.</strong> Consider flexibility, support, maintenance, upgrades, control, privacy, convenience, and availability.</li>
+            <li><strong>Test the downside.</strong> Ask what happens if you stop using it early, prices rise, the purchased item needs repair, or your financial situation changes.</li>
+            <li><strong>Choose for your real behavior.</strong> The cheapest theoretical choice is not best if it depends on habits or assumptions you are unlikely to follow.</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Frequently asked questions</h2>
+          <div class="faq-item"><h3>How does the Subscribe vs Buy calculator work?</h3><p>It compares projected subscription spending with the net cost of ownership over your expected use period, then adds practical factors such as flexibility, upgrades, maintenance, ownership value, provider risk, resale value, and upfront affordability.</p></div>
+          <div class="faq-item"><h3>Is a subscription cheaper than buying?</h3><p>Sometimes. It is often cheaper for short-term or uncertain use. Over longer periods, repeated payments can exceed the cost of buying, especially when the purchased item has a long life and resale value.</p></div>
+          <div class="faq-item"><h3>What is the break-even point?</h3><p>It is the approximate time when cumulative subscription spending equals the estimated net ownership cost. If you expect to use the product well beyond that point, buying may become more attractive.</p></div>
+          <div class="faq-item"><h3>Should I include subscription price increases?</h3><p>For multi-year comparisons, testing a moderate increase scenario is useful. It does not predict the provider's future pricing; it shows whether your decision remains sensible if prices rise.</p></div>
+          <div class="faq-item"><h3>Should resale value be included?</h3><p>Yes, when the purchased product is likely to have a resale market. Use a conservative estimate and test a lower value if you are uncertain.</p></div>
+          <div class="faq-item"><h3>Are annual subscriptions always better than monthly subscriptions?</h3><p>No. An annual plan may reduce the monthly equivalent price but also reduces flexibility. It can waste money if you stop using the service before the prepaid period ends.</p></div>
+          <div class="faq-item"><h3>When does subscribing make more sense?</h3><p>Subscription can be stronger when the need is temporary or uncertain, cancellation is easy, upgrades or maintenance are genuinely valuable, or the product becomes obsolete quickly.</p></div>
+          <div class="faq-item"><h3>When does buying make more sense?</h3><p>Buying can be stronger when use is stable and long term, the product remains useful for years, ownership matters, resale value is meaningful, and you can afford the purchase without damaging your financial safety net.</p></div>
+          <div class="faq-item"><h3>What if I am unsure how long I will use it?</h3><p>Run several scenarios. Compare a short, medium, and long use period. This shows how sensitive the answer is to your biggest uncertainty.</p></div>
+          <div class="faq-item"><h3>Does the tool work for software and physical products?</h3><p>Yes, but use the fields differently. For software, maintenance may represent upgrades or support. For physical products, it can represent repairs, servicing, storage, or replacement parts.</p></div>
+          <div class="faq-item"><h3>Does buying always mean permanent access?</h3><p>No. Digital purchases may still depend on licensing, servers, accounts, compatibility, or support. Check the actual ownership and access terms.</p></div>
+          <div class="faq-item"><h3>Is this financial advice?</h3><p>No. It is a general educational decision aid based on your estimates. Actual costs, contract terms, taxes, consumer rights, resale values, and future prices vary.</p></div>
+        </section>
+
+        <section class="about-box">
+          <h2>About this calculator</h2>
+          <p>DecideHelper creates practical tools for everyday money and shopping decisions. This calculator is designed to make the Subscribe vs Buy comparison transparent by separating the measurable cost comparison from the personal value of flexibility, upgrades, ownership, and financial comfort.</p>
+          <p>The calculator does not collect your entries or require signup. Its scoring framework is a structured decision aid rather than a prediction. For an important or expensive commitment, verify the provider's current terms and use conservative estimates.</p>
+        </section>
+
+        <section class="related">
+          <h2>Related decision guides and tools</h2>
+          <ul>
+            <li><a href="should-i-subscribe-or-buy.html">Should I Subscribe or Buy?</a> — read the complete companion decision guide.</li>
+            <li><a href="../money/should-i-buy-this.html">Should I Buy This?</a> — decide whether the purchase is worth making at all.</li>
+            <li><a href="should-i-buy-new-or-used.html">Should I Buy New or Used?</a> — compare price, condition, depreciation, and useful life.</li>
+            <li><a href="should-i-buy-new-or-used-tool.html">Should I Buy New or Used? Decision Tool</a> — compare long-term ownership value.</li>
+            <li><a href="should-i-wait-for-a-sale.html">Should I Wait for a Sale?</a> — compare likely savings with the cost of waiting.</li>
+            <li><a href="should-i-wait-for-a-sale-tool.html">Should I Wait for a Sale? Decision Tool</a> — calculate buying now versus waiting.</li>
+            <li><a href="should-i-buy-extended-warranty.html">Should I Buy an Extended Warranty?</a> — compare warranty cost with repair risk.</li>
+            <li><a href="should-i-buy-extended-warranty-tool.html">Extended Warranty Decision Tool</a> — calculate whether extra protection is worth considering.</li>
+            <li><a href="should-i-repair-or-replace.html">Should I Repair or Replace?</a> — compare repair and replacement value.</li>
+            <li><a href="index.html">Shopping Decisions</a> — browse more practical shopping guides and tools.</li>
+          </ul>
+        </section>
+
+        <p class="disclaimer"><strong>Disclaimer:</strong> This calculator is for general educational and informational purposes only. Results are estimates based on the information you enter and the tool's scoring framework. It does not provide financial, legal, tax, consumer-protection, technical, or professional advice. Subscription terms, cancellation rights, ownership rights, taxes, maintenance costs, resale values, financing costs, and prices vary. Review the actual terms and costs before making a decision.</p>
+      </div>
+    </article>
+  </main>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../privacy-policy.html">Privacy Policy</a>
+      <a href="../terms-and-conditions.html">Terms</a>
+      <a href="../disclaimer.html">Disclaimer</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+    <p>© <span id="year"></span> DecideHelper. Educational content only.</p>
+  </div>
+</footer>
+
+<script>
+const form=document.getElementById("decisionForm");
+const results=document.getElementById("results");
+const errorBox=document.getElementById("errorBox");
+const resetBtn=document.getElementById("resetBtn");
+
+function num(id){return Number(document.getElementById(id).value);}
+function sel(id){return Number(document.getElementById(id).value);}
+function clamp(v,min,max){return Math.min(Math.max(v,min),max);}
+function money(v){return new Intl.NumberFormat("en-US",{maximumFractionDigits:2}).format(v);}
+function addReason(list,text){const li=document.createElement("li");li.textContent=text;list.appendChild(li);}
+
+function projectedSubscription(months,monthlyBase,annualIncrease){
+  let total=0;
+  for(let m=0;m<months;m++){
+    const yearIndex=Math.floor(m/12);
+    total += monthlyBase*Math.pow(1+annualIncrease,yearIndex);
+  }
+  return total;
+}
+function findBreakEven(netOwnership,monthlyBase,annualIncrease){
+  if(monthlyBase<=0) return null;
+  let total=0;
+  for(let m=1;m<=600;m++){
+    const yearIndex=Math.floor((m-1)/12);
+    total += monthlyBase*Math.pow(1+annualIncrease,yearIndex);
+    if(total>=netOwnership) return m;
+  }
+  return null;
+}
+
+function calculate(event){
+  event.preventDefault();
+  errorBox.style.display="none"; errorBox.textContent="";
+
+  const useMonths=num("useMonths"), monthlyFee=num("monthlyFee"), setupFee=num("setupFee"),
+    monthlyExtras=num("monthlyExtras"), cancelCost=num("cancelCost"), purchasePrice=num("purchasePrice"),
+    financingCost=num("financingCost"), annualMaintenance=num("annualMaintenance"),
+    ownershipExtras=num("ownershipExtras"), resaleValue=num("resaleValue"), buyUpgradeCost=num("buyUpgradeCost");
+
+  const values=[useMonths,monthlyFee,setupFee,monthlyExtras,cancelCost,purchasePrice,financingCost,annualMaintenance,ownershipExtras,resaleValue,buyUpgradeCost];
+  if(values.some(v=>!Number.isFinite(v)||v<0) || useMonths<1){
+    errorBox.textContent="Please enter valid non-negative numbers. Expected use period must be at least one month.";
+    errorBox.style.display="block";results.style.display="none";return;
+  }
+  if(monthlyFee===0 && purchasePrice===0){
+    errorBox.textContent="Please enter a subscription price or purchase price greater than zero.";
+    errorBox.style.display="block";results.style.display="none";return;
+  }
+
+  const annualIncrease=sel("annualIncrease"), usageConfidence=sel("usageConfidence"),
+    usageFrequency=sel("usageFrequency"), cancelEase=sel("cancelEase"), needsChange=sel("needsChange"),
+    upgradeValue=sel("upgradeValue"), includedService=sel("includedService"), obsolescence=sel("obsolescence"),
+    providerRisk=sel("providerRisk"), ownershipValue=sel("ownershipValue"), resaleConfidence=sel("resaleConfidence"),
+    upfrontComfort=sel("upfrontComfort"), paymentPreference=sel("paymentPreference");
+
+  const monthlyBase=monthlyFee+monthlyExtras;
+  const recurringTotal=projectedSubscription(Math.round(useMonths),monthlyBase,annualIncrease);
+  const totalSubscription=recurringTotal+setupFee+cancelCost;
+  const years=useMonths/12;
+  const maintenanceTotal=annualMaintenance*years;
+  const effectiveResale=Math.min(resaleValue,purchasePrice+buyUpgradeCost);
+  const netOwnership=Math.max(0,purchasePrice+financingCost+maintenanceTotal+ownershipExtras+buyUpgradeCost-effectiveResale);
+  const difference=totalSubscription-netOwnership;
+  const breakEven=findBreakEven(netOwnership-setupFee-cancelCost,monthlyBase,annualIncrease);
+
+  let subscribeScore=45, buyScore=45;
+  const subscribeReasons=document.getElementById("subscribeReasons"), buyReasons=document.getElementById("buyReasons");
+  subscribeReasons.innerHTML="";buyReasons.innerHTML="";
+
+  if(useMonths<=12){subscribeScore+=18;addReason(subscribeReasons,"Your expected use period is short, which favors paying for access rather than long-term ownership.");}
+  else if(useMonths<=24){subscribeScore+=9;addReason(subscribeReasons,"The expected use period is relatively limited.");}
+  else if(useMonths>=48){buyScore+=16;addReason(buyReasons,"You expect long-term use, so recurring payments have more time to accumulate.");}
+  else if(useMonths>=36){buyScore+=9;addReason(buyReasons,"The expected use period is long enough for ownership to become more valuable.");}
+
+  if(difference>0){
+    const ratio=netOwnership>0?difference/netOwnership:1;
+    buyScore+=ratio>=0.5?22:ratio>=0.2?16:10;
+    addReason(buyReasons,"The projected subscription cost is higher than the estimated net ownership cost.");
+  } else if(difference<0){
+    const saving=Math.abs(difference), ratio=totalSubscription>0?saving/totalSubscription:1;
+    subscribeScore+=ratio>=0.5?22:ratio>=0.2?16:10;
+    addReason(subscribeReasons,"The projected subscription cost is lower over your expected use period.");
+  }
+
+  if(usageConfidence<=1){subscribeScore+=12;addReason(subscribeReasons,"You are uncertain about using it for the full period, increasing the value of flexibility.");}
+  if(usageConfidence===3){buyScore+=8;addReason(buyReasons,"You are highly confident that the product will be used for the full period.");}
+
+  if(usageFrequency===0){subscribeScore+=4;addReason(subscribeReasons,"Low usage makes a large ownership commitment harder to justify.");}
+  if(usageFrequency>=2 && useMonths>=36){buyScore+=7;addReason(buyReasons,"Regular long-term usage supports extracting more value from ownership.");}
+
+  subscribeScore+=cancelEase*4;
+  if(cancelEase===3)addReason(subscribeReasons,"Easy month-to-month cancellation makes the subscription genuinely flexible.");
+  if(cancelEase===0){buyScore+=10;addReason(buyReasons,"A difficult cancellation process or long contract reduces subscription flexibility.");}
+
+  subscribeScore+=needsChange*5;
+  if(needsChange>=2)addReason(subscribeReasons,"Your needs may change, so avoiding a long ownership commitment has value.");
+  if(needsChange===0){buyScore+=6;addReason(buyReasons,"Your needs appear stable, reducing the value of subscription flexibility.");}
+
+  subscribeScore+=upgradeValue*5;
+  if(upgradeValue>=2)addReason(subscribeReasons,"Included upgrades or new versions have meaningful value to you.");
+  if(upgradeValue===0){buyScore+=7;addReason(buyReasons,"You place little value on continuous upgrades.");}
+
+  subscribeScore+=includedService*4;
+  if(includedService>=2)addReason(subscribeReasons,"Included maintenance, support, or replacement adds practical subscription value.");
+
+  subscribeScore+=obsolescence*4;
+  if(obsolescence>=2)addReason(subscribeReasons,"Faster obsolescence makes flexible access and upgrades more useful.");
+  if(obsolescence===0){buyScore+=6;addReason(buyReasons,"The product is expected to remain useful for a long time.");}
+
+  buyScore+=providerRisk*5;
+  if(providerRisk>=2)addReason(buyReasons,"Price, provider, access, or lock-in risk reduces the appeal of depending on a subscription.");
+
+  buyScore+=ownershipValue*5;
+  if(ownershipValue>=2)addReason(buyReasons,"Ownership, control, and continued access have meaningful value to you.");
+
+  if(effectiveResale>0){
+    buyScore+=resaleConfidence>=2?9:5;
+    addReason(buyReasons,"Expected resale value reduces the effective cost of ownership.");
+  }
+
+  if(upfrontComfort===0){subscribeScore+=18;addReason(subscribeReasons,"Buying now could damage your financial safety margin.");}
+  else if(upfrontComfort===1){subscribeScore+=9;addReason(subscribeReasons,"The upfront purchase would create some financial strain.");}
+  else if(upfrontComfort===3){buyScore+=8;addReason(buyReasons,"You can afford the upfront purchase comfortably.");}
+
+  if(paymentPreference<=1){subscribeScore+=(2-paymentPreference)*5;addReason(subscribeReasons,"You prefer smaller recurring payments and lower initial commitment.");}
+  if(paymentPreference>=3){buyScore+=(paymentPreference-2)*6;addReason(buyReasons,"You prefer ending payments and owning the product.");}
+
+  if(annualIncrease>=0.05){buyScore+=8;addReason(buyReasons,"The price-increase scenario makes long-term subscription spending less predictable.");}
+  if(setupFee+cancelCost>monthlyBase*2 && monthlyBase>0){buyScore+=7;addReason(buyReasons,"Subscription setup or exit costs reduce its flexibility advantage.");}
+  if(financingCost>purchasePrice*0.15 && purchasePrice>0){subscribeScore+=8;addReason(subscribeReasons,"Financing adds a meaningful cost to buying.");}
+  if(maintenanceTotal+ownershipExtras+buyUpgradeCost>purchasePrice*0.4 && purchasePrice>0){subscribeScore+=8;addReason(subscribeReasons,"Ownership carries substantial additional maintenance or upgrade costs.");}
+
+  subscribeScore=Math.round(clamp(subscribeScore,0,100));
+  buyScore=Math.round(clamp(buyScore,0,100));
+
+  if(!subscribeReasons.children.length)addReason(subscribeReasons,"The current inputs do not create a strong subscription advantage.");
+  if(!buyReasons.children.length)addReason(buyReasons,"The current inputs do not create a strong ownership advantage.");
+
+  const box=document.getElementById("recommendationBox"), title=document.getElementById("recommendationTitle"), text=document.getElementById("recommendationText");
+  box.className="recommendation";
+  const scoreDiff=subscribeScore-buyScore;
+
+  if(scoreDiff>=10){
+    title.textContent="Recommendation: Consider Subscribing";
+    text.textContent="Your expected use period, flexibility needs, included benefits, affordability, and projected costs make subscription the stronger fit under these assumptions. Confirm cancellation rules and test a higher-price scenario before committing.";
+    box.classList.add("subscribe");
+  }else if(scoreDiff<=-10){
+    title.textContent="Recommendation: Consider Buying";
+    text.textContent="Your expected long-term use, ownership value, resale potential, and projected total cost make buying the stronger fit under these assumptions. Make sure the upfront purchase does not weaken your emergency savings.";
+    box.classList.add("buy");
+  }else{
+    title.textContent="Recommendation: Close Call — Compare the Terms";
+    text.textContent="The financial and practical factors are close. Focus on the break-even point, cancellation terms, included upgrades or maintenance, realistic resale value, and how confident you are about the expected use period.";
+    box.classList.add("close");
+  }
+
+  document.getElementById("subscribeScore").textContent=subscribeScore;
+  document.getElementById("buyScore").textContent=buyScore;
+  document.getElementById("subscribeScoreBar").style.width=subscribeScore+"%";
+  document.getElementById("buyScoreBar").style.width=buyScore+"%";
+  document.getElementById("subscriptionCostCell").textContent=money(totalSubscription);
+  document.getElementById("ownershipCostCell").textContent=money(netOwnership);
+  document.getElementById("differenceCell").textContent=difference>0
+    ? money(difference)+" more for subscription over the selected period"
+    : difference<0 ? money(Math.abs(difference))+" more for buying over the selected period" : "Approximately equal";
+  document.getElementById("breakEvenCell").textContent=breakEven
+    ? breakEven+" months (approximate)"
+    : monthlyBase<=0 ? "No recurring subscription cost entered" : "Not reached within 50 years under these assumptions";
+  document.getElementById("subMonthlyCell").textContent=money(totalSubscription/useMonths);
+  document.getElementById("buyMonthlyCell").textContent=money(netOwnership/useMonths);
+
+  results.style.display="block";
+  results.scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+function resetTool(){
+  form.reset();
+  document.getElementById("useMonths").value="36";
+  document.getElementById("monthlyFee").value="30";
+  document.getElementById("setupFee").value="0";
+  document.getElementById("monthlyExtras").value="0";
+  document.getElementById("cancelCost").value="0";
+  document.getElementById("purchasePrice").value="900";
+  document.getElementById("financingCost").value="0";
+  document.getElementById("annualMaintenance").value="40";
+  document.getElementById("ownershipExtras").value="0";
+  document.getElementById("resaleValue").value="200";
+  document.getElementById("buyUpgradeCost").value="0";
+  errorBox.style.display="none";errorBox.textContent="";results.style.display="none";
+  document.getElementById("calculator-title").scrollIntoView({behavior:"smooth",block:"start"});
+}
+form.addEventListener("submit",calculate);
+resetBtn.addEventListener("click",resetTool);
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
