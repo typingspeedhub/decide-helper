@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- ========================= -->
+  <!-- MAIN PAGE -->
+  <!-- ========================= -->
+
   <url>
     <loc>https://decidehelper.com/</loc>
   </url>
+
+
+  <!-- ========================= -->
+  <!-- MONEY DECISIONS -->
+  <!-- ========================= -->
 
   <url>
     <loc>https://decidehelper.com/money/</loc>
@@ -16,13 +25,116 @@
   <url>
     <loc>https://decidehelper.com/money/should-i-buy-this-tool.html</loc>
   </url>
+
   <url>
-  <loc>https://decidehelper.com/money/should-i-finance-it.html</loc>
+    <loc>https://decidehelper.com/money/should-i-finance-it.html</loc>
   </url>
-<url>
-  <loc>https://decidehelper.com/money/loan-early-payoff-decision-tool.html</loc>
-</url>
-  
+
+  <url>
+    <loc>https://decidehelper.com/money/should-i-finance-it-tool.html</loc>
+  </url>
+
+  <url>
+    <loc>https://decidehelper.com/money/should-i-pay-cash.html</loc>
+  </url>
+
+  <url>
+    <loc>https://decidehelper.com/money/should-i-pay-off-my-loan-early.html</loc>
+  </url>
+
+  <url>
+    <loc>https://decidehelper.com/money/loan-early-payoff-decision-tool.html</loc>
+  </url>
+
+  <url>
+    <loc>https://decidehelper.com/money/should-i-refinance.html</loc>
+  </url>
+
+  <url>
+    <loc>https://decidehelper.com/money/should-i-build-emergency-fund.html</loc>
+  </url>
+
+
+  <!-- ========================= -->
+  <!-- SHOPPING DECISIONS -->
+  <!-- ========================= -->
+
+  <url>
+    <loc>https://decidehelper.com/shopping/</loc>
+  </url>
+
+  <url>
+    <loc>https://decidehelper.com/shopping/should-i-buy-new-or-used.html</loc>
+  </url>
+
+  <url>
+    <loc>https://decidehelper.com/shopping/should-i-buy-new-or-used-tool.html</loc>
+  </url>
+
+  <url>
+    <loc>https://decidehelper.com/shopping/should-i-wait-for-a-sale.html</loc>
+  </url>
+
+  <url>
+    <loc>https://decidehelper.com/shopping/should-i-wait-for-a-sale-tool.html</loc>
+  </url>
+
+  <url>
+    <loc>https://decidehelper.com/shopping/should-i-repair-or-replace.html</loc>
+  </url>
+
+  <url>
+    <loc>https://decidehelper.com/shopping/should-i-repair-or-replace-tool.html</loc>
+  </url>
+
+  <url>
+    <loc>https://decidehelper.com/shopping/should-i-buy-extended-warranty.html</loc>
+  </url>
+
+  <url>
+    <loc>https://decidehelper.com/shopping/should-i-buy-extended-warranty-tool.html</loc>
+  </url>
+
+  <url>
+    <loc>https://decidehelper.com/shopping/should-i-subscribe-or-buy.html</loc>
+  </url>
+
+  <url>
+    <loc>https://decidehelper.com/shopping/subscription-vs-buy-calculator.html</loc>
+  </url>
+
+  <url>
+    <loc>https://decidehelper.com/shopping/should-i-upgrade-my-phone.html</loc>
+  </url>
+
+  <url>
+    <loc>https://decidehelper.com/shopping/should-i-upgrade-my-phone-tool.html</loc>
+  </url>
+
+
+  <!-- ========================= -->
+  <!-- HOME DECISIONS -->
+  <!-- ========================= -->
+
+  <url>
+    <loc>https://decidehelper.com/home/</loc>
+  </url>
+
+  <url>
+    <loc>https://decidehelper.com/home/should-i-rent-or-buy.html</loc>
+    <lastmod>2026-08-21</lastmod>
+  </url>
+
+  <url>
+    <loc>https://decidehelper.com/home/should-i-rent-or-buy-tool.html</loc>
+    <lastmod>2026-08-24</lastmod>
+  </url>
+
+
+  <!-- ========================= -->
+  <!-- INFORMATION / LEGAL -->
+  <!-- ========================= -->
+
   <url>
     <loc>https://decidehelper.com/about.html</loc>
   </url>
@@ -33,6 +145,14 @@
 
   <url>
     <loc>https://decidehelper.com/privacy-policy.html</loc>
+  </url>
+
+  <url>
+    <loc>https://decidehelper.com/terms-and-conditions.html</loc>
+  </url>
+
+  <url>
+    <loc>https://decidehelper.com/disclaimer.html</loc>
   </url>
 
 </urlset>
