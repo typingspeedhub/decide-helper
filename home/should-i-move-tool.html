@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-68ZVCW4FWK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-68ZVCW4FWK');
+  </script>
+
+  <!-- Google AdSense -->
+  <script async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1607876440670769"
+    crossorigin="anonymous"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Moving Decision Tool | Should I Move or Stay? | DecideHelper</title>
+  <meta name="description" content="Use this free Moving Decision Tool to compare housing cost, moving expenses, commute, space, neighborhood, family support, lifestyle, job stability, financial resilience, and long-term fit before deciding whether to move or stay.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="DecideHelper">
+  <link rel="canonical" href="https://decidehelper.com/home/should-i-move-tool.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DecideHelper">
+  <meta property="og:title" content="Moving Decision Tool | Should I Move or Stay?">
+  <meta property="og:description" content="Compare the financial, practical, and lifestyle trade-offs of moving versus staying using a structured decision score and cost comparison.">
+  <meta property="og:url" content="https://decidehelper.com/home/should-i-move-tool.html">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Moving Decision Tool | DecideHelper">
+  <meta name="twitter:description" content="A free educational tool for comparing moving costs, monthly housing expenses, commute, space, neighborhood, family needs, and financial resilience.">
+
+  <style>
+    :root{
+      --bg:#f5f7fb;--surface:#fff;--surface-soft:#eff6ff;--surface-muted:#f8fafc;
+      --text:#1f2937;--muted:#5f6b7a;--heading:#0f172a;--primary:#2563eb;
+      --primary-dark:#1d4ed8;--green:#15803d;--green-soft:#f0fdf4;
+      --amber:#92400e;--amber-soft:#fffbeb;--red:#991b1b;--red-soft:#fef2f2;
+      --border:#dbe3ef;--shadow:0 14px 36px rgba(15,23,42,.08);
+      --radius:16px;--max-width:1100px
+    }
+    *{box-sizing:border-box}html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+    a{color:var(--primary-dark)}a:hover{text-decoration-thickness:2px}
+    button,input,select{font:inherit}
+    header{background:#0f172a;color:#fff;padding:24px 20px}
+    .header-inner,.footer-inner{max-width:var(--max-width);margin:0 auto}
+    .logo{display:inline-block;color:#fff;text-decoration:none;font-size:27px;font-weight:700;letter-spacing:-.02em}
+    .tagline{margin:5px 0 0;color:#cbd5e1;font-size:15px}
+    .primary-nav{margin-top:16px;display:flex;gap:16px;flex-wrap:wrap}
+    .primary-nav a{color:#e2e8f0;text-decoration:none;font-weight:600}
+    .primary-nav a:hover{color:#fff;text-decoration:underline}
+    .container{max-width:var(--max-width);margin:0 auto;padding:0 20px}
+    .breadcrumb{padding:22px 0 8px;color:var(--muted);font-size:14px}
+    .breadcrumb a{color:var(--muted)}
+    main{padding-bottom:60px}
+    .page-shell{margin-top:12px;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+    .hero{padding:52px 48px 42px;background:linear-gradient(135deg,#eff6ff 0%,#fff 55%,#f8fafc 100%);border-bottom:1px solid var(--border)}
+    .eyebrow{display:inline-block;margin-bottom:14px;padding:6px 11px;border-radius:999px;background:#dbeafe;color:#1e40af;font-size:13px;font-weight:700;letter-spacing:.03em;text-transform:uppercase}
+    h1{margin:0;max-width:930px;color:var(--heading);font-size:clamp(38px,6vw,62px);line-height:1.08;letter-spacing:-.04em}
+    .hero-intro{max-width:900px;margin:24px 0 0;font-size:20px;color:#334155}
+    .meta{margin-top:22px;color:var(--muted);font-size:14px}
+    .content{padding:44px 48px 56px}
+    h2{margin-top:54px;margin-bottom:14px;color:var(--heading);font-size:32px;line-height:1.22;letter-spacing:-.02em}
+    h3{margin-top:30px;margin-bottom:10px;color:var(--heading);font-size:22px;line-height:1.3}
+    p{margin:13px 0}ul,ol{padding-left:24px}li{margin:8px 0}
+    .lead{font-size:19px;color:#334155}
+    .summary-box{padding:24px;border:1px solid #bfdbfe;border-left:5px solid var(--primary);background:var(--surface-soft);border-radius:12px;margin-bottom:34px}
+    .summary-box h2{margin-top:0;font-size:24px}
+    .calculator-wrap{margin:34px 0 44px;border:1px solid var(--border);border-radius:16px;overflow:hidden;background:#fff}
+    .calculator-heading{padding:28px 30px;background:#0f172a;color:#fff}
+    .calculator-heading h2{margin:0;color:#fff;font-size:30px}
+    .calculator-heading p{margin-bottom:0;color:#cbd5e1}
+    .calculator-body{padding:30px}
+    .section-title{margin:32px 0 18px;padding-bottom:10px;border-bottom:1px solid var(--border);font-size:22px;color:var(--heading)}
+    .section-title:first-child{margin-top:0}
+    .field-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+    .field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}
+    label{font-weight:700;color:#172033}.help{color:var(--muted);font-size:13px;line-height:1.45}
+    input,select{width:100%;min-height:46px;padding:11px 12px;border:1px solid #cbd5e1;border-radius:9px;background:#fff;color:var(--text)}
+    input:focus,select:focus{outline:3px solid rgba(37,99,235,.16);border-color:var(--primary)}
+    .button-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+    .button{border:0;border-radius:10px;padding:13px 20px;cursor:pointer;font-weight:700}
+    .button.primary{background:var(--primary);color:#fff}.button.primary:hover{background:var(--primary-dark)}
+    .button.secondary{background:#e2e8f0;color:#0f172a}.button.secondary:hover{background:#cbd5e1}
+    .error-box{display:none;margin-top:22px;padding:16px 18px;border:1px solid #fecaca;border-radius:10px;background:var(--red-soft);color:var(--red);font-weight:700}
+    .results{display:none;margin-top:30px;border-top:1px solid var(--border);padding-top:30px}
+    .recommendation{padding:26px;border-radius:14px;border:1px solid #bfdbfe;background:var(--surface-soft)}
+    .recommendation.strong{border-color:#bbf7d0;background:var(--green-soft)}
+    .recommendation.caution{border-color:#fde68a;background:var(--amber-soft)}
+    .recommendation.weak{border-color:#fecaca;background:var(--red-soft)}
+    .recommendation h3{margin:0 0 10px;font-size:28px}
+    .score-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin:24px 0}
+    .score-card{border:1px solid var(--border);border-radius:14px;padding:20px;background:#fff}
+    .score-card h3{margin-top:0;font-size:17px}.score-value{font-size:29px;font-weight:700;line-height:1.05}
+    .score-card.good .score-value{color:var(--green)}.score-card.warn .score-value{color:var(--amber)}.score-card.neutral .score-value{color:var(--primary-dark)}
+    .results-table,.comparison-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px}
+    .results-table th,.comparison-table th{padding:13px;background:#0f172a;color:#fff;text-align:left;border:1px solid #334155}
+    .results-table td,.comparison-table td{padding:13px;border:1px solid var(--border);vertical-align:top}
+    .results-table tbody tr:nth-child(even),.comparison-table tbody tr:nth-child(even){background:#f8fafc}
+    .reason-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:24px}
+    .reason-box{padding:20px;border:1px solid var(--border);border-radius:12px;background:#f8fafc}.reason-box h3{margin-top:0;font-size:19px}
+    .callout{border-radius:12px;padding:22px 24px;margin:28px 0}.callout h3{margin-top:0}
+    .callout.good{background:var(--green-soft);border:1px solid #bbf7d0;color:#14532d}
+    .callout.warning{background:var(--amber-soft);border:1px solid #fde68a;color:#78350f}
+    .callout.info{background:var(--surface-soft);border:1px solid #bfdbfe;color:#1e3a8a}
+    .formula{margin:20px 0;padding:18px;border-radius:10px;background:#0f172a;color:#f8fafc;font-family:"Courier New",monospace;overflow-x:auto}
+    .steps{counter-reset:decision-step;list-style:none;padding-left:0}
+    .steps li{counter-increment:decision-step;position:relative;padding:0 0 24px 64px;min-height:52px}
+    .steps li::before{content:counter(decision-step);position:absolute;left:0;top:0;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--primary);color:#fff;font-weight:700}
+    .faq-item{border-top:1px solid var(--border);padding:22px 0}.faq-item:first-of-type{border-top:0}.faq-item h3{margin-top:0;font-size:21px}
+    .about-box{margin-top:48px;padding:28px;border-radius:14px;background:#f8fafc;border:1px solid var(--border)}.about-box h2{margin-top:0}
+    .related{margin-top:54px;padding:30px;border-radius:14px;background:#0f172a;color:#e2e8f0}.related h2{margin-top:0;color:#fff}.related a{color:#bfdbfe;font-weight:700}
+    .disclaimer{margin-top:36px;padding-top:24px;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
+    footer{background:#0f172a;color:#cbd5e1;padding:34px 20px}.footer-inner{text-align:center}
+    .footer-links{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-bottom:14px}.footer-links a{color:#e2e8f0}
+    @media(max-width:900px){.score-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:820px){.hero{padding:38px 26px 32px}.content{padding:32px 26px 44px}.field-grid,.reason-list{grid-template-columns:1fr}.comparison-table,.results-table{display:block;overflow-x:auto}}
+    @media(max-width:520px){header{padding:20px 16px}.container{padding:0 12px}.hero{padding:32px 20px 28px}.content{padding:28px 20px 38px}.calculator-body{padding:22px 18px}.calculator-heading{padding:24px 20px}.score-grid{grid-template-columns:1fr}h1{font-size:38px}h2{font-size:28px}.hero-intro{font-size:18px}.button{width:100%}}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebApplication",
+    "name":"Moving Decision Tool",
+    "url":"https://decidehelper.com/home/should-i-move-tool.html",
+    "applicationCategory":"CalculatorApplication",
+    "operatingSystem":"Any",
+    "description":"A free educational moving decision tool that compares one-time moving costs, monthly housing costs, commute, space, neighborhood, family support, job stability, financial resilience, lifestyle, and long-term fit.",
+    "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+    "publisher":{"@type":"Organization","name":"DecideHelper","url":"https://decidehelper.com/"}
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://decidehelper.com/"},
+      {"@type":"ListItem","position":2,"name":"Home Decisions","item":"https://decidehelper.com/home/"},
+      {"@type":"ListItem","position":3,"name":"Moving Decision Tool","item":"https://decidehelper.com/home/should-i-move-tool.html"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"How does the Moving Decision Tool work?","acceptedAnswer":{"@type":"Answer","text":"The tool compares one-time moving costs, changes in monthly housing and transportation costs, expected years in the new home, commute time, space, neighborhood, family support, job stability, lifestyle, and financial resilience. It produces a structured educational score rather than a guarantee or professional recommendation."}},
+      {"@type":"Question","name":"Does the tool tell me whether I should definitely move?","acceptedAnswer":{"@type":"Answer","text":"No. The result is a decision aid based only on the information you enter. It cannot inspect a property, verify local costs, predict future housing prices, or know personal circumstances that you do not enter."}},
+      {"@type":"Question","name":"What moving costs should I include?","acceptedAnswer":{"@type":"Answer","text":"Include movers or vehicle rental, packing, deposits or transaction costs, cleaning, storage, utility setup, temporary accommodation, immediate furnishing or repairs, time off work, and other relocation expenses."}},
+      {"@type":"Question","name":"Should I include commute savings in a moving decision?","acceptedAnswer":{"@type":"Answer","text":"Yes. Compare transportation spending as well as time. A higher housing cost may be partly offset by lower fuel, parking, transit, or vehicle costs and by meaningful time savings."}},
+      {"@type":"Question","name":"Is a high moving score a recommendation to sign a lease or buy a home?","acceptedAnswer":{"@type":"Answer","text":"No. A high score only means moving appears comparatively stronger under your entered assumptions. Verify the new home, neighborhood, legal terms, financing, and local conditions before making a commitment."}}
+    ]
+  }
+  </script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a class="logo" href="../index.html">DecideHelper</a>
+    <p class="tagline">Clear frameworks for difficult everyday decisions.</p>
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="../money/index.html">Money Decisions</a>
+      <a href="../shopping/index.html">Shopping Decisions</a>
+      <a href="index.html">Home Decisions</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../index.html">Home</a> ›
+    <a href="index.html">Home Decisions</a> ›
+    Moving Decision Tool
+  </nav>
+
+  <main>
+    <article class="page-shell">
+      <section class="hero">
+        <span class="eyebrow">Free Home Decision Tool</span>
+        <h1>Moving Decision Tool</h1>
+        <p class="hero-intro">
+          Should you move or stay where you are? Compare the true cost of moving with changes in housing expenses,
+          commute, space, neighborhood, family support, work stability, lifestyle, and long-term fit.
+          The tool turns those trade-offs into a structured score you can stress-test before making a major housing decision.
+        </p>
+        <p class="meta">Updated September 2, 2026 · No signup required</p>
+      </section>
+
+      <div class="content">
+        <section class="summary-box">
+          <h2>What this moving tool is designed to do</h2>
+          <p>
+            Moving is rarely a simple question of whether the new home is nicer. A move can solve a long commute,
+            reduce housing cost, create needed space, improve access to family or services, or place you in a neighborhood
+            that fits your daily life better. At the same time, it can consume savings, increase recurring costs,
+            disrupt routines, and introduce new uncertainties.
+          </p>
+          <p>
+            This tool separates <strong>financial impact</strong> from <strong>practical and lifestyle fit</strong>.
+            It estimates the one-time cost of moving, the annual change in recurring costs, an approximate break-even period
+            where relevant, commute time gained or saved, and a structured move-versus-stay score based on your own inputs.
+          </p>
+        </section>
+
+        <section class="calculator-wrap" aria-labelledby="calculator-title">
+          <div class="calculator-heading">
+            <h2 id="calculator-title">Should I Move or Stay? Calculator</h2>
+            <p>Use the same currency for all money fields. Currency symbols are not required.</p>
+          </div>
+
+          <div class="calculator-body">
+            <form id="movingForm" novalidate>
+              <h3 class="section-title">1. Why you are considering a move</h3>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="mainReason">Main reason for moving</label>
+                  <select id="mainReason">
+                    <option value="cost">Lower housing cost</option>
+                    <option value="commute">Shorter commute / better access</option>
+                    <option value="space" selected>More suitable space or layout</option>
+                    <option value="neighborhood">Better neighborhood / services</option>
+                    <option value="family">Closer to family / support</option>
+                    <option value="work">Job or career change</option>
+                    <option value="lifestyle">Lifestyle / quality of life</option>
+                    <option value="temporary">Mostly temporary frustration or desire for change</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="problemSeverity">How serious is the current problem?</label>
+                  <select id="problemSeverity">
+                    <option value="5">5 — major and persistent</option>
+                    <option value="4">4 — important</option>
+                    <option value="3" selected>3 — meaningful but manageable</option>
+                    <option value="2">2 — modest</option>
+                    <option value="1">1 — mostly preference / temporary frustration</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="stayAlternative">How well could staying and improving solve the problem?</label>
+                  <select id="stayAlternative">
+                    <option value="1">Poorly — the problem is mainly location or cannot be fixed</option>
+                    <option value="2">Only partly</option>
+                    <option value="3" selected>Moderately</option>
+                    <option value="4">Quite well</option>
+                    <option value="5">Very well — staying may solve most of it at lower cost</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="certainty">How confident are you that the new area/home solves the problem?</label>
+                  <select id="certainty">
+                    <option value="5">5 — researched thoroughly and tested</option>
+                    <option value="4" selected>4 — good evidence</option>
+                    <option value="3">3 — some uncertainty</option>
+                    <option value="2">2 — limited research</option>
+                    <option value="1">1 — mostly assumption or excitement</option>
+                  </select>
+                </div>
+              </div>
+
+              <h3 class="section-title">2. One-time moving costs and available cash</h3>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="movingCost">Movers, transport and packing</label>
+                  <input id="movingCost" type="number" min="0" step="0.01" value="2500" required>
+                </div>
+                <div class="field">
+                  <label for="transactionCost">Deposits, closing, legal, agent or transaction costs</label>
+                  <input id="transactionCost" type="number" min="0" step="0.01" value="5000" required>
+                </div>
+                <div class="field">
+                  <label for="setupCost">Cleaning, utility setup, furnishing, repairs and other setup</label>
+                  <input id="setupCost" type="number" min="0" step="0.01" value="2000" required>
+                </div>
+                <div class="field">
+                  <label for="otherMoveCost">Temporary housing, storage, time off work and other costs</label>
+                  <input id="otherMoveCost" type="number" min="0" step="0.01" value="1000" required>
+                </div>
+                <div class="field">
+                  <label for="availableCash">Cash available specifically for the move</label>
+                  <input id="availableCash" type="number" min="0" step="0.01" value="12000" required>
+                </div>
+                <div class="field">
+                  <label for="emergencySavings">Emergency savings you want to keep untouched</label>
+                  <input id="emergencySavings" type="number" min="0" step="0.01" value="15000" required>
+                  <span class="help">Keep this separate from the planned moving budget.</span>
+                </div>
+              </div>
+
+              <h3 class="section-title">3. Monthly cost comparison</h3>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="currentHousing">Current monthly housing cost</label>
+                  <input id="currentHousing" type="number" min="0" step="0.01" value="1600" required>
+                  <span class="help">Rent/mortgage plus recurring housing costs you want included.</span>
+                </div>
+                <div class="field">
+                  <label for="newHousing">Expected monthly housing cost after moving</label>
+                  <input id="newHousing" type="number" min="0" step="0.01" value="1850" required>
+                </div>
+                <div class="field">
+                  <label for="currentTransport">Current monthly commute / transport cost</label>
+                  <input id="currentTransport" type="number" min="0" step="0.01" value="350" required>
+                </div>
+                <div class="field">
+                  <label for="newTransport">Expected monthly commute / transport cost after moving</label>
+                  <input id="newTransport" type="number" min="0" step="0.01" value="180" required>
+                </div>
+                <div class="field">
+                  <label for="currentOther">Other current monthly location-related costs</label>
+                  <input id="currentOther" type="number" min="0" step="0.01" value="100" required>
+                </div>
+                <div class="field">
+                  <label for="newOther">Other expected monthly costs after moving</label>
+                  <input id="newOther" type="number" min="0" step="0.01" value="100" required>
+                </div>
+              </div>
+
+              <h3 class="section-title">4. Time, daily life and long-term fit</h3>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="currentCommute">Current round-trip commute (minutes per workday)</label>
+                  <input id="currentCommute" type="number" min="0" max="600" step="1" value="80" required>
+                </div>
+                <div class="field">
+                  <label for="newCommute">Expected round-trip commute after moving (minutes per workday)</label>
+                  <input id="newCommute" type="number" min="0" max="600" step="1" value="35" required>
+                </div>
+                <div class="field">
+                  <label for="workdays">Work / commute days per year</label>
+                  <input id="workdays" type="number" min="0" max="366" step="1" value="220" required>
+                </div>
+                <div class="field">
+                  <label for="yearsExpected">How many years do you realistically expect to stay after moving?</label>
+                  <input id="yearsExpected" type="number" min="0.5" max="50" step="0.5" value="7" required>
+                </div>
+                <div class="field">
+                  <label for="spaceFit">Expected improvement in space / layout</label>
+                  <select id="spaceFit">
+                    <option value="5">5 — major improvement</option>
+                    <option value="4" selected>4 — clear improvement</option>
+                    <option value="3">3 — modest improvement</option>
+                    <option value="2">2 — little improvement</option>
+                    <option value="1">1 — worse or uncertain</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="neighborhoodFit">Expected neighborhood / service improvement</label>
+                  <select id="neighborhoodFit">
+                    <option value="5">5 — major improvement</option>
+                    <option value="4" selected>4 — clear improvement</option>
+                    <option value="3">3 — similar</option>
+                    <option value="2">2 — some compromises</option>
+                    <option value="1">1 — likely worse</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="familySupport">Effect on family / support network</label>
+                  <select id="familySupport">
+                    <option value="5">5 — much better</option>
+                    <option value="4">4 — better</option>
+                    <option value="3" selected>3 — about the same</option>
+                    <option value="2">2 — weaker</option>
+                    <option value="1">1 — much weaker</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="lifestyleFit">Expected overall daily-life improvement</label>
+                  <select id="lifestyleFit">
+                    <option value="5">5 — major daily improvement</option>
+                    <option value="4" selected>4 — meaningful improvement</option>
+                    <option value="3">3 — modest</option>
+                    <option value="2">2 — uncertain</option>
+                    <option value="1">1 — mostly cosmetic / novelty</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="jobStability">Work and income stability after moving</label>
+                  <select id="jobStability">
+                    <option value="5">5 — very stable</option>
+                    <option value="4" selected>4 — reasonably stable</option>
+                    <option value="3">3 — some uncertainty</option>
+                    <option value="2">2 — meaningful uncertainty</option>
+                    <option value="1">1 — high uncertainty / move depends on new income</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="futureFit">Fit with likely 5-year household needs</label>
+                  <select id="futureFit">
+                    <option value="5">5 — very strong fit</option>
+                    <option value="4" selected>4 — likely good fit</option>
+                    <option value="3">3 — uncertain</option>
+                    <option value="2">2 — important limitations remain</option>
+                    <option value="1">1 — likely another move soon</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="button-row">
+                <button class="button primary" type="submit">Evaluate Moving Decision</button>
+                <button class="button secondary" type="button" id="resetBtn">Reset Tool</button>
+              </div>
+              <div class="error-box" id="errorBox" role="alert"></div>
+            </form>
+
+            <section class="results" id="results" aria-live="polite">
+              <div class="recommendation" id="recommendationBox">
+                <h3 id="recommendationTitle">Your estimated result</h3>
+                <p id="recommendationText"></p>
+              </div>
+
+              <div class="score-grid">
+                <div class="score-card neutral">
+                  <h3>Move decision score</h3>
+                  <div class="score-value" id="decisionScore">—</div>
+                </div>
+                <div class="score-card neutral">
+                  <h3>One-time moving cost</h3>
+                  <div class="score-value" id="moveCostCard">—</div>
+                </div>
+                <div class="score-card good">
+                  <h3>Monthly change</h3>
+                  <div class="score-value" id="monthlyChangeCard">—</div>
+                </div>
+                <div class="score-card warn">
+                  <h3>Annual commute hours saved</h3>
+                  <div class="score-value" id="timeSavedCard">—</div>
+                </div>
+              </div>
+
+              <table class="results-table">
+                <thead><tr><th>Calculation</th><th>Estimated result</th></tr></thead>
+                <tbody>
+                  <tr><td>Total one-time moving cost</td><td id="totalMoveCostCell">—</td></tr>
+                  <tr><td>Move budget surplus / gap</td><td id="moveBudgetCell">—</td></tr>
+                  <tr><td>Current monthly housing + transport + location costs</td><td id="currentMonthlyCell">—</td></tr>
+                  <tr><td>Expected monthly costs after moving</td><td id="newMonthlyCell">—</td></tr>
+                  <tr><td>Monthly cost change</td><td id="monthlyChangeCell">—</td></tr>
+                  <tr><td>Annual recurring cost change</td><td id="annualChangeCell">—</td></tr>
+                  <tr><td>Estimated recurring cost change over expected stay</td><td id="horizonChangeCell">—</td></tr>
+                  <tr><td>One-time cost + recurring difference over expected stay</td><td id="totalHorizonCell">—</td></tr>
+                  <tr><td>Commute minutes saved per workday</td><td id="dailyTimeCell">—</td></tr>
+                  <tr><td>Estimated commute hours saved per year</td><td id="annualHoursCell">—</td></tr>
+                  <tr><td>Estimated commute hours saved over expected stay</td><td id="horizonHoursCell">—</td></tr>
+                  <tr><td>Simple break-even from recurring monthly savings</td><td id="breakevenCell">—</td></tr>
+                </tbody>
+              </table>
+
+              <div class="reason-list">
+                <div class="reason-box">
+                  <h3>Factors supporting a move</h3>
+                  <ul id="supportReasons"></ul>
+                </div>
+                <div class="reason-box">
+                  <h3>Reasons to slow down or compare staying</h3>
+                  <ul id="cautionReasons"></ul>
+                </div>
+              </div>
+
+              <div class="callout warning">
+                <h3>Stress-test the result before making a commitment</h3>
+                <p>
+                  Rerun the tool with higher moving costs, a less favorable monthly budget, a shorter expected stay,
+                  and lower scores for neighborhood or lifestyle improvement. A robust move should still make sense
+                  when the assumptions become less optimistic.
+                </p>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section>
+          <h2>How the Moving Decision Tool works</h2>
+          <p class="lead">
+            The tool asks two separate questions: <strong>Does moving improve your financial position or remain affordable?</strong>
+            and <strong>does it solve important daily-life problems better than staying?</strong>
+          </p>
+          <p>
+            That distinction matters because moving can be worthwhile even when it costs more. A shorter commute,
+            better accessibility, proximity to family support, or a home that finally fits the household may justify
+            a higher monthly payment. Conversely, a cheaper home may be a weak move if transport costs rise,
+            the neighborhood is a poor fit, or another move is likely soon.
+          </p>
+        </section>
+
+        <section>
+          <h2>What the moving score means</h2>
+          <p>
+            The score is a structured comparison, not a real-estate valuation or a prediction of happiness.
+            It gives positive weight to serious current problems, confidence that the new location solves them,
+            better space and neighborhood fit, stronger family support, commute improvement, a longer expected stay,
+            stable work and income, and a financially manageable move.
+          </p>
+          <p>
+            It reduces the score when staying can solve most of the problem, the new area is poorly researched,
+            one-time costs exceed the move budget, monthly costs rise sharply, job stability is weak,
+            or the new home may not fit likely future needs.
+          </p>
+          <div class="callout info">
+            <h3>The score is designed to expose trade-offs</h3>
+            <p>
+              A score near the middle is not a failure. It often means the decision depends on a few important assumptions.
+              Change those assumptions deliberately and see which ones have the greatest effect on the result.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>How the tool calculates one-time moving cost</h2>
+          <p>
+            Moving cost is broader than the price of a moving company. The calculator adds transport and packing,
+            deposits or transaction costs, setup and furnishing, and other temporary or relocation expenses.
+          </p>
+          <div class="formula">Total one-time moving cost = moving/packing + transaction costs + setup costs + other relocation costs</div>
+          <p>
+            Depending on your situation, the real list can also include legal fees, inspections, storage, temporary accommodation,
+            utility connections, locksmiths, cleaning, parking permits, time off work, pet care, childcare, or replacing furniture
+            that does not fit the new home.
+          </p>
+        </section>
+
+        <section>
+          <h2>Why emergency savings are kept separate</h2>
+          <p>
+            The tool asks for cash available for the move separately from emergency savings because the same money should not
+            automatically be counted twice. A move can create unexpected bills shortly after relocation, from repairs to deposits,
+            vehicle problems, medical expenses, or an income interruption.
+          </p>
+          <div class="callout good">
+            <h3>A stronger move leaves financial breathing room</h3>
+            <p>
+              The decision is more resilient when the planned moving budget covers expected costs without requiring you
+              to empty the reserve intended for unrelated emergencies.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>How monthly cost comparison works</h2>
+          <p>
+            The calculator compares three categories before and after the move: housing, transportation, and other location-related costs.
+            This avoids treating rent or mortgage as the whole housing decision.
+          </p>
+          <div class="formula">Monthly change = new monthly total − current monthly total</div>
+          <p>
+            A positive result means the new location costs more each month under your assumptions.
+            A negative result means the new location is expected to save money each month.
+          </p>
+          <p>
+            You can include utilities, parking, association fees, insurance, taxes, maintenance reserves, childcare changes,
+            or other recurring items in the housing or “other” fields when they are materially different between the two options.
+          </p>
+        </section>
+
+        <section>
+          <h2>What simple break-even means</h2>
+          <p>
+            If moving produces recurring monthly savings, the tool estimates how many months of those savings would be needed
+            to recover the one-time moving cost.
+          </p>
+          <div class="formula">Simple break-even months = one-time moving cost ÷ monthly recurring savings</div>
+          <p>
+            This is only a simplified perspective. It ignores investment returns, inflation, financing costs, property appreciation,
+            taxes, selling costs, and future changes in housing expenses. If the move increases monthly costs, there is no financial
+            break-even from recurring savings alone; the justification must come from other benefits.
+          </p>
+        </section>
+
+        <section>
+          <h2>Why commute belongs in the housing decision</h2>
+          <p>
+            A home is not just a building. Its location determines how much time and money is spent reaching work, school,
+            childcare, family, shops, healthcare, and other regular destinations.
+          </p>
+          <p>
+            The tool calculates daily commute minutes saved and converts them into approximate annual hours.
+            Saving 45 minutes on 220 commute days is about 165 hours per year. That time may affect sleep,
+            exercise, family routines, stress, or the ability to take on other responsibilities.
+          </p>
+          <p>
+            Treat commute savings cautiously if your employer, work location, or remote-work policy may change soon.
+          </p>
+        </section>
+
+        <section>
+          <h2>Why a cheaper house can still create a more expensive life</h2>
+          <p>
+            Lower rent or mortgage does not guarantee lower total cost. A cheaper location can require a second car,
+            longer drives, more fuel, higher parking expense, or additional childcare and service costs.
+          </p>
+          <table class="comparison-table">
+            <thead><tr><th>Factor</th><th>Current home</th><th>Potential new home</th></tr></thead>
+            <tbody>
+              <tr><td>Housing payment</td><td>Known and predictable</td><td>May be lower or higher</td></tr>
+              <tr><td>Transportation</td><td>Current commute and vehicle needs</td><td>May create savings or require more driving</td></tr>
+              <tr><td>Time</td><td>Current daily routine</td><td>Can materially improve or worsen</td></tr>
+              <tr><td>Support network</td><td>Existing family, neighbors, schools and services</td><td>May strengthen or weaken</td></tr>
+              <tr><td>Uncertainty</td><td>Lower because you know the area</td><td>Higher until you live there</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>Why expected years in the new home matter</h2>
+          <p>
+            A costly move becomes harder to justify if another move is likely in one or two years.
+            A longer time horizon gives you more time to benefit from a better commute, neighborhood,
+            layout, family support, and any recurring financial savings.
+          </p>
+          <p>
+            The tool therefore gives some positive weight to a longer expected stay, but it does not assume that staying longer
+            is always better. The new home must still fit your likely household and work needs.
+          </p>
+        </section>
+
+        <section>
+          <h2>How to score space and layout</h2>
+          <p>
+            Focus on function rather than square footage. Ask what the current home prevents you from doing:
+            separate bedrooms, a workable home office, accessibility, storage, privacy, safe movement,
+            or an appropriate layout for children or older family members.
+          </p>
+          <p>
+            A larger home is not automatically a better move. Extra rooms can increase heating, cooling,
+            furnishing, maintenance, cleaning, taxes, and insurance. Score the new home based on practical use,
+            not simply size.
+          </p>
+        </section>
+
+        <section>
+          <h2>How to score neighborhood fit</h2>
+          <p>
+            Location problems are among the hardest housing problems to fix without moving.
+            Before giving a new neighborhood a high score, visit it at different times and test the routes you will actually use.
+          </p>
+          <ul>
+            <li>Check weekday and weekend traffic.</li>
+            <li>Visit in the morning, evening, and after dark.</li>
+            <li>Test parking and public transport.</li>
+            <li>Walk to shops, schools, parks, or services you expect to use.</li>
+            <li>Check noise, lighting, sidewalks, crossings, and accessibility.</li>
+            <li>Think about planned development that may change the area.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>How family support can change the economics of moving</h2>
+          <p>
+            Nearby family or trusted support can have financial as well as emotional value.
+            Regular childcare, elder care, emergency help, shared transport, or practical support may reduce other costs
+            and make daily routines more resilient.
+          </p>
+          <p>
+            Moving farther away can improve housing affordability while creating new childcare or travel costs.
+            The family-support score gives this factor explicit weight instead of treating it as an afterthought.
+          </p>
+        </section>
+
+        <section>
+          <h2>Why work and income stability matter</h2>
+          <p>
+            A move is more fragile when it depends on a new job, probation period, variable income,
+            uncertain remote-work policy, or a workplace that may change location.
+          </p>
+          <p>
+            Stress-test the decision by asking whether the new home would remain affordable after a temporary income drop,
+            whether another employer is accessible from the area, and whether a job change could recreate the long commute
+            you are trying to solve.
+          </p>
+        </section>
+
+        <section>
+          <h2>When moving usually deserves serious consideration</h2>
+          <ul>
+            <li>The current home fails an important long-term need.</li>
+            <li>The commute consumes excessive time or transportation cost.</li>
+            <li>The neighborhood conflicts with important priorities.</li>
+            <li>You need to be closer to work, school, care, or family support.</li>
+            <li>Housing costs are unsustainable and a realistic alternative is cheaper overall.</li>
+            <li>Renovation or reorganization cannot reasonably solve the main problem.</li>
+            <li>The new area has been researched thoroughly.</li>
+            <li>The move can be funded without exhausting emergency savings.</li>
+            <li>The new home fits likely needs for several years.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>When staying deserves serious consideration</h2>
+          <ul>
+            <li>The dissatisfaction is recent or linked to a temporary event.</li>
+            <li>The main problem can be fixed at reasonable cost.</li>
+            <li>The new home costs substantially more for only a modest improvement.</li>
+            <li>Your work location or household plans may change soon.</li>
+            <li>The move would weaken a valuable support network.</li>
+            <li>The new neighborhood has not been tested thoroughly.</li>
+            <li>The move would consume most available savings.</li>
+            <li>You are mainly reacting to attractive listings or cosmetic upgrades.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Stress-test your moving decision</h2>
+          <ol class="steps">
+            <li><strong>Raise the moving cost.</strong> Add a realistic buffer for deposits, setup, repairs, storage, and unexpected expenses.</li>
+            <li><strong>Make the monthly budget less favorable.</strong> Increase housing or transport costs and see whether the result remains comfortable.</li>
+            <li><strong>Shorten the expected stay.</strong> Ask what happens if work, family, or housing needs change sooner than expected.</li>
+            <li><strong>Lower the neighborhood and lifestyle scores.</strong> Avoid assuming the new area will be perfect.</li>
+            <li><strong>Compare a serious stay option.</strong> Estimate the cost of renovation, storage changes, transport changes, or other improvements.</li>
+            <li><strong>Recheck job stability.</strong> Do not build the move around income that is not yet reliable.</li>
+            <li><strong>Proceed only if the core reason still holds.</strong> A robust move should solve important problems without requiring every assumption to be optimistic.</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Common moving decision mistakes</h2>
+          <ul>
+            <li>Comparing only rent or mortgage instead of total monthly living costs.</li>
+            <li>Ignoring deposits, transaction costs, setup costs, and lost work time.</li>
+            <li>Using emergency savings as though it were automatically available for the move.</li>
+            <li>Assuming a shorter map distance always means an easier commute.</li>
+            <li>Visiting the new neighborhood only once.</li>
+            <li>Overvaluing extra space that will rarely be used.</li>
+            <li>Moving to solve a problem that could be fixed cheaply while staying.</li>
+            <li>Ignoring the value of nearby family, schools, doctors, neighbors, and familiar services.</li>
+            <li>Assuming current job arrangements will remain unchanged for years.</li>
+            <li>Treating the score as professional financial, legal, or real-estate advice.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Example: higher rent but a much shorter commute</h2>
+          <p>
+            Suppose moving raises housing cost by 250 per month but reduces transport cost by 170.
+            The net recurring increase is only 80 per month. If the move also saves 45 minutes on 220 workdays,
+            the household gains roughly 165 hours per year.
+          </p>
+          <p>
+            The move may be attractive despite the higher housing payment because the total financial difference is modest
+            and the time benefit is substantial. The case becomes weaker if the job is unstable or likely to become remote.
+          </p>
+        </section>
+
+        <section>
+          <h2>Example: cheaper home but a second car is needed</h2>
+          <p>
+            A home farther from the city may save 350 per month on housing, but the household needs another vehicle.
+            Fuel, insurance, maintenance, parking, and depreciation can consume much of the saving.
+          </p>
+          <p>
+            Enter the expected transport increase rather than assuming the housing saving represents the true monthly benefit.
+          </p>
+        </section>
+
+        <section>
+          <h2>Example: moving closer to family support</h2>
+          <p>
+            A household with young children pays slightly more for housing near grandparents who can provide regular childcare.
+            Even if the move does not produce direct housing savings, lower childcare and travel costs plus more reliable support
+            can create a strong practical case.
+          </p>
+        </section>
+
+        <section>
+          <h2>Example: temporary frustration after several repairs</h2>
+          <p>
+            A homeowner has faced several repairs in one year and starts browsing newer homes.
+            If the current location still works, major systems have already been replaced, and moving would require a much larger payment,
+            the stronger decision may be to reassess after the temporary frustration passes.
+          </p>
+        </section>
+
+        <section>
+          <h2>Information this tool cannot know for you</h2>
+          <ul>
+            <li>The true condition of a specific property.</li>
+            <li>Future rent, mortgage rates, taxes, insurance, utilities, or property values.</li>
+            <li>Whether a neighborhood will feel right after you live there.</li>
+            <li>Future job location, income, or remote-work policy.</li>
+            <li>Local legal, tax, tenant, mortgage, purchase, or sale requirements.</li>
+            <li>School quality, availability, or eligibility in a specific location.</li>
+            <li>Hidden repair, maintenance, or building problems.</li>
+            <li>The personal value of being near family, friends, healthcare, or community.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Frequently asked questions</h2>
+          <div class="faq-item">
+            <h3>How does the Moving Decision Tool work?</h3>
+            <p>
+              It compares one-time moving costs, changes in recurring housing and transport expenses,
+              commute time, expected years in the new home, space, neighborhood, family support,
+              lifestyle, job stability, and long-term fit. The result is an educational score based on your inputs.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>Does the tool tell me whether I should definitely move?</h3>
+            <p>
+              No. It helps organize the trade-offs. It cannot inspect properties, predict future housing markets,
+              or account for personal factors you do not enter.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>What moving costs should I include?</h3>
+            <p>
+              Include movers or vehicle rental, packing, storage, deposits, closing or legal costs where relevant,
+              cleaning, temporary accommodation, utility setup, locks, furnishing, repairs, time off work,
+              and other transition expenses.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>Should I include commute savings?</h3>
+            <p>
+              Yes. Compare both transport spending and time. A higher housing cost may be partly offset
+              by lower fuel, parking, transit, or vehicle costs and by a meaningful reduction in daily travel time.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>What if moving makes my monthly costs higher?</h3>
+            <p>
+              A higher monthly cost does not automatically make the move wrong. The important question is whether
+              the practical improvement is large enough and the new budget remains comfortable and resilient.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>What does the break-even period mean?</h3>
+            <p>
+              When the new location produces monthly recurring savings, the tool divides one-time moving costs
+              by those savings. It is a simple estimate and does not include investment returns, inflation,
+              property appreciation, taxes, or financing effects.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>Should I move for more space?</h3>
+            <p>
+              More space is a strong reason when the current home no longer functions for the household.
+              First compare the move with decluttering, better storage, room reconfiguration, or renovation if those could solve the problem.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>Should I move because I dislike my neighborhood?</h3>
+            <p>
+              Persistent location problems can be strong reasons to move because they are difficult to fix while staying.
+              Research the potential new area at different times and test the commute, services, parking, and routes you will use.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>How much emergency savings should I keep after moving?</h3>
+            <p>
+              There is no universal amount for every household. The important principle is to avoid using every available reserve
+              for the move. Keep a buffer appropriate to income stability, obligations, housing type, and likely unexpected costs.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>Does a high score mean I should sign a lease or buy a property now?</h3>
+            <p>
+              No. A high score only means moving looks comparatively stronger under the values entered.
+              Verify the property, neighborhood, contract, financing, legal requirements, and local conditions before committing.
+            </p>
+          </div>
+        </section>
+
+        <section class="about-box">
+          <h2>About this Moving Decision Tool</h2>
+          <p>
+            DecideHelper creates educational frameworks and interactive tools for difficult everyday decisions.
+            This tool follows the same core questions as the accompanying
+            <a href="should-i-move.html">Should I Move?</a> guide: what problem the move solves,
+            what the full cost is, how daily travel changes, whether the new area has been researched,
+            what happens to family support and finances, and whether the new home fits likely future needs.
+          </p>
+          <p>
+            The calculator intentionally avoids claiming that the lowest-cost option is always best.
+            Housing decisions combine money, time, access, support networks, space, risk, and quality of life.
+            A useful tool makes those trade-offs visible instead of reducing the decision to one price.
+          </p>
+        </section>
+
+        <section class="related">
+          <h2>Related decision guides and tools</h2>
+          <ul>
+            <li><a href="should-i-move.html">Should I Move?</a> — read the full move-versus-stay decision guide.</li>
+            <li><a href="should-i-renovate.html">Should I Renovate?</a> — compare improving the current home with moving.</li>
+            <li><a href="should-i-renovate-tool.html">Renovation Decision Tool</a> — test renovation cost, funding, urgency, and long-term fit.</li>
+            <li><a href="should-i-rent-or-buy.html">Should I Rent or Buy a Home?</a> — compare flexibility, ownership costs, and time horizon.</li>
+            <li><a href="should-i-rent-or-buy-tool.html">Rent vs Buy Calculator</a> — model renting versus buying over your time horizon.</li>
+            <li><a href="../money/should-i-finance-it.html">Should I Finance It?</a> — evaluate borrowing for a major expense.</li>
+            <li><a href="../money/should-i-build-emergency-fund.html">Should I Build an Emergency Fund?</a> — think through reserves before a major move.</li>
+            <li><a href="index.html">Home Decisions</a> — browse more home decision guides and tools.</li>
+          </ul>
+        </section>
+
+        <p class="disclaimer">
+          <strong>Disclaimer:</strong> This tool is for general educational and informational purposes only.
+          Results are estimates based entirely on the values you enter and simplified assumptions.
+          It does not provide financial, mortgage, investment, tax, legal, real-estate, relocation, insurance,
+          employment, school, or other professional advice. Housing costs, transaction rules, taxes, tenant rights,
+          property laws, financing, insurance, schools, moving costs, and local conditions vary by location and circumstance.
+          Verify current local information, inspect any property carefully, and consult qualified professionals when appropriate
+          before signing a lease, selling a home, purchasing property, borrowing money, or making another major relocation decision.
+        </p>
+      </div>
+    </article>
+  </main>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../privacy-policy.html">Privacy Policy</a>
+      <a href="../terms-and-conditions.html">Terms</a>
+      <a href="../disclaimer.html">Disclaimer</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+    <p>© <span id="year"></span> DecideHelper. Educational content only.</p>
+  </div>
+</footer>
+
+<script>
+  const form = document.getElementById('movingForm');
+  const results = document.getElementById('results');
+  const errorBox = document.getElementById('errorBox');
+  const resetBtn = document.getElementById('resetBtn');
+
+  function n(id){ return Number(document.getElementById(id).value); }
+  function money(v){
+    const sign=v<0?'-':'';
+    return sign+new Intl.NumberFormat('en-US',{maximumFractionDigits:0}).format(Math.abs(v));
+  }
+  function addReason(list,text){
+    const li=document.createElement('li');
+    li.textContent=text;
+    list.appendChild(li);
+  }
+  function reasonScore(type){
+    return {cost:4,commute:4.5,space:4,neighborhood:4,family:4.5,work:4,lifestyle:3.5,temporary:1.5}[type] || 3;
+  }
+
+  function calculate(event){
+    event.preventDefault();
+    errorBox.style.display='none';
+    errorBox.textContent='';
+
+    const input={
+      mainReason:document.getElementById('mainReason').value,
+      problemSeverity:n('problemSeverity'),
+      stayAlternative:n('stayAlternative'),
+      certainty:n('certainty'),
+      movingCost:n('movingCost'),
+      transactionCost:n('transactionCost'),
+      setupCost:n('setupCost'),
+      otherMoveCost:n('otherMoveCost'),
+      availableCash:n('availableCash'),
+      emergencySavings:n('emergencySavings'),
+      currentHousing:n('currentHousing'),
+      newHousing:n('newHousing'),
+      currentTransport:n('currentTransport'),
+      newTransport:n('newTransport'),
+      currentOther:n('currentOther'),
+      newOther:n('newOther'),
+      currentCommute:n('currentCommute'),
+      newCommute:n('newCommute'),
+      workdays:n('workdays'),
+      yearsExpected:n('yearsExpected'),
+      spaceFit:n('spaceFit'),
+      neighborhoodFit:n('neighborhoodFit'),
+      familySupport:n('familySupport'),
+      lifestyleFit:n('lifestyleFit'),
+      jobStability:n('jobStability'),
+      futureFit:n('futureFit')
+    };
+
+    const numeric=Object.entries(input).filter(([k])=>k!=='mainReason').map(([,v])=>v);
+    const invalid = numeric.some(v=>!Number.isFinite(v)) ||
+      input.movingCost<0 || input.transactionCost<0 || input.setupCost<0 || input.otherMoveCost<0 ||
+      input.availableCash<0 || input.emergencySavings<0 ||
+      input.currentHousing<0 || input.newHousing<0 || input.currentTransport<0 || input.newTransport<0 ||
+      input.currentOther<0 || input.newOther<0 || input.currentCommute<0 || input.newCommute<0 ||
+      input.workdays<0 || input.workdays>366 || input.yearsExpected<=0;
+
+    if(invalid){
+      errorBox.textContent='Please enter valid non-negative values. Expected years in the new home must be greater than zero.';
+      errorBox.style.display='block';
+      results.style.display='none';
+      return;
+    }
+
+    const moveCost=input.movingCost+input.transactionCost+input.setupCost+input.otherMoveCost;
+    const moveBudget=input.availableCash-moveCost;
+
+    const currentMonthly=input.currentHousing+input.currentTransport+input.currentOther;
+    const newMonthly=input.newHousing+input.newTransport+input.newOther;
+    const monthlyChange=newMonthly-currentMonthly;
+    const annualChange=monthlyChange*12;
+    const horizonChange=annualChange*input.yearsExpected;
+    const totalHorizon=moveCost+horizonChange;
+
+    const dailyMinutesSaved=input.currentCommute-input.newCommute;
+    const annualHoursSaved=dailyMinutesSaved*input.workdays/60;
+    const horizonHoursSaved=annualHoursSaved*input.yearsExpected;
+    const monthlySavings=Math.max(0,-monthlyChange);
+    const breakeven=monthlySavings>0?moveCost/monthlySavings:Infinity;
+
+    let score=50;
+    score += (reasonScore(input.mainReason)-3)*5;
+    score += (input.problemSeverity-3)*6;
+    score += (input.certainty-3)*5;
+    score -= (input.stayAlternative-3)*6;
+    score += (input.spaceFit-3)*4;
+    score += (input.neighborhoodFit-3)*4;
+    score += (input.familySupport-3)*4;
+    score += (input.lifestyleFit-3)*5;
+    score += (input.jobStability-3)*5;
+    score += (input.futureFit-3)*5;
+    score += Math.min(10,Math.max(-8,(input.yearsExpected-5)*1.5));
+
+    if(moveBudget>=0) score+=7;
+    else score-=Math.min(18,8+(Math.abs(moveBudget)/Math.max(moveCost,1))*20);
+
+    const monthlyRatio=currentMonthly>0?monthlyChange/currentMonthly:0;
+    if(monthlyChange<=0) score+=Math.min(8,Math.abs(monthlyRatio)*20+2);
+    else score-=Math.min(12,monthlyRatio*25);
+
+    if(annualHoursSaved>=120) score+=8;
+    else if(annualHoursSaved>=60) score+=5;
+    else if(annualHoursSaved>=20) score+=2;
+    else if(annualHoursSaved<-60) score-=6;
+    else if(annualHoursSaved<0) score-=3;
+
+    if(input.mainReason==='temporary') score-=10;
+    if(input.certainty<=2) score-=5;
+    if(input.jobStability<=2) score-=6;
+    if(input.futureFit<=2) score-=5;
+
+    score=Math.max(0,Math.min(100,Math.round(score)));
+
+    const box=document.getElementById('recommendationBox');
+    const title=document.getElementById('recommendationTitle');
+    const text=document.getElementById('recommendationText');
+    box.className='recommendation';
+
+    if(score>=70 && moveBudget>=0){
+      title.textContent='Estimated result: The case for moving looks relatively strong';
+      text.textContent='Your inputs show a comparatively strong combination of problem-solving benefit, daily-life improvement, research confidence, long-term fit, and financial capacity. Before committing, stress-test the result with higher costs and a less favorable view of the new area.';
+      box.classList.add('strong');
+    } else if(score>=45){
+      title.textContent='Estimated result: Mixed — compare moving with a serious stay option';
+      text.textContent='The move may solve meaningful problems, but the current assumptions also show trade-offs. Compare a stay-and-improve scenario, verify the new neighborhood and recurring costs, and rerun the tool with more conservative assumptions.';
+      box.classList.add('caution');
+    } else {
+      title.textContent='Estimated result: Staying or delaying deserves more attention';
+      text.textContent='Under the values entered, moving looks financially or practically fragile. The move may be expensive relative to the benefit, the new situation may be uncertain, or staying may solve much of the same problem at lower cost and disruption.';
+      box.classList.add('weak');
+    }
+
+    document.getElementById('decisionScore').textContent=score+' / 100';
+    document.getElementById('moveCostCard').textContent=money(moveCost);
+    document.getElementById('monthlyChangeCard').textContent=(monthlyChange>0?'+':'')+money(monthlyChange)+'/mo';
+    document.getElementById('timeSavedCard').textContent=(annualHoursSaved>=0?annualHoursSaved.toFixed(0):'-'+Math.abs(annualHoursSaved).toFixed(0))+' h';
+
+    document.getElementById('totalMoveCostCell').textContent=money(moveCost);
+    document.getElementById('moveBudgetCell').textContent=moveBudget>=0?'Surplus '+money(moveBudget):'Gap '+money(Math.abs(moveBudget));
+    document.getElementById('currentMonthlyCell').textContent=money(currentMonthly);
+    document.getElementById('newMonthlyCell').textContent=money(newMonthly);
+    document.getElementById('monthlyChangeCell').textContent=
+      monthlyChange<0?'Saving '+money(Math.abs(monthlyChange))+' per month':
+      monthlyChange>0?'Increase '+money(monthlyChange)+' per month':'No change';
+    document.getElementById('annualChangeCell').textContent=
+      annualChange<0?'Saving '+money(Math.abs(annualChange))+' per year':
+      annualChange>0?'Increase '+money(annualChange)+' per year':'No change';
+    document.getElementById('horizonChangeCell').textContent=
+      horizonChange<0?'Saving '+money(Math.abs(horizonChange))+' over '+input.yearsExpected+' years':
+      horizonChange>0?'Increase '+money(horizonChange)+' over '+input.yearsExpected+' years':'No change';
+    document.getElementById('totalHorizonCell').textContent=
+      totalHorizon<0?'Net saving '+money(Math.abs(totalHorizon))+' including moving cost':
+      'Net additional cost '+money(totalHorizon)+' including moving cost';
+    document.getElementById('dailyTimeCell').textContent=
+      dailyMinutesSaved>=0?dailyMinutesSaved.toFixed(0)+' minutes saved':
+      Math.abs(dailyMinutesSaved).toFixed(0)+' additional minutes';
+    document.getElementById('annualHoursCell').textContent=
+      annualHoursSaved>=0?annualHoursSaved.toFixed(1)+' hours saved':
+      Math.abs(annualHoursSaved).toFixed(1)+' additional hours';
+    document.getElementById('horizonHoursCell').textContent=
+      horizonHoursSaved>=0?horizonHoursSaved.toFixed(0)+' hours saved':
+      Math.abs(horizonHoursSaved).toFixed(0)+' additional hours';
+    document.getElementById('breakevenCell').textContent=
+      Number.isFinite(breakeven)?breakeven.toFixed(1)+' months':'No break-even from monthly savings because the move does not reduce recurring monthly cost';
+
+    const support=document.getElementById('supportReasons');
+    const caution=document.getElementById('cautionReasons');
+    support.innerHTML=''; caution.innerHTML='';
+
+    if(input.problemSeverity>=4) addReason(support,'Your current housing problem is important or persistent, so staying has a real cost or drawback.');
+    if(input.certainty>=4) addReason(support,'You have relatively strong confidence that the new home or area addresses the main problem.');
+    if(input.spaceFit>=4) addReason(support,'The new home is expected to provide a clear improvement in space or layout.');
+    if(input.neighborhoodFit>=4) addReason(support,'The new neighborhood or local services appear to fit your priorities better.');
+    if(input.familySupport>=4) addReason(support,'The move is expected to strengthen family or practical support.');
+    if(input.lifestyleFit>=4) addReason(support,'The move is expected to improve ordinary daily life, not just appearance or novelty.');
+    if(input.jobStability>=4) addReason(support,'Work and income appear reasonably stable under the new arrangement.');
+    if(input.futureFit>=4) addReason(support,'The new home appears to fit likely household needs for several years.');
+    if(moveBudget>=0) addReason(support,'The cash you allocated to the move covers the estimated one-time moving costs.');
+    if(monthlyChange<0) addReason(support,'The new location is expected to reduce recurring monthly housing, transport, and location-related costs.');
+    if(annualHoursSaved>=60) addReason(support,'The estimated commute time saving is meaningful over a typical year.');
+
+    if(moveBudget<0) addReason(caution,'Estimated one-time moving costs are higher than the cash budget you entered for the move.');
+    if(input.stayAlternative>=4) addReason(caution,'A stay-and-improve alternative may solve much of the same problem with less disruption.');
+    if(input.certainty<=2) addReason(caution,'The new area or home has not been researched enough to support a high-confidence decision.');
+    if(monthlyChange>0 && monthlyRatio>0.15) addReason(caution,'The move increases recurring monthly costs materially relative to your current total.');
+    if(input.jobStability<=2) addReason(caution,'Work or income uncertainty makes a major housing change more financially fragile.');
+    if(input.futureFit<=2) addReason(caution,'The new home may not fit your likely medium-term needs, increasing the risk of another move.');
+    if(input.yearsExpected<=3) addReason(caution,'A short expected stay gives you less time to recover moving costs or enjoy the practical benefits.');
+    if(annualHoursSaved<0) addReason(caution,'The move is expected to increase commute time.');
+    if(input.familySupport<=2) addReason(caution,'The move may weaken your family or practical support network.');
+    if(input.mainReason==='temporary') addReason(caution,'The main reason is temporary frustration or desire for change, which deserves extra scrutiny before a costly move.');
+
+    if(!support.children.length) addReason(support,'The current inputs do not create a dominant structural factor in favor of moving.');
+    if(!caution.children.length) addReason(caution,'No major warning factor dominates under the current inputs, but property and neighborhood assumptions should still be verified.');
+
+    results.style.display='block';
+    results.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+
+  function resetTool(){
+    form.reset();
+    document.getElementById('mainReason').value='space';
+    document.getElementById('problemSeverity').value='3';
+    document.getElementById('stayAlternative').value='3';
+    document.getElementById('certainty').value='4';
+    document.getElementById('movingCost').value='2500';
+    document.getElementById('transactionCost').value='5000';
+    document.getElementById('setupCost').value='2000';
+    document.getElementById('otherMoveCost').value='1000';
+    document.getElementById('availableCash').value='12000';
+    document.getElementById('emergencySavings').value='15000';
+    document.getElementById('currentHousing').value='1600';
+    document.getElementById('newHousing').value='1850';
+    document.getElementById('currentTransport').value='350';
+    document.getElementById('newTransport').value='180';
+    document.getElementById('currentOther').value='100';
+    document.getElementById('newOther').value='100';
+    document.getElementById('currentCommute').value='80';
+    document.getElementById('newCommute').value='35';
+    document.getElementById('workdays').value='220';
+    document.getElementById('yearsExpected').value='7';
+    document.getElementById('spaceFit').value='4';
+    document.getElementById('neighborhoodFit').value='4';
+    document.getElementById('familySupport').value='3';
+    document.getElementById('lifestyleFit').value='4';
+    document.getElementById('jobStability').value='4';
+    document.getElementById('futureFit').value='4';
+    errorBox.style.display='none';
+    results.style.display='none';
+    document.getElementById('calculator-title').scrollIntoView({behavior:'smooth',block:'start'});
+  }
+
+  form.addEventListener('submit',calculate);
+  resetBtn.addEventListener('click',resetTool);
+  document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
