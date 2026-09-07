@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-68ZVCW4FWK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-68ZVCW4FWK');
+  </script>
+
+  <!-- Google AdSense -->
+  <script async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1607876440670769"
+    crossorigin="anonymous"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Solar Panel Payback Calculator | Estimate Solar Savings | DecideHelper</title>
+  <meta name="description" content="Use this free Solar Panel Payback Calculator to estimate net solar cost, annual savings, simple payback, 10- and 20-year savings, self-consumption value, export value, maintenance, degradation, financing, and whether solar may fit your time in the home.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="DecideHelper">
+  <link rel="canonical" href="https://decidehelper.com/home/solar-panel-payback-calculator.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DecideHelper">
+  <meta property="og:title" content="Solar Panel Payback Calculator | DecideHelper">
+  <meta property="og:description" content="Estimate solar panel payback using installation cost, incentives, production, self-consumption, electricity price, export value, maintenance, degradation, financing, and ownership period.">
+  <meta property="og:url" content="https://decidehelper.com/home/solar-panel-payback-calculator.html">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Solar Panel Payback Calculator">
+  <meta name="twitter:description" content="A free educational calculator for estimating rooftop solar cost, savings, payback and long-term value.">
+
+  <style>
+    :root{
+      --bg:#f5f7fb;--surface:#fff;--surface-soft:#eff6ff;--surface-muted:#f8fafc;
+      --text:#1f2937;--muted:#5f6b7a;--heading:#0f172a;--primary:#2563eb;
+      --primary-dark:#1d4ed8;--green:#15803d;--green-soft:#f0fdf4;
+      --amber:#92400e;--amber-soft:#fffbeb;--red:#991b1b;--red-soft:#fef2f2;
+      --border:#dbe3ef;--shadow:0 14px 36px rgba(15,23,42,.08);
+      --radius:16px;--max-width:1100px
+    }
+    *{box-sizing:border-box}html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+    a{color:var(--primary-dark)}a:hover{text-decoration-thickness:2px}
+    button,input,select{font:inherit}
+    header{background:#0f172a;color:#fff;padding:24px 20px}
+    .header-inner,.footer-inner{max-width:var(--max-width);margin:0 auto}
+    .logo{display:inline-block;color:#fff;text-decoration:none;font-size:27px;font-weight:700;letter-spacing:-.02em}
+    .tagline{margin:5px 0 0;color:#cbd5e1;font-size:15px}
+    .primary-nav{margin-top:16px;display:flex;gap:16px;flex-wrap:wrap}
+    .primary-nav a{color:#e2e8f0;text-decoration:none;font-weight:600}
+    .primary-nav a:hover{color:#fff;text-decoration:underline}
+    .container{max-width:var(--max-width);margin:0 auto;padding:0 20px}
+    .breadcrumb{padding:22px 0 8px;color:var(--muted);font-size:14px}.breadcrumb a{color:var(--muted)}
+    main{padding-bottom:60px}
+    .page-shell{margin-top:12px;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+    .hero{padding:52px 48px 42px;background:linear-gradient(135deg,#eff6ff 0%,#fff 55%,#f8fafc 100%);border-bottom:1px solid var(--border)}
+    .eyebrow{display:inline-block;margin-bottom:14px;padding:6px 11px;border-radius:999px;background:#dbeafe;color:#1e40af;font-size:13px;font-weight:700;letter-spacing:.03em;text-transform:uppercase}
+    h1{margin:0;max-width:930px;color:var(--heading);font-size:clamp(38px,6vw,62px);line-height:1.08;letter-spacing:-.04em}
+    .hero-intro{max-width:900px;margin:24px 0 0;font-size:20px;color:#334155}
+    .meta{margin-top:22px;color:var(--muted);font-size:14px}
+    .content{padding:44px 48px 56px}
+    h2{margin-top:54px;margin-bottom:14px;color:var(--heading);font-size:32px;line-height:1.22;letter-spacing:-.02em}
+    h3{margin-top:30px;margin-bottom:10px;color:var(--heading);font-size:22px;line-height:1.3}
+    p{margin:13px 0}ul,ol{padding-left:24px}li{margin:8px 0}.lead{font-size:19px;color:#334155}
+    .summary-box{padding:24px;border:1px solid #bfdbfe;border-left:5px solid var(--primary);background:var(--surface-soft);border-radius:12px;margin-bottom:34px}
+    .summary-box h2{margin-top:0;font-size:24px}
+    .calculator-wrap{margin:34px 0 44px;border:1px solid var(--border);border-radius:16px;overflow:hidden;background:#fff}
+    .calculator-heading{padding:28px 30px;background:#0f172a;color:#fff}
+    .calculator-heading h2{margin:0;color:#fff;font-size:30px}.calculator-heading p{margin-bottom:0;color:#cbd5e1}
+    .calculator-body{padding:30px}
+    .section-title{margin:32px 0 18px;padding-bottom:10px;border-bottom:1px solid var(--border);font-size:22px;color:var(--heading)}
+    .section-title:first-child{margin-top:0}
+    .field-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+    .field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}
+    label{font-weight:700;color:#172033}.help{color:var(--muted);font-size:13px;line-height:1.45}
+    input,select{width:100%;min-height:46px;padding:11px 12px;border:1px solid #cbd5e1;border-radius:9px;background:#fff;color:var(--text)}
+    input:focus,select:focus{outline:3px solid rgba(37,99,235,.16);border-color:var(--primary)}
+    .button-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+    .button{border:0;border-radius:10px;padding:13px 20px;cursor:pointer;font-weight:700}
+    .button.primary{background:var(--primary);color:#fff}.button.primary:hover{background:var(--primary-dark)}
+    .button.secondary{background:#e2e8f0;color:#0f172a}.button.secondary:hover{background:#cbd5e1}
+    .error-box{display:none;margin-top:22px;padding:16px 18px;border:1px solid #fecaca;border-radius:10px;background:var(--red-soft);color:var(--red);font-weight:700}
+    .results{display:none;margin-top:30px;border-top:1px solid var(--border);padding-top:30px}
+    .recommendation{padding:26px;border-radius:14px;border:1px solid #bfdbfe;background:var(--surface-soft)}
+    .recommendation.strong{border-color:#bbf7d0;background:var(--green-soft)}
+    .recommendation.caution{border-color:#fde68a;background:var(--amber-soft)}
+    .recommendation.weak{border-color:#fecaca;background:var(--red-soft)}
+    .recommendation h3{margin:0 0 10px;font-size:28px}
+    .score-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin:24px 0}
+    .score-card{border:1px solid var(--border);border-radius:14px;padding:20px;background:#fff}
+    .score-card h3{margin-top:0;font-size:17px}.score-value{font-size:29px;font-weight:700;line-height:1.05}
+    .score-card.good .score-value{color:var(--green)}.score-card.warn .score-value{color:var(--amber)}.score-card.neutral .score-value{color:var(--primary-dark)}
+    .results-table,.comparison-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px}
+    .results-table th,.comparison-table th{padding:13px;background:#0f172a;color:#fff;text-align:left;border:1px solid #334155}
+    .results-table td,.comparison-table td{padding:13px;border:1px solid var(--border);vertical-align:top}
+    .results-table tbody tr:nth-child(even),.comparison-table tbody tr:nth-child(even){background:#f8fafc}
+    .reason-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:24px}
+    .reason-box{padding:20px;border:1px solid var(--border);border-radius:12px;background:#f8fafc}.reason-box h3{margin-top:0;font-size:19px}
+    .callout{border-radius:12px;padding:22px 24px;margin:28px 0}.callout h3{margin-top:0}
+    .callout.good{background:var(--green-soft);border:1px solid #bbf7d0;color:#14532d}
+    .callout.warning{background:var(--amber-soft);border:1px solid #fde68a;color:#78350f}
+    .callout.info{background:var(--surface-soft);border:1px solid #bfdbfe;color:#1e3a8a}
+    .formula{margin:20px 0;padding:18px;border-radius:10px;background:#0f172a;color:#f8fafc;font-family:"Courier New",monospace;overflow-x:auto}
+    .faq-item{border-top:1px solid var(--border);padding:22px 0}.faq-item:first-of-type{border-top:0}.faq-item h3{margin-top:0;font-size:21px}
+    .about-box{margin-top:48px;padding:28px;border-radius:14px;background:#f8fafc;border:1px solid var(--border)}.about-box h2{margin-top:0}
+    .related{margin-top:54px;padding:30px;border-radius:14px;background:#0f172a;color:#e2e8f0}.related h2{margin-top:0;color:#fff}.related a{color:#bfdbfe;font-weight:700}
+    .disclaimer{margin-top:36px;padding-top:24px;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
+    footer{background:#0f172a;color:#cbd5e1;padding:34px 20px}.footer-inner{text-align:center}
+    .footer-links{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-bottom:14px}.footer-links a{color:#e2e8f0}
+    @media(max-width:900px){.score-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:820px){.hero{padding:38px 26px 32px}.content{padding:32px 26px 44px}.field-grid,.reason-list{grid-template-columns:1fr}.comparison-table,.results-table{display:block;overflow-x:auto}}
+    @media(max-width:520px){header{padding:20px 16px}.container{padding:0 12px}.hero{padding:32px 20px 28px}.content{padding:28px 20px 38px}.calculator-body{padding:22px 18px}.calculator-heading{padding:24px 20px}.score-grid{grid-template-columns:1fr}h1{font-size:38px}h2{font-size:28px}.hero-intro{font-size:18px}.button{width:100%}}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebApplication",
+    "name":"Solar Panel Payback Calculator",
+    "url":"https://decidehelper.com/home/solar-panel-payback-calculator.html",
+    "applicationCategory":"CalculatorApplication",
+    "operatingSystem":"Any",
+    "description":"A free educational solar payback calculator that estimates net solar cost, first-year savings, simple payback, long-term savings, self-consumption value, export value, maintenance, degradation, financing cost, and ownership-period fit.",
+    "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+    "publisher":{"@type":"Organization","name":"DecideHelper","url":"https://decidehelper.com/"}
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://decidehelper.com/"},
+      {"@type":"ListItem","position":2,"name":"Home Decisions","item":"https://decidehelper.com/home/"},
+      {"@type":"ListItem","position":3,"name":"Solar Panel Payback Calculator","item":"https://decidehelper.com/home/solar-panel-payback-calculator.html"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"How does the Solar Panel Payback Calculator work?","acceptedAnswer":{"@type":"Answer","text":"The calculator estimates the net project cost after incentives, separates self-consumed solar from exported electricity, estimates first-year savings after maintenance, and compares cumulative savings with project cost over time."}},
+      {"@type":"Question","name":"What is a simple solar payback period?","acceptedAnswer":{"@type":"Answer","text":"Simple payback is the net upfront project cost divided by estimated first-year net savings. It is a screening estimate and does not capture every future cost, financing charge, tariff change, equipment replacement, degradation, or the time value of money."}},
+      {"@type":"Question","name":"Why does self-consumption matter?","acceptedAnswer":{"@type":"Answer","text":"Solar electricity used directly in the home can replace electricity bought at the retail rate, while exported electricity may receive a different value. The difference can materially affect annual savings."}},
+      {"@type":"Question","name":"Does the calculator predict my actual solar production?","acceptedAnswer":{"@type":"Answer","text":"No. Enter a site-specific annual production estimate from a qualified installer or recognized solar-estimation source. Real production varies with location, weather, orientation, tilt, shading, equipment, and system losses."}},
+      {"@type":"Question","name":"Should I include a battery in solar payback?","acceptedAnswer":{"@type":"Answer","text":"Include a battery only when its cost and expected effect on self-consumption or tariff savings are reflected in your inputs. Solar and battery economics should also be evaluated separately."}},
+      {"@type":"Question","name":"Is a short payback period a guarantee that solar is a good investment?","acceptedAnswer":{"@type":"Answer","text":"No. A short estimated payback can still rely on uncertain production, tariff, incentive, financing, maintenance, equipment-life, or ownership assumptions. Review the complete project and stress-test the inputs."}}
+    ]
+  }
+  </script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a class="logo" href="../index.html">DecideHelper</a>
+    <p class="tagline">Clear frameworks for difficult everyday decisions.</p>
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="../money/index.html">Money Decisions</a>
+      <a href="../shopping/index.html">Shopping Decisions</a>
+      <a href="index.html">Home Decisions</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../index.html">Home</a> ›
+    <a href="index.html">Home Decisions</a> ›
+    Solar Panel Payback Calculator
+  </nav>
+
+  <main>
+    <article class="page-shell">
+      <section class="hero">
+        <span class="eyebrow">Free Home Energy Decision Tool</span>
+        <h1>Solar Panel Payback Calculator</h1>
+        <p class="hero-intro">
+          Estimate how long a rooftop solar project may take to recover its cost and how much value it may create over the years you expect to own the home.
+          The calculator separates electricity used directly in the home from electricity exported to the grid and lets you test maintenance,
+          panel degradation, electricity-price changes and financing instead of relying on one optimistic savings number.
+        </p>
+        <p class="meta">Updated September 7, 2026 · No signup required · Educational estimate</p>
+      </section>
+
+      <div class="content">
+        <section class="summary-box">
+          <h2>What this solar payback calculator is designed to do</h2>
+          <p>
+            A solar quote can look attractive while hiding important assumptions. Total production is not necessarily worth the retail electricity rate,
+            exported electricity may be compensated differently, equipment output can decline gradually, maintenance costs exist,
+            and financing can materially change the true project cost.
+          </p>
+          <p>
+            This tool estimates <strong>net project cost</strong>, <strong>first-year solar value</strong>,
+            <strong>simple payback</strong>, <strong>cumulative savings over 10 and 20 years</strong>,
+            and whether the estimated payback occurs within your expected ownership period.
+            It is a decision aid, not a substitute for a site survey, installer proposal, utility tariff review or financial advice.
+          </p>
+        </section>
+
+        <section class="calculator-wrap" aria-labelledby="calculator-title">
+          <div class="calculator-heading">
+            <h2 id="calculator-title">Estimate Your Solar Payback</h2>
+            <p>Use the same currency for every money field. Enter percentages as ordinary numbers, such as 40 for 40%.</p>
+          </div>
+
+          <div class="calculator-body">
+            <form id="solarForm" novalidate>
+              <h3 class="section-title">1. Solar project cost</h3>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="installedCost">Total installed solar cost</label>
+                  <input id="installedCost" type="number" min="0" step="0.01" value="15000" required>
+                  <span class="help">Include equipment, labor, permits, electrical work and other project costs.</span>
+                </div>
+                <div class="field">
+                  <label for="incentives">Confirmed incentives / credits</label>
+                  <input id="incentives" type="number" min="0" step="0.01" value="3000" required>
+                  <span class="help">Only include benefits you have verified you can actually receive.</span>
+                </div>
+                <div class="field">
+                  <label for="batteryCost">Battery cost included in project</label>
+                  <input id="batteryCost" type="number" min="0" step="0.01" value="0" required>
+                  <span class="help">Enter 0 if there is no battery or its cost is already included above.</span>
+                </div>
+                <div class="field">
+                  <label for="otherUpfront">Other upfront solar-related cost</label>
+                  <input id="otherUpfront" type="number" min="0" step="0.01" value="0" required>
+                  <span class="help">For example roof work specifically required for solar or connection fees.</span>
+                </div>
+              </div>
+
+              <h3 class="section-title">2. Production and electricity value</h3>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="annualProduction">Estimated first-year solar production (kWh)</label>
+                  <input id="annualProduction" type="number" min="1" step="1" value="7000" required>
+                  <span class="help">Prefer a site-specific estimate that includes orientation, shading and system losses.</span>
+                </div>
+                <div class="field">
+                  <label for="selfConsumption">Expected self-consumption (%)</label>
+                  <input id="selfConsumption" type="number" min="0" max="100" step="0.1" value="45" required>
+                  <span class="help">Share of solar production you expect to use directly in the home.</span>
+                </div>
+                <div class="field">
+                  <label for="retailRate">Electricity purchase price per kWh</label>
+                  <input id="retailRate" type="number" min="0" step="0.0001" value="0.30" required>
+                  <span class="help">Use the avoidable per-kWh price that self-consumed solar actually replaces.</span>
+                </div>
+                <div class="field">
+                  <label for="exportRate">Export compensation per kWh</label>
+                  <input id="exportRate" type="number" min="0" step="0.0001" value="0.08" required>
+                  <span class="help">Enter the value paid or credited for electricity sent to the grid.</span>
+                </div>
+              </div>
+
+              <h3 class="section-title">3. Long-term assumptions</h3>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="annualMaintenance">Expected annual solar-related cost</label>
+                  <input id="annualMaintenance" type="number" min="0" step="0.01" value="150" required>
+                  <span class="help">A planning allowance for monitoring, service, cleaning or other recurring costs.</span>
+                </div>
+                <div class="field">
+                  <label for="degradation">Annual production degradation (%)</label>
+                  <input id="degradation" type="number" min="0" max="5" step="0.01" value="0.5" required>
+                  <span class="help">A simplified annual decline applied to production after year one.</span>
+                </div>
+                <div class="field">
+                  <label for="electricityGrowth">Annual electricity-price change (%)</label>
+                  <input id="electricityGrowth" type="number" min="-10" max="20" step="0.1" value="2" required>
+                  <span class="help">Use a conservative assumption. Future tariffs are uncertain.</span>
+                </div>
+                <div class="field">
+                  <label for="exportGrowth">Annual export-rate change (%)</label>
+                  <input id="exportGrowth" type="number" min="-20" max="20" step="0.1" value="0" required>
+                  <span class="help">Use 0 if you do not want to assume export compensation rises.</span>
+                </div>
+                <div class="field">
+                  <label for="yearsInHome">Expected years you will keep the home</label>
+                  <input id="yearsInHome" type="number" min="1" max="40" step="1" value="15" required>
+                </div>
+                <div class="field">
+                  <label for="analysisYears">Long-term analysis period (years)</label>
+                  <input id="analysisYears" type="number" min="5" max="40" step="1" value="25" required>
+                </div>
+              </div>
+
+              <h3 class="section-title">4. Financing (optional)</h3>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="financedAmount">Amount financed</label>
+                  <input id="financedAmount" type="number" min="0" step="0.01" value="0" required>
+                  <span class="help">Enter 0 for a cash purchase.</span>
+                </div>
+                <div class="field">
+                  <label for="loanRate">Loan annual interest rate (%)</label>
+                  <input id="loanRate" type="number" min="0" max="50" step="0.01" value="6" required>
+                </div>
+                <div class="field">
+                  <label for="loanYears">Loan term (years)</label>
+                  <input id="loanYears" type="number" min="1" max="30" step="1" value="10" required>
+                </div>
+                <div class="field">
+                  <label for="loanFees">Financing / origination fees</label>
+                  <input id="loanFees" type="number" min="0" step="0.01" value="0" required>
+                </div>
+              </div>
+
+              <div class="button-row">
+                <button class="button primary" type="submit">Calculate Solar Payback</button>
+                <button class="button secondary" type="button" id="resetBtn">Reset Calculator</button>
+              </div>
+              <div class="error-box" id="errorBox" role="alert"></div>
+            </form>
+
+            <section class="results" id="results" aria-live="polite">
+              <div class="recommendation" id="recommendationBox">
+                <h3 id="recommendationTitle">Your estimated solar result</h3>
+                <p id="recommendationText"></p>
+              </div>
+
+              <div class="score-grid">
+                <div class="score-card neutral">
+                  <h3>Net project cost</h3>
+                  <div class="score-value" id="netCostResult">—</div>
+                </div>
+                <div class="score-card good">
+                  <h3>First-year net savings</h3>
+                  <div class="score-value" id="yearOneSavingsResult">—</div>
+                </div>
+                <div class="score-card neutral">
+                  <h3>Simple payback</h3>
+                  <div class="score-value" id="simplePaybackResult">—</div>
+                </div>
+                <div class="score-card neutral">
+                  <h3>Modeled break-even</h3>
+                  <div class="score-value" id="modeledPaybackResult">—</div>
+                </div>
+              </div>
+
+              <table class="results-table">
+                <thead><tr><th>Result</th><th>Estimate</th><th>What it means</th></tr></thead>
+                <tbody>
+                  <tr><td>Self-consumed solar, year 1</td><td id="selfKwhResult">—</td><td>Production used directly in the home.</td></tr>
+                  <tr><td>Exported solar, year 1</td><td id="exportKwhResult">—</td><td>Production sent to the grid under your assumption.</td></tr>
+                  <tr><td>Gross solar value, year 1</td><td id="grossValueResult">—</td><td>Retail savings plus export compensation before annual solar-related costs.</td></tr>
+                  <tr><td>Estimated financing cost</td><td id="financeCostResult">—</td><td>Approximate interest plus entered financing fees over the loan term.</td></tr>
+                  <tr><td>10-year cumulative net savings</td><td id="tenYearResult">—</td><td>Modeled solar value minus recurring costs, before subtracting the initial project cost.</td></tr>
+                  <tr><td>20-year cumulative net savings</td><td id="twentyYearResult">—</td><td>Longer-term modeled operating savings, where the selected analysis period permits.</td></tr>
+                  <tr><td>Net benefit over expected ownership</td><td id="ownershipBenefitResult">—</td><td>Cumulative operating savings minus project and estimated financing cost over your expected time in the home.</td></tr>
+                  <tr><td>Net benefit over analysis period</td><td id="analysisBenefitResult">—</td><td>Cumulative operating savings minus project and estimated financing cost over the selected analysis period.</td></tr>
+                </tbody>
+              </table>
+
+              <div class="reason-list">
+                <div class="reason-box">
+                  <h3>What strengthens the estimate</h3>
+                  <ul id="strengthList"></ul>
+                </div>
+                <div class="reason-box">
+                  <h3>What deserves a closer look</h3>
+                  <ul id="riskList"></ul>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section>
+          <h2>How the Solar Panel Payback Calculator works</h2>
+          <p class="lead">
+            The calculator asks a more useful question than “How much electricity will my panels produce?”:
+            <strong>How much financial value will that production create after project cost, export rules, maintenance and financing?</strong>
+          </p>
+          <p>
+            First, it calculates your net project cost after confirmed incentives. Then it divides first-year solar production into
+            self-consumed and exported electricity. Self-consumed energy is valued at the electricity purchase price you enter,
+            while exported energy is valued at your export-compensation rate.
+          </p>
+          <div class="formula">First-year gross solar value = (self-consumed kWh × retail electricity rate) + (exported kWh × export rate)</div>
+          <div class="formula">First-year net savings = first-year gross solar value − annual solar-related costs</div>
+          <p>
+            For later years, the calculator applies your production-degradation assumption and your assumed changes in electricity and export prices.
+            This creates a year-by-year estimate instead of pretending every future year will be identical to year one.
+          </p>
+        </section>
+
+        <section>
+          <h2>What simple payback means</h2>
+          <p>
+            Simple payback is a screening measure. It compares the net upfront project cost with the first year's estimated net savings:
+          </p>
+          <div class="formula">Simple payback = net project cost ÷ first-year net savings</div>
+          <p>
+            A 10-year simple payback means the first-year savings estimate is roughly one tenth of the net upfront cost.
+            It does <strong>not</strong> mean the project is guaranteed to recover its cost in exactly 10 years.
+            Production, tariffs, maintenance, equipment condition, grid rules and household consumption can change.
+          </p>
+          <div class="callout warning">
+            <h3>Do not use simple payback by itself</h3>
+            <p>
+              Compare it with the modeled break-even result and your expected years in the home.
+              If payback only occurs under aggressive assumptions or after you expect to move, the decision is less robust.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Why self-consumption can change solar economics</h2>
+          <p>
+            Solar electricity used directly in your home can replace electricity you would otherwise buy from the grid.
+            Electricity exported to the grid may receive a lower or otherwise different value.
+            For that reason, multiplying every solar kWh by the retail electricity price can overstate savings.
+          </p>
+          <div class="formula">Self-consumed solar = annual production × self-consumption percentage</div>
+          <div class="formula">Exported solar = annual production − self-consumed solar</div>
+          <p>
+            If your household can safely shift flexible electricity use into daylight hours, self-consumption may increase.
+            Examples can include appliance use, water heating, electric-vehicle charging or some heating and cooling loads,
+            depending on your equipment and tariff.
+          </p>
+        </section>
+
+        <section>
+          <h2>How financing affects solar payback</h2>
+          <p>
+            A financed system can have the same equipment and production as a cash purchase but a different total financial result.
+            The calculator estimates loan payments using a standard amortizing-loan formula and adds the resulting interest plus any entered financing fees.
+          </p>
+          <p>
+            This financing estimate is deliberately shown separately from the core solar operating savings.
+            That makes it easier to compare the underlying project economics with the cost of the borrowing method used to buy it.
+          </p>
+          <div class="callout info">
+            <h3>Compare the cash price as well as the monthly payment</h3>
+            <p>
+              A low advertised monthly payment can come from a long loan term. Review the total financed amount, interest rate,
+              fees, loan term, prepayment rules and what happens to the loan if you sell the property.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Why degradation and electricity-price assumptions are included</h2>
+          <p>
+            Solar production can decline gradually over time, while electricity prices and export compensation can change.
+            Because nobody knows future tariffs precisely, the best use of these fields is scenario testing rather than prediction.
+          </p>
+          <p>
+            Run the calculator once with your central assumptions, then again with lower production value, lower export compensation,
+            slower electricity-price growth or higher annual costs. A project that remains reasonable under less favorable inputs is more resilient
+            than one that works only in the most optimistic scenario.
+          </p>
+        </section>
+
+        <section>
+          <h2>Example: why export value matters</h2>
+          <p>
+            Suppose a system produces 7,000 kWh in its first year. If you use 45% directly, 3,150 kWh replaces grid purchases and 3,850 kWh is exported.
+            If grid electricity costs 0.30 per kWh while exports are worth 0.08 per kWh, the two portions of production are not equally valuable.
+          </p>
+          <p>
+            The calculator values each portion separately. This is more conservative than treating all 7,000 kWh as though every unit offsets
+            a 0.30 retail purchase.
+          </p>
+        </section>
+
+        <section>
+          <h2>Example: a short ownership period</h2>
+          <p>
+            A project may have attractive lifetime economics but still be a weak fit for someone expecting to sell in a few years.
+            If your modeled payback is 11 years and you realistically expect to own the home for only five years,
+            you may not personally receive enough operating savings to recover the project cost.
+          </p>
+          <p>
+            Possible resale value may matter, but it should be treated cautiously rather than assumed as a guaranteed recovery of the remaining cost.
+          </p>
+        </section>
+
+        <section>
+          <h2>What this calculator cannot know for you</h2>
+          <ul>
+            <li>Your property's actual solar resource, roof condition, structural capacity, orientation or shading.</li>
+            <li>The accuracy of an installer production estimate.</li>
+            <li>Future electricity tariffs, export compensation or grid rules.</li>
+            <li>Whether an incentive, grant, tax benefit or rebate applies to your exact circumstances.</li>
+            <li>Future maintenance, inverter, battery, roof-removal or replacement costs not entered here.</li>
+            <li>Changes in household electricity use, such as an EV, heat pump, home office or household-size change.</li>
+            <li>Future property value or how a buyer will value the solar system.</li>
+            <li>Tax, financing, legal, electrical, engineering or insurance consequences in your location.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>How to use the result before accepting a solar quote</h2>
+          <ol>
+            <li>Enter the complete installed cash price, not just the panel price.</li>
+            <li>Use only incentives you have independently confirmed.</li>
+            <li>Use a site-specific first-year production estimate.</li>
+            <li>Estimate how much production you will actually use directly.</li>
+            <li>Use your real electricity purchase rate and current export rules.</li>
+            <li>Include a reasonable annual cost allowance.</li>
+            <li>Enter financing terms separately if you are borrowing.</li>
+            <li>Compare payback with the number of years you realistically expect to own the home.</li>
+            <li>Recalculate with a less favorable scenario.</li>
+            <li>Compare several detailed installer quotes before committing.</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Frequently asked questions</h2>
+
+          <div class="faq-item">
+            <h3>How does the Solar Panel Payback Calculator work?</h3>
+            <p>
+              It estimates net project cost after incentives, separates self-consumed and exported solar electricity,
+              estimates first-year savings after annual costs, and models later years using your degradation and price-change assumptions.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>What is a good payback period for solar panels?</h3>
+            <p>
+              There is no universal cutoff. A useful payback depends on project risk, financing, equipment life, local tariffs,
+              alternative uses for the money and how long you expect to own the home. Compare several scenarios rather than relying on one threshold.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Should I use my full electricity bill to calculate savings?</h3>
+            <p>
+              Not automatically. Some bill components may be fixed and may remain even after solar is installed.
+              Use the per-kWh cost that solar generation can realistically avoid, plus the actual compensation available for exports.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Does the calculator estimate solar production from system size?</h3>
+            <p>
+              No. Production depends on location, orientation, tilt, shading, weather, equipment and system losses.
+              Enter a site-specific annual production estimate rather than relying on a universal kWh-per-kW assumption.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Why is exported electricity valued separately?</h3>
+            <p>
+              Export compensation can differ from the retail price you pay for electricity. Separating the two avoids assuming every solar kWh has the same financial value.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Should I include a solar battery?</h3>
+            <p>
+              If a battery is part of the quote, include its cost. Its benefit should also be reflected realistically in your self-consumption or tariff assumptions.
+              Consider testing solar without the battery as a separate scenario so you can see what the battery adds to cost and value.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Does the payback calculation include financing?</h3>
+            <p>
+              The calculator estimates financing interest and fees separately and includes them when showing net long-term benefit.
+              The simple payback figure itself is based on the net project cost and first-year operating savings so the underlying project remains visible.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Can solar panels eliminate my electricity bill?</h3>
+            <p>
+              Not necessarily. Fixed charges, nighttime use, seasonal production, system size and local tariff rules can leave a remaining bill even with substantial solar generation.
+            </p>
+          </div>
+        </section>
+
+        <section class="about-box">
+          <h2>About this Solar Panel Payback Calculator</h2>
+          <p>
+            DecideHelper creates educational frameworks and interactive tools for difficult everyday decisions.
+            This calculator is designed to accompany the
+            <a href="should-i-install-solar-panels.html">Should I Install Solar Panels?</a> guide.
+            Both focus on the same core questions: complete project cost, realistic production, self-consumption,
+            export compensation, financing, maintenance, payback, roof readiness and expected time in the home.
+          </p>
+          <p>
+            The calculator intentionally uses editable assumptions instead of claiming to predict a universal solar return.
+            Its purpose is to make the assumptions visible so you can compare quotes and stress-test the decision.
+          </p>
+        </section>
+
+        <section class="related">
+          <h2>Related decision guides and tools</h2>
+          <ul>
+            <li><a href="should-i-install-solar-panels.html">Should I Install Solar Panels?</a> — read the full solar decision guide.</li>
+            <li><a href="should-i-renovate.html">Should I Renovate?</a> — compare renovation priorities, costs and long-term fit.</li>
+            <li><a href="should-i-renovate-tool.html">Renovation Decision Tool</a> — test project cost, funding, urgency and home fit.</li>
+            <li><a href="should-i-move.html">Should I Move?</a> — decide whether your current home still fits your needs.</li>
+            <li><a href="../money/should-i-finance-it.html">Should I Finance It?</a> — evaluate the cost and risk of borrowing.</li>
+            <li><a href="../money/should-i-build-emergency-fund.html">Should I Build an Emergency Fund?</a> — consider reserves before a major project.</li>
+            <li><a href="index.html">Home Decisions</a> — browse more practical home decision guides and tools.</li>
+          </ul>
+        </section>
+
+        <p class="disclaimer">
+          <strong>Disclaimer:</strong> This calculator is for general educational and informational purposes only.
+          Results are estimates based entirely on the values you enter and simplified assumptions. It does not provide financial,
+          investment, tax, legal, engineering, electrical, roofing, construction, energy, insurance or other professional advice.
+          Solar costs, production, degradation, electricity tariffs, incentives, export compensation, taxes, financing,
+          grid-connection rules, permits, equipment requirements and maintenance vary by location, property, utility, installer and personal circumstances.
+          Verify current local information, obtain site-specific professional assessments, review contracts carefully and consult qualified professionals when appropriate
+          before making a solar installation or financing decision.
+        </p>
+      </div>
+    </article>
+  </main>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../privacy-policy.html">Privacy Policy</a>
+      <a href="../terms-and-conditions.html">Terms</a>
+      <a href="../disclaimer.html">Disclaimer</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+    <p>© <span id="year"></span> DecideHelper. Educational content only.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const form = document.getElementById('solarForm');
+  const resetBtn = document.getElementById('resetBtn');
+  const errorBox = document.getElementById('errorBox');
+  const results = document.getElementById('results');
+  const recommendationBox = document.getElementById('recommendationBox');
+
+  function n(id){ return Number(document.getElementById(id).value); }
+  function money(v){
+    if (!Number.isFinite(v)) return '—';
+    return v.toLocaleString(undefined,{maximumFractionDigits:0});
+  }
+  function num(v,d=1){
+    if (!Number.isFinite(v)) return '—';
+    return v.toLocaleString(undefined,{maximumFractionDigits:d});
+  }
+  function pct(v){ return num(v,1) + '%'; }
+
+  function monthlyPayment(principal, annualRate, years){
+    if(principal <= 0) return 0;
+    const months = Math.max(1, Math.round(years * 12));
+    const r = annualRate / 100 / 12;
+    if(r === 0) return principal / months;
+    return principal * r / (1 - Math.pow(1 + r, -months));
+  }
+
+  function cumulativeSavings(years, production0, selfPct, retail0, export0, maintenance, degradationPct, retailGrowthPct, exportGrowthPct){
+    let total = 0;
+    for(let y=1; y<=years; y++){
+      const production = production0 * Math.pow(1 - degradationPct/100, y-1);
+      const retail = retail0 * Math.pow(1 + retailGrowthPct/100, y-1);
+      const exportRate = export0 * Math.pow(1 + exportGrowthPct/100, y-1);
+      const selfKwh = production * selfPct;
+      const exported = production - selfKwh;
+      total += (selfKwh * retail) + (exported * exportRate) - maintenance;
+    }
+    return total;
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    errorBox.style.display = 'none';
+
+    const installedCost = n('installedCost');
+    const incentives = n('incentives');
+    const batteryCost = n('batteryCost');
+    const otherUpfront = n('otherUpfront');
+    const production = n('annualProduction');
+    const selfPctInput = n('selfConsumption');
+    const retail = n('retailRate');
+    const exportRate = n('exportRate');
+    const maintenance = n('annualMaintenance');
+    const degradation = n('degradation');
+    const retailGrowth = n('electricityGrowth');
+    const exportGrowth = n('exportGrowth');
+    const yearsHome = n('yearsInHome');
+    const analysisYears = n('analysisYears');
+    const financedAmount = n('financedAmount');
+    const loanRate = n('loanRate');
+    const loanYears = n('loanYears');
+    const loanFees = n('loanFees');
+
+    const vals = [installedCost,incentives,batteryCost,otherUpfront,production,selfPctInput,retail,exportRate,maintenance,degradation,retailGrowth,exportGrowth,yearsHome,analysisYears,financedAmount,loanRate,loanYears,loanFees];
+    if(vals.some(v => !Number.isFinite(v))){
+      errorBox.textContent = 'Please enter a valid number in every field.';
+      errorBox.style.display = 'block';
+      return;
+    }
+    if(installedCost < 0 || incentives < 0 || batteryCost < 0 || otherUpfront < 0 || production <= 0 || retail < 0 || exportRate < 0 || maintenance < 0 || financedAmount < 0 || loanRate < 0 || loanFees < 0){
+      errorBox.textContent = 'Costs, rates and production cannot be negative, and annual production must be greater than zero.';
+      errorBox.style.display = 'block';
+      return;
+    }
+    if(selfPctInput < 0 || selfPctInput > 100 || degradation < 0 || degradation > 5 || yearsHome < 1 || analysisYears < 5 || analysisYears > 40 || loanYears < 1){
+      errorBox.textContent = 'Please check the percentage and year fields. Self-consumption must be 0–100%, degradation 0–5%, and the analysis period 5–40 years.';
+      errorBox.style.display = 'block';
+      return;
+    }
+
+    const netProjectCost = Math.max(0, installedCost + batteryCost + otherUpfront - incentives);
+    if(incentives > installedCost + batteryCost + otherUpfront){
+      errorBox.textContent = 'Confirmed incentives are greater than the entered project cost. Please verify the values.';
+      errorBox.style.display = 'block';
+      return;
+    }
+    if(financedAmount > netProjectCost + 0.01){
+      errorBox.textContent = 'The financed amount is greater than the net project cost. Please verify the financing input.';
+      errorBox.style.display = 'block';
+      return;
+    }
+
+    const selfPct = selfPctInput / 100;
+    const selfKwh = production * selfPct;
+    const exportKwh = production - selfKwh;
+    const grossYearOne = selfKwh * retail + exportKwh * exportRate;
+    const netYearOne = grossYearOne - maintenance;
+    const simplePayback = netYearOne > 0 ? netProjectCost / netYearOne : Infinity;
+
+    const payment = monthlyPayment(financedAmount, loanRate, loanYears);
+    const totalLoanPayments = payment * Math.round(loanYears * 12);
+    const financeCost = financedAmount > 0 ? Math.max(0, totalLoanPayments - financedAmount) + loanFees : 0;
+    const effectiveCost = netProjectCost + financeCost;
+
+    const maxYears = Math.max(40, analysisYears, yearsHome);
+    let cumulative = 0, modeledPayback = null;
+    for(let y=1; y<=maxYears; y++){
+      const prodY = production * Math.pow(1 - degradation/100, y-1);
+      const retailY = retail * Math.pow(1 + retailGrowth/100, y-1);
+      const exportY = exportRate * Math.pow(1 + exportGrowth/100, y-1);
+      const annual = (prodY*selfPct*retailY) + (prodY*(1-selfPct)*exportY) - maintenance;
+      cumulative += annual;
+      if(modeledPayback === null && cumulative >= effectiveCost) modeledPayback = y;
+    }
+
+    const tenSavings = cumulativeSavings(10, production,selfPct,retail,exportRate,maintenance,degradation,retailGrowth,exportGrowth);
+    const twentyYears = Math.min(20, analysisYears);
+    const twentySavings = cumulativeSavings(twentyYears, production,selfPct,retail,exportRate,maintenance,degradation,retailGrowth,exportGrowth);
+    const ownershipSavings = cumulativeSavings(Math.round(yearsHome), production,selfPct,retail,exportRate,maintenance,degradation,retailGrowth,exportGrowth);
+    const analysisSavings = cumulativeSavings(Math.round(analysisYears), production,selfPct,retail,exportRate,maintenance,degradation,retailGrowth,exportGrowth);
+    const ownershipBenefit = ownershipSavings - effectiveCost;
+    const analysisBenefit = analysisSavings - effectiveCost;
+
+    document.getElementById('netCostResult').textContent = money(netProjectCost);
+    document.getElementById('yearOneSavingsResult').textContent = netYearOne > 0 ? money(netYearOne) : 'No positive savings';
+    document.getElementById('simplePaybackResult').textContent = Number.isFinite(simplePayback) ? num(simplePayback,1) + ' years' : 'No payback';
+    document.getElementById('modeledPaybackResult').textContent = modeledPayback ? modeledPayback + ' years' : 'Not within 40 years';
+    document.getElementById('selfKwhResult').textContent = money(selfKwh) + ' kWh';
+    document.getElementById('exportKwhResult').textContent = money(exportKwh) + ' kWh';
+    document.getElementById('grossValueResult').textContent = money(grossYearOne);
+    document.getElementById('financeCostResult').textContent = money(financeCost);
+    document.getElementById('tenYearResult').textContent = money(tenSavings);
+    document.getElementById('twentyYearResult').textContent = money(twentySavings) + (analysisYears < 20 ? ' (' + analysisYears + '-year setting limits analysis)' : '');
+    document.getElementById('ownershipBenefitResult').textContent = money(ownershipBenefit);
+    document.getElementById('analysisBenefitResult').textContent = money(analysisBenefit);
+
+    const strengths = [];
+    const risks = [];
+
+    if(selfPctInput >= 50) strengths.push('A relatively large share of production is assumed to be used directly in the home.');
+    else risks.push('Less than half of production is assumed to be self-consumed, so export compensation has a larger effect on the result.');
+
+    if(exportRate >= retail * 0.7) strengths.push('Your entered export value is relatively close to the retail electricity rate.');
+    else risks.push('Exported electricity is worth substantially less than electricity used directly under your inputs.');
+
+    if(financedAmount === 0) strengths.push('The estimate does not include borrowing cost.');
+    else if(financeCost <= netProjectCost * 0.15) strengths.push('Estimated financing cost is moderate relative to the project cost.');
+    else risks.push('Financing adds a meaningful amount to the effective project cost.');
+
+    if(modeledPayback && modeledPayback <= yearsHome) strengths.push('Modeled break-even occurs within your expected ownership period.');
+    else risks.push('Modeled break-even does not occur within your expected ownership period under these assumptions.');
+
+    if(degradation <= 0.5) strengths.push('The entered degradation assumption is modest.');
+    if(retailGrowth > 4) risks.push('The result assumes relatively strong future electricity-price growth; test a lower-growth scenario.');
+    if(incentives > netProjectCost * 0.4 && incentives > 0) risks.push('A large share of the economics depends on incentives; verify eligibility and timing carefully.');
+    if(netYearOne <= 0) risks.push('First-year solar value does not exceed the entered annual solar-related cost.');
+
+    if(strengths.length === 0) strengths.push('No single input dominates positively; compare several scenarios before deciding.');
+    if(risks.length === 0) risks.push('No major warning is visible from these inputs, but site, tariff, equipment and contract details still require verification.');
+
+    document.getElementById('strengthList').innerHTML = strengths.map(x => '<li>'+x+'</li>').join('');
+    document.getElementById('riskList').innerHTML = risks.map(x => '<li>'+x+'</li>').join('');
+
+    recommendationBox.className = 'recommendation';
+    let title, text;
+    if(netYearOne <= 0){
+      recommendationBox.classList.add('weak');
+      title = 'The current assumptions do not produce positive first-year net savings';
+      text = 'Check production, electricity value, export compensation, annual costs and project price. A project with no positive operating savings cannot recover its cost through the modeled electricity savings.';
+    } else if(modeledPayback && modeledPayback <= yearsHome && analysisBenefit > 0){
+      recommendationBox.classList.add('strong');
+      title = 'Solar may be financially promising under these assumptions';
+      text = 'The modeled project reaches break-even within your expected ownership period and shows a positive net benefit over the selected analysis period. Stress-test lower production, lower export value and higher costs before treating the estimate as robust.';
+    } else if(modeledPayback && modeledPayback <= analysisYears){
+      recommendationBox.classList.add('caution');
+      title = 'The project may pay back, but the timing deserves caution';
+      text = 'The modeled project reaches break-even within the selected analysis period, but not necessarily within the years you expect to own the home. Review resale assumptions, financing and a less favorable scenario.';
+    } else {
+      recommendationBox.classList.add('weak');
+      title = 'The current assumptions show a weak or long payback case';
+      text = 'The modeled project does not recover its effective cost within the selected analysis period or ownership horizon. Compare a lower quote, different system size, stronger self-consumption, financing alternatives or other home-energy upgrades.';
+    }
+
+    document.getElementById('recommendationTitle').textContent = title;
+    document.getElementById('recommendationText').textContent = text;
+    results.style.display = 'block';
+    results.scrollIntoView({behavior:'smooth',block:'start'});
+  });
+
+  resetBtn.addEventListener('click', function(){
+    form.reset();
+    results.style.display = 'none';
+    errorBox.style.display = 'none';
+    window.scrollTo({top:form.getBoundingClientRect().top + window.scrollY - 20,behavior:'smooth'});
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
