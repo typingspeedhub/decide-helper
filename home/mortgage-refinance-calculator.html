@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-68ZVCW4FWK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-68ZVCW4FWK');
+  </script>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1607876440670769" crossorigin="anonymous"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mortgage Refinance Calculator: Break-Even, Savings & Costs | DecideHelper</title>
+  <meta name="description" content="Use this free mortgage refinance calculator to compare your current mortgage with a new loan. Estimate monthly savings, break-even time, closing costs, remaining balance, interest, and the effect of changing the loan term.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="DecideHelper">
+  <link rel="canonical" href="https://decidehelper.com/home/mortgage-refinance-calculator.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DecideHelper">
+  <meta property="og:title" content="Mortgage Refinance Calculator | DecideHelper">
+  <meta property="og:description" content="Compare your current mortgage with a refinance using monthly payment, closing costs, break-even time, loan term, interest, and expected time in the home.">
+  <meta property="og:url" content="https://decidehelper.com/home/mortgage-refinance-calculator.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Mortgage Refinance Calculator | DecideHelper">
+  <meta name="twitter:description" content="Estimate refinance savings, closing-cost break-even, interest, balances, and term trade-offs with a free educational calculator.">
+
+  <style>
+    :root{--bg:#f5f7fb;--surface:#fff;--surface-soft:#eff6ff;--surface-muted:#f8fafc;--text:#1f2937;--muted:#5f6b7a;--heading:#0f172a;--primary:#2563eb;--primary-dark:#1d4ed8;--green:#15803d;--green-soft:#f0fdf4;--amber:#92400e;--amber-soft:#fffbeb;--red:#991b1b;--red-soft:#fef2f2;--border:#dbe3ef;--shadow:0 14px 36px rgba(15,23,42,.08);--radius:16px;--max-width:1100px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}a{color:var(--primary-dark)}a:hover{text-decoration-thickness:2px}button,input,select{font:inherit}
+    header{background:#0f172a;color:#fff;padding:24px 20px}.header-inner,.footer-inner{max-width:var(--max-width);margin:0 auto}.logo{display:inline-block;color:#fff;text-decoration:none;font-size:27px;font-weight:700;letter-spacing:-.02em}.tagline{margin:5px 0 0;color:#cbd5e1;font-size:15px}.primary-nav{margin-top:16px;display:flex;gap:16px;flex-wrap:wrap}.primary-nav a{color:#e2e8f0;text-decoration:none;font-weight:600}.primary-nav a:hover{color:#fff;text-decoration:underline}
+    .container{max-width:var(--max-width);margin:0 auto;padding:0 20px}.breadcrumb{padding:22px 0 8px;color:var(--muted);font-size:14px}.breadcrumb a{color:var(--muted)}main{padding-bottom:60px}.page-shell{margin-top:12px;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}.hero{padding:52px 48px 42px;background:linear-gradient(135deg,#eff6ff 0%,#fff 55%,#f8fafc 100%);border-bottom:1px solid var(--border)}.eyebrow{display:inline-block;margin-bottom:14px;padding:6px 11px;border-radius:999px;background:#dbeafe;color:#1e40af;font-size:13px;font-weight:700;letter-spacing:.03em;text-transform:uppercase}h1{margin:0;max-width:930px;color:var(--heading);font-size:clamp(38px,6vw,62px);line-height:1.08;letter-spacing:-.04em}.hero-intro{max-width:900px;margin:24px 0 0;font-size:20px;color:#334155}.meta{margin-top:22px;color:var(--muted);font-size:14px}.content{padding:44px 48px 56px}h2{margin-top:54px;margin-bottom:14px;color:var(--heading);font-size:32px;line-height:1.22;letter-spacing:-.02em}h3{margin-top:30px;margin-bottom:10px;color:var(--heading);font-size:22px;line-height:1.3}p{margin:13px 0}ul,ol{padding-left:24px}li{margin:8px 0}.lead{font-size:19px;color:#334155}
+    .summary-box{padding:24px;border:1px solid #bfdbfe;border-left:5px solid var(--primary);background:var(--surface-soft);border-radius:12px;margin-bottom:34px}.summary-box h2{margin-top:0;font-size:24px}.calculator-wrap{margin:34px 0 44px;border:1px solid var(--border);border-radius:16px;overflow:hidden;background:#fff}.calculator-heading{padding:28px 30px;background:#0f172a;color:#fff}.calculator-heading h2{margin:0;color:#fff;font-size:30px}.calculator-heading p{margin-bottom:0;color:#cbd5e1}.calculator-body{padding:30px}.section-title{margin:32px 0 18px;padding-bottom:10px;border-bottom:1px solid var(--border);font-size:22px;color:var(--heading)}.section-title:first-child{margin-top:0}.field-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}label{font-weight:700;color:#172033}.help{color:var(--muted);font-size:13px;line-height:1.45}input,select{width:100%;min-height:46px;padding:11px 12px;border:1px solid #cbd5e1;border-radius:9px;background:#fff;color:var(--text)}input:focus,select:focus{outline:3px solid rgba(37,99,235,.16);border-color:var(--primary)}
+    .button-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.button{border:0;border-radius:10px;padding:13px 20px;cursor:pointer;font-weight:700}.button.primary{background:var(--primary);color:#fff}.button.primary:hover{background:var(--primary-dark)}.button.secondary{background:#e2e8f0;color:#0f172a}.button.secondary:hover{background:#cbd5e1}.error-box{display:none;margin-top:22px;padding:16px 18px;border:1px solid #fecaca;border-radius:10px;background:var(--red-soft);color:var(--red);font-weight:700}.results{display:none;margin-top:30px;border-top:1px solid var(--border);padding-top:30px}.recommendation{padding:26px;border-radius:14px;border:1px solid #bfdbfe;background:var(--surface-soft)}.recommendation.strong{border-color:#bbf7d0;background:var(--green-soft)}.recommendation.caution{border-color:#fde68a;background:var(--amber-soft)}.recommendation.weak{border-color:#fecaca;background:var(--red-soft)}.recommendation h3{margin:0 0 10px;font-size:28px}
+    .score-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin:24px 0}.score-card{border:1px solid var(--border);border-radius:14px;padding:20px;background:#fff}.score-card h3{margin-top:0;font-size:17px}.score-value{font-size:30px;font-weight:700;line-height:1.05}.score-card.good .score-value{color:var(--green)}.score-card.warn .score-value{color:var(--amber)}.score-card.neutral .score-value{color:var(--primary-dark)}.results-table,.comparison-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px}.results-table th,.comparison-table th{padding:13px;background:#0f172a;color:#fff;text-align:left;border:1px solid #334155}.results-table td,.comparison-table td{padding:13px;border:1px solid var(--border);vertical-align:top}.results-table tbody tr:nth-child(even),.comparison-table tbody tr:nth-child(even){background:#f8fafc}.reason-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:24px}.reason-box{padding:20px;border:1px solid var(--border);border-radius:12px;background:#f8fafc}.reason-box h3{margin-top:0;font-size:19px}.callout{border-radius:12px;padding:22px 24px;margin:28px 0}.callout h3{margin-top:0}.callout.good{background:var(--green-soft);border:1px solid #bbf7d0;color:#14532d}.callout.warning{background:var(--amber-soft);border:1px solid #fde68a;color:#78350f}.callout.info{background:var(--surface-soft);border:1px solid #bfdbfe;color:#1e3a8a}.formula{margin:20px 0;padding:18px;border-radius:10px;background:#0f172a;color:#f8fafc;font-family:"Courier New",monospace;overflow-x:auto}.steps{counter-reset:decision-step;list-style:none;padding-left:0}.steps li{counter-increment:decision-step;position:relative;padding:0 0 24px 64px;min-height:52px}.steps li::before{content:counter(decision-step);position:absolute;left:0;top:0;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--primary);color:#fff;font-weight:700}.faq-item{border-top:1px solid var(--border);padding:22px 0}.faq-item:first-of-type{border-top:0}.faq-item h3{margin-top:0;font-size:21px}.about-box{margin-top:48px;padding:28px;border-radius:14px;background:#f8fafc;border:1px solid var(--border)}.about-box h2{margin-top:0}.related{margin-top:54px;padding:30px;border-radius:14px;background:#0f172a;color:#e2e8f0}.related h2{margin-top:0;color:#fff}.related a{color:#bfdbfe;font-weight:700}.disclaimer{margin-top:36px;padding-top:24px;border-top:1px solid var(--border);color:var(--muted);font-size:14px}footer{background:#0f172a;color:#cbd5e1;padding:34px 20px}.footer-inner{text-align:center}.footer-links{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-bottom:14px}.footer-links a{color:#e2e8f0}
+    @media(max-width:900px){.score-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:820px){.hero{padding:38px 26px 32px}.content{padding:32px 26px 44px}.field-grid,.reason-list{grid-template-columns:1fr}.comparison-table,.results-table{display:block;overflow-x:auto}}@media(max-width:520px){header{padding:20px 16px}.container{padding:0 12px}.hero{padding:32px 20px 28px}.content{padding:28px 20px 38px}.calculator-body{padding:22px 18px}.calculator-heading{padding:24px 20px}.score-grid{grid-template-columns:1fr}h1{font-size:38px}h2{font-size:28px}.hero-intro{font-size:18px}.button{width:100%}}
+  </style>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Mortgage Refinance Calculator","url":"https://decidehelper.com/home/mortgage-refinance-calculator.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","description":"A free educational mortgage refinance calculator that compares current and proposed mortgage payments, closing costs, break-even time, remaining balances, interest costs, loan terms, and expected time in the loan.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"DecideHelper","url":"https://decidehelper.com/"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://decidehelper.com/"},{"@type":"ListItem","position":2,"name":"Home Decisions","item":"https://decidehelper.com/home/"},{"@type":"ListItem","position":3,"name":"Mortgage Refinance Calculator","item":"https://decidehelper.com/home/mortgage-refinance-calculator.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"How does the mortgage refinance calculator work?","acceptedAnswer":{"@type":"Answer","text":"The calculator compares your current mortgage with a proposed refinance using balance, interest rate, remaining term, new term, closing costs, financed fees, and expected time in the loan. It estimates payments, break-even time, interest, and remaining balances."}},
+    {"@type":"Question","name":"What is the refinance break-even point?","acceptedAnswer":{"@type":"Answer","text":"A simple refinance break-even point estimates how many months of monthly payment savings are needed to recover eligible upfront refinance costs."}},
+    {"@type":"Question","name":"Does a lower monthly payment always mean refinancing saves money?","acceptedAnswer":{"@type":"Answer","text":"No. A lower payment can result from a lower rate, a longer loan term, or both. Extending the term can reduce the payment while increasing the time you remain in debt."}},
+    {"@type":"Question","name":"Should financed closing costs be ignored?","acceptedAnswer":{"@type":"Answer","text":"No. Costs added to the new loan increase the amount borrowed and may also increase interest. The calculator shows financed costs separately from upfront costs."}},
+    {"@type":"Question","name":"Is this calculator a mortgage recommendation?","acceptedAnswer":{"@type":"Answer","text":"No. It is an educational comparison tool based on the numbers you enter. Actual mortgage qualification, rates, taxes, insurance, fees, and legal requirements vary."}}
+  ]}
+  </script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a class="logo" href="../index.html">DecideHelper</a>
+    <p class="tagline">Clear frameworks for difficult everyday decisions.</p>
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="../money/index.html">Money Decisions</a>
+      <a href="../shopping/index.html">Shopping Decisions</a>
+      <a href="index.html">Home Decisions</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> › <a href="index.html">Home Decisions</a> › Mortgage Refinance Calculator</nav>
+  <main>
+    <article class="page-shell">
+      <section class="hero">
+        <span class="eyebrow">Free Home Finance Tool</span>
+        <h1>Mortgage Refinance Calculator</h1>
+        <p class="hero-intro">Compare your current mortgage with a proposed refinance using monthly payment, interest rate, remaining term, closing costs, financed fees, break-even time, expected years in the loan, and remaining balance. The goal is to show whether a lower payment comes from a genuinely better loan or simply from stretching repayment over more years.</p>
+        <p class="meta">Updated September 11, 2026 · No signup required</p>
+      </section>
+
+      <div class="content">
+        <section class="summary-box">
+          <h2>What this refinance calculator is designed to show</h2>
+          <p>A mortgage refinance is a replacement of one debt contract with another. The new interest rate matters, but so do the closing costs, the new loan balance, the new term, how quickly principal is repaid, and how long you actually expect to keep the loan.</p>
+          <p>This tool estimates <strong>current and new monthly principal-and-interest payments, monthly payment change, simple break-even time, lifetime interest, interest over your expected time horizon, and the remaining balance under each option</strong>. It also highlights term extension and other trade-offs that can make an apparently cheaper refinance less attractive.</p>
+        </section>
+
+        <section class="calculator-wrap" aria-labelledby="calculator-title">
+          <div class="calculator-heading">
+            <h2 id="calculator-title">Compare Your Current Mortgage With a Refinance</h2>
+            <p>Use the same currency for every money field. Currency symbols are not required.</p>
+          </div>
+          <div class="calculator-body">
+            <form id="refiForm" novalidate>
+              <h3 class="section-title">1. Current mortgage</h3>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="balance">Current principal balance</label>
+                  <input id="balance" type="number" min="0.01" step="0.01" value="250000" required>
+                </div>
+                <div class="field">
+                  <label for="currentRate">Current interest rate (%)</label>
+                  <input id="currentRate" type="number" min="0" max="50" step="0.01" value="6.75" required>
+                </div>
+                <div class="field">
+                  <label for="remainingYears">Remaining term (years)</label>
+                  <input id="remainingYears" type="number" min="0.25" max="50" step="0.25" value="22" required>
+                  <span class="help">Enter the years remaining today, not the original mortgage term.</span>
+                </div>
+                <div class="field">
+                  <label for="currentExtra">Extra principal you currently pay each month</label>
+                  <input id="currentExtra" type="number" min="0" step="0.01" value="0" required>
+                  <span class="help">Optional. Use 0 if you only make the required payment.</span>
+                </div>
+              </div>
+
+              <h3 class="section-title">2. Proposed refinance</h3>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="newRate">New interest rate (%)</label>
+                  <input id="newRate" type="number" min="0" max="50" step="0.01" value="5.75" required>
+                </div>
+                <div class="field">
+                  <label for="newYears">New loan term (years)</label>
+                  <input id="newYears" type="number" min="1" max="50" step="1" value="20" required>
+                </div>
+                <div class="field">
+                  <label for="upfrontCosts">Closing costs paid upfront</label>
+                  <input id="upfrontCosts" type="number" min="0" step="0.01" value="4500" required>
+                  <span class="help">Include eligible lender and third-party transaction costs you will pay in cash.</span>
+                </div>
+                <div class="field">
+                  <label for="financedCosts">Costs added to the new loan balance</label>
+                  <input id="financedCosts" type="number" min="0" step="0.01" value="0" required>
+                  <span class="help">These costs are not free; they increase the amount borrowed.</span>
+                </div>
+                <div class="field">
+                  <label for="points">Discount points / other upfront rate-buydown cost</label>
+                  <input id="points" type="number" min="0" step="0.01" value="0" required>
+                </div>
+                <div class="field">
+                  <label for="newExtra">Extra principal you plan to pay each month after refinancing</label>
+                  <input id="newExtra" type="number" min="0" step="0.01" value="0" required>
+                </div>
+              </div>
+
+              <h3 class="section-title">3. Your time horizon</h3>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="horizonYears">How many years do you realistically expect to keep this mortgage?</label>
+                  <input id="horizonYears" type="number" min="0.25" max="50" step="0.25" value="7" required>
+                  <span class="help">Use the earlier of a likely move, sale, or another refinance.</span>
+                </div>
+                <div class="field">
+                  <label for="goal">Main reason for refinancing</label>
+                  <select id="goal">
+                    <option value="rate" selected>Lower interest rate / overall cost</option>
+                    <option value="payment">Lower required monthly payment</option>
+                    <option value="term">Pay off the mortgage sooner</option>
+                    <option value="stability">Improve rate or payment stability</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="button-row">
+                <button class="button primary" type="submit">Compare Mortgage Options</button>
+                <button class="button secondary" type="button" id="resetBtn">Reset Tool</button>
+              </div>
+              <div class="error-box" id="errorBox" role="alert"></div>
+            </form>
+
+            <section class="results" id="results" aria-live="polite">
+              <div class="recommendation" id="recommendationBox">
+                <h3 id="recommendationTitle">Your estimated result</h3>
+                <p id="recommendationText"></p>
+              </div>
+
+              <div class="score-grid">
+                <div class="score-card neutral"><h3>Decision score</h3><div class="score-value" id="decisionScore">—</div></div>
+                <div class="score-card good"><h3>Monthly payment change</h3><div class="score-value" id="monthlySavingsCard">—</div></div>
+                <div class="score-card warn"><h3>Simple break-even</h3><div class="score-value" id="breakEvenCard">—</div></div>
+                <div class="score-card neutral"><h3>New loan term</h3><div class="score-value" id="termCard">—</div></div>
+              </div>
+
+              <table class="results-table">
+                <thead><tr><th>Calculation</th><th>Keep current mortgage</th><th>Refinance</th></tr></thead>
+                <tbody>
+                  <tr><td>Starting loan balance</td><td id="currentBalanceCell">—</td><td id="newBalanceCell">—</td></tr>
+                  <tr><td>Interest rate</td><td id="currentRateCell">—</td><td id="newRateCell">—</td></tr>
+                  <tr><td>Scheduled remaining / new term</td><td id="currentTermCell">—</td><td id="newTermCell">—</td></tr>
+                  <tr><td>Required monthly principal & interest</td><td id="currentPaymentCell">—</td><td id="newPaymentCell">—</td></tr>
+                  <tr><td>Monthly amount including entered extra principal</td><td id="currentActualPaymentCell">—</td><td id="newActualPaymentCell">—</td></tr>
+                  <tr><td>Estimated balance after your time horizon</td><td id="currentHorizonBalanceCell">—</td><td id="newHorizonBalanceCell">—</td></tr>
+                  <tr><td>Estimated interest paid during your time horizon</td><td id="currentHorizonInterestCell">—</td><td id="newHorizonInterestCell">—</td></tr>
+                  <tr><td>Estimated remaining lifetime interest</td><td id="currentLifetimeInterestCell">—</td><td id="newLifetimeInterestCell">—</td></tr>
+                  <tr><td>Upfront refinance costs</td><td>0</td><td id="upfrontCostCell">—</td></tr>
+                  <tr><td>Financed refinance costs added to balance</td><td>0</td><td id="financedCostCell">—</td></tr>
+                </tbody>
+              </table>
+
+              <table class="comparison-table">
+                <thead><tr><th>Decision measure</th><th>Estimated result</th></tr></thead>
+                <tbody>
+                  <tr><td>Monthly required payment change</td><td id="monthlySavingsCell">—</td></tr>
+                  <tr><td>Simple break-even from upfront costs</td><td id="breakEvenCell">—</td></tr>
+                  <tr><td>Interest difference over your chosen time horizon</td><td id="horizonInterestDifferenceCell">—</td></tr>
+                  <tr><td>Balance difference after your chosen time horizon</td><td id="balanceDifferenceCell">—</td></tr>
+                  <tr><td>Lifetime interest + refinance transaction costs difference</td><td id="lifetimeDifferenceCell">—</td></tr>
+                  <tr><td>Term change</td><td id="termDifferenceCell">—</td></tr>
+                </tbody>
+              </table>
+
+              <div class="reason-list">
+                <div class="reason-box"><h3>Factors supporting refinancing</h3><ul id="supportReasons"></ul></div>
+                <div class="reason-box"><h3>Reasons to slow down or keep the current mortgage</h3><ul id="cautionReasons"></ul></div>
+              </div>
+
+              <div class="callout warning">
+                <h3>Stress-test the result before acting</h3>
+                <p>Run the calculator again with a smaller rate improvement, higher closing costs, and a shorter time in the home. A refinance is more resilient when it still looks reasonable under less favorable assumptions.</p>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section>
+          <h2>How the mortgage refinance calculator works</h2>
+          <p class="lead">The calculator compares what happens from today forward if you keep your existing mortgage with what happens if you replace it with the proposed new loan.</p>
+          <p>It does not compare the refinance with the original terms of your existing mortgage. That would be misleading because some of the original loan has already been repaid. Instead, it uses your <strong>current balance, current rate, and remaining term</strong> as the baseline.</p>
+        </section>
+
+        <section>
+          <h2>Monthly payment calculation</h2>
+          <p>The calculator uses a standard fixed-rate amortizing payment formula for principal and interest. Taxes, homeowners insurance, association fees, mortgage insurance, and escrow adjustments are not included because those items may not change in the same way as the loan itself.</p>
+          <div class="formula">Monthly payment = P × r × (1 + r)^n ÷ ((1 + r)^n − 1)</div>
+          <p>Here, <strong>P</strong> is principal, <strong>r</strong> is the monthly interest rate, and <strong>n</strong> is the number of scheduled monthly payments.</p>
+        </section>
+
+        <section>
+          <h2>What the refinance break-even point means</h2>
+          <p>The simple break-even period estimates how long monthly payment savings need to accumulate before they recover the refinance costs you pay upfront.</p>
+          <div class="formula">Simple break-even months = upfront refinance costs ÷ monthly required-payment savings</div>
+          <p>If upfront costs are 4,800 and the new required principal-and-interest payment is 200 lower, the simple break-even point is about 24 months.</p>
+          <p>This is useful as a first screen, but it is not the entire decision. It can miss differences in principal repayment, loan term, financed costs, and remaining balance. That is why this calculator also compares those items separately.</p>
+        </section>
+
+        <section>
+          <h2>Why a lower monthly mortgage payment can be misleading</h2>
+          <p>A lower payment can come from two very different sources: a better interest rate or a longer repayment period. For example, replacing a mortgage with 14 years remaining with a new 30-year mortgage can reduce the payment dramatically even when the economic improvement is modest.</p>
+          <div class="callout warning"><h3>Payment relief is not always the same as savings</h3><p>If the new mortgage extends repayment for many additional years, part of the lower monthly payment comes from paying principal more slowly. Compare the new term and the remaining balance, not only the payment.</p></div>
+        </section>
+
+        <section>
+          <h2>How financed closing costs affect the refinance</h2>
+          <p>Some refinancing costs can be added to the new mortgage balance. This reduces the cash you need at closing, but the cost does not disappear. It becomes additional mortgage principal and may generate interest for years.</p>
+          <p>The calculator therefore separates <strong>upfront costs</strong> from <strong>financed costs</strong>. Upfront costs are used in the simple break-even calculation, while financed costs increase the starting balance of the new mortgage.</p>
+        </section>
+
+        <section>
+          <h2>How the expected time horizon changes the answer</h2>
+          <p>You may not keep either mortgage until final payoff. A move, home sale, another refinance, or accelerated payoff can end the comparison much earlier. Enter the number of years you realistically expect to keep the loan so the tool can compare interest and remaining balances over that period.</p>
+          <p>If you expect to move in three years, a refinance with a five-year break-even period is difficult to justify from monthly savings alone. If you expect to keep the mortgage for ten years, the same loan has more time to recover its costs.</p>
+        </section>
+
+        <section>
+          <h2>Why remaining balance matters</h2>
+          <p>Two mortgages can have similar payments but leave you with very different balances after five or ten years. A refinance that restarts a long amortization period may improve cash flow while slowing principal reduction.</p>
+          <p>The calculator displays the estimated remaining balance under both options after your selected time horizon. If the refinance has a meaningfully larger balance, that difference is an important cost of the lower payment.</p>
+        </section>
+
+        <section>
+          <h2>How to interpret the decision score</h2>
+          <p>The score is a structured comparison, not a lender recommendation. It gives positive weight to a meaningful rate reduction, a break-even period shorter than your expected time in the loan, lower interest cost, and a term that does not unnecessarily stretch repayment. It subtracts weight for high costs, weak payment savings, a break-even period beyond your likely stay, and major term extension.</p>
+          <div class="callout info"><h3>Use the score to expose trade-offs</h3><p>A strong score does not guarantee that you qualify for the loan or that refinancing is right for your circumstances. A weaker score does not mean a refinance can never be useful, especially when the primary goal is payment stability or necessary cash-flow relief.</p></div>
+        </section>
+
+        <section>
+          <h2>What to include in refinance costs</h2>
+          <p>Depending on the lender, property, loan program, and location, refinance costs can include lender charges, origination fees, appraisal, title-related charges, recording charges, settlement services, discount points, and other transaction expenses.</p>
+          <p>Prepaid property taxes, homeowners insurance, and prepaid interest may also affect cash needed at closing, but they are partly timing items rather than pure transaction expenses. For a clean break-even comparison, try to separate true refinance transaction costs from amounts you would pay anyway.</p>
+        </section>
+
+        <section>
+          <h2>When refinancing may deserve serious consideration</h2>
+          <ul>
+            <li>The new interest rate is meaningfully lower after fees are considered.</li>
+            <li>The simple break-even point is comfortably shorter than your likely time in the loan.</li>
+            <li>The new term is similar to or shorter than the current remaining term.</li>
+            <li>The refinance lowers interest without leaving a substantially larger balance later.</li>
+            <li>You want to replace an adjustable or uncertain payment structure with a predictable fixed-rate loan.</li>
+            <li>The required monthly payment reduction would materially improve household cash flow.</li>
+            <li>You have compared several written offers using similar assumptions.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>When keeping your current mortgage may be better</h2>
+          <ul>
+            <li>You are likely to sell or refinance again before the break-even point.</li>
+            <li>The new rate is only slightly lower and transaction costs are high.</li>
+            <li>The lower payment comes mainly from restarting a much longer loan term.</li>
+            <li>Your current mortgage already has favorable terms.</li>
+            <li>The refinance adds substantial costs to the new balance.</li>
+            <li>You are close to paying off the current mortgage.</li>
+            <li>Closing costs would weaken your emergency reserves.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>A practical refinance stress test</h2>
+          <ol class="steps">
+            <li><strong>Raise the closing costs.</strong> Add a margin for fees that may be higher than the first estimate.</li>
+            <li><strong>Reduce the rate advantage.</strong> Test a slightly higher new rate.</li>
+            <li><strong>Shorten your expected stay.</strong> Ask what happens if you move earlier than planned.</li>
+            <li><strong>Compare a term close to your remaining term.</strong> Do not default automatically to a new 30-year mortgage.</li>
+            <li><strong>Test financed costs separately.</strong> See how adding fees to principal affects the new balance and interest.</li>
+            <li><strong>Compare the balance after five or ten years.</strong> A lower payment is less attractive if you owe much more later.</li>
+            <li><strong>Proceed only if the refinance still solves your original goal.</strong> The headline rate should not dominate the decision.</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Common mortgage refinance calculator mistakes</h2>
+          <ul>
+            <li>Entering the original mortgage term instead of the remaining term.</li>
+            <li>Ignoring closing costs because they are rolled into the new loan.</li>
+            <li>Calling the entire monthly payment reduction “savings.”</li>
+            <li>Comparing a new 30-year loan with a current mortgage that has far fewer years left.</li>
+            <li>Using an unrealistically long expected time in the home.</li>
+            <li>Ignoring discount points or lender credits.</li>
+            <li>Comparing quotes from different dates without considering market movement.</li>
+            <li>Assuming taxes and insurance will change exactly like principal and interest.</li>
+            <li>Treating a simple break-even calculation as a complete refinance analysis.</li>
+            <li>Using the calculator result as professional mortgage or financial advice.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Example: lower rate with a similar term</h2>
+          <p>Suppose a homeowner has 22 years remaining and refinances into a 20-year mortgage at a meaningfully lower rate. The closing costs are moderate, the monthly payment falls, and the break-even period is about two years. If the homeowner expects to stay seven years, the refinance may look comparatively strong because the rate improves without substantially extending repayment.</p>
+        </section>
+
+        <section>
+          <h2>Example: lower payment caused mainly by a longer term</h2>
+          <p>Now suppose a homeowner has 14 years remaining but refinances into a new 30-year mortgage. The required payment may fall dramatically. However, the tool may show a much larger remaining balance after five or ten years and more lifetime interest. The lower payment can still be useful for cash flow, but it should not be confused with a pure cost saving.</p>
+        </section>
+
+        <section>
+          <h2>Example: moving before break-even</h2>
+          <p>If refinancing costs 5,400 upfront and lowers the required payment by 150 per month, the simple break-even period is 36 months. A homeowner who expects to move in about two years would not recover those costs through monthly payment savings alone.</p>
+        </section>
+
+        <section>
+          <h2>Information this calculator cannot know for you</h2>
+          <ul>
+            <li>The actual interest rate and fees a lender will offer after underwriting.</li>
+            <li>Whether your rate is locked or how long the lock lasts.</li>
+            <li>Your credit, income, debt-to-income, equity, appraisal, or qualification status.</li>
+            <li>Mortgage insurance rules or program-specific requirements.</li>
+            <li>Future interest rates or home values.</li>
+            <li>Tax consequences or deductibility of mortgage interest or points.</li>
+            <li>Property taxes, insurance, escrow adjustments, or association costs.</li>
+            <li>Prepayment penalties or other contractual charges on your current mortgage.</li>
+            <li>Whether another loan structure is legally or financially suitable for you.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Frequently asked questions</h2>
+          <div class="faq-item"><h3>How does the mortgage refinance calculator work?</h3><p>It compares your current mortgage with a proposed refinance using your current balance, current rate, remaining term, new rate, new term, upfront costs, financed costs, extra payments, and expected time in the loan. It estimates payment, break-even, interest, and remaining balances.</p></div>
+          <div class="faq-item"><h3>What is the refinance break-even point?</h3><p>The simple break-even point divides eligible upfront refinance costs by monthly required-payment savings. It estimates how long the payment savings need to recover those upfront costs.</p></div>
+          <div class="faq-item"><h3>Does a lower monthly payment always mean I save money?</h3><p>No. A lower payment can result from extending the loan term. Compare the remaining balance, interest, and term as well as the monthly payment.</p></div>
+          <div class="faq-item"><h3>Should I enter the original term of my current mortgage?</h3><p>No. Enter the number of years remaining today. Refinancing should be compared with what happens if you keep the existing mortgage from this point forward.</p></div>
+          <div class="faq-item"><h3>What if I roll closing costs into the new mortgage?</h3><p>Enter those costs in the financed-cost field. The calculator adds them to the new loan balance instead of treating them as upfront cash.</p></div>
+          <div class="faq-item"><h3>Are taxes and homeowners insurance included?</h3><p>No. The payment calculations focus on principal and interest so the old and new debt structures can be compared directly. Taxes, insurance, mortgage insurance, and escrow may need separate analysis.</p></div>
+          <div class="faq-item"><h3>What if I make extra principal payments?</h3><p>You can enter extra monthly principal for both the current and proposed loan. The amortization comparison will reflect faster balance reduction and lower interest when those extra payments are mathematically possible.</p></div>
+          <div class="faq-item"><h3>Is break-even enough to make the decision?</h3><p>No. Break-even is a useful first screen, but the new term, financed fees, remaining balance, total interest, rate risk, and your actual goal also matter.</p></div>
+          <div class="faq-item"><h3>How much lower should the new rate be?</h3><p>There is no universal percentage-point rule. The answer depends on your balance, costs, remaining term, new term, and how long you expect to keep the mortgage.</p></div>
+          <div class="faq-item"><h3>Does a high decision score mean I should refinance?</h3><p>No. The score is an educational comparison based on your inputs. It does not evaluate qualification, legal issues, taxes, lender quality, or your full financial situation.</p></div>
+        </section>
+
+        <section class="about-box">
+          <h2>About this mortgage refinance calculator</h2>
+          <p>DecideHelper creates educational frameworks and interactive tools for difficult everyday decisions. This calculator is designed to complement the <a href="should-i-refinance-my-mortgage.html">Should I Refinance My Mortgage?</a> guide by turning the guide's core questions into a structured numerical comparison.</p>
+          <p>The tool intentionally avoids a one-number answer. Refinancing can improve cash flow while increasing long-term cost, or increase a monthly payment while shortening the debt substantially. A useful decision should make those trade-offs visible.</p>
+        </section>
+
+        <section class="related">
+          <h2>Related decision guides and tools</h2>
+          <ul>
+            <li><a href="should-i-refinance-my-mortgage.html">Should I Refinance My Mortgage?</a> — read the full decision guide.</li>
+            <li><a href="should-i-rent-or-buy.html">Should I Rent or Buy a Home?</a> — compare long-term housing choices.</li>
+            <li><a href="should-i-rent-or-buy-tool.html">Rent vs Buy Calculator</a> — compare renting and buying over your time horizon.</li>
+            <li><a href="should-i-move.html">Should I Move?</a> — compare the financial and practical case for moving.</li>
+            <li><a href="../money/should-i-pay-off-early.html">Should I Pay Off My Loan Early?</a> — compare extra debt repayment with keeping cash available.</li>
+            <li><a href="../money/should-i-build-emergency-fund.html">Should I Build an Emergency Fund?</a> — consider reserves before using cash for closing costs.</li>
+            <li><a href="index.html">Home Decisions</a> — browse more home decision guides and tools.</li>
+          </ul>
+        </section>
+
+        <p class="disclaimer"><strong>Disclaimer:</strong> This calculator is for general educational and informational purposes only. Results are estimates based on the values you enter and simplified fixed-rate amortization assumptions. It does not provide mortgage, lending, financial, investment, tax, legal, accounting, insurance, real-estate, or other professional advice. Actual rates, APRs, qualification requirements, appraisals, loan programs, closing costs, taxes, insurance, mortgage insurance, prepayment rules, consumer protections, and lender practices vary by borrower, property, jurisdiction, and market conditions. Obtain current written loan estimates and consider qualified professional advice before refinancing a mortgage.</p>
+      </div>
+    </article>
+  </main>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="../index.html">Home</a><a href="../about.html">About</a><a href="../privacy-policy.html">Privacy Policy</a><a href="../terms-and-conditions.html">Terms</a><a href="../disclaimer.html">Disclaimer</a><a href="../contact.html">Contact</a>
+    </nav>
+    <p>© <span id="year"></span> DecideHelper. Educational content only.</p>
+  </div>
+</footer>
+
+<script>
+  const form=document.getElementById('refiForm');
+  const results=document.getElementById('results');
+  const errorBox=document.getElementById('errorBox');
+  const resetBtn=document.getElementById('resetBtn');
+  function n(id){return Number(document.getElementById(id).value)}
+  function money(v){const sign=v<0?'-':'';return sign+new Intl.NumberFormat('en-US',{maximumFractionDigits:0}).format(Math.abs(v))}
+  function pct(v){return new Intl.NumberFormat('en-US',{maximumFractionDigits:2}).format(v)+'%'}
+  function addReason(list,text){const li=document.createElement('li');li.textContent=text;list.appendChild(li)}
+
+  function payment(principal,annualRate,months){
+    if(principal<=0||months<=0)return 0;
+    const r=annualRate/100/12;
+    if(r===0)return principal/months;
+    return principal*r*Math.pow(1+r,months)/(Math.pow(1+r,months)-1);
+  }
+
+  function amortize(principal,annualRate,months,extra,horizonMonths){
+    const scheduled=payment(principal,annualRate,months);
+    let balance=principal,totalInterest=0,totalPaid=0,monthsPaid=0;
+    const r=annualRate/100/12;
+    const limit=Math.min(months,Math.max(0,Math.round(horizonMonths)));
+    for(let i=0;i<limit&&balance>0.005;i++){
+      const interest=balance*r;
+      let pay=Math.min(balance+interest,scheduled+extra);
+      let principalPaid=pay-interest;
+      if(principalPaid<0)principalPaid=0;
+      balance=Math.max(0,balance-principalPaid);
+      totalInterest+=interest;totalPaid+=pay;monthsPaid++;
+    }
+    return{scheduled,balance,totalInterest,totalPaid,monthsPaid};
+  }
+
+  function lifetime(principal,annualRate,months,extra){
+    const scheduled=payment(principal,annualRate,months);
+    let balance=principal,totalInterest=0,totalPaid=0,monthsPaid=0;
+    const r=annualRate/100/12;
+    const hardLimit=months+1200;
+    while(balance>0.005&&monthsPaid<hardLimit){
+      const interest=balance*r;
+      let pay=Math.min(balance+interest,scheduled+extra);
+      if(pay<=interest&&balance>0){return{scheduled,balance,totalInterest:Infinity,totalPaid:Infinity,monthsPaid:Infinity}}
+      const principalPaid=pay-interest;
+      balance=Math.max(0,balance-principalPaid);
+      totalInterest+=interest;totalPaid+=pay;monthsPaid++;
+    }
+    return{scheduled,balance,totalInterest,totalPaid,monthsPaid};
+  }
+
+  function calculate(e){
+    e.preventDefault();errorBox.style.display='none';errorBox.textContent='';
+    const input={balance:n('balance'),currentRate:n('currentRate'),remainingYears:n('remainingYears'),currentExtra:n('currentExtra'),newRate:n('newRate'),newYears:n('newYears'),upfrontCosts:n('upfrontCosts'),financedCosts:n('financedCosts'),points:n('points'),newExtra:n('newExtra'),horizonYears:n('horizonYears'),goal:document.getElementById('goal').value};
+    const vals=Object.entries(input).filter(([k])=>k!=='goal').map(([,v])=>v);
+    if(vals.some(v=>!Number.isFinite(v))||input.balance<=0||input.currentRate<0||input.remainingYears<=0||input.currentExtra<0||input.newRate<0||input.newYears<=0||input.upfrontCosts<0||input.financedCosts<0||input.points<0||input.newExtra<0||input.horizonYears<=0){
+      errorBox.textContent='Please enter valid values. Balance, remaining term, new term, and time horizon must be greater than zero; costs and rates cannot be negative.';errorBox.style.display='block';results.style.display='none';return;
+    }
+
+    const currentMonths=Math.max(1,Math.round(input.remainingYears*12));
+    const newMonths=Math.max(1,Math.round(input.newYears*12));
+    const horizonMonths=Math.max(1,Math.round(input.horizonYears*12));
+    const newBalance=input.balance+input.financedCosts;
+    const upfront=input.upfrontCosts+input.points;
+    const curLife=lifetime(input.balance,input.currentRate,currentMonths,input.currentExtra);
+    const newLife=lifetime(newBalance,input.newRate,newMonths,input.newExtra);
+    const curH=amortize(input.balance,input.currentRate,currentMonths,input.currentExtra,horizonMonths);
+    const newH=amortize(newBalance,input.newRate,newMonths,input.newExtra,horizonMonths);
+    const monthlySavings=curLife.scheduled-newLife.scheduled;
+    const breakEven=monthlySavings>0?upfront/monthlySavings:Infinity;
+    const rateDrop=input.currentRate-input.newRate;
+    const termChange=input.newYears-input.remainingYears;
+    const horizonInterestDiff=curH.totalInterest-(newH.totalInterest+upfront);
+    const balanceDiff=curH.balance-newH.balance;
+    const currentLifetimeCost=curLife.totalInterest;
+    const newLifetimeCost=newLife.totalInterest+upfront+input.financedCosts;
+    const lifetimeDiff=currentLifetimeCost-newLifetimeCost;
+
+    let score=50;
+    if(rateDrop>0)score+=Math.min(16,rateDrop*10);else score+=Math.max(-18,rateDrop*8);
+    if(monthlySavings>0)score+=Math.min(10,monthlySavings/Math.max(curLife.scheduled,1)*40);else score-=8;
+    if(Number.isFinite(breakEven)){if(breakEven<=horizonMonths)score+=12;else score-=12;if(breakEven<=36)score+=5}else if(upfront>0)score-=10;
+    if(termChange<=0)score+=8;else score-=Math.min(18,termChange*1.5);
+    if(horizonInterestDiff>0)score+=8;else score-=8;
+    if(lifetimeDiff>0)score+=7;else score-=7;
+    if(balanceDiff>=0)score+=5;else score-=Math.min(10,Math.abs(balanceDiff)/input.balance*40);
+    if(input.goal==='payment'&&monthlySavings>0)score+=5;
+    if(input.goal==='term'&&termChange<0)score+=6;
+    if(input.goal==='stability')score+=2;
+    if(upfront/input.balance>0.04)score-=5;
+    score=Math.max(0,Math.min(100,Math.round(score)));
+
+    const box=document.getElementById('recommendationBox');const title=document.getElementById('recommendationTitle');const text=document.getElementById('recommendationText');box.className='recommendation';
+    if(score>=70 && (breakEven<=horizonMonths || upfront===0)){
+      title.textContent='Estimated result: The refinance case looks comparatively strong';
+      text.textContent='Under the values entered, the refinance combines a favorable rate/payment comparison with a time horizon that appears long enough to recover costs. Check the term, remaining balance, and final lender estimate before treating the result as a real saving.';box.classList.add('strong');
+    }else if(score>=45){
+      title.textContent='Estimated result: Mixed — compare term, costs, and time horizon';
+      text.textContent='The refinance has some potential benefits, but important trade-offs remain. Test a term closer to your current remaining term, verify all closing costs, and rerun the calculator with a shorter expected stay.';box.classList.add('caution');
+    }else{
+      title.textContent='Estimated result: Keeping the current mortgage may deserve more attention';
+      text.textContent='Under the values entered, the refinance appears weak because costs, term extension, limited savings, or the expected time horizon reduce the benefit. Compare other offers or wait for more favorable terms before replacing the current mortgage.';box.classList.add('weak');
+    }
+
+    document.getElementById('decisionScore').textContent=score+' / 100';
+    document.getElementById('monthlySavingsCard').textContent=monthlySavings>=0?money(monthlySavings)+' lower':money(Math.abs(monthlySavings))+' higher';
+    document.getElementById('breakEvenCard').textContent=upfront===0?'Immediate':Number.isFinite(breakEven)?breakEven.toFixed(1)+' mo':'No break-even';
+    document.getElementById('termCard').textContent=input.newYears+' years';
+    document.getElementById('currentBalanceCell').textContent=money(input.balance);document.getElementById('newBalanceCell').textContent=money(newBalance);
+    document.getElementById('currentRateCell').textContent=pct(input.currentRate);document.getElementById('newRateCell').textContent=pct(input.newRate);
+    document.getElementById('currentTermCell').textContent=input.remainingYears+' years';document.getElementById('newTermCell').textContent=input.newYears+' years';
+    document.getElementById('currentPaymentCell').textContent=money(curLife.scheduled);document.getElementById('newPaymentCell').textContent=money(newLife.scheduled);
+    document.getElementById('currentActualPaymentCell').textContent=money(curLife.scheduled+input.currentExtra);document.getElementById('newActualPaymentCell').textContent=money(newLife.scheduled+input.newExtra);
+    document.getElementById('currentHorizonBalanceCell').textContent=money(curH.balance);document.getElementById('newHorizonBalanceCell').textContent=money(newH.balance);
+    document.getElementById('currentHorizonInterestCell').textContent=money(curH.totalInterest);document.getElementById('newHorizonInterestCell').textContent=money(newH.totalInterest);
+    document.getElementById('currentLifetimeInterestCell').textContent=money(curLife.totalInterest);document.getElementById('newLifetimeInterestCell').textContent=money(newLife.totalInterest);
+    document.getElementById('upfrontCostCell').textContent=money(upfront);document.getElementById('financedCostCell').textContent=money(input.financedCosts);
+    document.getElementById('monthlySavingsCell').textContent=monthlySavings>0?money(monthlySavings)+' lower per month':monthlySavings<0?money(Math.abs(monthlySavings))+' higher per month':'No change';
+    document.getElementById('breakEvenCell').textContent=upfront===0?'No upfront-cost recovery period':Number.isFinite(breakEven)?breakEven.toFixed(1)+' months':'No simple break-even because the required payment does not decrease';
+    document.getElementById('horizonInterestDifferenceCell').textContent=horizonInterestDiff>=0?'Refinance lower by '+money(horizonInterestDiff)+' after upfront costs':'Refinance higher by '+money(Math.abs(horizonInterestDiff))+' after upfront costs';
+    document.getElementById('balanceDifferenceCell').textContent=balanceDiff>=0?'Refinance balance lower by '+money(balanceDiff):'Refinance balance higher by '+money(Math.abs(balanceDiff));
+    document.getElementById('lifetimeDifferenceCell').textContent=lifetimeDiff>=0?'Refinance lower by '+money(lifetimeDiff):'Refinance higher by '+money(Math.abs(lifetimeDiff));
+    document.getElementById('termDifferenceCell').textContent=termChange===0?'Same scheduled term':termChange>0?input.newYears+' years is '+termChange.toFixed(2)+' years longer than the current remaining term':input.newYears+' years is '+Math.abs(termChange).toFixed(2)+' years shorter than the current remaining term';
+
+    const support=document.getElementById('supportReasons');const caution=document.getElementById('cautionReasons');support.innerHTML='';caution.innerHTML='';
+    if(rateDrop>=0.5)addReason(support,'The proposed interest rate is meaningfully lower than the current rate.');
+    if(monthlySavings>0)addReason(support,'The required principal-and-interest payment is lower under the proposed refinance.');
+    if(Number.isFinite(breakEven)&&breakEven<=horizonMonths)addReason(support,'The simple break-even period is shorter than your entered time horizon.');
+    if(termChange<=0)addReason(support,'The new scheduled term does not extend beyond the current remaining term.');
+    if(horizonInterestDiff>0)addReason(support,'Estimated interest plus upfront costs are lower over your chosen time horizon.');
+    if(balanceDiff>=0)addReason(support,'The refinance leaves an equal or lower estimated balance at the end of your chosen time horizon.');
+    if(lifetimeDiff>0)addReason(support,'Estimated lifetime interest plus refinance transaction costs are lower in this simplified comparison.');
+
+    if(rateDrop<=0)addReason(caution,'The proposed rate is not lower than the current rate.');
+    if(monthlySavings<=0)addReason(caution,'The proposed refinance does not reduce the required principal-and-interest payment.');
+    if(Number.isFinite(breakEven)&&breakEven>horizonMonths)addReason(caution,'The simple break-even period is longer than the time you expect to keep the loan.');
+    if(!Number.isFinite(breakEven)&&upfront>0)addReason(caution,'There is no simple payment-savings break-even under the entered values.');
+    if(termChange>=5)addReason(caution,'The refinance extends scheduled repayment by at least five years, so part of any payment reduction may come from slower principal repayment.');
+    else if(termChange>0)addReason(caution,'The refinance extends the scheduled loan term beyond the current remaining term.');
+    if(balanceDiff<0)addReason(caution,'The refinance leaves a higher estimated mortgage balance at the end of your chosen time horizon.');
+    if(horizonInterestDiff<0)addReason(caution,'Estimated interest plus upfront costs are higher over your chosen time horizon.');
+    if(lifetimeDiff<0)addReason(caution,'Estimated lifetime interest and refinance transaction costs are higher in the simplified comparison.');
+    if(input.financedCosts>0)addReason(caution,'Some refinance costs are added to the new mortgage balance and may generate interest.');
+    if(upfront/input.balance>0.03)addReason(caution,'Upfront refinance costs are relatively large compared with the current mortgage balance.');
+    if(!support.children.length)addReason(support,'No single factor creates a strong numerical case for refinancing under the current inputs.');
+    if(!caution.children.length)addReason(caution,'No major warning factor dominates the current inputs, but lender terms and assumptions should still be verified.');
+
+    results.style.display='block';results.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+
+  function resetTool(){form.reset();['balance','currentRate','remainingYears','currentExtra','newRate','newYears','upfrontCosts','financedCosts','points','newExtra','horizonYears'].forEach(()=>{});document.getElementById('balance').value='250000';document.getElementById('currentRate').value='6.75';document.getElementById('remainingYears').value='22';document.getElementById('currentExtra').value='0';document.getElementById('newRate').value='5.75';document.getElementById('newYears').value='20';document.getElementById('upfrontCosts').value='4500';document.getElementById('financedCosts').value='0';document.getElementById('points').value='0';document.getElementById('newExtra').value='0';document.getElementById('horizonYears').value='7';document.getElementById('goal').value='rate';errorBox.style.display='none';results.style.display='none';document.getElementById('calculator-title').scrollIntoView({behavior:'smooth',block:'start'});}
+  form.addEventListener('submit',calculate);resetBtn.addEventListener('click',resetTool);document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
