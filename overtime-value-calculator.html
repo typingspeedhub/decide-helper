@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-68ZVCW4FWK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-68ZVCW4FWK');
+  </script>
+
+  <!-- Google AdSense -->
+  <script async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1607876440670769"
+    crossorigin="anonymous"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Overtime Value Calculator | Is Overtime Worth It? | DecideHelper</title>
+  <meta name="description" content="Use this free Overtime Value Calculator to estimate overtime pay, take-home value, extra costs, effective hourly value, and monthly overtime income before deciding whether extra hours are worth it.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="DecideHelper">
+
+  <link rel="canonical" href="https://decidehelper.com/career/overtime-value-calculator.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DecideHelper">
+  <meta property="og:title" content="Overtime Value Calculator | Is Overtime Worth It?">
+  <meta property="og:description" content="Estimate gross overtime pay, take-home overtime value, extra work-related costs, total time commitment, and effective value per sacrificed hour.">
+  <meta property="og:url" content="https://decidehelper.com/career/overtime-value-calculator.html">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Overtime Value Calculator | DecideHelper">
+  <meta name="twitter:description" content="A free overtime pay and value calculator that looks beyond the headline overtime rate.">
+
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --surface:#fff;
+      --surface-soft:#f5f3ff;
+      --surface-muted:#f8fafc;
+      --text:#1f2937;
+      --muted:#5f6b7a;
+      --heading:#0f172a;
+      --primary:#8b5cf6;
+      --primary-dark:#6d28d9;
+      --green:#15803d;
+      --green-soft:#f0fdf4;
+      --amber:#92400e;
+      --amber-soft:#fffbeb;
+      --red:#991b1b;
+      --red-soft:#fef2f2;
+      --blue:#1d4ed8;
+      --blue-soft:#eff6ff;
+      --border:#dbe3ef;
+      --shadow:0 14px 36px rgba(15,23,42,.08);
+      --radius:16px;
+      --max-width:1100px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Arial,Helvetica,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.7;
+    }
+
+    a{color:var(--primary-dark)}
+    a:hover{text-decoration-thickness:2px}
+    button,input,select{font:inherit}
+
+    header{
+      background:#0f172a;
+      color:#fff;
+      padding:24px 20px;
+    }
+
+    .header-inner,.footer-inner{
+      max-width:var(--max-width);
+      margin:0 auto;
+    }
+
+    .logo{
+      display:inline-block;
+      color:#fff;
+      text-decoration:none;
+      font-size:27px;
+      font-weight:700;
+      letter-spacing:-.02em;
+    }
+
+    .tagline{
+      margin:5px 0 0;
+      color:#cbd5e1;
+      font-size:15px;
+    }
+
+    .primary-nav{
+      margin-top:16px;
+      display:flex;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+
+    .primary-nav a{
+      color:#e2e8f0;
+      text-decoration:none;
+      font-weight:600;
+    }
+
+    .primary-nav a:hover{
+      color:#fff;
+      text-decoration:underline;
+    }
+
+    .container{
+      max-width:var(--max-width);
+      margin:0 auto;
+      padding:0 20px;
+    }
+
+    .breadcrumb{
+      padding:22px 0 8px;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .breadcrumb a{color:var(--muted)}
+    main{padding-bottom:60px}
+
+    .page-shell{
+      margin-top:12px;
+      background:var(--surface);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+
+    .hero{
+      padding:52px 48px 42px;
+      background:linear-gradient(135deg,#f5f3ff 0%,#fff 55%,#f8fafc 100%);
+      border-bottom:1px solid var(--border);
+    }
+
+    .eyebrow{
+      display:inline-block;
+      margin-bottom:14px;
+      padding:6px 11px;
+      border-radius:999px;
+      background:#ede9fe;
+      color:#6d28d9;
+      font-size:13px;
+      font-weight:700;
+      letter-spacing:.03em;
+      text-transform:uppercase;
+    }
+
+    h1{
+      margin:0;
+      max-width:930px;
+      color:var(--heading);
+      font-size:clamp(38px,6vw,62px);
+      line-height:1.08;
+      letter-spacing:-.04em;
+    }
+
+    .hero-intro{
+      max-width:900px;
+      margin:24px 0 0;
+      font-size:20px;
+      color:#334155;
+    }
+
+    .meta{
+      margin-top:22px;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .content{padding:44px 48px 56px}
+
+    h2{
+      margin-top:54px;
+      margin-bottom:14px;
+      color:var(--heading);
+      font-size:32px;
+      line-height:1.22;
+      letter-spacing:-.02em;
+    }
+
+    h3{
+      margin-top:30px;
+      margin-bottom:10px;
+      color:var(--heading);
+      font-size:22px;
+      line-height:1.3;
+    }
+
+    p{margin:13px 0}
+    ul,ol{padding-left:24px}
+    li{margin:8px 0}
+    .lead{font-size:19px;color:#334155}
+
+    .summary-box{
+      padding:24px;
+      border:1px solid #ddd6fe;
+      border-left:5px solid var(--primary);
+      background:var(--surface-soft);
+      border-radius:12px;
+      margin-bottom:34px;
+    }
+
+    .summary-box h2{margin-top:0;font-size:24px}
+
+    .calculator-wrap{
+      margin:34px 0 44px;
+      border:1px solid var(--border);
+      border-radius:16px;
+      overflow:hidden;
+      background:#fff;
+    }
+
+    .calculator-heading{
+      padding:28px 30px;
+      background:#0f172a;
+      color:#fff;
+    }
+
+    .calculator-heading h2{
+      margin:0;
+      color:#fff;
+      font-size:30px;
+    }
+
+    .calculator-heading p{
+      margin-bottom:0;
+      color:#cbd5e1;
+    }
+
+    .calculator-body{padding:30px}
+
+    .section-title{
+      margin:32px 0 18px;
+      padding-bottom:10px;
+      border-bottom:1px solid var(--border);
+      font-size:22px;
+      color:var(--heading);
+    }
+
+    .section-title:first-child{margin-top:0}
+
+    .field-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:20px;
+    }
+
+    .field{
+      display:flex;
+      flex-direction:column;
+      gap:7px;
+    }
+
+    .field.full{grid-column:1/-1}
+
+    label{
+      font-weight:700;
+      color:#172033;
+    }
+
+    .help{
+      color:var(--muted);
+      font-size:13px;
+      line-height:1.45;
+    }
+
+    input,select{
+      width:100%;
+      min-height:46px;
+      padding:11px 12px;
+      border:1px solid #cbd5e1;
+      border-radius:9px;
+      background:#fff;
+      color:var(--text);
+    }
+
+    input:focus,select:focus{
+      outline:3px solid rgba(139,92,246,.16);
+      border-color:var(--primary);
+    }
+
+    .button-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:30px;
+    }
+
+    .button{
+      border:0;
+      border-radius:10px;
+      padding:13px 20px;
+      cursor:pointer;
+      font-weight:700;
+    }
+
+    .button.primary{background:var(--primary);color:#fff}
+    .button.primary:hover{background:var(--primary-dark)}
+    .button.secondary{background:#e2e8f0;color:#0f172a}
+    .button.secondary:hover{background:#cbd5e1}
+
+    .error-box{
+      display:none;
+      margin-top:22px;
+      padding:16px 18px;
+      border:1px solid #fecaca;
+      border-radius:10px;
+      background:var(--red-soft);
+      color:var(--red);
+      font-weight:700;
+    }
+
+    .results{
+      display:none;
+      margin-top:30px;
+      border-top:1px solid var(--border);
+      padding-top:30px;
+    }
+
+    .recommendation{
+      padding:26px;
+      border-radius:14px;
+      border:1px solid #ddd6fe;
+      background:var(--surface-soft);
+    }
+
+    .recommendation.strong{
+      border-color:#bbf7d0;
+      background:var(--green-soft);
+    }
+
+    .recommendation.mixed{
+      border-color:#fde68a;
+      background:var(--amber-soft);
+    }
+
+    .recommendation.low{
+      border-color:#fecaca;
+      background:var(--red-soft);
+    }
+
+    .recommendation h3{
+      margin:0 0 10px;
+      font-size:28px;
+    }
+
+    .score-grid{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:18px;
+      margin:24px 0;
+    }
+
+    .score-card{
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:20px;
+      background:#fff;
+    }
+
+    .score-card h3{
+      margin-top:0;
+      font-size:17px;
+    }
+
+    .score-value{
+      font-size:29px;
+      font-weight:700;
+      line-height:1.1;
+      word-break:break-word;
+    }
+
+    .score-card.good .score-value{color:var(--green)}
+    .score-card.warn .score-value{color:var(--amber)}
+    .score-card.neutral .score-value{color:var(--primary-dark)}
+    .score-card.info .score-value{color:var(--blue)}
+
+    .results-table,.comparison-table{
+      width:100%;
+      border-collapse:collapse;
+      margin:24px 0;
+      font-size:15px;
+    }
+
+    .results-table th,.comparison-table th{
+      padding:13px;
+      background:#0f172a;
+      color:#fff;
+      text-align:left;
+      border:1px solid #334155;
+    }
+
+    .results-table td,.comparison-table td{
+      padding:13px;
+      border:1px solid var(--border);
+      vertical-align:top;
+    }
+
+    .results-table tbody tr:nth-child(even),
+    .comparison-table tbody tr:nth-child(even){
+      background:#f8fafc;
+    }
+
+    .reason-list{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:18px;
+      margin-top:24px;
+    }
+
+    .reason-box{
+      padding:20px;
+      border:1px solid var(--border);
+      border-radius:12px;
+      background:#f8fafc;
+    }
+
+    .reason-box h3{margin-top:0;font-size:19px}
+
+    .callout{
+      border-radius:12px;
+      padding:22px 24px;
+      margin:28px 0;
+    }
+
+    .callout h3{margin-top:0}
+
+    .callout.good{
+      background:var(--green-soft);
+      border:1px solid #bbf7d0;
+      color:#14532d;
+    }
+
+    .callout.warning{
+      background:var(--amber-soft);
+      border:1px solid #fde68a;
+      color:#78350f;
+    }
+
+    .callout.info{
+      background:var(--blue-soft);
+      border:1px solid #bfdbfe;
+      color:#1e3a8a;
+    }
+
+    .formula{
+      margin:20px 0;
+      padding:18px;
+      border-radius:10px;
+      background:#0f172a;
+      color:#f8fafc;
+      font-family:"Courier New",monospace;
+      overflow-x:auto;
+    }
+
+    .steps{
+      counter-reset:decision-step;
+      list-style:none;
+      padding-left:0;
+    }
+
+    .steps li{
+      counter-increment:decision-step;
+      position:relative;
+      padding:0 0 24px 64px;
+      min-height:52px;
+    }
+
+    .steps li::before{
+      content:counter(decision-step);
+      position:absolute;
+      left:0;
+      top:0;
+      width:42px;
+      height:42px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      background:var(--primary);
+      color:#fff;
+      font-weight:700;
+    }
+
+    .faq-item{
+      border-top:1px solid var(--border);
+      padding:22px 0;
+    }
+
+    .faq-item:first-of-type{border-top:0}
+    .faq-item h3{margin-top:0;font-size:21px}
+
+    .about-box{
+      margin-top:48px;
+      padding:28px;
+      border-radius:14px;
+      background:#f8fafc;
+      border:1px solid var(--border);
+    }
+
+    .about-box h2{margin-top:0}
+
+    .related{
+      margin-top:54px;
+      padding:30px;
+      border-radius:14px;
+      background:#0f172a;
+      color:#e2e8f0;
+    }
+
+    .related h2{margin-top:0;color:#fff}
+    .related a{color:#ddd6fe;font-weight:700}
+
+    .disclaimer{
+      margin-top:36px;
+      padding-top:24px;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    footer{
+      background:#0f172a;
+      color:#cbd5e1;
+      padding:34px 20px;
+    }
+
+    .footer-inner{text-align:center}
+
+    .footer-links{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:14px;
+      margin-bottom:14px;
+    }
+
+    .footer-links a{color:#e2e8f0}
+
+    @media(max-width:900px){
+      .score-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+
+    @media(max-width:820px){
+      .hero{padding:38px 26px 32px}
+      .content{padding:32px 26px 44px}
+      .field-grid,.reason-list{grid-template-columns:1fr}
+      .comparison-table,.results-table{display:block;overflow-x:auto}
+    }
+
+    @media(max-width:520px){
+      header{padding:20px 16px}
+      .container{padding:0 12px}
+      .hero{padding:32px 20px 28px}
+      .content{padding:28px 20px 38px}
+      .calculator-body{padding:22px 18px}
+      .calculator-heading{padding:24px 20px}
+      .score-grid{grid-template-columns:1fr}
+      h1{font-size:38px}
+      h2{font-size:28px}
+      .hero-intro{font-size:18px}
+      .button{width:100%}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebApplication",
+    "name":"Overtime Value Calculator",
+    "url":"https://decidehelper.com/career/overtime-value-calculator.html",
+    "applicationCategory":"BusinessApplication",
+    "operatingSystem":"Any",
+    "description":"A free educational overtime value calculator that estimates gross overtime pay, take-home value, extra costs, total time commitment, effective value per sacrificed hour, and recurring monthly overtime value.",
+    "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+    "publisher":{"@type":"Organization","name":"DecideHelper","url":"https://decidehelper.com/"}
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://decidehelper.com/"},
+      {"@type":"ListItem","position":2,"name":"Career Decisions","item":"https://decidehelper.com/career/"},
+      {"@type":"ListItem","position":3,"name":"Overtime Value Calculator","item":"https://decidehelper.com/career/overtime-value-calculator.html"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"How does the Overtime Value Calculator work?",
+        "acceptedAnswer":{"@type":"Answer","text":"The calculator estimates gross overtime pay from your regular hourly rate, overtime multiplier and paid overtime hours. It then applies your estimated take-home percentage, subtracts extra costs, includes extra commute and preparation or recovery time, and calculates the effective value per total hour sacrificed."}
+      },
+      {
+        "@type":"Question",
+        "name":"How do I calculate overtime pay?",
+        "acceptedAnswer":{"@type":"Answer","text":"A simple estimate is regular hourly rate multiplied by the overtime multiplier and paid overtime hours. For example, time-and-a-half uses a multiplier of 1.5. Actual overtime rules and eligible hours depend on your country, contract, employer and worker classification."}
+      },
+      {
+        "@type":"Question",
+        "name":"Does the calculator estimate overtime after taxes?",
+        "acceptedAnswer":{"@type":"Answer","text":"Yes, but only as an estimate. You enter the percentage of overtime pay you expect to keep after taxes and payroll deductions. The tool does not calculate country-specific tax law or benefits."}
+      },
+      {
+        "@type":"Question",
+        "name":"What is effective overtime value per hour?",
+        "acceptedAnswer":{"@type":"Answer","text":"Effective overtime value per hour is the estimated take-home overtime pay minus extra costs, divided by the total additional time commitment. The total time can include paid overtime, extra commuting, preparation and recovery time."}
+      },
+      {
+        "@type":"Question",
+        "name":"Is time-and-a-half always the overtime rate?",
+        "acceptedAnswer":{"@type":"Answer","text":"No. Time-and-a-half is common in some situations, but overtime premiums vary by country, occupation, contract, collective agreement, employer and the type of hours worked. Enter the multiplier that actually applies to you."}
+      },
+      {
+        "@type":"Question",
+        "name":"Can this calculator tell me whether I should work overtime?",
+        "acceptedAnswer":{"@type":"Answer","text":"No single calculator can make that decision. This tool shows the financial and time trade-off. Sleep, safety, health, family responsibilities, career value and personal priorities also matter."}
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+<header>
+  <div class="header-inner">
+    <a class="logo" href="../index.html">DecideHelper</a>
+    <p class="tagline">Clear frameworks for difficult everyday decisions.</p>
+
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="../money/index.html">Money Decisions</a>
+      <a href="../shopping/index.html">Shopping Decisions</a>
+      <a href="../home/index.html">Home Decisions</a>
+      <a href="index.html">Career Decisions</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../index.html">Home</a> ›
+    <a href="index.html">Career Decisions</a> ›
+    Overtime Value Calculator
+  </nav>
+
+  <main>
+    <article class="page-shell">
+      <section class="hero">
+        <span class="eyebrow">Free Career Calculator</span>
+        <h1>Overtime Value Calculator</h1>
+        <p class="hero-intro">
+          Is overtime worth it? Estimate your gross overtime pay, expected take-home value, extra work-related costs, total time commitment, and effective overtime value per hour. This calculator is designed to show what an extra shift may really be worth after the hidden costs and unpaid time around it are included.
+        </p>
+        <p class="meta">Updated September 25, 2026 · No signup required</p>
+      </section>
+
+      <div class="content">
+        <section class="summary-box">
+          <h2>What this overtime calculator is designed to do</h2>
+          <p>
+            A headline overtime rate can make extra work look more valuable than it really is. Taxes and payroll deductions reduce take-home pay, while fuel, parking, childcare, meals, extra commuting, preparation, and recovery can reduce the value further.
+          </p>
+          <p>
+            This <strong>overtime value calculator</strong> combines those pieces. It works as an <strong>overtime pay calculator</strong>, an <strong>overtime after-tax estimate</strong>, and a simple way to compare the money you keep with the total time you give up. It is currency-neutral: use dollars, euros, pounds, forints, or another currency, but keep all money inputs in the same currency.
+          </p>
+        </section>
+
+        <section class="calculator-wrap" aria-labelledby="calculator-title">
+          <div class="calculator-heading">
+            <h2 id="calculator-title">Calculate the Real Value of Overtime</h2>
+            <p>
+              Enter the values for one overtime shift or one block of extra hours. If the overtime repeats, add how many similar sessions you expect each month.
+            </p>
+          </div>
+
+          <div class="calculator-body">
+            <form id="overtimeForm" novalidate>
+              <h3 class="section-title">1. Your pay and overtime rate</h3>
+
+              <div class="field-grid">
+                <div class="field">
+                  <label for="currency">Currency label or symbol</label>
+                  <input id="currency" type="text" maxlength="8" value="$" aria-describedby="currencyHelp">
+                  <span class="help" id="currencyHelp">Examples: $, €, £, HUF, USD. This is for display only.</span>
+                </div>
+
+                <div class="field">
+                  <label for="baseRate">Regular hourly pay</label>
+                  <input id="baseRate" type="number" min="0.01" step="0.01" value="20" required>
+                  <span class="help">Use your normal gross hourly rate before deductions.</span>
+                </div>
+
+                <div class="field">
+                  <label for="multiplier">Overtime pay multiplier</label>
+                  <input id="multiplier" type="number" min="0" max="10" step="0.05" value="1.5" required>
+                  <span class="help">Examples: 1.0 = regular rate, 1.5 = time-and-a-half, 2.0 = double time.</span>
+                </div>
+
+                <div class="field">
+                  <label for="overtimeHours">Paid overtime hours</label>
+                  <input id="overtimeHours" type="number" min="0.01" max="168" step="0.25" value="6" required>
+                  <span class="help">Enter only the hours that will actually be paid as overtime.</span>
+                </div>
+              </div>
+
+              <h3 class="section-title">2. Estimate overtime after taxes and deductions</h3>
+
+              <div class="field-grid">
+                <div class="field">
+                  <label for="keepPercent">Estimated percentage you keep</label>
+                  <input id="keepPercent" type="number" min="0" max="100" step="0.1" value="72" required>
+                  <span class="help">If you expect to keep about 72% after taxes and payroll deductions, enter 72.</span>
+                </div>
+
+                <div class="field">
+                  <label for="sessionsPerMonth">Similar overtime sessions per month</label>
+                  <input id="sessionsPerMonth" type="number" min="0" max="100" step="0.1" value="4" required>
+                  <span class="help">Use 0 if you only want to evaluate one overtime session.</span>
+                </div>
+              </div>
+
+              <h3 class="section-title">3. Extra costs caused by overtime</h3>
+
+              <div class="field-grid">
+                <div class="field">
+                  <label for="travelCost">Extra travel / parking cost</label>
+                  <input id="travelCost" type="number" min="0" step="0.01" value="10" required>
+                </div>
+
+                <div class="field">
+                  <label for="mealCost">Extra meals / convenience spending</label>
+                  <input id="mealCost" type="number" min="0" step="0.01" value="8" required>
+                </div>
+
+                <div class="field">
+                  <label for="careCost">Extra childcare / eldercare</label>
+                  <input id="careCost" type="number" min="0" step="0.01" value="0" required>
+                </div>
+
+                <div class="field">
+                  <label for="otherCost">Other overtime-related costs</label>
+                  <input id="otherCost" type="number" min="0" step="0.01" value="0" required>
+                  <span class="help">For example: taxi, extra vehicle wear, paid help, or another cost created by the shift.</span>
+                </div>
+              </div>
+
+              <h3 class="section-title">4. Extra time that is not paid</h3>
+
+              <div class="field-grid">
+                <div class="field">
+                  <label for="extraCommute">Extra commute / waiting time (minutes)</label>
+                  <input id="extraCommute" type="number" min="0" max="1440" step="1" value="40" required>
+                </div>
+
+                <div class="field">
+                  <label for="prepRecovery">Preparation + recovery time (minutes)</label>
+                  <input id="prepRecovery" type="number" min="0" max="1440" step="1" value="30" required>
+                  <span class="help">Optional estimate for extra preparation, changing, waiting, or recovery time around the overtime.</span>
+                </div>
+              </div>
+
+              <div class="button-row">
+                <button class="button primary" type="submit">Calculate Overtime Value</button>
+                <button class="button secondary" type="button" id="resetBtn">Reset Calculator</button>
+              </div>
+
+              <div class="error-box" id="errorBox" role="alert"></div>
+            </form>
+
+            <section class="results" id="results" aria-live="polite">
+              <div class="recommendation" id="recommendationBox">
+                <h3 id="recommendationTitle">Your estimated overtime value</h3>
+                <p id="recommendationText"></p>
+              </div>
+
+              <div class="score-grid">
+                <div class="score-card neutral">
+                  <h3>Gross overtime pay</h3>
+                  <div class="score-value" id="grossCard">—</div>
+                </div>
+
+                <div class="score-card info">
+                  <h3>Estimated take-home pay</h3>
+                  <div class="score-value" id="takeHomeCard">—</div>
+                </div>
+
+                <div class="score-card good">
+                  <h3>Net overtime value</h3>
+                  <div class="score-value" id="netCard">—</div>
+                </div>
+
+                <div class="score-card warn">
+                  <h3>Value per sacrificed hour</h3>
+                  <div class="score-value" id="effectiveCard">—</div>
+                </div>
+              </div>
+
+              <table class="results-table">
+                <thead>
+                  <tr>
+                    <th>Calculation</th>
+                    <th>Estimated result</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Overtime hourly rate</td>
+                    <td id="overtimeRateCell">—</td>
+                  </tr>
+                  <tr>
+                    <td>Gross overtime pay</td>
+                    <td id="grossPayCell">—</td>
+                  </tr>
+                  <tr>
+                    <td>Estimated take-home overtime pay</td>
+                    <td id="takeHomeCell">—</td>
+                  </tr>
+                  <tr>
+                    <td>Total extra costs</td>
+                    <td id="costsCell">—</td>
+                  </tr>
+                  <tr>
+                    <td>Net financial value after extra costs</td>
+                    <td id="netValueCell">—</td>
+                  </tr>
+                  <tr>
+                    <td>Paid overtime time</td>
+                    <td id="paidTimeCell">—</td>
+                  </tr>
+                  <tr>
+                    <td>Unpaid extra time around the overtime</td>
+                    <td id="unpaidTimeCell">—</td>
+                  </tr>
+                  <tr>
+                    <td>Total additional time commitment</td>
+                    <td id="totalTimeCell">—</td>
+                  </tr>
+                  <tr>
+                    <td>Effective overtime value per total hour sacrificed</td>
+                    <td id="effectiveValueCell">—</td>
+                  </tr>
+                  <tr>
+                    <td>Estimated normal take-home value per paid hour</td>
+                    <td id="normalNetRateCell">—</td>
+                  </tr>
+                  <tr>
+                    <td>Effective overtime value vs normal take-home hourly value</td>
+                    <td id="comparisonCell">—</td>
+                  </tr>
+                  <tr>
+                    <td>Estimated monthly net overtime value</td>
+                    <td id="monthlyCell">—</td>
+                  </tr>
+                  <tr>
+                    <td>Estimated annual net overtime value at the same frequency</td>
+                    <td id="annualCell">—</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="reason-list">
+                <div class="reason-box">
+                  <h3>What is supporting the overtime value</h3>
+                  <ul id="supportReasons"></ul>
+                </div>
+
+                <div class="reason-box">
+                  <h3>What is reducing the overtime value</h3>
+                  <ul id="cautionReasons"></ul>
+                </div>
+              </div>
+
+              <div class="callout info">
+                <h3>Use the result as a financial estimate, not a command</h3>
+                <p>
+                  The calculator can estimate money and time. It cannot measure how tired you will be, what family event you may miss, whether the work is safe, or whether the extra hours help your long-term career. Those factors belong in the final decision too.
+                </p>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section>
+          <h2>How the Overtime Value Calculator works</h2>
+          <p class="lead">
+            The calculator answers four separate questions: <strong>How much overtime pay will you earn?</strong> <strong>How much might you keep?</strong> <strong>What extra costs will the overtime create?</strong> and <strong>how much total time will the shift consume?</strong>
+          </p>
+
+          <p>
+            Keeping those questions separate matters because a high overtime rate does not automatically mean a high real-world return. A six-hour overtime shift can take seven or eight hours from your day once extra travel, waiting, preparation, and recovery are included.
+          </p>
+
+          <div class="formula">
+            Gross overtime pay = regular hourly rate × overtime multiplier × paid overtime hours
+          </div>
+
+          <div class="formula">
+            Estimated take-home overtime pay = gross overtime pay × percentage you expect to keep
+          </div>
+
+          <div class="formula">
+            Net overtime value = estimated take-home overtime pay − extra costs caused by the overtime
+          </div>
+
+          <div class="formula">
+            Effective overtime value per sacrificed hour = net overtime value ÷ total additional time commitment
+          </div>
+        </section>
+
+        <section>
+          <h2>Overtime pay calculator: why the multiplier matters</h2>
+          <p>
+            Some workers are paid their regular rate for extra hours, while others receive a premium such as time-and-a-half or double time. The calculator does not assume that one overtime rule applies everywhere.
+          </p>
+
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Multiplier</th>
+                <th>Meaning</th>
+                <th>Example with a 20 hourly base rate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1.0×</td>
+                <td>Regular hourly rate</td>
+                <td>20 per overtime hour</td>
+              </tr>
+              <tr>
+                <td>1.25×</td>
+                <td>25% premium</td>
+                <td>25 per overtime hour</td>
+              </tr>
+              <tr>
+                <td>1.5×</td>
+                <td>Time-and-a-half</td>
+                <td>30 per overtime hour</td>
+              </tr>
+              <tr>
+                <td>2.0×</td>
+                <td>Double time</td>
+                <td>40 per overtime hour</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>
+            Your actual overtime rate may depend on local employment law, your contract, collective agreements, your occupation, whether you are paid hourly or salaried, the number of hours already worked, and whether the shift is on a weekend, night, or holiday. Enter the rate or multiplier that actually applies to you.
+          </p>
+        </section>
+
+        <section>
+          <h2>How to estimate overtime after taxes</h2>
+          <p>
+            An online overtime tax calculator can only be fully accurate when it knows the tax rules that apply to you. This tool uses a simpler approach: you enter the percentage of overtime pay you expect to keep after taxes and payroll deductions.
+          </p>
+
+          <p>
+            For example, if a shift produces 180 in gross overtime pay and you expect to keep 72%, the estimated take-home amount is 129.60 before extra costs.
+          </p>
+
+          <div class="callout warning">
+            <h3>Do not treat the take-home percentage as a tax return calculation</h3>
+            <p>
+              Payroll withholding, marginal tax rates, credits, benefits, social contributions, and final annual tax can differ. If the exact tax effect matters, use official guidance or a qualified professional for your country and situation.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Why hidden overtime costs belong in the calculation</h2>
+          <p>
+            The extra shift may cause expenses that your normal schedule would not create. These costs reduce the money you actually gain from working more.
+          </p>
+
+          <ul>
+            <li>Extra fuel, public transport, parking, tolls, taxi, or rideshare</li>
+            <li>Childcare or eldercare needed only because you are working longer</li>
+            <li>Meals, snacks, coffee, or convenience food bought during the longer day</li>
+            <li>Additional vehicle wear from an extra commute</li>
+            <li>Paid help for household tasks you no longer have time to do</li>
+            <li>Other purchases directly caused by the extra shift</li>
+          </ul>
+
+          <p>
+            Small costs can matter when the overtime premium is modest. If 35 of extra costs come out of 110 of expected take-home pay, almost one-third of the apparent benefit disappears before time is considered.
+          </p>
+        </section>
+
+        <section>
+          <h2>Why this is more than an overtime wage calculator</h2>
+          <p>
+            A normal overtime wage calculator stops at paid hours. The real decision often depends on the unpaid time around the shift.
+          </p>
+
+          <p>
+            Suppose you are paid for five overtime hours but spend another 45 minutes travelling, 15 minutes preparing, and 30 minutes winding down before you can return to normal life. The shift has taken 6.5 hours from your day, not five.
+          </p>
+
+          <div class="formula">
+            Total additional time = paid overtime hours + extra commute + preparation + waiting + recovery time
+          </div>
+
+          <p>
+            The <strong>effective overtime hourly rate</strong> shown by this calculator therefore measures money kept per total hour sacrificed, not just money paid per payroll hour.
+          </p>
+        </section>
+
+        <section>
+          <h2>How to read the overtime value comparison</h2>
+          <p>
+            The results compare your effective overtime value with an estimated normal take-home hourly value. This is useful because it asks whether the premium still survives after extra costs and unpaid time.
+          </p>
+
+          <ul>
+            <li><strong>Higher than normal:</strong> the overtime remains financially stronger per total sacrificed hour than a normal paid hour under the assumptions entered.</li>
+            <li><strong>Close to normal:</strong> the overtime premium is largely being absorbed by extra costs or unpaid time.</li>
+            <li><strong>Below normal:</strong> the extra shift may still help your cash flow, but its effective value per total hour is lower than your estimated normal take-home hourly value.</li>
+          </ul>
+
+          <p>
+            This comparison is not a recommendation to accept or reject overtime. A lower effective rate may still be useful for a short-term emergency fund or debt goal. A higher rate may still be a poor trade if the hours damage sleep, safety, family time, or recovery.
+          </p>
+        </section>
+
+        <section>
+          <h2>Example: is a six-hour overtime shift worth it?</h2>
+          <p>
+            Assume your normal hourly rate is 20, the overtime multiplier is 1.5, and you work six paid overtime hours. Gross overtime pay is 180.
+          </p>
+
+          <p>
+            If you expect to keep 72% after deductions, estimated take-home pay is 129.60. Now assume the shift causes 18 in extra travel and meal costs. Net financial value falls to 111.60.
+          </p>
+
+          <p>
+            If extra commuting and preparation add 70 minutes, the total time commitment is about 7.17 hours. The effective value is about 15.57 per total sacrificed hour. Your estimated normal take-home hourly value at a 72% keep rate is 14.40, so the overtime still provides a modest financial premium after these assumptions are included.
+          </p>
+
+          <p>
+            Change the childcare cost, commute time, tax estimate, or overtime multiplier and the result can move substantially. That is why stress-testing the inputs is useful.
+          </p>
+        </section>
+
+        <section>
+          <h2>How to use the calculator for weekly overtime</h2>
+          <p>
+            If you normally work the same overtime block each week, enter one typical session and set the monthly frequency to about 4.33. The calculator will estimate monthly and annual net overtime value at that frequency.
+          </p>
+
+          <p>
+            For irregular schedules, use a conservative monthly average. If you work different kinds of overtime—weekday evenings, weekends, nights, or holidays—calculate them separately because the pay multiplier, expenses, and time cost may be different.
+          </p>
+
+          <div class="callout good">
+            <h3>Give recurring overtime a review date</h3>
+            <p>
+              An overtime pattern that makes sense for two months may not make sense for two years. Recheck the numbers if your tax situation, commuting cost, childcare, schedule, fatigue, or financial goal changes.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>When overtime can look better on paper than in real life</h2>
+          <ul>
+            <li>The premium applies to fewer hours than you expected.</li>
+            <li>Taxes or deductions leave less take-home pay than you estimated.</li>
+            <li>An extra commute is required for a short shift.</li>
+            <li>Childcare or transport costs are high.</li>
+            <li>You buy more convenience food because the day is longer.</li>
+            <li>The shift disrupts sleep and reduces the value of the next day.</li>
+            <li>You need a long recovery period after the overtime.</li>
+            <li>The overtime is frequent enough to crowd out exercise, family time, or education.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>When overtime can create value beyond the paycheck</h2>
+          <p>
+            Money is not the only possible return. Extra hours may also provide value if they help you learn an important system, build a transferable skill, complete a high-visibility project, or reach a defined short-term financial goal.
+          </p>
+
+          <p>
+            Those benefits are difficult to convert into a number, so the calculator intentionally leaves them outside the financial result. Add them separately rather than forcing every career and lifestyle factor into one score.
+          </p>
+        </section>
+
+        <section>
+          <h2>What this overtime calculator cannot know for you</h2>
+          <ul>
+            <li>Your exact country-specific overtime rights or legal eligibility</li>
+            <li>Your final tax liability or payroll withholding rules</li>
+            <li>Whether your employer counts every extra minute as paid time</li>
+            <li>How much fatigue the shift will create</li>
+            <li>Whether driving or safety-sensitive work will remain safe after a long day</li>
+            <li>The personal value of family time, exercise, sleep, hobbies, or recovery</li>
+            <li>Whether the overtime will help your promotion or long-term career</li>
+            <li>Whether repeated overtime will remain available in future months</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>A practical overtime decision process</h2>
+          <ol class="steps">
+            <li>
+              <strong>Verify the overtime rate.</strong>
+              Confirm which hours are paid and whether a premium such as 1.5× or 2× actually applies.
+            </li>
+            <li>
+              <strong>Estimate take-home pay.</strong>
+              Use a realistic percentage rather than assuming the full gross amount reaches your bank account.
+            </li>
+            <li>
+              <strong>Add the hidden costs.</strong>
+              Include travel, parking, childcare, food, and other spending caused by the shift.
+            </li>
+            <li>
+              <strong>Count the full time commitment.</strong>
+              Add extra commuting, waiting, preparation, and recovery around the paid hours.
+            </li>
+            <li>
+              <strong>Compare the effective value.</strong>
+              Look at net money per total hour sacrificed, not only the headline overtime rate.
+            </li>
+            <li>
+              <strong>Check non-financial costs.</strong>
+              Consider sleep, safety, family time, health routines, stress, and career value.
+            </li>
+            <li>
+              <strong>Set a purpose and review point.</strong>
+              Decide what the extra money is for and when you will reassess whether the overtime is still worth it.
+            </li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Frequently asked questions</h2>
+
+          <div class="faq-item">
+            <h3>How does the Overtime Value Calculator work?</h3>
+            <p>
+              It calculates gross overtime pay from your normal hourly rate, overtime multiplier, and paid overtime hours. It then estimates take-home pay, subtracts extra costs, adds unpaid time around the shift, and calculates the effective value per total hour sacrificed.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>How do I calculate overtime pay?</h3>
+            <p>
+              A simple estimate is regular hourly rate × overtime multiplier × paid overtime hours. If your normal rate is 20 and your overtime rate is 1.5×, the overtime hourly rate is 30. Six overtime hours would therefore produce 180 in gross overtime pay.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Is overtime taxed more?</h3>
+            <p>
+              Tax treatment depends on the tax system where you live. Extra income can change withholding or cause some additional income to fall into a higher marginal tax band, but that does not automatically mean all income is taxed at that rate. This calculator lets you enter your own estimated take-home percentage instead of assuming a universal tax rule.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>What is time-and-a-half overtime?</h3>
+            <p>
+              Time-and-a-half means 1.5 times the regular hourly rate. A 20 normal hourly rate would become 30 for each eligible overtime hour. Whether time-and-a-half applies depends on the rules and employment terms that apply to you.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>What does effective overtime value per hour mean?</h3>
+            <p>
+              It is the net overtime value after extra costs divided by the total additional time commitment. This can be more useful than the payroll rate because it includes unpaid travel, preparation, waiting, or recovery time that the overtime creates.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Should I include commuting time in an overtime calculator?</h3>
+            <p>
+              Include extra commuting time when the overtime causes travel you would not otherwise make or meaningfully extends your workday. If the overtime simply adds two hours before you drive home on the same normal commute, there may be no additional commute time to add.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Should I include childcare and meal costs?</h3>
+            <p>
+              Yes, when those costs exist only because you are working the overtime. The goal is to estimate the incremental cost of saying yes to the extra shift.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Can I use this as a weekly overtime calculator?</h3>
+            <p>
+              Yes. Enter one typical overtime block and set the number of similar sessions per month. For weekly overtime, about 4.33 sessions per month is a reasonable annualized average.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Does a high effective overtime rate mean I should always accept?</h3>
+            <p>
+              No. The calculation covers money and time only. Sleep, fatigue, safety, health, family responsibilities, personal plans, and long-term career value can outweigh a favorable financial result.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Is overtime worth it for paying off debt or building savings?</h3>
+            <p>
+              Overtime can be useful for a defined short-term financial goal when the net value is meaningful and the schedule is sustainable. Give the extra income a specific purpose and consider reducing the extra hours after the target is reached.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Can this calculator check whether unpaid overtime is worth it?</h3>
+            <p>
+              It is mainly designed for paid overtime. You can enter a multiplier of 0 to see the direct financial result of unpaid overtime, but the real question then becomes whether the extra work provides a clear career, learning, deadline, or other non-financial benefit.
+            </p>
+          </div>
+        </section>
+
+        <section class="about-box">
+          <h2>About this Overtime Value Calculator</h2>
+          <p>
+            DecideHelper creates educational frameworks and interactive tools for difficult everyday decisions. This calculator follows the same logic as the accompanying <a href="should-i-work-overtime.html">Should I Work Overtime?</a> guide: compare gross pay, expected take-home value, hidden costs, the full time commitment, work-life balance, fatigue, safety, family time, and longer-term career value.
+          </p>
+          <p>
+            The calculator intentionally avoids pretending that money alone can decide whether overtime is worth it. Its job is to make the financial trade-off visible so you can combine it with the parts of the decision that are personal and harder to measure.
+          </p>
+        </section>
+
+        <section class="related">
+          <h2>Related career guides and tools</h2>
+          <ul>
+            <li><a href="should-i-work-overtime.html">Should I Work Overtime?</a> — read the full decision guide on overtime pay, fatigue, work-life balance, and long-term sustainability.</li>
+            <li><a href="should-i-ask-for-a-raise.html">Should I Ask for a Raise?</a> — compare performance, market pay, timing, responsibilities, and negotiation strategy.</li>
+            <li><a href="job-change-decision-tool.html">Job Change Decision Tool</a> — compare pay, benefits, hours, commute, growth, security, flexibility, and switching risk.</li>
+            <li><a href="should-i-change-jobs.html">Should I Change Jobs?</a> — compare staying with a realistic alternative before making a career move.</li>
+            <li><a href="index.html">Career Decisions</a> — browse more practical career decision guides and tools.</li>
+          </ul>
+        </section>
+
+        <p class="disclaimer">
+          <strong>Disclaimer:</strong> This calculator is for general educational and informational purposes only. Results are simplified estimates based entirely on the values you enter. It does not provide employment, legal, financial, tax, medical, human-resources, career, or other professional advice. Overtime eligibility, pay rates, working-time limits, employee classifications, taxes, payroll deductions, rest requirements, and workplace practices vary by country, employer, occupation, contract, and personal circumstances. Verify the rules that apply to you and consult qualified professionals when appropriate.
+        </p>
+      </div>
+    </article>
+  </main>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="../index.html">Home</a>
+      <a href="../money/index.html">Money Decisions</a>
+      <a href="../shopping/index.html">Shopping Decisions</a>
+      <a href="../home/index.html">Home Decisions</a>
+      <a href="index.html">Career Decisions</a>
+      <a href="../about.html">About</a>
+      <a href="../privacy-policy.html">Privacy Policy</a>
+      <a href="../terms-and-conditions.html">Terms</a>
+      <a href="../disclaimer.html">Disclaimer</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+
+    <p>© <span id="year"></span> DecideHelper. Educational content only.</p>
+  </div>
+</footer>
+
+<script>
+  const form = document.getElementById('overtimeForm');
+  const results = document.getElementById('results');
+  const errorBox = document.getElementById('errorBox');
+  const resetBtn = document.getElementById('resetBtn');
+
+  function num(id){
+    return Number(document.getElementById(id).value);
+  }
+
+  function currencyLabel(){
+    const raw = document.getElementById('currency').value.trim();
+    return raw || '';
+  }
+
+  function money(value){
+    const label = currencyLabel();
+    const abs = Math.abs(value);
+    const formatted = new Intl.NumberFormat('en-US', {
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 2
+    }).format(abs);
+
+    const sign = value < 0 ? '-' : '';
+    if (!label) return sign + formatted;
+
+    const symbols = ['$', '€', '£', '¥', '₹'];
+    if (symbols.includes(label)) return sign + label + formatted;
+
+    return sign + formatted + ' ' + label;
+  }
+
+  function addReason(list, text){
+    const li = document.createElement('li');
+    li.textContent = text;
+    list.appendChild(li);
+  }
+
+  function calculate(event){
+    event.preventDefault();
+    errorBox.style.display = 'none';
+
+    const i = {
+      baseRate: num('baseRate'),
+      multiplier: num('multiplier'),
+      overtimeHours: num('overtimeHours'),
+      keepPercent: num('keepPercent'),
+      sessionsPerMonth: num('sessionsPerMonth'),
+      travelCost: num('travelCost'),
+      mealCost: num('mealCost'),
+      careCost: num('careCost'),
+      otherCost: num('otherCost'),
+      extraCommute: num('extraCommute'),
+      prepRecovery: num('prepRecovery')
+    };
+
+    const values = Object.values(i);
+
+    if (
+      values.some(v => !Number.isFinite(v)) ||
+      i.baseRate <= 0 ||
+      i.multiplier < 0 ||
+      i.overtimeHours <= 0 ||
+      i.keepPercent < 0 ||
+      i.keepPercent > 100 ||
+      i.sessionsPerMonth < 0 ||
+      i.travelCost < 0 ||
+      i.mealCost < 0 ||
+      i.careCost < 0 ||
+      i.otherCost < 0 ||
+      i.extraCommute < 0 ||
+      i.prepRecovery < 0
+    ){
+      errorBox.textContent = 'Please enter valid values. Pay and paid overtime hours must be greater than zero, and cost/time fields cannot be negative.';
+      errorBox.style.display = 'block';
+      results.style.display = 'none';
+      return;
+    }
+
+    const overtimeRate = i.baseRate * i.multiplier;
+    const grossPay = overtimeRate * i.overtimeHours;
+    const keepRate = i.keepPercent / 100;
+    const takeHomePay = grossPay * keepRate;
+
+    const totalCosts = i.travelCost + i.mealCost + i.careCost + i.otherCost;
+    const netValue = takeHomePay - totalCosts;
+
+    const unpaidMinutes = i.extraCommute + i.prepRecovery;
+    const unpaidHours = unpaidMinutes / 60;
+    const totalTime = i.overtimeHours + unpaidHours;
+
+    const effectiveValue = totalTime > 0 ? netValue / totalTime : 0;
+    const normalNetRate = i.baseRate * keepRate;
+    const comparisonPct = normalNetRate > 0 ? ((effectiveValue - normalNetRate) / normalNetRate) * 100 : 0;
+
+    const monthlyNet = netValue * i.sessionsPerMonth;
+    const annualNet = monthlyNet * 12;
+
+    const extraTimePct = i.overtimeHours > 0 ? (unpaidHours / i.overtimeHours) * 100 : 0;
+    const costShare = takeHomePay > 0 ? (totalCosts / takeHomePay) * 100 : 0;
+
+    const box = document.getElementById('recommendationBox');
+    const title = document.getElementById('recommendationTitle');
+    const text = document.getElementById('recommendationText');
+
+    box.className = 'recommendation';
+
+    if (netValue <= 0){
+      title.textContent = 'Estimated result: Extra costs consume the estimated take-home pay';
+      text.textContent = 'Under the values entered, the overtime produces little or no positive financial value after the extra costs. Check the inputs and consider whether the non-financial benefit is strong enough to justify the time.';
+      box.classList.add('low');
+    } else if (comparisonPct >= 20){
+      title.textContent = 'Estimated result: The overtime keeps a relatively strong financial premium';
+      text.textContent = 'After estimated deductions, extra costs, and unpaid time, the effective value per total hour sacrificed remains materially above your estimated normal take-home hourly value. Add sleep, safety, family time, and career factors before making the final decision.';
+      box.classList.add('strong');
+    } else if (comparisonPct >= -10){
+      title.textContent = 'Estimated result: The financial trade-off is fairly close';
+      text.textContent = 'The overtime adds money, but extra costs and unpaid time absorb much of the premium. Small changes in commuting, childcare, meals, taxes, or recovery time could change the result.';
+      box.classList.add('mixed');
+    } else {
+      title.textContent = 'Estimated result: The effective value is below your normal take-home hourly value';
+      text.textContent = 'The overtime still adds cash under the values entered, but each total hour sacrificed is producing less financial value than your estimated normal take-home hourly value. Consider whether the overtime serves a specific short-term goal or provides other meaningful benefits.';
+      box.classList.add('low');
+    }
+
+    document.getElementById('grossCard').textContent = money(grossPay);
+    document.getElementById('takeHomeCard').textContent = money(takeHomePay);
+    document.getElementById('netCard').textContent = money(netValue);
+    document.getElementById('effectiveCard').textContent = money(effectiveValue) + '/h';
+
+    document.getElementById('overtimeRateCell').textContent = money(overtimeRate) + ' per paid overtime hour';
+    document.getElementById('grossPayCell').textContent = money(grossPay);
+    document.getElementById('takeHomeCell').textContent = money(takeHomePay);
+    document.getElementById('costsCell').textContent = money(totalCosts);
+    document.getElementById('netValueCell').textContent = money(netValue);
+    document.getElementById('paidTimeCell').textContent = i.overtimeHours.toFixed(2).replace(/\.00$/, '') + ' hours';
+    document.getElementById('unpaidTimeCell').textContent = unpaidHours.toFixed(2).replace(/\.00$/, '') + ' hours';
+    document.getElementById('totalTimeCell').textContent = totalTime.toFixed(2).replace(/\.00$/, '') + ' hours';
+    document.getElementById('effectiveValueCell').textContent = money(effectiveValue) + ' per total hour';
+    document.getElementById('normalNetRateCell').textContent = money(normalNetRate) + ' per normal paid hour';
+
+    const compPrefix = comparisonPct >= 0 ? '+' : '';
+    document.getElementById('comparisonCell').textContent =
+      compPrefix + comparisonPct.toFixed(1) + '% compared with estimated normal take-home hourly value';
+
+    document.getElementById('monthlyCell').textContent =
+      i.sessionsPerMonth > 0 ? money(monthlyNet) + ' per month' : 'Not calculated — frequency is 0';
+
+    document.getElementById('annualCell').textContent =
+      i.sessionsPerMonth > 0 ? money(annualNet) + ' per year' : 'Not calculated — frequency is 0';
+
+    const support = document.getElementById('supportReasons');
+    const caution = document.getElementById('cautionReasons');
+    support.innerHTML = '';
+    caution.innerHTML = '';
+
+    if (i.multiplier >= 1.5){
+      addReason(support, 'The overtime multiplier is at least time-and-a-half.');
+    } else if (i.multiplier > 1){
+      addReason(support, 'The overtime rate includes a premium above the normal hourly rate.');
+    }
+
+    if (i.keepPercent >= 70){
+      addReason(support, 'Your estimated take-home percentage leaves most of the gross overtime pay available before extra costs.');
+    }
+
+    if (totalCosts === 0){
+      addReason(support, 'You entered no direct extra costs for this overtime session.');
+    } else if (costShare <= 15){
+      addReason(support, 'Direct extra costs consume a relatively small share of estimated take-home overtime pay.');
+    }
+
+    if (unpaidHours <= 0.25){
+      addReason(support, 'There is little additional unpaid time around the overtime.');
+    }
+
+    if (comparisonPct >= 10){
+      addReason(support, 'Effective value per total sacrificed hour remains above your estimated normal take-home hourly value.');
+    }
+
+    if (i.sessionsPerMonth > 0 && monthlyNet > 0){
+      addReason(support, 'At the frequency entered, the overtime creates a positive recurring monthly cash contribution.');
+    }
+
+    if (i.multiplier <= 1){
+      addReason(caution, 'The entered overtime multiplier provides little or no premium above the normal hourly rate.');
+    }
+
+    if (i.keepPercent < 60){
+      addReason(caution, 'The take-home percentage entered removes a large part of the gross overtime pay.');
+    }
+
+    if (costShare >= 30){
+      addReason(caution, 'Extra costs consume at least 30% of estimated take-home overtime pay.');
+    } else if (costShare >= 15){
+      addReason(caution, 'Extra costs take a meaningful share of estimated take-home overtime pay.');
+    }
+
+    if (extraTimePct >= 30){
+      addReason(caution, 'Unpaid travel, preparation, or recovery adds at least 30% to the paid overtime time.');
+    } else if (extraTimePct >= 15){
+      addReason(caution, 'Unpaid time adds a noticeable amount to the total time commitment.');
+    }
+
+    if (comparisonPct < 0){
+      addReason(caution, 'After costs and unpaid time, the effective overtime value is below your estimated normal take-home hourly value.');
+    }
+
+    if (netValue <= 0){
+      addReason(caution, 'Under the current inputs, extra costs equal or exceed estimated take-home overtime pay.');
+    }
+
+    if (!support.children.length){
+      addReason(support, 'No single financial factor strongly improves the overtime value under the current inputs.');
+    }
+
+    if (!caution.children.length){
+      addReason(caution, 'No major financial warning factor dominates, but non-financial costs still need to be considered.');
+    }
+
+    results.style.display = 'block';
+    results.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+
+  form.addEventListener('submit', calculate);
+
+  resetBtn.addEventListener('click', () => {
+    form.reset();
+    results.style.display = 'none';
+    errorBox.style.display = 'none';
+    document.getElementById('calculator-title').scrollIntoView({behavior:'smooth', block:'start'});
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
