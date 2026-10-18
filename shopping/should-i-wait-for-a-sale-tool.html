@@ -1109,16 +1109,16 @@
 
                     <select id="saleProbability" name="saleProbability">
                       <option value="0.2">
-                        Low — mostly a guess
+                        Low (20%) — mostly a guess
                       </option>
                       <option value="0.4">
-                        Possible
+                        Possible (40%)
                       </option>
                       <option value="0.65" selected>
-                        Likely — similar sales happen regularly
+                        Likely (65%) — similar sales happen regularly
                       </option>
                       <option value="0.85">
-                        Very likely — a known sale event is approaching
+                        Very likely (85%) — a known sale event is approaching
                       </option>
                     </select>
                   </div>
@@ -1503,7 +1503,7 @@
                     </tr>
 
                     <tr>
-                      <td>Estimated net value of waiting</td>
+                      <td>Net financial estimate of waiting</td>
                       <td id="waitingValueCell">—</td>
                     </tr>
                   </tbody>
@@ -1568,10 +1568,11 @@
             </p>
 
             <p>
-              Finally, the tool subtracts the practical cost of waiting and
-              applies separate scores for urgency, stock risk, price increase
-              risk, budget safety, financing, impulse risk, seasonal timing,
-              and the quality of your price research.
+              Finally, the money estimate subtracts the practical waiting expenses
+              you entered. Urgency, stock risk, price increase risk, budget safety,
+              financing, impulse risk and seasonality affect <strong>separate,
+              judgment-based decision scores</strong>; they are not converted into
+              invented dollar costs. The scores are not measured probabilities.
             </p>
 
             <div class="callout good">
@@ -1587,6 +1588,38 @@
                 practical costs.
               </p>
             </div>
+          </section>
+
+
+          <section aria-labelledby="methodology-heading">
+            <h2 id="methodology-heading">Calculation assumptions and score methodology</h2>
+            <p>
+              <strong>Money amounts and decision scores are different.</strong> The current effective price
+              includes the purchase price, shipping, financing and estimated return costs, minus a usable coupon.
+              The future effective price includes the estimated future price, fees and coupon. Possible additional
+              savings equal the positive difference between the two prices.
+            </p>
+            <p>
+              The <strong>probability-adjusted saving</strong> multiplies that possible saving by your selected
+              chance of getting the better deal. The <strong>net financial waiting estimate</strong> then subtracts
+              only the waiting expenses you entered. It is a simplified scenario, not a statistically calibrated
+              expected return: it assumes that if the target sale does not occur, you can still buy at today's
+              effective price. Future price increases, stockouts, opportunity costs and product differences are
+              <strong>not valued in dollars</strong> unless included in your entered waiting expense.
+            </p>
+            <p>
+              The separate Buy Now and Wait scores are <strong>illustrative 0–100 decision aids</strong>,
+              not probabilities or validated financial ratings. Both start at 50 and use fixed, editorial
+              points for discounts, urgency, stock and price risks, affordability, available substitutes,
+              research, impulse concerns and seasonal timing. For example, high urgency adds 18 points
+              to Buy Now and subtracts 6 from Wait, while a weak emergency fund favors waiting.
+              These point weights are judgment calls, not empirical predictions; test multiple scenarios
+              and prioritize actual costs and essential needs over the score.
+            </p>
+            <p>
+              The chance labels (20%, 40%, 65%, 85%) are user-selected assumptions, not live sale forecasts.
+              Cash figures can use any single currency, consistently. The tool does not fetch current prices.
+            </p>
           </section>
 
           <section>
@@ -2307,6 +2340,20 @@
       const availableCash = valueOf("availableCash");
       const monthlySavings = valueOf("monthlySavings");
 
+      // Empty inputs must not be silently interpreted as zero by Number("").
+      const requiredMoneyIds = [
+        "normalPrice", "currentPrice", "currentCoupon", "currentShipping",
+        "currentFinance", "returnCost", "futurePrice", "futureCoupon",
+        "futureShipping", "monthsToSale", "waitingCost", "availableCash",
+        "monthlySavings"
+      ];
+      if (requiredMoneyIds.some(id => document.getElementById(id).value.trim() === "")) {
+        errorBox.textContent = "Please fill in every numeric field. Use 0 when a cost does not apply.";
+        errorBox.style.display = "block";
+        results.style.display = "none";
+        return;
+      }
+
       const numericValues = [
         normalPrice,
         currentPrice,
@@ -2324,11 +2371,13 @@
       ];
 
       if (
-        numericValues.some(value => !Number.isFinite(value) || value < 0) ||
-        normalPrice <= 0
+        numericValues.some(value => !Number.isFinite(value) || value < 0 || value > 1e10) ||
+        normalPrice <= 0 || monthsToSale > 120 ||
+        currentCoupon > currentPrice + currentShipping + currentFinance + returnCost ||
+        futureCoupon > futurePrice + futureShipping
       ) {
         errorBox.textContent =
-          "Please enter valid non-negative numbers. The normal price must be greater than zero.";
+          "Enter non-negative amounts (up to 10 billion), a normal price above zero and a waiting period of 0–120 months. Coupons cannot exceed the corresponding total price and fees.";
         errorBox.style.display = "block";
         results.style.display = "none";
         return;
@@ -2374,29 +2423,9 @@
       const expectedSaving =
         possibleAdditionalSaving * saleProbability;
 
-      const urgencyCostFactor =
-        urgency * Math.max(normalPrice * 0.015, 5);
-
-      const stockRiskCostFactor =
-        stockRisk * Math.max(normalPrice * 0.012, 4);
-
-      const priceRiskCostFactor =
-        priceIncreaseRisk * Math.max(normalPrice * 0.01, 3);
-
-      const substituteCredit =
-        substitute * Math.max(normalPrice * 0.006, 2);
-
-      const timePenalty =
-        monthsToSale * Math.max(normalPrice * 0.0025, 1);
-
-      const netWaitingValue =
-        expectedSaving +
-        substituteCredit -
-        waitingCost -
-        urgencyCostFactor -
-        stockRiskCostFactor -
-        priceRiskCostFactor -
-        timePenalty;
+      // Money estimate: only user-entered financial amounts are represented in currency.
+      // Qualitative urgency, availability and other uncertainties belong in the scores below.
+      const netWaitingValue = expectedSaving - waitingCost;
 
       let buyScore = 50;
       let waitScore = 50;
@@ -2634,13 +2663,13 @@
         waitScore += 14;
         addReason(
           waitReasons,
-          "The probability-adjusted net value of waiting is meaningfully positive."
+          "The financial waiting estimate (after entered waiting expenses) is meaningfully positive."
         );
       } else if (netWaitingValue < 0) {
         buyScore += 12;
         addReason(
           buyReasons,
-          "After urgency and risk are considered, waiting has a negative estimated value."
+          "After subtracting the waiting expenses you entered, the financial waiting estimate is negative."
         );
       }
 
@@ -2687,14 +2716,13 @@
       const scoreDifference = buyScore - waitScore;
       const weakBudget =
         buyNowCost > availableCash ||
-        emergencyFundMonths <= 1 ||
-        (currentFinance > 0 && needOrWant <= 1);
+        emergencyFundMonths <= 1;
 
       if (weakBudget) {
         recommendationTitle.textContent =
           "Recommendation: Wait Until You Save More";
         recommendationText.textContent =
-          "The current deal does not appear strong enough to justify weakening your cash position, reducing essential savings, or using costly financing. Consider setting a target price and saving toward the purchase.";
+          "Buying today would exceed the cash available for this purchase or leave very limited emergency savings. Consider building your buffer or reviewing less expensive options before committing.";
         recommendationBox.classList.add("save");
       } else if (scoreDifference >= 9) {
         recommendationTitle.textContent =
@@ -2743,11 +2771,11 @@
       if (netWaitingValue >= 0) {
         document.getElementById("waitingValueCell").textContent =
           money(netWaitingValue) +
-          " estimated positive value";
+          " estimated financial advantage (scenario)";
       } else {
         document.getElementById("waitingValueCell").textContent =
           money(Math.abs(netWaitingValue)) +
-          " estimated disadvantage";
+          " estimated financial disadvantage (scenario)";
       }
 
       results.style.display = "block";
